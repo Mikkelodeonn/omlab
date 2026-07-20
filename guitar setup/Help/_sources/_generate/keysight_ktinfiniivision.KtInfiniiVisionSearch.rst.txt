@@ -1,0 +1,24 @@
+
+KtInfiniiVisionSearch
+======================
+    | Access interface members using: ``driver.search``
+    | Where ``driver`` is a reference to the driver's root interface returned by the :ref:`constructor <programming:Creating a Driver Instance>`.
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: KtInfiniiVisionSearch
+    :members:
+    :exclude-members: get_name_by_index, items
+
+
+
+**Child Interfaces**
+
+
+.. toctree::
+   keysight_ktinfiniivision.KtInfiniiVisionSearchEdge
+   keysight_ktinfiniivision.KtInfiniiVisionSearchGlitch
+   keysight_ktinfiniivision.KtInfiniiVisionSearchPeak
+   keysight_ktinfiniivision.KtInfiniiVisionSearchRunt
+   keysight_ktinfiniivision.KtInfiniiVisionSearchSerial
+   keysight_ktinfiniivision.KtInfiniiVisionSearchTransition

@@ -1,0 +1,14 @@
+
+SerialBusI2SClockSlope
+=======================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusI2SClockSlope
+    :members:
+    :exclude-members: name
+
+
+
+

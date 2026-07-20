@@ -1,0 +1,14 @@
+
+SearchMode
+===========
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SearchMode
+    :members:
+    :exclude-members: name
+
+
+
+

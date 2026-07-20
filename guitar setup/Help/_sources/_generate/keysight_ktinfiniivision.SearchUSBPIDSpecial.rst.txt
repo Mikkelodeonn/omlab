@@ -1,0 +1,14 @@
+
+SearchUSBPIDSpecial
+====================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SearchUSBPIDSpecial
+    :members:
+    :exclude-members: name
+
+
+
+

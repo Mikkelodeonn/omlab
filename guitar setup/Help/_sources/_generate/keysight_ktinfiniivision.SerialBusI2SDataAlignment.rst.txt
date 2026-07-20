@@ -1,0 +1,14 @@
+
+SerialBusI2SDataAlignment
+==========================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusI2SDataAlignment
+    :members:
+    :exclude-members: name
+
+
+
+

@@ -1,0 +1,14 @@
+
+CounterTotalizerPolarity
+=========================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: CounterTotalizerPolarity
+    :members:
+    :exclude-members: name
+
+
+
+

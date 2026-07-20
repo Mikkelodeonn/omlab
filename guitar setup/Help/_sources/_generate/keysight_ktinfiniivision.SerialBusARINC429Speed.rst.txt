@@ -1,0 +1,14 @@
+
+SerialBusARINC429Speed
+=======================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusARINC429Speed
+    :members:
+    :exclude-members: name
+
+
+
+

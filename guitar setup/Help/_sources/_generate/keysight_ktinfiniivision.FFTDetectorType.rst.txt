@@ -1,0 +1,14 @@
+
+FFTDetectorType
+================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: FFTDetectorType
+    :members:
+    :exclude-members: name
+
+
+
+

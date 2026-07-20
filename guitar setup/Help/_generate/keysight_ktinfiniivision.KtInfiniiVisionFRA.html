@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>KtInfiniiVisionFRA &#8212; KtInfiniiVision 1.0.0 Documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinxdoc.css?v=d59dc883" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <script src="../_static/documentation_options.js?v=8d563738"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="KtInfiniiVisionHistogram" href="keysight_ktinfiniivision.KtInfiniiVisionHistogram.html" />
+    <link rel="prev" title="KtInfiniiVisionFFT" href="keysight_ktinfiniivision.KtInfiniiVisionFFT.html" /> 
+  </head><body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<table width="100%" cellpadding="0" cellspacing="0"><tr>
+        <td valign="top"><a href="../index.html"><h1 style="font-size: 2em;">KtInfiniiVision Driver Python API</h1></a></td>
+        <td align="right"><a href="https://www.keysight.com" target="_blank"><img src="../_static\keysight.gif" alt="keysight.gif"></a></td>
+</tr></table>
+</div>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionHistogram.html" title="KtInfiniiVisionHistogram"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionFFT.html" title="KtInfiniiVisionFFT"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" accesskey="U">KtInfiniiVision</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionFRA</a></li> 
+      </ul>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="ktinfiniivisionfra">
+<h1>KtInfiniiVisionFRA<a class="headerlink" href="#ktinfiniivisionfra" title="Link to this heading">¶</a></h1>
+<blockquote>
+<div><div class="line-block">
+<div class="line">Access interface members using: <code class="docutils literal notranslate"><span class="pre">driver.fra</span></code></div>
+<div class="line">Where <code class="docutils literal notranslate"><span class="pre">driver</span></code> is a reference to the driver’s root interface returned by the <a class="reference internal" href="../programming.html#creating-a-driver-instance"><span class="std std-ref">constructor</span></a>.</div>
+</div>
+</div></blockquote>
+<dl class="py class">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFRA">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">KtInfiniiVisionFRA</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA" title="Link to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA" title="keysight_ktinfiniivision.KtInfiniiVisionFRA"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionFRA</span></code></a> interface.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFRA.amplitude">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">amplitude</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA.amplitude" title="Link to this definition">¶</a></dt>
+<dd><p>The waveform generator amplitude in the frequency response analysis.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; The amplitude and offset can aslo be indirectly set using WaveGensHighVoltage.
+<br />&#8226; For example, an amplitude of 5 V and an offset of 1 V is the same as a high-level voltage of 4 V and a low-level voltage of -1 V.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFRA.amplitude_profile_state">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">amplitude_profile_state</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA.amplitude_profile_state" title="Link to this definition">¶</a></dt>
+<dd><p>Enables or disables the ability to specify amplitude ramping within different decades</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFRA.enabled">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">enabled</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA.enabled" title="Link to this definition">¶</a></dt>
+<dd><p>Enables or disables the Frequency Response Analysis (FRA) feature.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFRA.get_amplitude_profile">
+<span class="sig-name descname"><span class="pre">get_amplitude_profile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionFRA"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionFRA</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">range</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="keysight_ktinfiniivision.FRAAmpRange.html#keysight_ktinfiniivision.FRAAmpRange" title="keysight_ktinfiniivision.keysight_ktinfiniivision.FRAAmpRange"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.FRAAmpRange</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA.get_amplitude_profile" title="Link to this definition">¶</a></dt>
+<dd><p>Returns waveform generator amplitude in the frequency response analysis.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>range</strong> (<a class="reference internal" href="keysight_ktinfiniivision.FRAAmpRange.html#keysight_ktinfiniivision.FRAAmpRange" title="keysight_ktinfiniivision.FRAAmpRange"><em>FRAAmpRange</em></a>) – Range</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Range</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-even">Remarks<span class="colon">:</span></dt>
+<dd class="field-even">When the amplitude profile setting is on  the &#60;range&#62; option specifies the initial ramp amplitude at the frequency
+setting. Amplitudes ramp between the settings specified for individual frequencies.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFRA.get_data">
+<span class="sig-name descname"><span class="pre">get_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionFRA"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionFRA</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency_mode</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="keysight_ktinfiniivision.FRAFrequencyMode.html#keysight_ktinfiniivision.FRAFrequencyMode" title="keysight_ktinfiniivision.keysight_ktinfiniivision.FRAFrequencyMode"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.FRAFrequencyMode</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v2.2)"><span class="pre">numpy.ndarray</span></a><span class="p"><span class="pre">[</span></span><span class="pre">numpy.float64</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v2.2)"><span class="pre">numpy.ndarray</span></a><span class="p"><span class="pre">[</span></span><span class="pre">numpy.float64</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v2.2)"><span class="pre">numpy.ndarray</span></a><span class="p"><span class="pre">[</span></span><span class="pre">numpy.float64</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v2.2)"><span class="pre">numpy.ndarray</span></a><span class="p"><span class="pre">[</span></span><span class="pre">numpy.float64</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA.get_data" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the frequency response analysis data.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>frequency_mode</strong> (<a class="reference internal" href="keysight_ktinfiniivision.FRAFrequencyMode.html#keysight_ktinfiniivision.FRAFrequencyMode" title="keysight_ktinfiniivision.FRAFrequencyMode"><em>FRAFrequencyMode</em></a>) – Specifies the frequency mode setting of the Frequency Response Analysis (FRA).</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><p>A tuple containing:</p>
+<ul class="simple">
+<li><p><strong>frequency</strong> (numpy.ndarray&lt;dtype:double&gt;) : Frequency</p></li>
+<li><p><strong>amplitude</strong> (numpy.ndarray&lt;dtype:double&gt;) : Amplitude</p></li>
+<li><p><strong>gain</strong> (numpy.ndarray&lt;dtype:double&gt;) : Gain</p></li>
+<li><p><strong>phase</strong> (numpy.ndarray&lt;dtype:double&gt;) : Phase</p></li>
+</ul>
+</p>
+</dd>
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.13)">tuple</a>[numpy.ndarray&lt;dtype:double&gt;, numpy.ndarray&lt;dtype:double&gt;, numpy.ndarray&lt;dtype:double&gt;, numpy.ndarray&lt;dtype:double&gt;]</p>
+</dd>
+<dt class="field-even">Remarks<span class="colon">:</span></dt>
+<dd class="field-even">&#8226; <a href="keysight_ktinfiniivision.FRATrace.html">FRATrace</a> can be used to specify whether to include gain,phase, both gain and phase, or neither in the frequency response analysis results.
+<br />&#8226;  FRASweepMode can be used whether to get the data from a sweep or single-frequency analysis.
+<br />&#8226; If this option is not specified, the data from the sweep analysis is returned by default.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFRA.input_source">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">input_source</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA.input_source" title="Link to this definition">¶</a></dt>
+<dd><p>The analog input channel that is probing the input voltage to the device under test (DUT) in the frequency response analysis.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; The Source can be specified in the following format: Channel&lt;n&gt;, where n: 1 to the number of analog channels.
+<br />&#8226; It specifies the analog input channel that is probing the input voltage to the device under test (DUT) in the frequency response analysis.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFRA.output_load_impedance">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">output_load_impedance</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA.output_load_impedance" title="Link to this definition">¶</a></dt>
+<dd><p>The current expected output load impedance</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.WaveformGeneratorOutputLoadImpedance.html#keysight_ktinfiniivision.WaveformGeneratorOutputLoadImpedance" title="keysight_ktinfiniivision.WaveformGeneratorOutputLoadImpedance">WaveformGeneratorOutputLoadImpedance</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; The output impedance of the Gen Out BNC is fixed at 50 ohms. However, the output load selection lets the waveform generator display the correct amplitude
+and offset levels for the expected output load.
+
+<br />&#8226; If the actual load impedance is different than the selected value, the displayed
+amplitude and offset levels will be incorrect.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFRA.output_source">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">output_source</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA.output_source" title="Link to this definition">¶</a></dt>
+<dd><p>The analog input channel that is probing the output voltage from the device under test (DUT) in the frequency response analysis.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">The Source can be specified in the following format: "Channel&lt;n&gt;", where n: 1 to the number of analog channels.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFRA.points_per_decade">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">points_per_decade</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA.points_per_decade" title="Link to this definition">¶</a></dt>
+<dd><p>The number of points per decade in the frequency response analysis.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">Input must be any &#60;value&#62; from &#123; 10 &#124; 20 &#124; 30 &#124; 40 &#124; 50 &#124; 60 &#124; 70 &#124; 80 &#124; 90 &#124; 100 &#125;</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFRA.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionFRA"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionFRA</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA.run" title="Link to this definition">¶</a></dt>
+<dd><p>Initiates the Frequency Response Analysis.</p>
+<dl class="field-list">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+<dt class="field-even">Remarks<span class="colon">:</span></dt>
+<dd class="field-even"><li />This analysis controls the built-in waveform generator to sweep a sine wave across a range of frequencies while measuring the input to and output from a device under test (DUT). At each frequency, gain (A) and phase are measured and plotted on a Bode frequency response chart.
+<li />When the frequency response analysis completes, you can use the FetchData method to get list of data for each step in the sweep: Frequency (Hz), Amplitude (Vpp), Gain (dB), and Phase (°).
+<li />It takes some time for the frequency sweep analysis to complete.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFRA.set_amplitude_profile">
+<span class="sig-name descname"><span class="pre">set_amplitude_profile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionFRA"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionFRA</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">amplitude</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">range</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="keysight_ktinfiniivision.FRAAmpRange.html#keysight_ktinfiniivision.FRAAmpRange" title="keysight_ktinfiniivision.keysight_ktinfiniivision.FRAAmpRange"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.FRAAmpRange</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA.set_amplitude_profile" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the waveform generator’s output sine wave amplitude.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>amplitude</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><em>float</em></a>) – Amplitude</p></li>
+<li><p><strong>range</strong> (<a class="reference internal" href="keysight_ktinfiniivision.FRAAmpRange.html#keysight_ktinfiniivision.FRAAmpRange" title="keysight_ktinfiniivision.FRAAmpRange"><em>FRAAmpRange</em></a>) – Range</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">When the amplitude profile setting is on  the &#60;range&#62; option specifies the initial ramp amplitude at the frequency
+setting. Amplitudes ramp between the settings specified for individual frequencies.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFRA.single_frequency">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">single_frequency</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA.single_frequency" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the single frequency value.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; The frequency response analysis is displayed on a log scale Bode plot, so user can select from decade values in addition to the minimum frequency of 20 Hz.
+<br />&#8226; The input &#60;value&#62;  
+<blockquote><br />&#8226; For X1000 &#38; X1200 Series: between 10 Hz and 20 MHz with a resolution of 0.1 Hz
+<br />&#8226; For T3000, X4000, X6000, M9240X &#38; P9240X Series: must be from &#123; 20 &#124; 100 &#124; 1000 &#124; 10000 &#124; 100000 &#124; 1000000 &#124; 10000000 &#124; 2000000 &#125; </blockquote>
+<br />&#8226; With the input, any of the &#60;suffix&#62;  can be used from &#123; Hz &#124; kHz &#124; MHz  &#125;</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFRA.start_frequency">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">start_frequency</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA.start_frequency" title="Link to this definition">¶</a></dt>
+<dd><p>The frequency sweep start value.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; The frequency response analysis is displayed on a log scale Bode plot, so user can select from decade values in addition to the minimum frequency of 20 Hz.
+<br />&#8226; The input &#60;value&#62;  
+<blockquote><br />&#8226; For X1000 &#38; X1200 Series: must be in between between 10 Hz and 19.99 MHz with a resolution of 0.1 Hz
+in NR3 format.
+<br />&#8226; For T3000, X4000, X6000, M9240X &#38; P9240X Series: must be from &#123; 20 &#124; 100 &#124; 1000 &#124; 10000 &#124; 100000 &#124; 1000000 &#124; 10000000  &#125; </blockquote>
+<br />&#8226; With the input, any of the &#60;suffix&#62; can be used from &#123; Hz &#124; kHz &#124; MHz  &#125;</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFRA.stop_frequency">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">stop_frequency</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA.stop_frequency" title="Link to this definition">¶</a></dt>
+<dd><p>The frequency sweep stop value.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; The input &#60;value&#62;  
+<blockquote><br />&#8226; For X1000 &#38; X1200 Series: must be in between 10.1 Hz and 20 MHz with a resolution of 0.1 Hz
+in NR3 format.
+<br />&#8226; For T3000, X4000, X6000, M9240X &#38; P9240X Series: must be from &#123; 100 &#124; 1000 &#124; 10000 &#124; 100000 &#124; 1000000 &#124; 10000000 &#124; 2000000 &#125; </blockquote>
+<br />&#8226; With the input, any of the &#60;suffix&#62;  can be used from &#123; Hz &#124; kHz &#124; MHz  &#125;</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFRA.sweep_mode">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sweep_mode</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA.sweep_mode" title="Link to this definition">¶</a></dt>
+<dd><p>Select between the normal swept frequency response analysis or analysis at a single frequency</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.FRAFrequencyMode.html#keysight_ktinfiniivision.FRAFrequencyMode" title="keysight_ktinfiniivision.FRAFrequencyMode">FRAFrequencyMode</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFRA.sweep_points">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sweep_points</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA.sweep_points" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the total number of points in the frequency response analysis.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">Number of points : 1 to 1000</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFRA.trace">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">trace</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA.trace" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies whether to include gain, phase, both gain and phase, or neither in the frequency response analysis results.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.FRATrace.html#keysight_ktinfiniivision.FRATrace" title="keysight_ktinfiniivision.FRATrace">FRATrace</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li>It affects the oscilloscope's front panel graphical user interface (plot and table) as well as when saving analysis data.</li>
+<li>Returns "None" if neither gain nor phase data is included.</li></dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">KtInfiniiVisionFRA</a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFRA</span></code></a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA.amplitude"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFRA.amplitude</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA.amplitude_profile_state"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFRA.amplitude_profile_state</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA.enabled"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFRA.enabled</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA.get_amplitude_profile"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFRA.get_amplitude_profile()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA.get_data"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFRA.get_data()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA.input_source"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFRA.input_source</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA.output_load_impedance"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFRA.output_load_impedance</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA.output_source"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFRA.output_source</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA.points_per_decade"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFRA.points_per_decade</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA.run"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFRA.run()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA.set_amplitude_profile"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFRA.set_amplitude_profile()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA.single_frequency"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFRA.single_frequency</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA.start_frequency"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFRA.start_frequency</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA.stop_frequency"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFRA.stop_frequency</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA.sweep_mode"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFRA.sweep_mode</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA.sweep_points"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFRA.sweep_points</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFRA.trace"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFRA.trace</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionFFT.html"
+                          title="previous chapter">KtInfiniiVisionFFT</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionHistogram.html"
+                          title="next chapter">KtInfiniiVisionHistogram</a></p>
+  </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionHistogram.html" title="KtInfiniiVisionHistogram"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionFFT.html" title="KtInfiniiVisionFFT"
+             >previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionFRA</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Keysight Technologies.  v1.0.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

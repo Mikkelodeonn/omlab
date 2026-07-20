@@ -1,0 +1,14 @@
+
+SerialBusIICAddressWidth
+=========================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusIICAddressWidth
+    :members:
+    :exclude-members: name
+
+
+
+

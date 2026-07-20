@@ -1,0 +1,14 @@
+
+WaveformPointMode
+==================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: WaveformPointMode
+    :members:
+    :exclude-members: name
+
+
+
+

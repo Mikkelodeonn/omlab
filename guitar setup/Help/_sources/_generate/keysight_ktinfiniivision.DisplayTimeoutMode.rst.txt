@@ -1,0 +1,14 @@
+
+DisplayTimeoutMode
+===================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: DisplayTimeoutMode
+    :members:
+    :exclude-members: name
+
+
+
+

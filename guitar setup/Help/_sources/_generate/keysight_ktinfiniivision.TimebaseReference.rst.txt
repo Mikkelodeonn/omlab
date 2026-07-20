@@ -1,0 +1,14 @@
+
+TimebaseReference
+==================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: TimebaseReference
+    :members:
+    :exclude-members: name
+
+
+
+

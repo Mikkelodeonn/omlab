@@ -1,0 +1,14 @@
+
+SerialBusSENTCRC
+=================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusSENTCRC
+    :members:
+    :exclude-members: name
+
+
+
+

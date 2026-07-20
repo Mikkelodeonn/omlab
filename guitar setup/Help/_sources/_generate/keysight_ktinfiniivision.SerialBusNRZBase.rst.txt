@@ -1,0 +1,14 @@
+
+SerialBusNRZBase
+=================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusNRZBase
+    :members:
+    :exclude-members: name
+
+
+
+

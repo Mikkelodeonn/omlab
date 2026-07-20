@@ -1,0 +1,14 @@
+
+SearchSPIMode
+==============
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SearchSPIMode
+    :members:
+    :exclude-members: name
+
+
+
+

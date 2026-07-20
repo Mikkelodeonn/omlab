@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>KtInfiniiVisionSerialBusLIN &#8212; KtInfiniiVision 1.0.0 Documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinxdoc.css?v=d59dc883" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <script src="../_static/documentation_options.js?v=8d563738"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="KtInfiniiVisionSerialBusM1553" href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusM1553.html" />
+    <link rel="prev" title="KtInfiniiVisionSerialBusIIC" href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusIIC.html" /> 
+  </head><body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<table width="100%" cellpadding="0" cellspacing="0"><tr>
+        <td valign="top"><a href="../index.html"><h1 style="font-size: 2em;">KtInfiniiVision Driver Python API</h1></a></td>
+        <td align="right"><a href="https://www.keysight.com" target="_blank"><img src="../_static\keysight.gif" alt="keysight.gif"></a></td>
+</tr></table>
+</div>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusM1553.html" title="KtInfiniiVisionSerialBusM1553"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusIIC.html" title="KtInfiniiVisionSerialBusIIC"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusCollection.html" >KtInfiniiVisionSerialBusCollection</a> &#187;</li>
+          <li class="nav-item nav-item-5"><a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBus.html" accesskey="U">KtInfiniiVisionSerialBus</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionSerialBusLIN</a></li> 
+      </ul>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="ktinfiniivisionserialbuslin">
+<h1>KtInfiniiVisionSerialBusLIN<a class="headerlink" href="#ktinfiniivisionserialbuslin" title="Link to this heading">¶</a></h1>
+<blockquote>
+<div><div class="line-block">
+<div class="line">Access interface members using: <code class="docutils literal notranslate"><span class="pre">driver.serial_buses[&lt;name_or_index&gt;].lin</span></code></div>
+<div class="line">Where <code class="docutils literal notranslate"><span class="pre">driver</span></code> is a reference to the driver’s root interface returned by the <a class="reference internal" href="../programming.html#creating-a-driver-instance"><span class="std std-ref">constructor</span></a>.</div>
+</div>
+</div></blockquote>
+<dl class="py class">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">KtInfiniiVisionSerialBusLIN</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN" title="Link to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN" title="keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusLIN</span></code></a> interface.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.baud_rate">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">baud_rate</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.baud_rate" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the standard baud rate of the LIN signal from 2400 b/s to 625 kb/s in 100 b/s increments. If you enter a baud rate that is not divisible by 100 b/s, the baud rate is set to the nearest baud rate divisible by 100 b/s</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">Valid values are from 2400 to 625000 in 100 b/s increments</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.display">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">display</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.display" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the LIN decode display type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.SerialBusLINDisplay.html#keysight_ktinfiniivision.SerialBusLINDisplay" title="keysight_ktinfiniivision.SerialBusLINDisplay">SerialBusLINDisplay</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.parity_enabled">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">parity_enabled</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.parity_enabled" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the the current LIN parity bits display setting of the serial decode bus. It specifies whether the parity bits are included as the most significant bits (MSB) in the display of the Frame Id field in the LIN decode bus.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.sample_point">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sample_point</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.sample_point" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the point during the bit time where the bit level is sampled to determine whether the bit is dominant or recessive. The sample point represents the percentage of time between the beginning of the bit time to the end of the bit time.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; Valid values are: 60, 62.5, 68, 70, 75, 80, 87.5
+<br />&#8226; The sample point values are not limited by the baud rate.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.source">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">source</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.source" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the source for the LIN signal.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; The source property can be specified in one the following string formats:
+<blockquote>
+ <br />&#8226; For DSO Models:
+ <blockquote>
+ <br />&#8226; "Channel&lt;n&gt;", where &lt;n&gt; can be from 1 to the number of analog channels.
+ <br />&#8226; "External", for External
+  </blockquote>
+ <br />&#8226; For MSO Models:
+ <blockquote>
+<br />&#8226; "Channel&lt;n&gt;", where &lt;n&gt; can be from 1 to the number of analog channels.
+ <br />&#8226; "Digital&lt;d&gt;", where &lt;d&gt; can be from 0 to the number of digital channels minus 1. For X2000 series DigitalChannels are not supported as source.
+</blockquote>
+</blockquote></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.standard">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">standard</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.standard" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the LIN standard in effect for triggering and decoding to be LIN1.3, LIN2.0 or LIN1.3NLC.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.SerialBusLINStandard.html#keysight_ktinfiniivision.SerialBusLINStandard" title="keysight_ktinfiniivision.SerialBusLINStandard">SerialBusLINStandard</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">The Standard property can be set to one of the following values:
+<ul>
+<li>LIN13: to specify the LIN1.3 standard for triggering and decoding</li>
+<li>LIN20: to specify the LIN2.0 standard for triggering and decoding</li>
+<li>LIN13NLC: to specify the LIN1.3 standard with no length control systems for triggering and decoding</li>
+</ul></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.sync_break_length">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sync_break_length</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.sync_break_length" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the length of the LIN sync break to be greater than or equal to 11, 12, or 13 clock lengths. The sync break is the idle period in the bus activity at the beginning of each packet that distinguishes one information packet from the previous one.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">Valid values are: 11, 12, 13</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.trigger_condition">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">trigger_condition</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.trigger_condition" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the LIN trigger condition.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.SerialBusLINTriggerCondition.html#keysight_ktinfiniivision.SerialBusLINTriggerCondition" title="keysight_ktinfiniivision.SerialBusLINTriggerCondition">SerialBusLINTriggerCondition</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; The TriggerCondition property can be set to one of the following values:
+<blockquote>
+<br />&#8226; SyncBreak: Sync Break
+<br />&#8226; ID: Frame ID
+<br />&#8226; nData: Frame ID and Data
+<br />&#8226; ParityError: Parity errors
+<br />&#8226; ChecksumError: Checksum errors
+<br />&#8226; Frame: Triggers on a symbolic frame
+<br />&#8226; FrameSig: Triggers on a symbolic frame and a signal value
+</blockquote>
+<br />&#8226; Use the TriggerID property to specify the frame ID.
+<br />&#8226; Use the TriggerPatternData properties to specify the data string length and value.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.trigger_id">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">trigger_id</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.trigger_id" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the LIN identifier searched for in each CAN message when the LIN trigger mode is set to frame ID.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; The TriggerID property can be specified in one of the following string formats:<blockquote>
+<br />&#8226; "n", where n: 7-bit integer in decimal from 0-63
+<br />&#8226; "#Bnn..n", where n: {0 | 1}
+<br />&#8226; "0xnn", where n: {0,..,9 | A,..,F} from 0x00 to 0x3f
+</blockquote>
+<br />&#8226; Setting the ID to a value of "-1" results in "0xXX" which is equivalent to all IDs.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.trigger_pattern_base">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">trigger_pattern_base</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.trigger_pattern_base" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the number base for LIN pattern data.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.SerialBusLINPatternBase.html#keysight_ktinfiniivision.SerialBusLINPatternBase" title="keysight_ktinfiniivision.SerialBusLINPatternBase">SerialBusLINPatternBase</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">Default base is binary.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.trigger_pattern_data">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">trigger_pattern_data</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.trigger_pattern_data" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the LIN trigger data pattern searched for in each LIN data field.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; The TriggerPatternData property can be specified in one of the following string formats:
+<blockquote>
+<br />&#8226; "n", where n: 32-bit integer in unsigned decimal
+<br />&#8226; "#Bnn...n", where n: {0 | 1 | X | $};
+<br />&#8226; "0xnn...n", where n: {0,..,9 | A,..,F | X | $}
+</blockquote>
+<br />&#8226; Set a string bit to "0" or "1" to set the corresponding bit in the data pattern to low or high, respectively.
+<br />&#8226; Set a string bit to "X" to ignore (mask off) that bit in the data pattern.
+<br />&#8226; Use the "$" character to indicate that the value of the corresponding bit will not be changed (the existing bit value is used).</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.trigger_pattern_data_length">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">trigger_pattern_data_length</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.trigger_pattern_data_length" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the number of 8-bit bytes in the LIN data string. The number of bytes in the string can be anywhere from 1 bytes to 8 bytes (64 bits). The value for these bytes is set by the TriggerPatternData property.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.trigger_symbolic_frame">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">trigger_symbolic_frame</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.trigger_symbolic_frame" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the specific message when the LIN trigger mode is set to Frame.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.trigger_symbolic_signal">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">trigger_symbolic_signal</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.trigger_symbolic_signal" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the specific signal when the LIN trigger mode is set to Frame and Signal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.trigger_symbolic_value">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">trigger_symbolic_value</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.trigger_symbolic_value" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the specific signal value when the LIN trigger mode is set to Frame and Signal.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">Encoded signal values are not supported in the remote interface (even though they can be used in the front panel graphical interface).</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">KtInfiniiVisionSerialBusLIN</a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusLIN</span></code></a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.baud_rate"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusLIN.baud_rate</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.display"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusLIN.display</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.parity_enabled"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusLIN.parity_enabled</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.sample_point"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusLIN.sample_point</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.source"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusLIN.source</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.standard"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusLIN.standard</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.sync_break_length"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusLIN.sync_break_length</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.trigger_condition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusLIN.trigger_condition</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.trigger_id"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusLIN.trigger_id</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.trigger_pattern_base"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusLIN.trigger_pattern_base</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.trigger_pattern_data"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusLIN.trigger_pattern_data</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.trigger_pattern_data_length"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusLIN.trigger_pattern_data_length</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.trigger_symbolic_frame"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusLIN.trigger_symbolic_frame</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.trigger_symbolic_signal"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusLIN.trigger_symbolic_signal</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN.trigger_symbolic_value"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusLIN.trigger_symbolic_value</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusIIC.html"
+                          title="previous chapter">KtInfiniiVisionSerialBusIIC</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusM1553.html"
+                          title="next chapter">KtInfiniiVisionSerialBusM1553</a></p>
+  </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusM1553.html" title="KtInfiniiVisionSerialBusM1553"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusIIC.html" title="KtInfiniiVisionSerialBusIIC"
+             >previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusCollection.html" >KtInfiniiVisionSerialBusCollection</a> &#187;</li>
+          <li class="nav-item nav-item-5"><a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBus.html" >KtInfiniiVisionSerialBus</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionSerialBusLIN</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Keysight Technologies.  v1.0.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

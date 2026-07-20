@@ -1,0 +1,14 @@
+
+SerialBusCXPITriggerType
+=========================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusCXPITriggerType
+    :members:
+    :exclude-members: name
+
+
+
+

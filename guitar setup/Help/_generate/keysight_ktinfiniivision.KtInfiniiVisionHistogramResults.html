@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>KtInfiniiVisionHistogramResults &#8212; KtInfiniiVision 1.0.0 Documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinxdoc.css?v=d59dc883" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <script src="../_static/documentation_options.js?v=8d563738"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="KtInfiniiVisionHistogramWindow" href="keysight_ktinfiniivision.KtInfiniiVisionHistogramWindow.html" />
+    <link rel="prev" title="KtInfiniiVisionHistogram" href="keysight_ktinfiniivision.KtInfiniiVisionHistogram.html" /> 
+  </head><body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<table width="100%" cellpadding="0" cellspacing="0"><tr>
+        <td valign="top"><a href="../index.html"><h1 style="font-size: 2em;">KtInfiniiVision Driver Python API</h1></a></td>
+        <td align="right"><a href="https://www.keysight.com" target="_blank"><img src="../_static\keysight.gif" alt="keysight.gif"></a></td>
+</tr></table>
+</div>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionHistogramWindow.html" title="KtInfiniiVisionHistogramWindow"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionHistogram.html" title="KtInfiniiVisionHistogram"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="keysight_ktinfiniivision.KtInfiniiVisionHistogram.html" accesskey="U">KtInfiniiVisionHistogram</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionHistogramResults</a></li> 
+      </ul>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="ktinfiniivisionhistogramresults">
+<h1>KtInfiniiVisionHistogramResults<a class="headerlink" href="#ktinfiniivisionhistogramresults" title="Link to this heading">¶</a></h1>
+<blockquote>
+<div><div class="line-block">
+<div class="line">Access interface members using: <code class="docutils literal notranslate"><span class="pre">driver.histogram.results</span></code></div>
+<div class="line">Where <code class="docutils literal notranslate"><span class="pre">driver</span></code> is a reference to the driver’s root interface returned by the <a class="reference internal" href="../programming.html#creating-a-driver-instance"><span class="std std-ref">constructor</span></a>.</div>
+</div>
+</div></blockquote>
+<dl class="py class">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionHistogramResults">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">KtInfiniiVisionHistogramResults</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionHistogramResults" title="Link to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionHistogramResults" title="keysight_ktinfiniivision.KtInfiniiVisionHistogramResults"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionHistogramResults</span></code></a> interface.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionHistogramResults.all_bin_hits">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">all_bin_hits</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionHistogramResults.all_bin_hits" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the sum of all hits in all bins (buckets) in the histogram.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionHistogramResults.bin_width">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">bin_width</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionHistogramResults.bin_width" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the width of each bin (bucket) in the histogram.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionHistogramResults.m1_s_percent">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">m1_s_percent</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionHistogramResults.m1_s_percent" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the percentage of histogram hits that lie within ±1 Std Dev of the mean.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionHistogramResults.m2_s_percent">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">m2_s_percent</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionHistogramResults.m2_s_percent" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the percentage of histogram hits that lie within ±2 Std Dev of the mean.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionHistogramResults.m3_s_percent">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">m3_s_percent</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionHistogramResults.m3_s_percent" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the percentage of histogram hits that lie within ±3 Std Dev of the mean.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionHistogramResults.max_bin_value">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">max_bin_value</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionHistogramResults.max_bin_value" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the value corresponding to the maximum bin that has any hits.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionHistogramResults.max_number_of_hits">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">max_number_of_hits</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionHistogramResults.max_number_of_hits" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the maximum number of hits in any single bin.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionHistogramResults.mean">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">mean</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionHistogramResults.mean" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the mean value of the histogram.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionHistogramResults.median">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">median</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionHistogramResults.median" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the median value of the histogram.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionHistogramResults.min_bin_value">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">min_bin_value</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionHistogramResults.min_bin_value" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the value corresponding to the minimum bin that has any hits.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionHistogramResults.mode">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">mode</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionHistogramResults.mode" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the mode value of the histogram.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionHistogramResults.peak_to_peak">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">peak_to_peak</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionHistogramResults.peak_to_peak" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the delta between the Max and Min values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionHistogramResults.standard_deviation">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">standard_deviation</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionHistogramResults.standard_deviation" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the standard deviation of the histogram values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">KtInfiniiVisionHistogramResults</a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionHistogramResults"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionHistogramResults</span></code></a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionHistogramResults.all_bin_hits"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionHistogramResults.all_bin_hits</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionHistogramResults.bin_width"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionHistogramResults.bin_width</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionHistogramResults.m1_s_percent"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionHistogramResults.m1_s_percent</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionHistogramResults.m2_s_percent"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionHistogramResults.m2_s_percent</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionHistogramResults.m3_s_percent"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionHistogramResults.m3_s_percent</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionHistogramResults.max_bin_value"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionHistogramResults.max_bin_value</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionHistogramResults.max_number_of_hits"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionHistogramResults.max_number_of_hits</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionHistogramResults.mean"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionHistogramResults.mean</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionHistogramResults.median"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionHistogramResults.median</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionHistogramResults.min_bin_value"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionHistogramResults.min_bin_value</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionHistogramResults.mode"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionHistogramResults.mode</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionHistogramResults.peak_to_peak"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionHistogramResults.peak_to_peak</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionHistogramResults.standard_deviation"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionHistogramResults.standard_deviation</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionHistogram.html"
+                          title="previous chapter">KtInfiniiVisionHistogram</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionHistogramWindow.html"
+                          title="next chapter">KtInfiniiVisionHistogramWindow</a></p>
+  </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionHistogramWindow.html" title="KtInfiniiVisionHistogramWindow"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionHistogram.html" title="KtInfiniiVisionHistogram"
+             >previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="keysight_ktinfiniivision.KtInfiniiVisionHistogram.html" >KtInfiniiVisionHistogram</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionHistogramResults</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Keysight Technologies.  v1.0.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

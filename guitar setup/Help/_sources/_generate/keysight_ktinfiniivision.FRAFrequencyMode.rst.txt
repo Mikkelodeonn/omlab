@@ -1,0 +1,14 @@
+
+FRAFrequencyMode
+=================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: FRAFrequencyMode
+    :members:
+    :exclude-members: name
+
+
+
+

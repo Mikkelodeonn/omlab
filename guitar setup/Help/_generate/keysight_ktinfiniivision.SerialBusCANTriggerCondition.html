@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>SerialBusCANTriggerCondition &#8212; KtInfiniiVision 1.0.0 Documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinxdoc.css?v=d59dc883" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <script src="../_static/documentation_options.js?v=8d563738"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="SerialBusCANTriggerType" href="keysight_ktinfiniivision.SerialBusCANTriggerType.html" />
+    <link rel="prev" title="SerialBusCANSignalType" href="keysight_ktinfiniivision.SerialBusCANSignalType.html" /> 
+  </head><body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<table width="100%" cellpadding="0" cellspacing="0"><tr>
+        <td valign="top"><a href="../index.html"><h1 style="font-size: 2em;">KtInfiniiVision Driver Python API</h1></a></td>
+        <td align="right"><a href="https://www.keysight.com" target="_blank"><img src="../_static\keysight.gif" alt="keysight.gif"></a></td>
+</tr></table>
+</div>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.SerialBusCANTriggerType.html" title="SerialBusCANTriggerType"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.SerialBusCANSignalType.html" title="SerialBusCANSignalType"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="enumerations.html" accesskey="U">Enumerations</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">SerialBusCANTriggerCondition</a></li> 
+      </ul>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="serialbuscantriggercondition">
+<h1>SerialBusCANTriggerCondition<a class="headerlink" href="#serialbuscantriggercondition" title="Link to this heading">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.SerialBusCANTriggerCondition">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SerialBusCANTriggerCondition</span></span><a class="headerlink" href="#keysight_ktinfiniivision.SerialBusCANTriggerCondition" title="Link to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>Values for the CAN trigger on condition.</p>
+</div></blockquote>
+<p>Members:</p>
+<blockquote>
+<div><p>START_OF_FRAME : Will trigger on the Start of Frame (SOF) bit of a Data frame, Remote Transfer Request (RTR) frame, or an Overload frame.</p>
+<p>DATA : Will trigger on CAN Data frames matching the specified Id, Data, and the DLC (Data length code).</p>
+<p>ERROR : Will trigger on CAN Error frame.</p>
+<p>ID_DATA : Will trigger on CAN frames matching the specified Id of a Data frame.</p>
+<p>ID_EITHER : Will trigger on the specified Id, regardless if it is a Remote frame or a Data frame.</p>
+<p>ID_REMOTE : Will trigger on CAN frames matching the specified Id of a Remote frame.</p>
+<p>ALL_ERRORS : Will trigger on CAN active error frames and unknown bus conditions.</p>
+<p>OVERLOAD : Will trigger on CAN overload frames.</p>
+<p>ACK_ERROR : Will trigger on a data or remote frame acknowledge bit that is recessive.</p>
+<p>END_OF_FRAME : Triggers at the end of any frame.</p>
+<p>FD_DATA : Triggers on CAN FD frames at the end of the last data byte defined in the trigger. You can trigger on up to 8 bytes of data anywhere within the CAN FD data, which can be up to 64 bytes long.</p>
+<p>FORM_ERROR : Triggers on reserved bit errors.</p>
+<p>STUFF_ERROR : Triggers on 6 consecutive 1s or 6 consecutive 0s, while in a non-error or non overload frame.</p>
+<p>CRC_ERROR : Triggers when the calculated CRC does not match the transmitted CRC.</p>
+<p>SPEC_ERROR : Triggers on Ack, Form, Stuff, or CRC errors.</p>
+<p>BRS_BIT : Triggers on the BRS bit of CAN FD frames.</p>
+<p>CRC_DBIT : Triggers on the CRC delimiter bit in CAN FD frames.</p>
+<p>EB_ACTIVE : Triggers on the ESI bit if set active.</p>
+<p>EB_PASSIVE : Triggers on the ESI bit if set passive.</p>
+<p>MSG : Triggers on a symbolic message.</p>
+<p>MSG_SIG : Triggers on a symbolic message and a signal value.</p>
+<p>FD_MSG_SIG : Triggers on a symbolic message and a signal value, limited to the first 8 bytes of FD data.</p>
+</div></blockquote>
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">SerialBusCANTriggerCondition</a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.SerialBusCANTriggerCondition"><code class="docutils literal notranslate"><span class="pre">SerialBusCANTriggerCondition</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.SerialBusCANSignalType.html"
+                          title="previous chapter">SerialBusCANSignalType</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.SerialBusCANTriggerType.html"
+                          title="next chapter">SerialBusCANTriggerType</a></p>
+  </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.SerialBusCANTriggerType.html" title="SerialBusCANTriggerType"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.SerialBusCANSignalType.html" title="SerialBusCANSignalType"
+             >previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="enumerations.html" >Enumerations</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">SerialBusCANTriggerCondition</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Keysight Technologies.  v1.0.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

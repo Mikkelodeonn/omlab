@@ -1,0 +1,14 @@
+
+SerialBusListerTimeReference
+=============================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusListerTimeReference
+    :members:
+    :exclude-members: name
+
+
+
+

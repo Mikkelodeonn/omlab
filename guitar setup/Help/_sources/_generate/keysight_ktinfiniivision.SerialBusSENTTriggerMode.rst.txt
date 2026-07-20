@@ -1,0 +1,14 @@
+
+SerialBusSENTTriggerMode
+=========================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusSENTTriggerMode
+    :members:
+    :exclude-members: name
+
+
+
+

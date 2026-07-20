@@ -1,0 +1,14 @@
+
+SearchSerialARINC429Mode
+=========================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SearchSerialARINC429Mode
+    :members:
+    :exclude-members: name
+
+
+
+

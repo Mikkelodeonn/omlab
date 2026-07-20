@@ -1,0 +1,14 @@
+
+MeasurementStatisticsFormat
+============================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: MeasurementStatisticsFormat
+    :members:
+    :exclude-members: name
+
+
+
+

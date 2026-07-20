@@ -1,0 +1,14 @@
+
+WaveformGeneratorArbitraryByteOrder
+====================================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: WaveformGeneratorArbitraryByteOrder
+    :members:
+    :exclude-members: name
+
+
+
+

@@ -1,0 +1,14 @@
+
+SerialBusSENTSignalOrder
+=========================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusSENTSignalOrder
+    :members:
+    :exclude-members: name
+
+
+
+

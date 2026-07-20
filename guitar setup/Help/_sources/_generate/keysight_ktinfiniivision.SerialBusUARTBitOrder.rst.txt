@@ -1,0 +1,14 @@
+
+SerialBusUARTBitOrder
+======================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusUARTBitOrder
+    :members:
+    :exclude-members: name
+
+
+
+

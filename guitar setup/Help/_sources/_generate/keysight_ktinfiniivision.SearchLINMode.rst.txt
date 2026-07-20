@@ -1,0 +1,14 @@
+
+SearchLINMode
+==============
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SearchLINMode
+    :members:
+    :exclude-members: name
+
+
+
+

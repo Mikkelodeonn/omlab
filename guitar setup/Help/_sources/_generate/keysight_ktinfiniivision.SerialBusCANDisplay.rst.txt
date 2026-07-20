@@ -1,0 +1,14 @@
+
+SerialBusCANDisplay
+====================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusCANDisplay
+    :members:
+    :exclude-members: name
+
+
+
+

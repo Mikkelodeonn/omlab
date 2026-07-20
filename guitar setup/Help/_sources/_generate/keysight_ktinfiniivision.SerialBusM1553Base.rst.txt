@@ -1,0 +1,14 @@
+
+SerialBusM1553Base
+===================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusM1553Base
+    :members:
+    :exclude-members: name
+
+
+
+

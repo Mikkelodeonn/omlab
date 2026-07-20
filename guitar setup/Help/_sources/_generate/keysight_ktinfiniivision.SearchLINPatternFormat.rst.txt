@@ -1,0 +1,14 @@
+
+SearchLINPatternFormat
+=======================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SearchLINPatternFormat
+    :members:
+    :exclude-members: name
+
+
+
+

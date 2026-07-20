@@ -1,0 +1,14 @@
+
+SearchRuntPolarity
+===================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SearchRuntPolarity
+    :members:
+    :exclude-members: name
+
+
+
+

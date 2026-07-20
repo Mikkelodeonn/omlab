@@ -1,0 +1,14 @@
+
+MeasurementJitter
+==================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: MeasurementJitter
+    :members:
+    :exclude-members: name
+
+
+
+

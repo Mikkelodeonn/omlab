@@ -1,0 +1,14 @@
+
+PowerOutputImpedance
+=====================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: PowerOutputImpedance
+    :members:
+    :exclude-members: name
+
+
+
+

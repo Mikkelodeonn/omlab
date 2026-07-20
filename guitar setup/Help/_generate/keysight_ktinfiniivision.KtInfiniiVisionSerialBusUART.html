@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>KtInfiniiVisionSerialBusUART &#8212; KtInfiniiVision 1.0.0 Documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinxdoc.css?v=d59dc883" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <script src="../_static/documentation_options.js?v=8d563738"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="KtInfiniiVisionSerialBusUSB" href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.html" />
+    <link rel="prev" title="KtInfiniiVisionSerialBusSPI" href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusSPI.html" /> 
+  </head><body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<table width="100%" cellpadding="0" cellspacing="0"><tr>
+        <td valign="top"><a href="../index.html"><h1 style="font-size: 2em;">KtInfiniiVision Driver Python API</h1></a></td>
+        <td align="right"><a href="https://www.keysight.com" target="_blank"><img src="../_static\keysight.gif" alt="keysight.gif"></a></td>
+</tr></table>
+</div>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.html" title="KtInfiniiVisionSerialBusUSB"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusSPI.html" title="KtInfiniiVisionSerialBusSPI"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusCollection.html" >KtInfiniiVisionSerialBusCollection</a> &#187;</li>
+          <li class="nav-item nav-item-5"><a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBus.html" accesskey="U">KtInfiniiVisionSerialBus</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionSerialBusUART</a></li> 
+      </ul>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="ktinfiniivisionserialbusuart">
+<h1>KtInfiniiVisionSerialBusUART<a class="headerlink" href="#ktinfiniivisionserialbusuart" title="Link to this heading">¶</a></h1>
+<blockquote>
+<div><div class="line-block">
+<div class="line">Access interface members using: <code class="docutils literal notranslate"><span class="pre">driver.serial_buses[&lt;name_or_index&gt;].uart</span></code></div>
+<div class="line">Where <code class="docutils literal notranslate"><span class="pre">driver</span></code> is a reference to the driver’s root interface returned by the <a class="reference internal" href="../programming.html#creating-a-driver-instance"><span class="std std-ref">constructor</span></a>.</div>
+</div>
+</div></blockquote>
+<dl class="py class">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">KtInfiniiVisionSerialBusUART</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART" title="Link to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART" title="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUART</span></code></a> interface.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.base">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">base</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.base" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the base to use for the UART decode and Lister display.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.SerialBusUARTBase.html#keysight_ktinfiniivision.SerialBusUARTBase" title="keysight_ktinfiniivision.SerialBusUARTBase">SerialBusUARTBase</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">The Base property can be set to one of the following values:
+<ul>
+<li>ASCII</li>
+<li>Binary</li>
+<li>Hexadecimal</li>
+</ul></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.baud_rate">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">baud_rate</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.baud_rate" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the bit rate (in bps) for the serial decoder and/or trigger when in UART mode. The baud rate can be set from 1200 b/s to 8 Mb/s in 100 b/s increments.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; If you enter a baud rate that is not divisible by 100 b/s, the baud rate is set to the nearest baud rate divisible by 100 b/s.
+<br />&#8226; Valid values are from 1200 to 8000000 in 100b/s increments.
+<br />&#8226; If the baud rate you select does not match the system baud rate, false triggers may occur.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.bit_order">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">bit_order</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.bit_order" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the order of transmission used by the physical Tx and Rx input signals for the serial decoder and/or trigger when in UART mode.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.SerialBusUARTBitOrder.html#keysight_ktinfiniivision.SerialBusUARTBitOrder" title="keysight_ktinfiniivision.SerialBusUARTBitOrder">SerialBusUARTBitOrder</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; The BitOrder property can be set to one of the following values:
+<blockquote>
+<br />&#8226; MSBFirst: MSB First
+<br />&#8226; LSBFirst: LSB First
+</blockquote>
+<br />&#8226; On selecting "LSBFirst", it sets the least significant bit of each message "byte" as transmitted first. Whereas on slecting "MSBFirst", it sets the most significant bit as transmitted first.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.error_count">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">error_count</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.error_count" title="Link to this definition">¶</a></dt>
+<dd><p>Read Only - Gets the UART error frame count.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.framing">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">framing</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.framing" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the byte value to use for framing (end of packet) or to turn off framing for UART decode.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">The Framing property can be specified in one of the following formats:
+<ul>
+<li>"OFF"</li>
+<li>"n", where n: 8-bit integer in decimal from 0 - 255</li>
+<li>"0xnn", where n: {0,..,9 | A,..,F} from 0x00 - 0xff</li>
+<li>"#Bnn..n", where n: {0 | 1}</li>
+</ul></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.parity">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">parity</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.parity" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the parity to be used with each message “byte” for the serial decoder and/or trigger when in UART mode.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.SerialBusUARTParity.html#keysight_ktinfiniivision.SerialBusUARTParity" title="keysight_ktinfiniivision.SerialBusUARTParity">SerialBusUARTParity</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">The Parity property can be set to one of the following values:
+<ul>
+<li>Even: Even parity</li>
+<li>Odd: Odd parity</li>
+<li>None: No parity</li>
+</ul></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.polarity">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">polarity</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.polarity" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the polarity as idle low or idle high for the serial decoder and/or trigger when in UART mode.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.SerialBusUARTPolarity.html#keysight_ktinfiniivision.SerialBusUARTPolarity" title="keysight_ktinfiniivision.SerialBusUARTPolarity">SerialBusUARTPolarity</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">The Polarity property can be set to one of the following values:
+<ul>
+<li>High: High polarity</li>
+<li>Low: Low polarity</li>
+</ul></dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.reset_counters">
+<span class="sig-name descname"><span class="pre">reset_counters</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.reset_counters" title="Link to this definition">¶</a></dt>
+<dd><p>This method resets the UART frame counters.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.rx_frame_count">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">rx_frame_count</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.rx_frame_count" title="Link to this definition">¶</a></dt>
+<dd><p>Read Only - Gets the UART Rx frame count.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.rx_source">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">rx_source</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.rx_source" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets which signal is used as the Rx source by the serial decoder and/or trigger when in UART mode.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; The RxSource can be specified in one the following string formats:
+<blockquote>
+<br />&#8226; For DSO Models:
+ <blockquote>
+<br />&#8226; "Channel&lt;n&gt;", where &lt;n&gt; can be from 1 to the number of analog channels.
+</blockquote>
+<br />&#8226; For MSO Models:
+ <blockquote>
+ <br />&#8226; "Channel&lt;n&gt;", where &lt;n&gt; can be from 1 to the number of analog channels.
+ <br />&#8226; "DigitalChannel&lt;d&gt;", where &lt;d&gt; can be from 0 to the number of digital channels minus 1. For X2000 series DigitalChannels are not supported as source.
+ </blockquote>
+ </blockquote></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.trigger_base">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">trigger_base</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.trigger_base" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the front panel UART/RS232 trigger setup data selection.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.SerialBusUARTTriggerBase.html#keysight_ktinfiniivision.SerialBusUARTTriggerBase" title="keysight_ktinfiniivision.SerialBusUARTTriggerBase">SerialBusUARTTriggerBase</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; The TriggerBase property can be set to one of the following values:
+<blockquote>
+<br />&#8226; ASCII: front panel data selection is from ASCII values.
+<br />&#8226; Hexadecimal: front panel data selection is from hexadecimal values.
+</blockquote>
+<br />&#8226; The TriggerBase property does not affect the SerialBusUARTTriggerData property which can always set data values using ASCII or hexadecimal values.
+<br />&#8226; The TriggerBase property is independent of the Base property which affects decode and Lister only.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.trigger_burst">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">trigger_burst</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.trigger_burst" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the burst value (Nth frame after idle period) in the range 1 to 4096 or OFF, for the trigger when in UART mode.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">The TriggerBurst property can be specified in one of the following formats:
+<ul>
+<li>"Off"</li>
+<li>"n", where n is integer from 1 to 4096</li>
+</ul></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.trigger_condition">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">trigger_condition</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.trigger_condition" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the data qualifier when TriggerType is set to RData, RD1, RD0, RDX, TData, TD1, TD0, or TDX for the trigger when in UART mode.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.SerialBusUARTTriggerCondition.html#keysight_ktinfiniivision.SerialBusUARTTriggerCondition" title="keysight_ktinfiniivision.SerialBusUARTTriggerCondition">SerialBusUARTTriggerCondition</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">The TriggerCondition property can be set to one of the following values:
+<ul>
+<li>Equal</li>
+<li>Not Equal</li>
+<li>Greater Than</li>
+<li>Less Than</li>
+</ul></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.trigger_data">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">trigger_data</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.trigger_data" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the data byte value (0x00 to 0xFF) for the trigger condition when in UART mode. The data value is used when one of the RD or TD trigger types is selected.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">The TriggerData property can be specified in one of the following string formats:
+<ul>
+<li> "n", where n: 8-bit integer from 0-255</li>
+<li> "#Hnn", where n: {0,..,9 | A,..,F} from 0x00 to 0xff</li>
+<li> "0xnn", where n: {0,..,9 | A,..,F} from 0x00 to 0xff</li>
+<li> "#Bnn..n", where n: {0 | 1}</li>
+<li>  Any of the 128 valid 7-bit ASCII characters (or standard abbreviations)</li>
+</ul></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.trigger_idle_time">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">trigger_idle_time</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.trigger_idle_time" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the value of the idle period for burst trigger in the range from 1 us to 10 s when in UART mode.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.trigger_type">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">trigger_type</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.trigger_type" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the UART Trigger Type</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.SerialBusUARTTriggerType.html#keysight_ktinfiniivision.SerialBusUARTTriggerType" title="keysight_ktinfiniivision.SerialBusUARTTriggerType">SerialBusUARTTriggerType</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; The TriggerType property can be set to one of the following values: &#123; RStart &#124; RStop &#124; RData &#124; RD1 &#124; RD0 &#124; RDX &#124; Parity Error &#124; TStart &#124; TStop &#124; TData &#124; TD1 &#124; TD0 &#124; TDX &#125;
+<br />&#8226; When one of the RD or TD types is selected, the <a href="keysight_ktinfiniivision.SerialBusUARTTriggerCondition.html">SerialBusUARTTriggerCondition</a> properties are used to specify the data value and comparison operator.
+<br />&#8226; The RD1, RD0, RDX, TD1, TD0, and TDX types (for triggering on data and alert bit values) are only valid when a 9-bit width has been selected.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.tx_frame_count">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">tx_frame_count</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.tx_frame_count" title="Link to this definition">¶</a></dt>
+<dd><p>Read Only - Gets the UART Tx frame count.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.tx_source">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">tx_source</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.tx_source" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets which signal is used as the Tx source by the serial decoder and/or trigger when in UART mode.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; The TxSource property can be specified in one the following string formats:
+<blockquote>
+<br />&#8226; For DSO Models:
+<blockquote>
+<br />&#8226; "Channel&lt;n&gt;", where &lt;n&gt; can be from 1 to the number of analog channels.
+<br />&#8226; "VAL_EXTERNAL", for External
+</blockquote>
+<br />&#8226; For MSO Models:
+<blockquote>
+<br />&#8226; "Channel&lt;n&gt;", where &lt;n&gt; can be from 1 to the number of analog channels.
+<br />&#8226; "DigitalChannel&lt;d&gt;", where &lt;d&gt; can be from 0 to the number of digital channels minus 1. For X2000 series DigitalChannels are not supported as source.
+</blockquote>
+</blockquote></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.width">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">width</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.width" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the number of bits (5-9) for each message “byte” for the serial decoder and/or trigger when in UART mode.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">Valid values are from 5 to 9.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">KtInfiniiVisionSerialBusUART</a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUART</span></code></a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.base"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUART.base</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.baud_rate"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUART.baud_rate</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.bit_order"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUART.bit_order</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.error_count"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUART.error_count</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.framing"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUART.framing</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.parity"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUART.parity</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.polarity"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUART.polarity</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.reset_counters"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUART.reset_counters()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.rx_frame_count"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUART.rx_frame_count</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.rx_source"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUART.rx_source</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.trigger_base"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUART.trigger_base</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.trigger_burst"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUART.trigger_burst</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.trigger_condition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUART.trigger_condition</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.trigger_data"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUART.trigger_data</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.trigger_idle_time"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUART.trigger_idle_time</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.trigger_type"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUART.trigger_type</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.tx_frame_count"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUART.tx_frame_count</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.tx_source"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUART.tx_source</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.width"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUART.width</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusSPI.html"
+                          title="previous chapter">KtInfiniiVisionSerialBusSPI</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.html"
+                          title="next chapter">KtInfiniiVisionSerialBusUSB</a></p>
+  </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.html" title="KtInfiniiVisionSerialBusUSB"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusSPI.html" title="KtInfiniiVisionSerialBusSPI"
+             >previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusCollection.html" >KtInfiniiVisionSerialBusCollection</a> &#187;</li>
+          <li class="nav-item nav-item-5"><a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBus.html" >KtInfiniiVisionSerialBus</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionSerialBusUART</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Keysight Technologies.  v1.0.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

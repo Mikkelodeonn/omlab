@@ -1,0 +1,14 @@
+
+SerialBusUARTPolarity
+======================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusUARTPolarity
+    :members:
+    :exclude-members: name
+
+
+
+

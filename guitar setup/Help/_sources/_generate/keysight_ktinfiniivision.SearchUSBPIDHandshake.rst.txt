@@ -1,0 +1,14 @@
+
+SearchUSBPIDHandshake
+======================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SearchUSBPIDHandshake
+    :members:
+    :exclude-members: name
+
+
+
+

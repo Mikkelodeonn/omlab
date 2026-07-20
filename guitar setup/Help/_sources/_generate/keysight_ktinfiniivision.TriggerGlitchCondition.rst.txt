@@ -1,0 +1,14 @@
+
+TriggerGlitchCondition
+=======================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: TriggerGlitchCondition
+    :members:
+    :exclude-members: name
+
+
+
+

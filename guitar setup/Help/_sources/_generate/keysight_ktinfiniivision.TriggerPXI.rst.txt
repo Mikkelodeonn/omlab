@@ -1,0 +1,14 @@
+
+TriggerPXI
+===========
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: TriggerPXI
+    :members:
+    :exclude-members: name
+
+
+
+

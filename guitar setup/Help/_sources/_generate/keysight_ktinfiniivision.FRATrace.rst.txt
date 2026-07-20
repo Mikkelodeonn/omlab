@@ -1,0 +1,14 @@
+
+FRATrace
+=========
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: FRATrace
+    :members:
+    :exclude-members: name
+
+
+
+

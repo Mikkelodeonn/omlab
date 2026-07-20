@@ -1,0 +1,14 @@
+
+StatusStandardEventFlags
+=========================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: StatusStandardEventFlags
+    :members:
+    :exclude-members: name
+
+
+
+

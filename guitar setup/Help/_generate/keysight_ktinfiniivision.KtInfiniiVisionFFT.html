@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>KtInfiniiVisionFFT &#8212; KtInfiniiVision 1.0.0 Documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinxdoc.css?v=d59dc883" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <script src="../_static/documentation_options.js?v=8d563738"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="KtInfiniiVisionFRA" href="keysight_ktinfiniivision.KtInfiniiVisionFRA.html" />
+    <link rel="prev" title="KtInfiniiVisionExternal" href="keysight_ktinfiniivision.KtInfiniiVisionExternal.html" /> 
+  </head><body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<table width="100%" cellpadding="0" cellspacing="0"><tr>
+        <td valign="top"><a href="../index.html"><h1 style="font-size: 2em;">KtInfiniiVision Driver Python API</h1></a></td>
+        <td align="right"><a href="https://www.keysight.com" target="_blank"><img src="../_static\keysight.gif" alt="keysight.gif"></a></td>
+</tr></table>
+</div>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionFRA.html" title="KtInfiniiVisionFRA"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionExternal.html" title="KtInfiniiVisionExternal"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" accesskey="U">KtInfiniiVision</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionFFT</a></li> 
+      </ul>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="ktinfiniivisionfft">
+<h1>KtInfiniiVisionFFT<a class="headerlink" href="#ktinfiniivisionfft" title="Link to this heading">¶</a></h1>
+<blockquote>
+<div><div class="line-block">
+<div class="line">Access interface members using: <code class="docutils literal notranslate"><span class="pre">driver.fft</span></code></div>
+<div class="line">Where <code class="docutils literal notranslate"><span class="pre">driver</span></code> is a reference to the driver’s root interface returned by the <a class="reference internal" href="../programming.html#creating-a-driver-instance"><span class="std std-ref">constructor</span></a>.</div>
+</div>
+</div></blockquote>
+<dl class="py class">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFFT">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">KtInfiniiVisionFFT</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT" title="Link to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT" title="keysight_ktinfiniivision.KtInfiniiVisionFFT"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionFFT</span></code></a> interface.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFFT.average_count">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">average_count</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.average_count" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the number of waveforms to be averaged together.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li>The number of averages can be set from 2 to 65536 in increments of powers of 2.</li>
+<li>Increasing the number of averages will increase resolution and reduce noise.</li></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFFT.center_frequency">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">center_frequency</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.center_frequency" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the center frequency when FFT (Fast Fourier Transform) is selected.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; The range of legal values is from -25 GHz to 25 GHz.
+<br />&#8226; The value returned, depend upon the Timebase value.
+<br />&#8226; Once changed the center frequency or frequency span value, they are no longer tracked.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFFT.clear">
+<span class="sig-name descname"><span class="pre">clear</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionFFT"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionFFT</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.clear" title="Link to this definition">¶</a></dt>
+<dd><p>Clears the number of evaluated waveforms when Display Mode is Average, MaxHold or MinHold.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFFT.detection_points">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">detection_points</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.detection_points" title="Link to this definition">¶</a></dt>
+<dd><p>command sets and gets maximum number of points that detectors should decimate to.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFFT.detection_type">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">detection_type</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.detection_type" title="Link to this definition">¶</a></dt>
+<dd><p>sets and gets the points in each bucket which are reduced to a single point according to the selected detection type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.FFTDetectorType.html#keysight_ktinfiniivision.FFTDetectorType" title="keysight_ktinfiniivision.FFTDetectorType">FFTDetectorType</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFFT.display_mode">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">display_mode</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.display_mode" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the FFT waveform display modes.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.FFTDisplayMode.html#keysight_ktinfiniivision.FFTDisplayMode" title="keysight_ktinfiniivision.FFTDisplayMode">FFTDisplayMode</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li>Normal: the FFT waveform without any averaging or hold functions applied. This is how FFT math function waveforms are displayed.</li>
+<li>Average: the FFT waveform is averaged the selected number of times. Averages are calculated using a "decaying average" approximation, where:
+    next_average = current_average + (new_data - current_average)/N
+
+    Where N starts at 1 for the first acquisition and increments for each following acquisition until it reaches the selected number of averages, where it holds.</li>
+<li>MaxHold: records the maximum vertical values found at each horizontal bucket across multiple analysis cycles and uses those values to build a waveform. This display mode is often referred to as Max Envelope.</li>
+<li>MinHold: records the minimum vertical values found at each horizontal bucket across multiple analysis cycles and uses those values to build a waveform. This display mode is often referred to as Min Envelope.</li></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFFT.enabled">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">enabled</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.enabled" title="Link to this definition">¶</a></dt>
+<dd><p>Enable or disable the display of the FFT function.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)">bool</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li>When On is selected, the FFT function is calculated and displayed.</li>
+<li>When Off is selected, the FFT function is neither calculated nor displayed.</li></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFFT.frequency_span">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">frequency_span</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.frequency_span" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the frequency span of the display (left graticule to right graticule) when FFT (Fast Fourier Transform) is selected.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; Legal values are 1 Hz to 100 GHz.
+<br />&#8226; If the frequency span set to a value outside of the legal range, the step size is automatically set to the nearest legal value.
+<br />&#8226; The value returned, depend upon the Timebase value.
+<br />&#8226; Once changed the center frequency or span value, they are no longer tracked.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFFT.gate">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">gate</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.gate" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the window on which the FFT is performed.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.FFTGate.html#keysight_ktinfiniivision.FFTGate" title="keysight_ktinfiniivision.FFTGate">FFTGate</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li>None: Main time base window.</li>
+<li>Zoom: Zoomed time base window.</li></dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFFT.get_bin_size">
+<span class="sig-name descname"><span class="pre">get_bin_size</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionFFT"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionFFT</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.get_bin_size" title="Link to this definition">¶</a></dt>
+<dd><p>returns the FFT’s bin size value</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFFT.get_resolution_bandwidth">
+<span class="sig-name descname"><span class="pre">get_resolution_bandwidth</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionFFT"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionFFT</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.get_resolution_bandwidth" title="Link to this definition">¶</a></dt>
+<dd><p>returns the FFT’s resolution bandwidth value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFFT.get_sample_rate_frequency">
+<span class="sig-name descname"><span class="pre">get_sample_rate_frequency</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionFFT"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionFFT</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.get_sample_rate_frequency" title="Link to this definition">¶</a></dt>
+<dd><p>returns the FFT’s sample rate value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFFT.offset">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">offset</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.offset" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the FFT vertical value represented at center screen.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li>If offset value is set outside of the legal range, the offset value is automatically set to the nearest legal value.</li>
+<li>This property is equivalent to <a href="3CD6607F_D111_4DBC_AF8C_43C799D3B82A.html">FFTReferenceLevel </a>property.</li></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFFT.readout">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">readout</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.readout" title="Link to this definition">¶</a></dt>
+<dd><p>command sets and gets how the FFT resolution is displayed in the FFT spectrum plot.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.FFTReadoutType.html#keysight_ktinfiniivision.FFTReadoutType" title="keysight_ktinfiniivision.FFTReadoutType">FFTReadoutType</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFFT.reference_level">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">reference_level</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.reference_level" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the FFT vertical value represented at center screen.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li>If reference level is set outside of the legal range, the level is automatically set to the nearest legal value.</li>
+<li>This property is equivalent to FFTOffset property.</li></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFFT.source">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">source</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.source" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the source for the FFT function.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">The parameter &#60;source&#62; can be specified in one of the following string formats: 
+<br />&#8226; Channel&lt;n&gt;  where n: 1 to the number of available analog channels.
+<br />&#8226; Function&lt;c&gt; where c: &#123; 1 &#124; 2 &#125;. Valid only for T3000 Series Oscilloscopes.
+<br />&#8226; Math&lt;c&gt; where c: &#123; 1 &#124; 2 &#125;. Valid only for T3000 Series Oscilloscopes.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFFT.start_frequency">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">start_frequency</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.start_frequency" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the start frequency in the FFT (Fast Fourier Transform) math function’s displayed range.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">The FFT (Fast Fourier Transform) math function's displayed range can also be set
+with the FrequencySpan properties.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFFT.stop_frequency">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">stop_frequency</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.stop_frequency" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the stop frequency in the FFT (Fast Fourier Transform) math function’s displayed range.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">The FFT (Fast Fourier Transform) math function's displayed range can also be set
+with the FrequencySpan properties.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFFT.vertical_range">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">vertical_range</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.vertical_range" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the full-scale vertical axis for the FFT function.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFFT.vertical_scale">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">vertical_scale</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.vertical_scale" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the vertical scale, or units per division, of the FFT function.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; Legal values for the scale depend on the selected function.
+<br />&#8226; With the input value, dB (Decibels) can be used a &#60;suffix&#62;.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFFT.vertical_units">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">vertical_units</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.vertical_units" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the FFT vertical units as Decibel or VRMS.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.FFTVerticalUnits.html#keysight_ktinfiniivision.FFTVerticalUnits" title="keysight_ktinfiniivision.FFTVerticalUnits">FFTVerticalUnits</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionFFT.window_type">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">window_type</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.window_type" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the Windowing transforms or operations for the FFT function.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.FFTWindowType.html#keysight_ktinfiniivision.FFTWindowType" title="keysight_ktinfiniivision.FFTWindowType">FFTWindowType</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li>Rectangular: useful for transient signals, and signals where there are an integral number of cycles in the time record.</li>
+<li>Hanning: useful for frequency resolution and general purpose use. It is good for resolving two frequencies that are close together, or for making frequency measurements. This is the default window.</li>
+<li>Flattop: best for making accurate amplitude measurements of frequency peaks.</li>
+<li>BHarris (Blackman-Harris): reduces time resolution compared to the rectangular window, but it improves the capacity to detect smaller impulses due to lower secondary lobes (provides minimal spectral leakage).</li>
+<li>Bartlett: (triangular, with end points at zero) window is similar to the Hanning window in that it is good for making accurate frequency measurements, but its higher and wider secondary lobes make it not quite as good for resolving frequencies that are close together. Not valif for X1000 and X12000 Seires Oscilloscopes</li>
+<li>The FFT operation assumes that the time record repeats. Unless an integral number of sampled waveform cycles exist in the record, a discontinuity is created between the end of one record and the beginning of the next. This discontinuity introduces additional frequency components about the peaks into the spectrum. This is referred to as leakage. To minimize leakage, windows that approach zero smoothly at the start and end of the record are employed as filters to the FFTs. Each window is useful for certain classes of input signals.</li></dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">KtInfiniiVisionFFT</a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFFT</span></code></a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.average_count"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFFT.average_count</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.center_frequency"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFFT.center_frequency</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.clear"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFFT.clear()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.detection_points"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFFT.detection_points</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.detection_type"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFFT.detection_type</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.display_mode"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFFT.display_mode</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.enabled"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFFT.enabled</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.frequency_span"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFFT.frequency_span</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.gate"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFFT.gate</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.get_bin_size"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFFT.get_bin_size()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.get_resolution_bandwidth"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFFT.get_resolution_bandwidth()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.get_sample_rate_frequency"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFFT.get_sample_rate_frequency()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.offset"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFFT.offset</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.readout"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFFT.readout</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.reference_level"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFFT.reference_level</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.source"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFFT.source</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.start_frequency"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFFT.start_frequency</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.stop_frequency"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFFT.stop_frequency</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.vertical_range"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFFT.vertical_range</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.vertical_scale"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFFT.vertical_scale</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.vertical_units"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFFT.vertical_units</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionFFT.window_type"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionFFT.window_type</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionExternal.html"
+                          title="previous chapter">KtInfiniiVisionExternal</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionFRA.html"
+                          title="next chapter">KtInfiniiVisionFRA</a></p>
+  </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionFRA.html" title="KtInfiniiVisionFRA"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionExternal.html" title="KtInfiniiVisionExternal"
+             >previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionFFT</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Keysight Technologies.  v1.0.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

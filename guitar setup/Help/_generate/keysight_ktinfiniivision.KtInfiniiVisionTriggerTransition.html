@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>KtInfiniiVisionTriggerTransition &#8212; KtInfiniiVision 1.0.0 Documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinxdoc.css?v=d59dc883" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <script src="../_static/documentation_options.js?v=8d563738"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="KtInfiniiVisionTriggerUSB" href="keysight_ktinfiniivision.KtInfiniiVisionTriggerUSB.html" />
+    <link rel="prev" title="KtInfiniiVisionTriggerTVUDTV" href="keysight_ktinfiniivision.KtInfiniiVisionTriggerTVUDTV.html" /> 
+  </head><body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<table width="100%" cellpadding="0" cellspacing="0"><tr>
+        <td valign="top"><a href="../index.html"><h1 style="font-size: 2em;">KtInfiniiVision Driver Python API</h1></a></td>
+        <td align="right"><a href="https://www.keysight.com" target="_blank"><img src="../_static\keysight.gif" alt="keysight.gif"></a></td>
+</tr></table>
+</div>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionTriggerUSB.html" title="KtInfiniiVisionTriggerUSB"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionTriggerTVUDTV.html" title="KtInfiniiVisionTriggerTVUDTV"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="keysight_ktinfiniivision.KtInfiniiVisionTrigger.html" accesskey="U">KtInfiniiVisionTrigger</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionTriggerTransition</a></li> 
+      </ul>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="ktinfiniivisiontriggertransition">
+<h1>KtInfiniiVisionTriggerTransition<a class="headerlink" href="#ktinfiniivisiontriggertransition" title="Link to this heading">¶</a></h1>
+<blockquote>
+<div><div class="line-block">
+<div class="line">Access interface members using: <code class="docutils literal notranslate"><span class="pre">driver.trigger.transition</span></code></div>
+<div class="line">Where <code class="docutils literal notranslate"><span class="pre">driver</span></code> is a reference to the driver’s root interface returned by the <a class="reference internal" href="../programming.html#creating-a-driver-instance"><span class="std std-ref">constructor</span></a>.</div>
+</div>
+</div></blockquote>
+<dl class="py class">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTriggerTransition">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">KtInfiniiVisionTriggerTransition</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerTransition" title="Link to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerTransition" title="keysight_ktinfiniivision.KtInfiniiVisionTriggerTransition"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionTriggerTransition</span></code></a> interface.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTriggerTransition.condition">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">condition</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerTransition.condition" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets whether user are looking for rise/fall times greater than or less than a certain time value. The time value is set using the QualifierTime property.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.TriggerTransitionCondition.html#keysight_ktinfiniivision.TriggerTransitionCondition" title="keysight_ktinfiniivision.TriggerTransitionCondition">TriggerTransitionCondition</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">The Condition property can be set to one of the following values:
+<ul>
+<li>GreaterThan: specifies that user is looking for rise/fall times greater than a certain time value.</li>
+<li>LessThan: specifies that user is looking for rise/fall times less than a certain time value.</li>
+</ul></dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTriggerTransition.configure">
+<span class="sig-name descname"><span class="pre">configure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerTransition" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionTriggerTransition"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionTriggerTransition</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">source</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">slope</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="keysight_ktinfiniivision.TriggerTransitionSlope.html#keysight_ktinfiniivision.TriggerTransitionSlope" title="keysight_ktinfiniivision.keysight_ktinfiniivision.TriggerTransitionSlope"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.TriggerTransitionSlope</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">condition</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="keysight_ktinfiniivision.TriggerTransitionCondition.html#keysight_ktinfiniivision.TriggerTransitionCondition" title="keysight_ktinfiniivision.keysight_ktinfiniivision.TriggerTransitionCondition"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.TriggerTransitionCondition</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">qualifier_time</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerTransition.configure" title="Link to this definition">¶</a></dt>
+<dd><p>Configures the source, slope, condition and qualifier time parameters for the Transition trigger.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>source</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><em>str</em></a>) – Specifies the channel used to produce the trigger.</p></li>
+<li><p><strong>slope</strong> (<a class="reference internal" href="keysight_ktinfiniivision.TriggerTransitionSlope.html#keysight_ktinfiniivision.TriggerTransitionSlope" title="keysight_ktinfiniivision.TriggerTransitionSlope"><em>TriggerTransitionSlope</em></a>) – Specifies a Positive rising edge or a Negative falling edge.</p></li>
+<li><p><strong>condition</strong> (<a class="reference internal" href="keysight_ktinfiniivision.TriggerTransitionCondition.html#keysight_ktinfiniivision.TriggerTransitionCondition" title="keysight_ktinfiniivision.TriggerTransitionCondition"><em>TriggerTransitionCondition</em></a>) – Specifies whether you are looking for rise/fall times greater than or less than a certain time value. The time value is set using the QualifierTime property.</p></li>
+<li><p><strong>qualifier_time</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><em>float</em></a>) – Specifies the time value for rise/fall time triggers. You also use the Condition property to specify whether you are triggering on times greater than or less than this time value.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTriggerTransition.qualifier_time">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">qualifier_time</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerTransition.qualifier_time" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the time value for rise/fall time triggers. User can also use the Condition property to specify whether user is triggering on times greater than or less than this time value.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">With the input value suitable suffix from &#123; s  &#124; ms  &#124; us &#124; ns &#124; ps &#125; can be selected.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTriggerTransition.slope">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">slope</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerTransition.slope" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets a Positive rising edge or a Negative falling edge.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.TriggerTransitionSlope.html#keysight_ktinfiniivision.TriggerTransitionSlope" title="keysight_ktinfiniivision.TriggerTransitionSlope">TriggerTransitionSlope</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">The Slope property can be set to one of the following values:
+<ul>
+<li>Negative: specifies a negative falling edge.</li>
+<li>Positive: specifies a positive rising edge.</li>
+</ul></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTriggerTransition.source">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">source</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerTransition.source" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the transition trigger source.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">The parameter &#60;source&#62; can be specified in following string format: Channel&lt;n&gt;, where n: 1 to the number of available analog channels.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTriggerTransition.threshold_high">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">threshold_high</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerTransition.threshold_high" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the high threshold the oscilloscope uses for the transition trigger.  The units are volts.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTriggerTransition.threshold_low">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">threshold_low</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerTransition.threshold_low" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the low threshold the oscilloscope uses for the transition trigger.  The units are volts.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">KtInfiniiVisionTriggerTransition</a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerTransition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTriggerTransition</span></code></a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerTransition.condition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTriggerTransition.condition</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerTransition.configure"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTriggerTransition.configure()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerTransition.qualifier_time"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTriggerTransition.qualifier_time</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerTransition.slope"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTriggerTransition.slope</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerTransition.source"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTriggerTransition.source</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerTransition.threshold_high"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTriggerTransition.threshold_high</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerTransition.threshold_low"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTriggerTransition.threshold_low</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionTriggerTVUDTV.html"
+                          title="previous chapter">KtInfiniiVisionTriggerTVUDTV</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionTriggerUSB.html"
+                          title="next chapter">KtInfiniiVisionTriggerUSB</a></p>
+  </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionTriggerUSB.html" title="KtInfiniiVisionTriggerUSB"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionTriggerTVUDTV.html" title="KtInfiniiVisionTriggerTVUDTV"
+             >previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="keysight_ktinfiniivision.KtInfiniiVisionTrigger.html" >KtInfiniiVisionTrigger</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionTriggerTransition</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Keysight Technologies.  v1.0.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+
+WaveformDataFormat
+===================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: WaveformDataFormat
+    :members:
+    :exclude-members: name
+
+
+
+

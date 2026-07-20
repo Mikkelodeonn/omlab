@@ -1,0 +1,14 @@
+
+SearchGlitchPolarity
+=====================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SearchGlitchPolarity
+    :members:
+    :exclude-members: name
+
+
+
+

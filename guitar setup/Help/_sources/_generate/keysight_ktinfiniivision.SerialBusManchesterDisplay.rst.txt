@@ -1,0 +1,14 @@
+
+SerialBusManchesterDisplay
+===========================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusManchesterDisplay
+    :members:
+    :exclude-members: name
+
+
+
+

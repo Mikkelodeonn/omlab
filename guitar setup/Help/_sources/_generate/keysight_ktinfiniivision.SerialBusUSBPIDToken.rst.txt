@@ -1,0 +1,14 @@
+
+SerialBusUSBPIDToken
+=====================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusUSBPIDToken
+    :members:
+    :exclude-members: name
+
+
+
+

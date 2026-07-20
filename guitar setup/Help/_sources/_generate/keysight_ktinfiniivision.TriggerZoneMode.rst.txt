@@ -1,0 +1,14 @@
+
+TriggerZoneMode
+================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: TriggerZoneMode
+    :members:
+    :exclude-members: name
+
+
+
+

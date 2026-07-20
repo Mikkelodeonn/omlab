@@ -1,0 +1,14 @@
+
+SerialBusI2SBase
+=================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusI2SBase
+    :members:
+    :exclude-members: name
+
+
+
+

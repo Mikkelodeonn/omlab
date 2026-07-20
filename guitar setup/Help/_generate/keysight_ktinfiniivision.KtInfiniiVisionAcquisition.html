@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>KtInfiniiVisionAcquisition &#8212; KtInfiniiVision 1.0.0 Documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinxdoc.css?v=d59dc883" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <script src="../_static/documentation_options.js?v=8d563738"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="KtInfiniiVisionAcquisitionSegmentedMemory" href="keysight_ktinfiniivision.KtInfiniiVisionAcquisitionSegmentedMemory.html" />
+    <link rel="prev" title="DriverUtility" href="keysight_ktinfiniivision.DriverUtility.html" /> 
+  </head><body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<table width="100%" cellpadding="0" cellspacing="0"><tr>
+        <td valign="top"><a href="../index.html"><h1 style="font-size: 2em;">KtInfiniiVision Driver Python API</h1></a></td>
+        <td align="right"><a href="https://www.keysight.com" target="_blank"><img src="../_static\keysight.gif" alt="keysight.gif"></a></td>
+</tr></table>
+</div>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionAcquisitionSegmentedMemory.html" title="KtInfiniiVisionAcquisitionSegmentedMemory"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.DriverUtility.html" title="DriverUtility"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" accesskey="U">KtInfiniiVision</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionAcquisition</a></li> 
+      </ul>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="ktinfiniivisionacquisition">
+<h1>KtInfiniiVisionAcquisition<a class="headerlink" href="#ktinfiniivisionacquisition" title="Link to this heading">¶</a></h1>
+<blockquote>
+<div><div class="line-block">
+<div class="line">Access interface members using: <code class="docutils literal notranslate"><span class="pre">driver.acquisition</span></code></div>
+<div class="line">Where <code class="docutils literal notranslate"><span class="pre">driver</span></code> is a reference to the driver’s root interface returned by the <a class="reference internal" href="../programming.html#creating-a-driver-instance"><span class="std std-ref">constructor</span></a>.</div>
+</div>
+</div></blockquote>
+<dl class="py class">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAcquisition">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">KtInfiniiVisionAcquisition</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition" title="Link to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition" title="keysight_ktinfiniivision.KtInfiniiVisionAcquisition"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionAcquisition</span></code></a> interface.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAcquisition.anti_aliasing_mode">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">anti_aliasing_mode</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.anti_aliasing_mode" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the disable anti-alias mode of the oscilloscope.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.AntiAliasMode.html#keysight_ktinfiniivision.AntiAliasMode" title="keysight_ktinfiniivision.AntiAliasMode">AntiAliasMode</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li>When set to Disable, antialias mode gets disabled for always. This is good for cases where dithered data is not desired.</li>
+<li>When set to Auto, the oscilloscope turns off antialias control as needed. Such cases are when the FFT or differentiate math functions are silent. The Digitizer always turns off the anti alias control.</li></dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAcquisition.auto_memory_depth">
+<span class="sig-name descname"><span class="pre">auto_memory_depth</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionAcquisition"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionAcquisition</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.auto_memory_depth" title="Link to this definition">¶</a></dt>
+<dd><p>Puts the oscilloscope into Automatic (default) mode where the optimal memory depth is selected automatically by the oscilloscope.</p>
+<dl class="field-list">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+<dt class="field-even">Remarks<span class="colon">:</span></dt>
+<dd class="field-even"><li>This is equivalent to turning Digitizer mode off through AcquisitionDigitizerEnabled property.</li>
+<li>It also affects the memory depth.</li></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAcquisition.auto_memory_depth_enabled">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">auto_memory_depth_enabled</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.auto_memory_depth_enabled" title="Link to this definition">¶</a></dt>
+<dd><p>Enables or disables Automatic determination of the analog channel memory depth.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)">bool</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; On: the analog channel memory depth is automatically determined by the
+oscilloscope based on the horizontal time/div setting (Automatic mode, the oscilloscope's default). This is equivalent to turning Digitizer mode off.
+<br />&#8226; Off: This is equivalent to turning Digitizer mode on.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAcquisition.auto_sample_rate">
+<span class="sig-name descname"><span class="pre">auto_sample_rate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionAcquisition"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionAcquisition</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.auto_sample_rate" title="Link to this definition">¶</a></dt>
+<dd><p>Puts the oscilloscope into Automatic (default) mode where the optimal sample rate is selected automatically by the oscilloscope.</p>
+<dl class="field-list">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+<dt class="field-even">Remarks<span class="colon">:</span></dt>
+<dd class="field-even">Puts the oscilloscope into Automatic (default) mode where the optimal
+sample rate is selected automatically by the oscilloscope.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAcquisition.auto_sample_rate_enabled">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">auto_sample_rate_enabled</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.auto_sample_rate_enabled" title="Link to this definition">¶</a></dt>
+<dd><p>Enables or disables Automatic determination of the analog channel sample rate.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)">bool</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; On: The analog channel sample rate is automatically determined by the oscilloscope based on the horizontal time/div setting (Automatic mode, the oscilloscope's default). This is equivalent to turning Digitizer mode off.
+<br />&#8226; Off: This is equivalent to turning Digitizer mode on
+<br />&#8226; The Automatic or Digitizer mode setting also affects the memory depth</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAcquisition.bandwidth">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">bandwidth</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.bandwidth" title="Link to this definition">¶</a></dt>
+<dd><p>command lets you limit the bandwidth of all channels to remove unwanted high frequency noise from the waveform and potentially increase the number of bits of vertical resolution. Query returns the current global bandwidth limit setting</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.BWLimit.html#keysight_ktinfiniivision.BWLimit" title="keysight_ktinfiniivision.BWLimit">BWLimit</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAcquisition.completion_percentage">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">completion_percentage</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.completion_percentage" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the minimum completion criteria (100) for an acquisition.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li>The only legal value is 100. All time buckets must contain data for the acquisition to be considered complete.</li>
+<li>It determines the percentage of the time buckets that must be "full" before an acquisition is considered complete.</li></dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAcquisition.configure_record">
+<span class="sig-name descname"><span class="pre">configure_record</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionAcquisition"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionAcquisition</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_per_record</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.timedelta" title="(in Python v3.13)"><span class="pre">datetime.timedelta</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">minimum_number_points</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">acquisition_start_time</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.timedelta" title="(in Python v3.13)"><span class="pre">datetime.timedelta</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.configure_record" title="Link to this definition">¶</a></dt>
+<dd><p>Configures the most commonly used properties of the oscilloscope’s acquisition subsystem: time per record, minimum record length, and the acquisition start time.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>time_per_record</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.timedelta" title="(in Python v3.13)"><em>datetime.timedelta</em></a>) – Specifies the time per record.  Refer to the  property for details.</p></li>
+<li><p><strong>minimum_number_points</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><em>int</em></a>) – Specifies the minimum number of points the  end-user allows in the waveform recorded.  Refer to the  property for details.</p></li>
+<li><p><strong>acquisition_start_time</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.timedelta" title="(in Python v3.13)"><em>datetime.timedelta</em></a>) – Specifies the position of the  first point in the waveform record relative to the trigger event.  Refer to the  property for details.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; This method is class compliant.
+<br />&#8226; The order in which the AcquisitionStartTime are set is implementation dependent. See the section titled "Common  Exceptions and Warnings" in IVI-3.2, Inherent Capabilities Specification, for general exceptions that may be thrown, and warning events that may be raised, by this method.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAcquisition.count">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">count</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.count" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the count value (from 1 to 65536) used to acquire the current waveform.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; The integer value returned will be from 1 to 65536.
+<br />&#8226; The returned values may differ from current values if the unit has been stopped and its configuration modified.
+<br />&#8226; For all AcquisitionType except Average, return value is 1.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAcquisition.digitizer_enabled">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">digitizer_enabled</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.digitizer_enabled" title="Link to this definition">¶</a></dt>
+<dd><p>Enables or disables the digitizer mode.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)">bool</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li>Normally, when Digitizer mode is disabled (Automatic mode), the oscilloscope's time per division setting determines the sample rate and memory depth so as to fill the waveform display with data while the oscilloscope is running (continuously making acquisitions). For single acquisitions, the time/division setting still determines the sample rate, but the maximum amount of acquisition memory is used.</li>
+<li> In Digitizer mode, the acquisition sample rate and memory depth can be chosen and those settings are used even though the captured data may extend way beyond the edges of, or take up just a small portion of, the waveform display, depending on the oscilloscope's time/div setting.</li>
+<li>Digitizer mode cannot be used along with these other oscilloscope features: XY and Roll time modes, horizontal Zoom display, time references other than Center, segmented memory, serial decode, digital channels, frequency response analysis, mask test, and the power application. In most cases, enabling one of these features when Digitizer mode is enabled will automatically disable Digitizer mode, and then disabling the feature will automatically reenable Digitizer mode.</li>
+<li>Digitizer mode primarily aids external software that controls and combines data from multiple instruments.</li></dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAcquisition.get_memory_depth">
+<span class="sig-name descname"><span class="pre">get_memory_depth</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionAcquisition"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionAcquisition</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.get_memory_depth" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the number of data points that the hardware will acquire from the input signal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The number of data points that the hardware will acquire from the input signal.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAcquisition.get_sample_rate">
+<span class="sig-name descname"><span class="pre">get_sample_rate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionAcquisition"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionAcquisition</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.get_sample_rate" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the current oscilloscope acquisition sample rate in samples/sec..</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The current oscilloscope acquisition sample rate.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">Remarks<span class="colon">:</span></dt>
+<dd class="field-even">The sample rate is not directly controllable.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAcquisition.get_sample_rate_max">
+<span class="sig-name descname"><span class="pre">get_sample_rate_max</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionAcquisition"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionAcquisition</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.get_sample_rate_max" title="Link to this definition">¶</a></dt>
+<dd><p>Gets the oscilloscope’s maximum possible sample rate.</p>
+<dl class="field-list">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The oscilloscope’s maximum possible sample rate in samples/sec.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">The sample rate is not directly controllable.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAcquisition.interpolation">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">interpolation</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.interpolation" title="Link to this definition">¶</a></dt>
+<dd><p>The Oscilloscope uses the interpolation method when it cannot resolve a voltage for every point in the waveform record.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.Interpolation.html#keysight_ktinfiniivision.Interpolation" title="keysight_ktinfiniivision.Interpolation">Interpolation</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAcquisition.is_anti_aliasing_enabled">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_anti_aliasing_enabled</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.is_anti_aliasing_enabled" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the current state of the oscilloscope acquisition anti-alias control.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAcquisition.memory_depth">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">memory_depth</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.memory_depth" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the desired acquisition memory depth.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; The maximum amount of memory available is halved when both channels in a pair are turned on. Channels 1 and 2 are one pair, channels 3 and 4 are the other.
+<br />&#8226;  When input value numerical memory depth is entered, then the oscilloscope is being put into Digitizer (manual) Mode with the desired number of points</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAcquisition.number_of_averages">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">number_of_averages</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.number_of_averages" title="Link to this definition">¶</a></dt>
+<dd><p>The number of values (in averaging mode) to be averaged for each time bucket before the acquisition is considered to be complete for that time bucket. The count can be set to any value from 2 to 65536.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; The count of 1 is no longer supported and was functionally equivalent to the HResolution acquisition type.
+<br />&#8226; User can select the high-resolution acquisition mode by setting the AcquisitionType property to HResolution.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAcquisition.number_of_points_min">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">number_of_points_min</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.number_of_points_min" title="Link to this definition">¶</a></dt>
+<dd><p>The minimum number of points which can be in a waveform record for each channel.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; It configures the record length that the oscilloscope uses for waveform acquisition. If number of minimum points exceeds the permissible value for sample mode then data out of range error is returned.
+<br />&#8226; For the analog sources, the records that can be transferred depend on the
+<a href="keysight_ktinfiniivision.WaveformPointMode.html">WaveformPointMode</a>. The maximum number of points returned for math (function) waveforms is determined by the "Normal" waveform points mode.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAcquisition.record_length">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">record_length</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.record_length" title="Link to this definition">¶</a></dt>
+<dd><p>Read Only - The actual number of points the oscilloscope acquires for each channel. It is equal to or greater than the minimum number of points specified with the NumberOfPointsMin property.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">If a full screen of data is not displayed, the number of points returned will not be 1000 or an
+even divisor of it.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAcquisition.reference_signal_mode">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">reference_signal_mode</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.reference_signal_mode" title="Link to this definition">¶</a></dt>
+<dd><p>Selects the 10 MHz Reference Signal Mode.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.AcquisitionReferenceSignalMode.html#keysight_ktinfiniivision.AcquisitionReferenceSignalMode" title="keysight_ktinfiniivision.AcquisitionReferenceSignalMode">AcquisitionReferenceSignalMode</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; The Off mode disables the oscilloscope's 10 MHz REF BNC connector.
+<br />&#8226; The Out mode is used to synchronize the timebase of two or more instruments.
+<br />&#8226; The In mode is used to supply a sample clock to the oscilloscope. A 10 MHz
+square or sine wave signal is input to the BNC connector labeled 10 MHz REF.
+The amplitude must be from: 5 dBm to 17 dBm (356 mVpp to 4.48 Vpp).
+<br />&#8226; Do not apply more than 20 dBm Max (6.32 Vpp Max) at the 10 MHz REF BNC
+connector on the rear panel or damage to the instrument may occur.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAcquisition.sample_mode">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sample_mode</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.sample_mode" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the current acquisition sample mode setting.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.AcquisitionSampleMode.html#keysight_ktinfiniivision.AcquisitionSampleMode" title="keysight_ktinfiniivision.AcquisitionSampleMode">AcquisitionSampleMode</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li>The time position parameter is usually referenced to the center of the screen, although it can be referenced to the 1st division from the left or right side of the screen. The acquisition start time in driver refers to the left side of the screen. For example if you have set up the instrument for a 1 ms acquisition that starts 5 ms (Acquisition start time) after the trigger, the time position sent to the scope must be offset by 5 (1 or 9) horizontal divisions. The time position reference is center, the range is 1 ms which means the left side is 0.5 x 1ms from the center. The driver will set the time position for 5.5 ms, which will make the left side of the screen = 5 ms.</li>
+
+<li>RealTime: The Real time mode Specifies that the oscilloscope produce the waveform display from samples collected during one trigger event (that is, one acquisition). At fast sweep speeds, when not enough samples can be collected for a waveform, a sophisticated reconstruction filter is used to fill-in sample points and enhance the waveform display.
+In Real time mode, to accurately reproduce a sampled waveform, the sample rate should be at least 2.5 times the highest frequency component of the waveform. If not, it is possible for the reconstructed waveform to be distorted or aliased. Aliasing is most commonly seen as jitter on fast digital edges.
+Use Real time sampling to capture infrequent triggers, unstable triggers, or complex changing waveforms, such as eye diagrams.</li>
+
+<li>MaxRealTime: Only allowed in  X6000 Series Oscilloscopes. The Maximum update rate real time mode is the same as Realtime except that in order to provide maximum update rate (trigger rates), the sample rate drops from 20 GSa/s to 2 GSa/s at a faster time/div setting than normal.
+This mode is ideal for finding glitches and infrequent events in waveforms that do not require the full 20 GSa/s sample rate (and associated bandwidth).
+This mode is not allowed in single, roll, segmented, mask test, or zone trigger.</li>
+
+<li>EquivalentTime: Only allowed in X4000 and X6000 Series Oscilloscopes. The equivalent time sampling mode is  Available in 6 GHz bandwidth models, this option gives you another way to fill-in sample points at fast sweep speeds - it is used only when sweep speeds are 20 ns/div or faster. In this case, instead of a reconstruction filter, a technique known as random repetitive sampling is used to build-up and draw one waveform using multiple triggers (acquisitions).
+At slower sweep speeds, there are enough sample points in a trigger (acquisition, in other words) to render a waveform on the display.
+
+Equivalent time sampling mode requires a repetitive waveform with a stable trigger.</li>
+
+<li>Segmented: The segmented mode sets the oscilloscope in segmented memory mode.</li></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAcquisition.sample_rate">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sample_rate</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.sample_rate" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and Gets the current oscilloscope acquisition sample rate in samples/sec. The sample rate is not directly controllable.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226;  &#60;sample&#95;rate&#62; value: If a numerical sample rate value is entered, this puts the
+oscilloscope into Digitizer (manual) mode with the desired sample rate.
+
+<br />&#8226; When the Maximum parameter is used, the oscilloscope's maximum possible
+sample rate is returned.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAcquisition.segmented_memory">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">segmented_memory</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.segmented_memory" title="Link to this definition">¶</a></dt>
+<dd><p>Reference to the <a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionAcquisitionSegmentedMemory.html#keysight_ktinfiniivision.KtInfiniiVisionAcquisitionSegmentedMemory" title="keysight_ktinfiniivision.KtInfiniiVisionAcquisitionSegmentedMemory"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionAcquisitionSegmentedMemory</span></code></a> interface.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Readonly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionAcquisitionSegmentedMemory.html#keysight_ktinfiniivision.KtInfiniiVisionAcquisitionSegmentedMemory" title="keysight_ktinfiniivision.KtInfiniiVisionAcquisitionSegmentedMemory">KtInfiniiVisionAcquisitionSegmentedMemory</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAcquisition.single_acquisition">
+<span class="sig-name descname"><span class="pre">single_acquisition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionAcquisition"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionAcquisition</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.single_acquisition" title="Link to this definition">¶</a></dt>
+<dd><p>Acquires a single trigger of data.</p>
+<dl class="field-list">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+<dt class="field-even">Remarks<span class="colon">:</span></dt>
+<dd class="field-even">This is the same as pressing the Single key on the front panel.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAcquisition.start_time">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">start_time</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.start_time" title="Link to this definition">¶</a></dt>
+<dd><p>The length of time from the trigger event to the first point in the waveform record. If positive, the first point in the waveform occurs after the trigger. If negative, the first point in the waveform occurs before the trigger. The units are seconds.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.timedelta" title="(in Python v3.13)">datetime.timedelta</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; The time position parameter is usually referenced to the center of the screen, although it can be referenced to the 1st division from the left or right side of the screen. 
+<br />&#8226; The acquisition start time in driver refers to the left side of the screen. 
+<br />&#8226; For example if you have set up the instrument for a 1 ms acquisition that starts 5 ms (Acquisition start time) after the trigger, the time position sent to the scope must be offset by 5 (1 or 9) horizontal divisions. The time position reference is center, the range is 1 ms which means the left side is 0.5 x 1ms from the center. The driver will set the time position for 5.5 ms, which will make the left side of the screen = 5 ms.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAcquisition.stop">
+<span class="sig-name descname"><span class="pre">stop</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionAcquisition"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionAcquisition</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.stop" title="Link to this definition">¶</a></dt>
+<dd><p>Stops the acquisition.</p>
+<dl class="field-list">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+<dt class="field-even">Remarks<span class="colon">:</span></dt>
+<dd class="field-even">This is the same as pressing the Stop key on the front panel.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAcquisition.time_per_record">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">time_per_record</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.time_per_record" title="Link to this definition">¶</a></dt>
+<dd><p>The time in seconds that corresponds to the record length.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.timedelta" title="(in Python v3.13)">datetime.timedelta</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">The input range is 10 times the current time-per-division setting.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAcquisition.type">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">type</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.type" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the type of acquisition data oscilloscope uses to fill the waveform record.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.AcquisitionDataType.html#keysight_ktinfiniivision.AcquisitionDataType" title="keysight_ktinfiniivision.AcquisitionDataType">AcquisitionDataType</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li>The acquisition types are:
+    <ul>
+        <li>Normal: sets the oscilloscope in the normal mode.</li>
+        <li>Average: sets the oscilloscope in the averaging mode, must be an integer from 1 to 65536. Not available in segmented mode.</li>
+        <li>HRESolution: sets the oscilloscope in the high-resolution mode.</li>
+        <li>Peak: sets the oscilloscope in the peak detect mode.</li>
+    </ul>
+</li></dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<p><strong>Child Interfaces</strong></p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionAcquisitionSegmentedMemory.html">KtInfiniiVisionAcquisitionSegmentedMemory</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionAcquisitionSegmentedMemory.html#keysight_ktinfiniivision.KtInfiniiVisionAcquisitionSegmentedMemory"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAcquisitionSegmentedMemory</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionAcquisitionSegmentedMemory.html#keysight_ktinfiniivision.KtInfiniiVisionAcquisitionSegmentedMemory.analyze"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAcquisitionSegmentedMemory.analyze()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionAcquisitionSegmentedMemory.html#keysight_ktinfiniivision.KtInfiniiVisionAcquisitionSegmentedMemory.count"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAcquisitionSegmentedMemory.count</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionAcquisitionSegmentedMemory.html#keysight_ktinfiniivision.KtInfiniiVisionAcquisitionSegmentedMemory.index"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAcquisitionSegmentedMemory.index</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionAcquisitionSegmentedMemory.html#keysight_ktinfiniivision.KtInfiniiVisionAcquisitionSegmentedMemory.save_mode"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAcquisitionSegmentedMemory.save_mode</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionAcquisitionSegmentedMemory.html#keysight_ktinfiniivision.KtInfiniiVisionAcquisitionSegmentedMemory.time_tag"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAcquisitionSegmentedMemory.time_tag</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">KtInfiniiVisionAcquisition</a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAcquisition</span></code></a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.anti_aliasing_mode"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAcquisition.anti_aliasing_mode</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.auto_memory_depth"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAcquisition.auto_memory_depth()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.auto_memory_depth_enabled"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAcquisition.auto_memory_depth_enabled</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.auto_sample_rate"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAcquisition.auto_sample_rate()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.auto_sample_rate_enabled"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAcquisition.auto_sample_rate_enabled</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.bandwidth"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAcquisition.bandwidth</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.completion_percentage"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAcquisition.completion_percentage</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.configure_record"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAcquisition.configure_record()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.count"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAcquisition.count</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.digitizer_enabled"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAcquisition.digitizer_enabled</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.get_memory_depth"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAcquisition.get_memory_depth()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.get_sample_rate"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAcquisition.get_sample_rate()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.get_sample_rate_max"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAcquisition.get_sample_rate_max()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.interpolation"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAcquisition.interpolation</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.is_anti_aliasing_enabled"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAcquisition.is_anti_aliasing_enabled</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.memory_depth"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAcquisition.memory_depth</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.number_of_averages"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAcquisition.number_of_averages</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.number_of_points_min"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAcquisition.number_of_points_min</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.record_length"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAcquisition.record_length</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.reference_signal_mode"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAcquisition.reference_signal_mode</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.sample_mode"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAcquisition.sample_mode</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.sample_rate"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAcquisition.sample_rate</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.segmented_memory"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAcquisition.segmented_memory</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.single_acquisition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAcquisition.single_acquisition()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.start_time"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAcquisition.start_time</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.stop"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAcquisition.stop()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.time_per_record"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAcquisition.time_per_record</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAcquisition.type"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAcquisition.type</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.DriverUtility.html"
+                          title="previous chapter">DriverUtility</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionAcquisitionSegmentedMemory.html"
+                          title="next chapter">KtInfiniiVisionAcquisitionSegmentedMemory</a></p>
+  </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionAcquisitionSegmentedMemory.html" title="KtInfiniiVisionAcquisitionSegmentedMemory"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.DriverUtility.html" title="DriverUtility"
+             >previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionAcquisition</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Keysight Technologies.  v1.0.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

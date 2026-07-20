@@ -1,0 +1,14 @@
+
+SearchIICCondition
+===================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SearchIICCondition
+    :members:
+    :exclude-members: name
+
+
+
+

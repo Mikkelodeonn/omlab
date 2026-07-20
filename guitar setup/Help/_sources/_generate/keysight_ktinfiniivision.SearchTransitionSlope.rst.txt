@@ -1,0 +1,14 @@
+
+SearchTransitionSlope
+======================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SearchTransitionSlope
+    :members:
+    :exclude-members: name
+
+
+
+

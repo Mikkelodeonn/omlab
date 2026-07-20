@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>KtInfiniiVisionTriggerWidth &#8212; KtInfiniiVision 1.0.0 Documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinxdoc.css?v=d59dc883" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <script src="../_static/documentation_options.js?v=8d563738"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="KtInfiniiVisionTriggerZone" href="keysight_ktinfiniivision.KtInfiniiVisionTriggerZone.html" />
+    <link rel="prev" title="KtInfiniiVisionTriggerUSB" href="keysight_ktinfiniivision.KtInfiniiVisionTriggerUSB.html" /> 
+  </head><body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<table width="100%" cellpadding="0" cellspacing="0"><tr>
+        <td valign="top"><a href="../index.html"><h1 style="font-size: 2em;">KtInfiniiVision Driver Python API</h1></a></td>
+        <td align="right"><a href="https://www.keysight.com" target="_blank"><img src="../_static\keysight.gif" alt="keysight.gif"></a></td>
+</tr></table>
+</div>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionTriggerZone.html" title="KtInfiniiVisionTriggerZone"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionTriggerUSB.html" title="KtInfiniiVisionTriggerUSB"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="keysight_ktinfiniivision.KtInfiniiVisionTrigger.html" accesskey="U">KtInfiniiVisionTrigger</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionTriggerWidth</a></li> 
+      </ul>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="ktinfiniivisiontriggerwidth">
+<h1>KtInfiniiVisionTriggerWidth<a class="headerlink" href="#ktinfiniivisiontriggerwidth" title="Link to this heading">¶</a></h1>
+<blockquote>
+<div><div class="line-block">
+<div class="line">Access interface members using: <code class="docutils literal notranslate"><span class="pre">driver.trigger.width</span></code></div>
+<div class="line">Where <code class="docutils literal notranslate"><span class="pre">driver</span></code> is a reference to the driver’s root interface returned by the <a class="reference internal" href="../programming.html#creating-a-driver-instance"><span class="std std-ref">constructor</span></a>.</div>
+</div>
+</div></blockquote>
+<dl class="py class">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTriggerWidth">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">KtInfiniiVisionTriggerWidth</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerWidth" title="Link to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerWidth" title="keysight_ktinfiniivision.KtInfiniiVisionTriggerWidth"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionTriggerWidth</span></code></a> interface.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTriggerWidth.condition">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">condition</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerWidth.condition" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the trigger duration qualifier. Whether a pulse within or outside the high and low thresholds triggers the oscilloscope.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.TriggerWidthCondition.html#keysight_ktinfiniivision.TriggerWidthCondition" title="keysight_ktinfiniivision.TriggerWidthCondition">TriggerWidthCondition</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; Entered: when the pattern is entered.
+<br />&#8226; Lessthan: when the pattern is present for less than a time value.
+<br />&#8226; Greaterthan: when the pattern is present for greater than a time value. The trigger occurs when the pattern exits (not when the Greaterthan time value is exceeded).
+<br />&#8226; Timeeout: when the pattern is present for greater than a time value. In this case, the trigger occurs when the Greaterthan time value is exceeded (not when the pattern exits).
+<br />&#8226; InRange: when the pattern is present for a time within a range of values.
+ <br />&#8226; OutRange: when the pattern is present for a time outside of range of values.
+ <br />&#8226; Pattern durations are evaluated using a timer. The timer starts on the last edge that makes the pattern (logical AND) true. Except when the Timeout qualifier is selected, the trigger occurs on the first edge that makes the pattern false, provided the time qualifier criteria has been met.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTriggerWidth.configure">
+<span class="sig-name descname"><span class="pre">configure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerWidth" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionTriggerWidth"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionTriggerWidth</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">source</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">level</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold_low</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold_high</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">polarity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="keysight_ktinfiniivision.TriggerWidthPolarity.html#keysight_ktinfiniivision.TriggerWidthPolarity" title="keysight_ktinfiniivision.keysight_ktinfiniivision.TriggerWidthPolarity"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.TriggerWidthPolarity</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">condition</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="keysight_ktinfiniivision.TriggerWidthCondition.html#keysight_ktinfiniivision.TriggerWidthCondition" title="keysight_ktinfiniivision.keysight_ktinfiniivision.TriggerWidthCondition"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.TriggerWidthCondition</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerWidth.configure" title="Link to this definition">¶</a></dt>
+<dd><p>Configures the width trigger.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>source</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><em>str</em></a>) – The source the trigger monitors for a trigger event.</p></li>
+<li><p><strong>level</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><em>float</em></a>) – The voltage threshold for the trigger sub-system.</p></li>
+<li><p><strong>threshold_low</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><em>float</em></a>) – The low width threshold time in seconds.</p></li>
+<li><p><strong>threshold_high</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><em>float</em></a>) – The high width threshold time in seconds.</p></li>
+<li><p><strong>polarity</strong> (<a class="reference internal" href="keysight_ktinfiniivision.TriggerWidthPolarity.html#keysight_ktinfiniivision.TriggerWidthPolarity" title="keysight_ktinfiniivision.TriggerWidthPolarity"><em>TriggerWidthPolarity</em></a>) – The polarity of the pulse that triggers the oscilloscope.</p></li>
+<li><p><strong>condition</strong> (<a class="reference internal" href="keysight_ktinfiniivision.TriggerWidthCondition.html#keysight_ktinfiniivision.TriggerWidthCondition" title="keysight_ktinfiniivision.TriggerWidthCondition"><em>TriggerWidthCondition</em></a>) – Whether a pulse within or outside the high and low thresholds triggers the oscilloscope.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTriggerWidth.polarity">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">polarity</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerWidth.polarity" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the polarity of the pulse that triggers the oscilloscope. Need to set Source before setting polarity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.TriggerWidthPolarity.html#keysight_ktinfiniivision.TriggerWidthPolarity" title="keysight_ktinfiniivision.TriggerWidthPolarity">TriggerWidthPolarity</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTriggerWidth.threshold_high">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">threshold_high</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerWidth.threshold_high" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the high width threshold time in seconds.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTriggerWidth.threshold_low">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">threshold_low</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerWidth.threshold_low" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the low width threshold time in seconds.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">KtInfiniiVisionTriggerWidth</a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerWidth"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTriggerWidth</span></code></a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerWidth.condition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTriggerWidth.condition</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerWidth.configure"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTriggerWidth.configure()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerWidth.polarity"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTriggerWidth.polarity</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerWidth.threshold_high"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTriggerWidth.threshold_high</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerWidth.threshold_low"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTriggerWidth.threshold_low</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionTriggerUSB.html"
+                          title="previous chapter">KtInfiniiVisionTriggerUSB</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionTriggerZone.html"
+                          title="next chapter">KtInfiniiVisionTriggerZone</a></p>
+  </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionTriggerZone.html" title="KtInfiniiVisionTriggerZone"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionTriggerUSB.html" title="KtInfiniiVisionTriggerUSB"
+             >previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="keysight_ktinfiniivision.KtInfiniiVisionTrigger.html" >KtInfiniiVisionTrigger</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionTriggerWidth</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Keysight Technologies.  v1.0.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

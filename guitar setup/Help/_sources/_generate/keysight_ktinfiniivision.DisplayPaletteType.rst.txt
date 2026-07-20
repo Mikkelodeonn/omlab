@@ -1,0 +1,14 @@
+
+DisplayPaletteType
+===================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: DisplayPaletteType
+    :members:
+    :exclude-members: name
+
+
+
+

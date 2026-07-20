@@ -1,0 +1,14 @@
+
+MathMeasurementTrendType
+=========================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: MathMeasurementTrendType
+    :members:
+    :exclude-members: name
+
+
+
+

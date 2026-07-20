@@ -1,0 +1,14 @@
+
+WaveformSubSource
+==================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: WaveformSubSource
+    :members:
+    :exclude-members: name
+
+
+
+

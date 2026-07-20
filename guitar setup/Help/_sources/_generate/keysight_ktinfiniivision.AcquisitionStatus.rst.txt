@@ -1,0 +1,14 @@
+
+AcquisitionStatus
+==================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: AcquisitionStatus
+    :members:
+    :exclude-members: name
+
+
+
+

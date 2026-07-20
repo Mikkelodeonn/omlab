@@ -1,0 +1,14 @@
+
+Interpolation
+==============
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: Interpolation
+    :members:
+    :exclude-members: name
+
+
+
+

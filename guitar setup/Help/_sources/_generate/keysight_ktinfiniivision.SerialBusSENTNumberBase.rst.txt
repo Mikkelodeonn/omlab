@@ -1,0 +1,14 @@
+
+SerialBusSENTNumberBase
+========================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusSENTNumberBase
+    :members:
+    :exclude-members: name
+
+
+
+

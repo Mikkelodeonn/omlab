@@ -1,0 +1,14 @@
+
+SerialBusI2STriggerAudioChannel
+================================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusI2STriggerAudioChannel
+    :members:
+    :exclude-members: name
+
+
+
+

@@ -1,0 +1,14 @@
+
+MathBusSlope
+=============
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: MathBusSlope
+    :members:
+    :exclude-members: name
+
+
+
+

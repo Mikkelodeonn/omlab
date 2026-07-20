@@ -1,0 +1,14 @@
+
+SearchSerialFlexRayMode
+========================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SearchSerialFlexRayMode
+    :members:
+    :exclude-members: name
+
+
+
+

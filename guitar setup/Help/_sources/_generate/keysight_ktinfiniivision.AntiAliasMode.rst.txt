@@ -1,0 +1,14 @@
+
+AntiAliasMode
+==============
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: AntiAliasMode
+    :members:
+    :exclude-members: name
+
+
+
+

@@ -1,0 +1,14 @@
+
+SearchI2SMode
+==============
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SearchI2SMode
+    :members:
+    :exclude-members: name
+
+
+
+

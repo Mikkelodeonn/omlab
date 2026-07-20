@@ -1,0 +1,14 @@
+
+PowerHarmonicsFrequency
+========================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: PowerHarmonicsFrequency
+    :members:
+    :exclude-members: name
+
+
+
+

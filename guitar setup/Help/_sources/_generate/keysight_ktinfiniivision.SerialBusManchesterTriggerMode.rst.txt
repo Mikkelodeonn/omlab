@@ -1,0 +1,14 @@
+
+SerialBusManchesterTriggerMode
+===============================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusManchesterTriggerMode
+    :members:
+    :exclude-members: name
+
+
+
+

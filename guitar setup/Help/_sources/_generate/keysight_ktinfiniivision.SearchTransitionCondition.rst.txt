@@ -1,0 +1,14 @@
+
+SearchTransitionCondition
+==========================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SearchTransitionCondition
+    :members:
+    :exclude-members: name
+
+
+
+

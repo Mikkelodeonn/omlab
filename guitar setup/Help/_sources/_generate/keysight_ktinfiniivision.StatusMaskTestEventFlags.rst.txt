@@ -1,0 +1,14 @@
+
+StatusMaskTestEventFlags
+=========================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: StatusMaskTestEventFlags
+    :members:
+    :exclude-members: name
+
+
+
+

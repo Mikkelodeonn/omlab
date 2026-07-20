@@ -1,0 +1,14 @@
+
+DisplaySidebar
+===============
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: DisplaySidebar
+    :members:
+    :exclude-members: name
+
+
+
+

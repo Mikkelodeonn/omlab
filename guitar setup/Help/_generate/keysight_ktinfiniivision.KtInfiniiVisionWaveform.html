@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>KtInfiniiVisionWaveform &#8212; KtInfiniiVision 1.0.0 Documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinxdoc.css?v=d59dc883" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <script src="../_static/documentation_options.js?v=8d563738"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Enumerations" href="enumerations.html" />
+    <link rel="prev" title="KtInfiniiVisionWaveGenTracking" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenTracking.html" /> 
+  </head><body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<table width="100%" cellpadding="0" cellspacing="0"><tr>
+        <td valign="top"><a href="../index.html"><h1 style="font-size: 2em;">KtInfiniiVision Driver Python API</h1></a></td>
+        <td align="right"><a href="https://www.keysight.com" target="_blank"><img src="../_static\keysight.gif" alt="keysight.gif"></a></td>
+</tr></table>
+</div>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="enumerations.html" title="Enumerations"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenTracking.html" title="KtInfiniiVisionWaveGenTracking"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" accesskey="U">KtInfiniiVision</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionWaveform</a></li> 
+      </ul>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="ktinfiniivisionwaveform">
+<h1>KtInfiniiVisionWaveform<a class="headerlink" href="#ktinfiniivisionwaveform" title="Link to this heading">¶</a></h1>
+<blockquote>
+<div><div class="line-block">
+<div class="line">Access interface members using: <code class="docutils literal notranslate"><span class="pre">driver.waveform</span></code></div>
+<div class="line">Where <code class="docutils literal notranslate"><span class="pre">driver</span></code> is a reference to the driver’s root interface returned by the <a class="reference internal" href="../programming.html#creating-a-driver-instance"><span class="std std-ref">constructor</span></a>.</div>
+</div>
+</div></blockquote>
+<dl class="py class">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveform">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">KtInfiniiVisionWaveform</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform" title="Link to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform" title="keysight_ktinfiniivision.KtInfiniiVisionWaveform"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveform</span></code></a> interface.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveform.byte_order">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">byte_order</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.byte_order" title="Link to this definition">¶</a></dt>
+<dd><p>Gets and sets the output sequence of the WORD data. It decides which significant byte to be transmitted first.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.WaveformByteOrder.html#keysight_ktinfiniivision.WaveformByteOrder" title="keysight_ktinfiniivision.WaveformByteOrder">WaveformByteOrder</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; This property affects the transmitting sequence only when <a href="keysight_ktinfiniivision.WaveformDataFormat.html">WaveformDataFormat</a> is set to "Word" format type.
+<br />&#8226; The default selection is MSB first.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveform.data_format">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">data_format</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.data_format" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the data transmission mode for waveform data points. It controls how the data is formatted when sent from the oscilloscope.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.WaveformDataFormat.html#keysight_ktinfiniivision.WaveformDataFormat" title="keysight_ktinfiniivision.WaveformDataFormat">WaveformDataFormat</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; ASCII: The formatted data converts the internal integer data values to real Y-axis
+values. Values are transferred as ASCii digits in floating point notation,
+separated by commas. ASCII formatted data is transferred ASCii text.
+<br />&#8226; Word: The formatted data transfers 16-bit data as two bytes.
+<br />&#8226; Byte: The formatted data transfers 16-bit data as two bytes.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveform.data_points">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">data_points</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.data_points" title="Link to this definition">¶</a></dt>
+<dd><p>Sampled data points of the waveform.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p>numpy.ndarray&lt;dtype:double&gt;</p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">Sampled data points of the waveform.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveform.get_data">
+<span class="sig-name descname"><span class="pre">get_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionWaveform"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionWaveform</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v2.2)"><span class="pre">numpy.ndarray</span></a><span class="p"><span class="pre">[</span></span><span class="pre">numpy.float64</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.get_data" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the sampled data points transmitted using the IEEE 488.2 arbitrary block data format.</p>
+<dl class="field-list">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Sampled data points of the waveform.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>numpy.ndarray&lt;with dtype:double&gt;</p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">The number of points returned is controlled by the AcquisitionNumberOfPointsMin property.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveform.get_x_values">
+<span class="sig-name descname"><span class="pre">get_x_values</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionWaveform"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionWaveform</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="keysight_ktinfiniivision.XListType.html#keysight_ktinfiniivision.XListType" title="keysight_ktinfiniivision.keysight_ktinfiniivision.XListType"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.XListType</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v2.2)"><span class="pre">numpy.ndarray</span></a><span class="p"><span class="pre">[</span></span><span class="pre">numpy.float64</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.get_x_values" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the X (time) information for all segments at once.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>list_type</strong> (<a class="reference internal" href="keysight_ktinfiniivision.XListType.html#keysight_ktinfiniivision.XListType" title="keysight_ktinfiniivision.XListType"><em>XListType</em></a>) – Specifies the type of information that is returned.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Time information of segments.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>numpy.ndarray&lt;with dtype:double&gt;</p>
+</dd>
+<dt class="field-even">Remarks<span class="colon">:</span></dt>
+<dd class="field-even">This method is useful when getting the waveform data for all segments at once which can be set through WaveformSegmentDataEnabled.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveform.memory_segment_count">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">memory_segment_count</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.memory_segment_count" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the number of memory segments in the acquired data.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; The Segmented Memory Acquisiton Mode is enabled through AcquisitonType.
+<br />&#8226; The number of segments to acquire is set through AcquisitionSegmentedMemoryCount.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveform.point_count">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">point_count</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.point_count" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the number of waveform points to be transferred with the Waveform data.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; This value represents the points contained in the selected waveform.
+<br />&#8226; The records and data that is transferred depend on the WaveformPointsMode.
+<br />&#8226; The maximum number of points returned for math (function) waveforms is determined when Normal is selected as WaveformPointsMode.
+<br />&#8226; When WaveformSource is SBus1 or Sbus2, this property is ignored and all available serial decode bus data is returned.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveform.point_mode">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">point_mode</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.point_mode" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the type of data record to be transferred.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.WaveformPointMode.html#keysight_ktinfiniivision.WaveformPointMode" title="keysight_ktinfiniivision.WaveformPointMode">WaveformPointMode</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; For the analog or digital sources, there are three different records that can be transferred: 
+<br /><blockquote>&#8226; Raw Acquistion Record: The maximum number of points available in this record is returned by AcquisitionMemoryDepth property. The raw acquisition record can only be retrieved from the analog or digital sources.
+<br />&#8226; Measurement Reciord: It is a maximum point representation of the raw acquisition record. The measurement record can be retrieved, when SystemPrecision is off from any source.
+<br />&#8226; Precision Analysis Record: It is a user-selectable 100k-point to 1M-point (maximum) representation of the raw acquisition record. The precision analysis record can be retrieved when SystemPrecision is on from analog sources.
+</blockquote> 
+<br />&#8226; If Normal is selected as &#60;points&#95;mode&#62;  and  SystemPrecision is off,the measurement record is retrieved.
+<br />&#8226; If Normal is selected as &#60;points&#95;mode&#62;  and  SystemPrecision is on,the precision analysis record is retrieved.
+<br />&#8226; If Raw is selected as &#60;points&#95;mode&#62;, under some conditions this data record is unavailable.
+<br />&#8226; If Maximum is selected as &#60;points&#95;mode&#62; and  whichever record contains the maximum amount of points is used. Usually, this is the raw acquisition record. But, the measurement record may have more data. If data is being retrieved as the oscilloscope is stopped and as the data displayed is changing, the data being retrieved can switch between the measurement and raw acquisition records.
+<br />&#8226; If WaveformSource is not an analog or digital source, then only Normal and Maximum modes are allowed.
+<br />&#8226; Considerations for Maximum or Raw data retrieval:
+<blockquote>
+<br />&#8226; The instrument must be stopped in order to return more than the measurement record or precision analysis record.
+<br />&#8226; TimeBaseMode must be selected as Main.
+<br />&#8226; AcquisitonType must be set to either of Normal, Avergae or HRESolution.
+<br />&#8226; Maximum or Raw will allow up to 4,000,000 points to be returned. The number of points returned will vary as the instrument's configuration is changed. You can use the AcquisitonNumberOfPointsMin with &#60;value&#62; as Maximum to determine the maximum number of points that can be retrieved at the current settings.</blockquote></dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveform.preamble">
+<span class="sig-name descname"><span class="pre">preamble</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionWaveform"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionWaveform</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v2.2)"><span class="pre">numpy.ndarray</span></a><span class="p"><span class="pre">[</span></span><span class="pre">numpy.float64</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.preamble" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the Preamble information for the selected waveform source. The preamble data contains information concerning the vertical and horizontal scaling of the data of the corresponding channel.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Preamble block.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>numpy.ndarray&lt;with dtype:double&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveform.segment_data_enabled">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">segment_data_enabled</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.segment_data_enabled" title="Link to this definition">¶</a></dt>
+<dd><p>Enables or disables the waveform data for all or curent segment(s).</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)">bool</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; When On: <br/><blockquote><br/>&#8226; Only available when WaveformSource is an analog input channel.
+<br/>&#8226; WaveformDataPoints returns data for all segments.</blockquote>
+<br/>&#8226; When Off: WaveformDataPoints returns data for the current segment.
+<br/>&#8226; The ability to get waveform data for all segments is faster and more convenient than iterating over multiple segments and retrieving each one separately.
+<br/>&#8226; The performance improvement comes primarily when raw acquisition record data is being retrieved instead of the measurement record data.
+<br/>&#8226; Raw record data or normal Measurement record data can be set through <a href="keysight_ktinfiniivision.WaveformPointMode.html">WaveformPointMode</a>.
+<br/>&#8226; One corner case where you may want to retreive the measurement record data is when the acquired data for a segment is less than the screen resolution and the measurement record is interpolated.
+<br/>&#8226; Most often though, the acquired data for a segment is enough to fill the screen,and less than the maximum measurement record size, so the segmented rawacquisition data and the measurement record data are the same.
+<br/>&#8226; If the number of segments is small, the raw acquisition segment size is greaterthan the measurement record size.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveform.source">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">source</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.source" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the source for the waveform.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; This property selects the analog channel, function, digital pod, digital bus, reference waveform, or serial decode bus to be used as the source.
+<br />&#8226; The parameter &#60;source&#62; can be specified in one of the following string formats:
+<br /><blockquote> For X1000 and X1200 Series oscilloscopes.
+<br /><blockquote>&#8226; Channel&lt;n&gt;, where n: 1 to the number of available analog channels.
+<br />&#8226; Function
+<br />&#8226; Math
+<br />&#8226; FFT
+<br />&#8226; Wmemory&lt;r&gt;, where r: 1 or 2.
+<br />&#8226; Abus
+<br />&#8226; SBus1, only allowed in X1200 series oscilloscopes.
+<br />&#8226; External </blockquote>
+</blockquote>
+
+
+<br /><blockquote>For DSO Models (Other then X1000 and X1200 series oscilloscopes)
+<br /><blockquote>&#8226; Channel&lt;n&gt;, where n: 1 to the number of available analog channels.
+<br />&#8226; Function&lt;m&gt;, where m: 1 to the number of available math functions. 
+<br />&#8226; Math&lt;m&gt;, where m: 1 to the number of available math functions. 
+<br />&#8226; Wmemory&lt;r&gt;, where r: 1 to the number of available reference waveforms.
+<br />&#8226; Sbus &#123; 1 &#124; 2 &#125;. Only SBus1 is allowed for X2000 series oscillocopes.
+<br />&#8226; FFT, only allowed in T3000, M9240X and P9240X seies oscilloscopes.
+</blockquote>
+</blockquote>
+
+<br /><blockquote> For MSO Models (Other then X1000 and X1200 series oscilloscopes)
+<br /><blockquote>&#8226; Channel&lt;n&gt;, where n: 1 to the number of available analog channels.
+<br />&#8226; Function&lt;m&gt;, where m: 1 to the number of available math functions. 
+<br />&#8226; Math&lt;m&gt;, where m: 1 to the number of available math functions. 
+<br />&#8226; Wmemory&lt;r&gt;, where r: 1 to the number of available reference waveforms.
+<br />&#8226; POD &#123; 1 &#124; 2 &#125;
+<br />&#8226; Sbus &#123; 1 &#124; 2 &#125;. Only SBus1 is allowed for  X2000 series oscillocopes.
+<br />&#8226; Bus &#123; 1 &#124; 2 &#125;
+<br />&#8226; FFT, only allowed in T3000, M9240X and P9240X seies oscilloscopes.
+</blockquote>
+</blockquote>
+<br />&#8226; External as a source is only available in 2 channel oscilloscopes only.
+<br />&#8226; Math&#60;m&#62; is an alias for Function&#60;m&#62; So function is alwways returned when either one is selected as a source.
+<br />&#8226; Function capabilities include add, subtract, multiply, integrate, differentiate, and FFT (Fast Fourier Transform) operations.
+<br />&#8226; When Sbus1 or Sbus2 is selected as source, ASCii is the only waveform format allowed. A string with timestamps and associated bus decode information is returned.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveform.sub_source">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sub_source</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.sub_source" title="Link to this definition">¶</a></dt>
+<dd><p>Selects the sub-source for those sources that have more than one possibility.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.WaveformSubSource.html#keysight_ktinfiniivision.WaveformSubSource" title="keysight_ktinfiniivision.WaveformSubSource">WaveformSubSource</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li>If the WaveformSource is serial decode, more than one data set
+may be available, and this property lets you choose from the available data sets.</li>
+<li>When using UART serial decode, this option lets you get "TX" data. (TX is an alias
+for SUB1.) The default, SUB0, specifies "RX" data. (RX is an alias for SUB0.)</li>
+<li>When using SPI serial decode, this option lets you get "MISO" data. (MISO is an
+alias for SUB1.) The default, SUB0, specifies "MOSI" data. (MOSI is an alias for
+SUB0.)</li>
+<li>When using SENT serial decode, this option lets you get "SLOW" data. (SLOW is
+an alias for SUB1.) The default, SUB0, specifies "FAST" data. (FAST is an alias for
+SUB0.) Only allowed in X4000, P9240X, M9240X and X6000 series oscilloscopes.</li>
+<li>If the<a href="keysight_ktinfiniivision.SerialBusMode.html">SerialBusMode</a> is not UART, SPI,
+or SENT, the only valid subsource is SUB0.</li></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveform.type">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">type</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.type" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the acquisition mode associated with the currently selected waveform.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.WaveformType.html#keysight_ktinfiniivision.WaveformType" title="keysight_ktinfiniivision.WaveformType">WaveformType</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">When the WaveformSource is POD1, POD2 or SBUS1, SBUS2, the type is Normal.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveform.unsigned_mode_enabled">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">unsigned_mode_enabled</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.unsigned_mode_enabled" title="Link to this definition">¶</a></dt>
+<dd><p>Enables/Disables unsigned mode of data values which sends integers as unsigned or signed.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)">bool</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; This porperty can be used to match the instrument's internal data type to the data type used by the programming language. 
+<br />&#8226; Thisproperty has no effect if the data format is ASCii.
+<br />&#8226; If the WaveformSource is set to any of POD1, POD2, BUS1, BUS2 then his property must be enabled.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveform.view">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">view</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.view" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the wiew setting associated with the currently selected waveform.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">The only legal value for the view setting is "Main".</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveform.x_increment">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">x_increment</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.x_increment" title="Link to this definition">¶</a></dt>
+<dd><p>Read Only - X-increment value for the currently specified source.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">This value is the time difference between consecutive data points in seconds.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveform.x_origin">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">x_origin</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.x_origin" title="Link to this definition">¶</a></dt>
+<dd><p>Read Only - Returns the returns the x-origin value for the currently specified source.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">This value is first data point (XReference = 0) specified by WaveformXReference.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveform.x_reference">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">x_reference</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.x_reference" title="Link to this definition">¶</a></dt>
+<dd><p>Read Only - X-reference value for the currently specified source.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; This value specifies the index of the data point associated with the x-origin data value.
+<br />&#8226; The x-reference point is the first point displayed and is always 0.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveform.y_increment">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">y_increment</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.y_increment" title="Link to this definition">¶</a></dt>
+<dd><p>Read Only - Returns the y-increment value in volts for the currently specified source.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; This value is voltage difference between consecutive data values. 
+<br />&#8226; For digital waveforms it is always "1".</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveform.y_origin">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">y_origin</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.y_origin" title="Link to this definition">¶</a></dt>
+<dd><p>Read Only - Y-origin value for the currently specified source.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">This value is the voltage at center screen specified <a href="B701FC76_4C15_4B9F_913C_D362C7F2B6B7.html">w    WaveformYReference.</a></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveform.y_reference">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">y_reference</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.y_reference" title="Link to this definition">¶</a></dt>
+<dd><p>Read Only - Y-reference value for the currently specified source.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; This value specifies the data point value where the y-origin occurs. 
+<br />&#8226; The data point is value of the center of the screen. It is undefined if the format is ASCII.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">KtInfiniiVisionWaveform</a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveform</span></code></a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.byte_order"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveform.byte_order</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.data_format"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveform.data_format</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.data_points"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveform.data_points</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.get_data"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveform.get_data()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.get_x_values"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveform.get_x_values()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.memory_segment_count"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveform.memory_segment_count</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.point_count"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveform.point_count</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.point_mode"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveform.point_mode</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.preamble"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveform.preamble()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.segment_data_enabled"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveform.segment_data_enabled</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.source"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveform.source</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.sub_source"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveform.sub_source</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.type"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveform.type</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.unsigned_mode_enabled"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveform.unsigned_mode_enabled</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.view"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveform.view</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.x_increment"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveform.x_increment</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.x_origin"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveform.x_origin</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.x_reference"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveform.x_reference</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.y_increment"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveform.y_increment</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.y_origin"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveform.y_origin</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveform.y_reference"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveform.y_reference</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenTracking.html"
+                          title="previous chapter">KtInfiniiVisionWaveGenTracking</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="enumerations.html"
+                          title="next chapter">Enumerations</a></p>
+  </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="enumerations.html" title="Enumerations"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenTracking.html" title="KtInfiniiVisionWaveGenTracking"
+             >previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionWaveform</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Keysight Technologies.  v1.0.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

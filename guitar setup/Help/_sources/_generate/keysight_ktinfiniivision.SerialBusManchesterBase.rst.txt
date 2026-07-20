@@ -1,0 +1,14 @@
+
+SerialBusManchesterBase
+========================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusManchesterBase
+    :members:
+    :exclude-members: name
+
+
+
+

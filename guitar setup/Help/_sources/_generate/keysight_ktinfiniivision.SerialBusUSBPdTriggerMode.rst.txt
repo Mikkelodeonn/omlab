@@ -1,0 +1,14 @@
+
+SerialBusUSBPdTriggerMode
+==========================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusUSBPdTriggerMode
+    :members:
+    :exclude-members: name
+
+
+
+

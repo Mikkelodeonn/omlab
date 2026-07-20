@@ -1,0 +1,14 @@
+
+MathBusYUnits
+==============
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: MathBusYUnits
+    :members:
+    :exclude-members: name
+
+
+
+

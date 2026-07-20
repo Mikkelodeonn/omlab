@@ -1,0 +1,14 @@
+
+TimebaseMode
+=============
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: TimebaseMode
+    :members:
+    :exclude-members: name
+
+
+
+

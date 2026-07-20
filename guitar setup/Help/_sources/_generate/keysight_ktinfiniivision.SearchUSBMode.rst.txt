@@ -1,0 +1,14 @@
+
+SearchUSBMode
+==============
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SearchUSBMode
+    :members:
+    :exclude-members: name
+
+
+
+

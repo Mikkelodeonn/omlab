@@ -1,0 +1,14 @@
+
+TriggerNFCEvent
+================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: TriggerNFCEvent
+    :members:
+    :exclude-members: name
+
+
+
+

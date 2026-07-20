@@ -1,0 +1,14 @@
+
+TriggerModifier
+================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: TriggerModifier
+    :members:
+    :exclude-members: name
+
+
+
+

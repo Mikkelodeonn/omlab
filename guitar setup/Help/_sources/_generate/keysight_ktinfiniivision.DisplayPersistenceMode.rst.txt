@@ -1,0 +1,14 @@
+
+DisplayPersistenceMode
+=======================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: DisplayPersistenceMode
+    :members:
+    :exclude-members: name
+
+
+
+

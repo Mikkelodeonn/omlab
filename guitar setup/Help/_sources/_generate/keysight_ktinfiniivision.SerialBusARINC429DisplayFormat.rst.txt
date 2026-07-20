@@ -1,0 +1,14 @@
+
+SerialBusARINC429DisplayFormat
+===============================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusARINC429DisplayFormat
+    :members:
+    :exclude-members: name
+
+
+
+

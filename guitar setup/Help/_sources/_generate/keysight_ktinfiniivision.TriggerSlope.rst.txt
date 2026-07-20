@@ -1,0 +1,14 @@
+
+TriggerSlope
+=============
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: TriggerSlope
+    :members:
+    :exclude-members: name
+
+
+
+

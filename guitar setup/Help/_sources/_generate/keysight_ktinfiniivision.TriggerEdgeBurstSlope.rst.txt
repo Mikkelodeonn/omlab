@@ -1,0 +1,14 @@
+
+TriggerEdgeBurstSlope
+======================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: TriggerEdgeBurstSlope
+    :members:
+    :exclude-members: name
+
+
+
+

@@ -1,0 +1,14 @@
+
+SerialBusUSBCondition
+======================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusUSBCondition
+    :members:
+    :exclude-members: name
+
+
+
+

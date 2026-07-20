@@ -1,0 +1,1816 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>KtInfiniiVisionMeasurementCollection &#8212; KtInfiniiVision 1.0.0 Documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinxdoc.css?v=d59dc883" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <script src="../_static/documentation_options.js?v=8d563738"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="KtInfiniiVisionMeasurement" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurement.html" />
+    <link rel="prev" title="KtInfiniiVisionMathFunctionSmoothing" href="keysight_ktinfiniivision.KtInfiniiVisionMathFunctionSmoothing.html" /> 
+  </head><body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<table width="100%" cellpadding="0" cellspacing="0"><tr>
+        <td valign="top"><a href="../index.html"><h1 style="font-size: 2em;">KtInfiniiVision Driver Python API</h1></a></td>
+        <td align="right"><a href="https://www.keysight.com" target="_blank"><img src="../_static\keysight.gif" alt="keysight.gif"></a></td>
+</tr></table>
+</div>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionMeasurement.html" title="KtInfiniiVisionMeasurement"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionMathFunctionSmoothing.html" title="KtInfiniiVisionMathFunctionSmoothing"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" accesskey="U">KtInfiniiVision</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionMeasurementCollection</a></li> 
+      </ul>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="ktinfiniivisionmeasurementcollection">
+<h1>KtInfiniiVisionMeasurementCollection<a class="headerlink" href="#ktinfiniivisionmeasurementcollection" title="Link to this heading">¶</a></h1>
+<blockquote>
+<div><div class="line-block">
+<div class="line">Access interface members using: <code class="docutils literal notranslate"><span class="pre">driver.measurements</span></code></div>
+<div class="line">Where <code class="docutils literal notranslate"><span class="pre">driver</span></code> is a reference to the driver’s root interface returned by the <a class="reference internal" href="../programming.html#creating-a-driver-instance"><span class="std std-ref">constructor</span></a>.</div>
+</div>
+</div></blockquote>
+<dl class="py class">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">KtInfiniiVisionMeasurementCollection</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection" title="Link to this definition">¶</a></dt>
+<dd><p>Collection interface for the Measurementrepeated capability.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>KtInfiniiVisionMeasurementCollection is a Repeated Capability Collection class, refer to <a class="reference internal" href="../programming.html#repeated-capability-collections"><span class="std std-ref">Repeated Capability Collections</span></a> for instance access operations.
+<strong>Instance Names:</strong> <a class="reference internal" href="../programming.html#dynamic-instance-names"><span class="std std-ref">Dynamic Instance Names</span></a></p>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.abort">
+<span class="sig-name descname"><span class="pre">abort</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.abort" title="Link to this definition">¶</a></dt>
+<dd><p>Aborts an acquisition and returns the oscilloscope to the Idle state.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.auto_acquisition">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">auto_acquisition</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.auto_acquisition" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the autoscale acquire mode.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.AutoAcquisitionMode.html#keysight_ktinfiniivision.AutoAcquisitionMode" title="keysight_ktinfiniivision.AutoAcquisitionMode">AutoAcquisitionMode</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li>When Normal is selected, the MeasurementAutoSetup sets the Normal acquisition type and the RTime (real-time) acquisition mode.</li>
+<li>When Current is selected, the current acquisition type and mode are kept on subsequent MeasurementAutoSetup.</li></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.auto_scale_channels">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">auto_scale_channels</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.auto_scale_channels" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the autoscale channels.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.AutoScaleChannelsMode.html#keysight_ktinfiniivision.AutoScaleChannelsMode" title="keysight_ktinfiniivision.AutoScaleChannelsMode">AutoScaleChannelsMode</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li>When All is selected, all channels that meet the requirements of  MeasurementAutoSetup will be displayed.</li>
+<li>When Displayed is selected, only the channels that are turned on are autoscaled.</li></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.auto_scale_fast_debug_enabled">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">auto_scale_fast_debug_enabled</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.auto_scale_fast_debug_enabled" title="Link to this definition">¶</a></dt>
+<dd><p>Enables or disables the current autoscale fast debug.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)">bool</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li>The Fast Debug option changes the behavior of MeasurementAutoSetup to let user make quick visual comparisons to determine whether the signal being probed is a DC voltage, ground, or an active AC signal.</li>
+<li>Channel coupling is maintained for easy viewing of oscillating signals.</li></dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.auto_setup">
+<span class="sig-name descname"><span class="pre">auto_setup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.auto_setup" title="Link to this definition">¶</a></dt>
+<dd><p>Automatically configures all the oscilloscopes settings based on the input signals.</p>
+<dl class="field-list">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+<dt class="field-even">Remarks<span class="colon">:</span></dt>
+<dd class="field-even">Evaluates all input signals and sets the correct conditions to display the signals.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.clear">
+<span class="sig-name descname"><span class="pre">clear</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.clear" title="Link to this definition">¶</a></dt>
+<dd><p>Clears all selected measurements and markers from the screen</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.configuration">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">configuration</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.configuration" title="Link to this definition">¶</a></dt>
+<dd><p>Reference to the <a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration" title="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionConfiguration</span></code></a> interface.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Readonly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration" title="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration">KtInfiniiVisionMeasurementCollectionConfiguration</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.count">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">count</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.count" title="Link to this definition">¶</a></dt>
+<dd><p>The number of repeated capability instances.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.dual">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dual</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.dual" title="Link to this definition">¶</a></dt>
+<dd><p>Reference to the <a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionDual.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionDual" title="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionDual"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionDual</span></code></a> interface.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Readonly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionDual.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionDual" title="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionDual">KtInfiniiVisionMeasurementCollectionDual</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.eye_height">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">eye_height</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.eye_height" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the vertical opening of an eye diagram. The opening at the center time reference is reported.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.eye_width">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">eye_width</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.eye_width" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the horizontal opening of an eye diagram. The largest opening within the crossings is returned.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.fft">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">fft</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.fft" title="Link to this definition">¶</a></dt>
+<dd><p>Reference to the <a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionFFT.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionFFT" title="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionFFT"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionFFT</span></code></a> interface.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Readonly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionFFT.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionFFT" title="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionFFT">KtInfiniiVisionMeasurementCollectionFFT</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.get_area_measurement">
+<span class="sig-name descname"><span class="pre">get_area_measurement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.get_area_measurement" title="Link to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic">
+<li><p>get_area_measurement(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, interval: keysight_ktinfiniivision.keysight_ktinfiniivision.MeasurementIntervalType, source: str) -&gt; float</p>
+<blockquote>
+<div><p>It measures and returns the area value</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>interval (MeasurementIntervalType) - Measurement interval</p></li>
+<li><p>source (str) - Source</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The area value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p>get_area_measurement(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, interval: keysight_ktinfiniivision.keysight_ktinfiniivision.MeasurementIntervalType) -&gt; float</p>
+<blockquote>
+<div><p>It measures and returns the area value</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>interval (MeasurementIntervalType) - Measurement interval</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The area value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p>get_area_measurement(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection) -&gt; float</p>
+<blockquote>
+<div><p>It measures and returns the area value</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The area value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+</ol>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.get_average_measurement">
+<span class="sig-name descname"><span class="pre">get_average_measurement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.get_average_measurement" title="Link to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic">
+<li><p>get_average_measurement(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, interval: keysight_ktinfiniivision.keysight_ktinfiniivision.MeasurementIntervalType, source: str) -&gt; float</p>
+<blockquote>
+<div><p>Returns the average value of an integral number of periods of the signal</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>interval (MeasurementIntervalType) - Measurement interval</p></li>
+<li><p>source (str) - Source</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Average value of an integral number of periods of the signal</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p>get_average_measurement(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, interval: keysight_ktinfiniivision.keysight_ktinfiniivision.MeasurementIntervalType) -&gt; float</p>
+<blockquote>
+<div><p>Returns the average value of an integral number of periods of the signal</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>interval (MeasurementIntervalType) - Measurement interval</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Average value of an integral number of periods of the signal</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p>get_average_measurement(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection) -&gt; float</p>
+<blockquote>
+<div><p>Returns the average value of an integral number of periods of the signal</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Average value of an integral number of periods of the signal</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+</ol>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.get_delay_measurement">
+<span class="sig-name descname"><span class="pre">get_delay_measurement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.get_delay_measurement" title="Link to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic">
+<li><p>get_delay_measurement(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, source1: str, source2: str) -&gt; float</p>
+<blockquote>
+<div><p>It measures and returns the delay between source1 and source2</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>source1 (str) - Source 1</p></li>
+<li><p>source2 (str) - Source 2</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Delay</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p>get_delay_measurement(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, source: str) -&gt; float</p>
+<blockquote>
+<div><p>It measures and returns the delay between source</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>source (str) - Source 1</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Delay</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p>get_delay_measurement(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection) -&gt; float</p>
+<blockquote>
+<div><p>It measures and returns the delay</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Delay</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+</ol>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.get_phase_measurement">
+<span class="sig-name descname"><span class="pre">get_phase_measurement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.get_phase_measurement" title="Link to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic">
+<li><p>get_phase_measurement(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, source1: str, source2: str) -&gt; float</p>
+<blockquote>
+<div><p>Measures and returns the phase between the specified sources</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>source1 (str) - Source 1</p></li>
+<li><p>source2 (str) - Source 1</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Phase angle value in degrees</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p>get_phase_measurement(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, source: str) -&gt; float</p>
+<blockquote>
+<div><p>Measures and returns the phase between the specified sources</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>source (str) - Source 1</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Phase angle value in degrees</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p>get_phase_measurement(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection) -&gt; float</p>
+<blockquote>
+<div><p>Measures and returns the phase between the specified sources</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Phase angle value in degrees</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+</ol>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.get_ratio">
+<span class="sig-name descname"><span class="pre">get_ratio</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.get_ratio" title="Link to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic">
+<li><p>get_ratio(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, interval_type: keysight_ktinfiniivision.keysight_ktinfiniivision.MeasurementIntervalType, source1: str, source2: str) -&gt; float</p>
+<blockquote>
+<div><p>Returns the ratio of ACRMS values of the specified sources expressed as dB.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>interval_type (MeasurementIntervalType) - Specifies the type of measurement interval.</p></li>
+<li><p>source1 (str) - Specifies the value of source1 for the ratio measurement.</p></li>
+<li><p>source2 (str) - Specifies the value of source2 for the ratio measurement.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Ratio value in dB.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">remarks<span class="colon">:</span></dt>
+<dd class="field-even">&#8226; Ratio measurements show the ratio of the ACRMS value of source1 to that of source2, expressed in dB.
+<br />&#8226; The parameter &#60;source&#62; can be specified in one of the following string formats:
+<br /><blockquote>&#8226; Channel&lt;n&gt;, where n: 1 to the number of available analog channels.
+<br />&#8226; Function&lt;m&gt;, where m: 1 to the number of available math functions.
+<br />&#8226; Math&lt;m&gt;, where m: 1 to the number of available math functions.
+<br />&#8226; Wmemory&lt;r&gt;, where r: 1 to the number of available reference waveforms.</blockquote>
+<br />&#8226; The method is not available, if the "FFT" is chosen as &#60;source&#62;.
+<br />&#8226; The &#60;interval&#62; option lets you specify the measurement interval: either an integral number of cycles, or the full screen. 
+<br />&#8226; If &#60;interval&#62; is not specified, then "Display" is chosen as interval type.</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p>get_ratio(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection) -&gt; float</p>
+<blockquote>
+<div><p>Returns the ratio of ACRMS values of the specified sources expressed as dB.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Ratio value in dB.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">remarks<span class="colon">:</span></dt>
+<dd class="field-even">Ratio measurements show the ratio of the ACRMS value of source1 to that of source2, expressed in dB.</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p>get_ratio(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, interval_type: keysight_ktinfiniivision.keysight_ktinfiniivision.MeasurementIntervalType, source1: str) -&gt; float</p>
+<blockquote>
+<div><p>Returns the ratio of ACRMS values of the specified sources expressed as dB.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>interval_type (MeasurementIntervalType) - Specifies the type of measurement interval.</p></li>
+<li><p>source1 (str) - Specifies the value of source1 for the ratio measurement.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Ratio value in dB.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">remarks<span class="colon">:</span></dt>
+<dd class="field-even">&#8226; Ratio measurements show the ratio of the ACRMS value of source1 to that of source2, expressed in dB.
+<br />&#8226; The parameter &#60;source&#62; can be specified in one of the following string formats:
+<br /><blockquote>&#8226; Channel&lt;n&gt;, where n: 1 to the number of available analog channels.
+<br />&#8226; Function&lt;m&gt;, where m: 1 to the number of available math functions.
+<br />&#8226; Math&lt;m&gt;, where m: 1 to the number of available math functions.
+<br />&#8226; Wmemory&lt;r&gt;, where r: 1 to the number of available reference waveforms.</blockquote>
+<br />&#8226; The method is not available, if the "FFT" is chosen as &#60;source&#62;.
+<br />&#8226; The &#60;interval&#62; option lets you specify the measurement interval: either an integral number of cycles, or the full screen. 
+<br />&#8226; If &#60;interval&#62; is not specified, then "Display" is chosen as interval type.</dd>
+</dl>
+</div></blockquote>
+</li>
+</ol>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.get_slew_rate">
+<span class="sig-name descname"><span class="pre">get_slew_rate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.get_slew_rate" title="Link to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic">
+<li><p>get_slew_rate(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, source: str, slope: keysight_ktinfiniivision.keysight_ktinfiniivision.MeasurementEdgeSlope) -&gt; float</p>
+<blockquote>
+<div><p>Returns the measured slew rate of the specified edge closest to the timebase reference.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>source (str) - Specifies the source for the slew rate meausurement.</p></li>
+<li><p>slope (MeasurementEdgeSlope) - Specifies the type of edge be measured for slew rate measurement.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Slew rate in vertical units/second.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">remarks<span class="colon">:</span></dt>
+<dd class="field-even">&#8226; The slew rate of an edge is the change in vertical value between the lower and upper thresholds of a waveform source (typically volts) divided by the change in time between where the waveform threshold crossings take place.
+<br />&#8226; The lower and upper thresholds for the measurement are specified by the measurement threshold settings for the source waveform.
+<br />&#8226; If the &#60;source&#62; parameter is not specified, then current MeasurementsSetSource setting is used.
+<br />&#8226; The method is not available when "FFT" is selected as a source.
+<br />&#8226; The on-screen edge closest to the timebase reference is measured.
+<br />&#8226; You can specify that a Rising edge be measured, a Falling edge be measured, or either a rising or a falling edge be measured (Either). If the &#60;slope&#62;is not specified, a rising edge is measured.</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p>get_slew_rate(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, source: str) -&gt; float</p>
+<blockquote>
+<div><p>Returns the measured slew rate of the specified edge closest to the timebase reference.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>source (str) - Specifies the source for the slew rate meausurement.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Slew rate in vertical units/second.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">remarks<span class="colon">:</span></dt>
+<dd class="field-even">&#8226; The slew rate of an edge is the change in vertical value between the lower and upper thresholds of a waveform source (typically volts) divided by the change in time between where the waveform threshold crossings take place.
+<br />&#8226; The lower and upper thresholds for the measurement are specified by the measurement threshold settings for the source waveform.
+<br />&#8226; If the &#60;source&#62; parameter is not specified, then current MeasurementsSetSource setting is used.
+<br />&#8226; The method is not available when "FFT" is selected as a source.
+<br />&#8226; The on-screen edge closest to the timebase reference is measured.</dd>
+</dl>
+</div></blockquote>
+</li>
+</ol>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.get_t_value_measurement">
+<span class="sig-name descname"><span class="pre">get_t_value_measurement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.get_t_value_measurement" title="Link to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic">
+<li><p>get_t_value_measurement(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, verticle_value: float, occurrence: int, source: str) -&gt; float</p>
+<blockquote>
+<div><p>Return time interval between the trigger event</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>verticle_value (float) - the vertical value that the waveform must cross</p></li>
+<li><p>occurrence (int) - the transition to be reported</p></li>
+<li><p>source (str) - Source</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Time in seconds of the specified value crossing</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p>get_t_value_measurement(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, verticle_value: float, occurrence: int) -&gt; float</p>
+<blockquote>
+<div><p>Return time interval between the trigger event</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>verticle_value (float) - the vertical value that the waveform must cross</p></li>
+<li><p>occurrence (int) - the transition to be reported</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Time in seconds of the specified value crossing</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+</ol>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.get_time_of_edge_measurement">
+<span class="sig-name descname"><span class="pre">get_time_of_edge_measurement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.get_time_of_edge_measurement" title="Link to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic">
+<li><p>get_time_of_edge_measurement(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, occurrence: int) -&gt; float</p>
+<blockquote>
+<div><p>Return time  of the specified transition</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>occurrence (int) - the transition to be reported</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>time in seconds of the specified transition</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p>get_time_of_edge_measurement(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, source: str, occurrence: int) -&gt; float</p>
+<blockquote>
+<div><p>Return time  of the specified transition</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>source (str) - Source</p></li>
+<li><p>occurrence (int) - the transition to be reported</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>time in seconds of the specified transition</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+</ol>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.get_v_time_measurement">
+<span class="sig-name descname"><span class="pre">get_v_time_measurement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.get_v_time_measurement" title="Link to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic">
+<li><p>get_v_time_measurement(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, vtime: datetime.timedelta, source: str) -&gt; float</p>
+<blockquote>
+<div><p>Returns the vertical value at a specified horizontal value on the source specified</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>vtime (datetime.timedelta) - Time from trigger in seconds</p></li>
+<li><p>source (str) - Source</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>vertical value at the specified horizontal location</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p>get_v_time_measurement(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, vtime: datetime.timedelta) -&gt; float</p>
+<blockquote>
+<div><p>Returns the vertical value at a specified horizontal value on the source specified</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>vtime (datetime.timedelta) - Time from trigger in seconds</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>vertical value at the specified horizontal location</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+</ol>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.get_vrms_measurment">
+<span class="sig-name descname"><span class="pre">get_vrms_measurment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.get_vrms_measurment" title="Link to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic">
+<li><p>get_vrms_measurment(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, interval: keysight_ktinfiniivision.keysight_ktinfiniivision.MeasurementIntervalType, type: keysight_ktinfiniivision.keysight_ktinfiniivision.MeasurementType, source: str) -&gt; float</p>
+<blockquote>
+<div><p>Return the RMS measurement value</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>interval (MeasurementIntervalType) - Measurement interval</p></li>
+<li><p>type (MeasurementType) - DC RMS measurement or an AC RMS measurement</p></li>
+<li><p>source (str) - Source</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>RMS measurement valu</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p>get_vrms_measurment(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, interval: keysight_ktinfiniivision.keysight_ktinfiniivision.MeasurementIntervalType, type: keysight_ktinfiniivision.keysight_ktinfiniivision.MeasurementType) -&gt; float</p>
+<blockquote>
+<div><p>Return the RMS measurement value</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>interval (MeasurementIntervalType) - Measurement interval</p></li>
+<li><p>type (MeasurementType) - DC RMS measurement or an AC RMS measurement</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>RMS measurement valu</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p>get_vrms_measurment(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, interval: keysight_ktinfiniivision.keysight_ktinfiniivision.MeasurementIntervalType) -&gt; float</p>
+<blockquote>
+<div><p>Return the RMS measurement value</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>interval (MeasurementIntervalType) - Measurement interval</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>RMS measurement valu</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p>get_vrms_measurment(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection) -&gt; float</p>
+<blockquote>
+<div><p>Return the RMS measurement value</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>RMS measurement valu</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+</ol>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.get_waveform_measurment">
+<span class="sig-name descname"><span class="pre">get_waveform_measurment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.get_waveform_measurment" title="Link to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic">
+<li><p>get_waveform_measurment(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, type: keysight_ktinfiniivision.keysight_ktinfiniivision.WaveformMeasurementType, source: str) -&gt; float</p>
+<blockquote>
+<div><p>Initiates an acquisition on all enabled channels, waits (up to MaxTime) for the acquisition to complete, and returns the measurement for this channel. Call FetchWaveformMeasurement to obtain other measurements for this or other channels.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>type (WaveformMeasurementType) - Characteristic of the acquired waveform to be measured.</p></li>
+<li><p>source (str) - Source</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The measured value. The units depend on the measurement that the user specifies with the measFunction parameter.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p>get_waveform_measurment(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, type: keysight_ktinfiniivision.keysight_ktinfiniivision.WaveformMeasurementType) -&gt; float</p>
+<blockquote>
+<div><p>Initiates an acquisition on all enabled channels, waits (up to MaxTime) for the acquisition to complete, and returns the measurement for this channel. Call FetchWaveformMeasurement to obtain other measurements for this or other channels.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>type (WaveformMeasurementType) - Characteristic of the acquired waveform to be measured.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The measured value. The units depend on the measurement that the user specifies with the measFunction parameter.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+</ol>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.get_y">
+<span class="sig-name descname"><span class="pre">get_y</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">horizontal_location</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.timedelta" title="(in Python v3.13)"><span class="pre">datetime.timedelta</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">source</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.get_y" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the vertical value at a specified horizontal value on the source specified.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>horizontal_location</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.timedelta" title="(in Python v3.13)"><em>datetime.timedelta</em></a>) – Specifies the horizantal location i.e. the time from trigger in seconds for the vertical value measurement.</p></li>
+<li><p><strong>source</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><em>str</em></a>) – Specifies the source for the vertical value measurement at the specified horizontal location.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Vertical value at the specified horizontal location.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-even">Remarks<span class="colon">:</span></dt>
+<dd class="field-even">&#8226; The parameter &#60;horizontalLocation&#62; is the time from trigger in seconds.
+<br />&#8226; The parameter &#60;source&#62; can be specified in one of the following string formats:
+<br /><blockquote>&#8226; Channel&lt;n&gt;, where n: 1 to the number of available analog channels.
+<br />&#8226; Digital&lt;d&gt;, where d: 1 to the number of available digital channels - 1.
+<br />&#8226; Function&lt;m&gt;, where m: 1 to the number of available math functions.
+<br />&#8226; Math&lt;m&gt;, where m: 1 to the number of available math functions.
+<br />&#8226; Wmemory&lt;r&gt;, where r: 1 to the number of available reference waveforms.</blockquote>
+<br />&#8226; When the  &#60;source&#62; is "FFT" waveform, the &#60;horizontalLocation&#62; is a frequency value instead of a time value. 
+<br />&#8226; The specified horizontal value must be on the screen; when it is a time value, it is referenced to the trigger event.
+<br />&#8226; If the optional source parameter is specified, then measurement source is modified.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.initiate">
+<span class="sig-name descname"><span class="pre">initiate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.initiate" title="Link to this definition">¶</a></dt>
+<dd><p>Initiates a waveform acquisition. The oscilloscope leaves the Idle state and waits for a trigger. The oscilloscope acquires a waveform for each enabled channel.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.install">
+<span class="sig-name descname"><span class="pre">install</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">source</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.install" title="Link to this definition">¶</a></dt>
+<dd><p>This command installs 10 common measurements on an analog input channel source.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>source</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><em>str</em></a>) – :CHANnel&lt;n&gt;</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.install_eye_height">
+<span class="sig-name descname"><span class="pre">install_eye_height</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.install_eye_height" title="Link to this definition">¶</a></dt>
+<dd><p>Installs the real-time eye height measurement on screen.</p>
+<dl class="field-list">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+<dt class="field-even">Remarks<span class="colon">:</span></dt>
+<dd class="field-even">Because the measurement is made using the color grade database, it is the only valid source, and the MeasurementsSetSource is automatically set to CGRade.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.install_eye_width">
+<span class="sig-name descname"><span class="pre">install_eye_width</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.install_eye_width" title="Link to this definition">¶</a></dt>
+<dd><p>Installs the real-time eye width measurement on screen.</p>
+<dl class="field-list">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+<dt class="field-even">Remarks<span class="colon">:</span></dt>
+<dd class="field-even">Because the measurement is made using the color grade database, it is the only valid source, and the MeasurementsSetSource is automatically set to CGRade.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.install_screen_dump">
+<span class="sig-name descname"><span class="pre">install_screen_dump</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.install_screen_dump" title="Link to this definition">¶</a></dt>
+<dd><p>Installs a snapshot of all measurement on the screen.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.is_waveform_element_invalid">
+<span class="sig-name descname"><span class="pre">is_waveform_element_invalid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">element</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.is_waveform_element_invalid" title="Link to this definition">¶</a></dt>
+<dd><p>Returns False if an element in a waveform array returned by the driver contains a valid voltage. Returns True if an element in a waveform array returned by the driver contains a value indicating that the oscilloscope could not sample a voltage.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>element</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><em>float</em></a>) – Pass one of the values from the waveform array returned by the read and fetch waveform methods.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if an element in the waveform array is invalid.  False otherwise.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.set_area_measurement">
+<span class="sig-name descname"><span class="pre">set_area_measurement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.set_area_measurement" title="Link to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic">
+<li><p>set_area_measurement(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, interval: keysight_ktinfiniivision.keysight_ktinfiniivision.MeasurementIntervalType, source: str) -&gt; None</p>
+<blockquote>
+<div><p>It installs an area measurement on screen</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>interval (MeasurementIntervalType) - Measurement interval</p></li>
+<li><p>source (str) - Source</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p>set_area_measurement(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, interval: keysight_ktinfiniivision.keysight_ktinfiniivision.MeasurementIntervalType) -&gt; None</p>
+<blockquote>
+<div><p>It installs an area measurement on screen</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>interval (MeasurementIntervalType) - Measurement interval</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p>set_area_measurement(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection) -&gt; None</p>
+<blockquote>
+<div><p>It installs an area measurement on screen</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+</ol>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.set_average_measurement">
+<span class="sig-name descname"><span class="pre">set_average_measurement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.set_average_measurement" title="Link to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic">
+<li><p>set_average_measurement(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, interval: keysight_ktinfiniivision.keysight_ktinfiniivision.MeasurementIntervalType, source: str) -&gt; None</p>
+<blockquote>
+<div><p>It installs a screen measurement and starts an average value measurement.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>interval (MeasurementIntervalType) - Measurement interval</p></li>
+<li><p>source (str) - Source</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p>set_average_measurement(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, interval: keysight_ktinfiniivision.keysight_ktinfiniivision.MeasurementIntervalType) -&gt; None</p>
+<blockquote>
+<div><p>It installs a screen measurement and starts an average value measurement.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>interval (MeasurementIntervalType) - Measurement interval</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p>set_average_measurement(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection) -&gt; None</p>
+<blockquote>
+<div><p>It installs a screen measurement and starts an average value measurement.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+</ol>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.set_delay_measurement">
+<span class="sig-name descname"><span class="pre">set_delay_measurement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.set_delay_measurement" title="Link to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic">
+<li><p>set_delay_measurement(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, source1: str, source2: str) -&gt; None</p>
+<blockquote>
+<div><p>It places the instrument in the continuous measurement mode and starts a delay measurement</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>source1 (str) - source 1</p></li>
+<li><p>source2 (str) - source 2</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p>set_delay_measurement(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, source: str) -&gt; None</p>
+<blockquote>
+<div><p>It places the instrument in the continuous measurement mode and starts a delay measurement</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>source (str) - source</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p>set_delay_measurement(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection) -&gt; None</p>
+<blockquote>
+<div><p>It places the instrument in the continuous measurement mode and starts a delay measurement</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+</ol>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.set_phase_measurement">
+<span class="sig-name descname"><span class="pre">set_phase_measurement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.set_phase_measurement" title="Link to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic">
+<li><p>set_phase_measurement(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, source1: str, source2: str) -&gt; None</p>
+<blockquote>
+<div><p>Measures and returns the phase between the specified sources</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>source1 (str) - Measures and returns the phase between the specified sources</p></li>
+<li><p>source2 (str) - Measures and returns the phase between the specified sources</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p>set_phase_measurement(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, source1: str) -&gt; None</p>
+<blockquote>
+<div><p>Measures and returns the phase between the specified sources</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>source1 (str) - Source</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p>set_phase_measurement(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection) -&gt; None</p>
+<blockquote>
+<div><p>Measures and returns the phase between the specified sources</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+</ol>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.set_ratio">
+<span class="sig-name descname"><span class="pre">set_ratio</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.set_ratio" title="Link to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic">
+<li><p>set_ratio(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, interval_type: keysight_ktinfiniivision.keysight_ktinfiniivision.MeasurementIntervalType, source1: str, source2: str) -&gt; None</p>
+<blockquote>
+<div><p>Installs a ratio measurement on screen i.e. the ACRMS value of source1 to that of source2, expressed in dB.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>interval_type (MeasurementIntervalType) - Specifies the type of measurement interval.</p></li>
+<li><p>source1 (str) - Specifies the value of source1 for the ratio measurement.</p></li>
+<li><p>source2 (str) - Specifies the value of source2 for the ratio measurement.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; Ratio measurements show the ratio of the ACRMS value of source1 to that of source2, expressed in dB.
+<br />&#8226; The parameter &#60;source&#62; can be specified in one of the following string formats:
+<br /><blockquote>&#8226; Channel&lt;n&gt;, where n: 1 to the number of available analog channels.
+<br />&#8226; Function&lt;m&gt;, where m: 1 to the number of available math functions.
+<br />&#8226; Math&lt;m&gt;, where m: 1 to the number of available math functions.
+<br />&#8226; Wmemory&lt;r&gt;, where r: 1 to the number of available reference waveforms.</blockquote>
+<br />&#8226; The method is not available, if the "FFT" is chosen as &#60;source&#62;.
+<br />&#8226; The &#60;interval&#62; option lets you specify the measurement interval: either an integral number of cycles, or the full screen. 
+<br />&#8226; If &#60;interval&#62; is not specified, then "Display" is chosen as interval type.</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p>set_ratio(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection) -&gt; None</p>
+<blockquote>
+<div><p>Installs a ratio measurement on screen i.e. the ACRMS value of source1 to that of source2, expressed in dB.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">remarks<span class="colon">:</span></dt>
+<dd class="field-odd">Ratio measurements show the ratio of the ACRMS value of source1 to that of source2, expressed in dB.</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p>set_ratio(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, interval_type: keysight_ktinfiniivision.keysight_ktinfiniivision.MeasurementIntervalType, source1: str) -&gt; None</p>
+<blockquote>
+<div><p>Installs a ratio measurement on screen i.e. the ACRMS value of source1 to that of source2, expressed in dB.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>interval_type (MeasurementIntervalType) - Specifies the type of measurement interval.</p></li>
+<li><p>source1 (str) - Specifies the value of source1 for the ratio measurement.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; Ratio measurements show the ratio of the ACRMS value of source1 to that of source2, expressed in dB.
+<br />&#8226; The parameter &#60;source&#62; can be specified in one of the following string formats:
+<br /><blockquote>&#8226; Channel&lt;n&gt;, where n: 1 to the number of available analog channels.
+<br />&#8226; Function&lt;m&gt;, where m: 1 to the number of available math functions.
+<br />&#8226; Math&lt;m&gt;, where m: 1 to the number of available math functions.
+<br />&#8226; Wmemory&lt;r&gt;, where r: 1 to the number of available reference waveforms.</blockquote>
+<br />&#8226; The method is not available, if the "FFT" is chosen as &#60;source&#62;.
+<br />&#8226; The &#60;interval&#62; option lets you specify the measurement interval: either an integral number of cycles, or the full screen. 
+<br />&#8226; If &#60;interval&#62; is not specified, then "Display" is chosen as interval type.</dd>
+</dl>
+</div></blockquote>
+</li>
+</ol>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.set_slew_rate">
+<span class="sig-name descname"><span class="pre">set_slew_rate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.set_slew_rate" title="Link to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic">
+<li><p>set_slew_rate(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, source: str, slope: keysight_ktinfiniivision.keysight_ktinfiniivision.MeasurementEdgeSlope) -&gt; None</p>
+<blockquote>
+<div><p>Installs a slew rate measurement on the oscilloscope’s front-panel screen.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>source (str) - Specifies the source for the slew rate meausurement.</p></li>
+<li><p>slope (MeasurementEdgeSlope) - Specifies the type of edge be measured for slew rate measurement.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; The slew rate of an edge is the change in vertical value between the lower and upper thresholds of a waveform source (typically volts) divided by the change in time between where the waveform threshold crossings take place.
+<br />&#8226; The lower and upper thresholds for the measurement are specified by the measurement threshold settings for the source waveform.
+<br />&#8226; If the &#60;source&#62; parameter is not specified, then current MeasurementsSetSource setting is used.
+<br />&#8226; The method is not available when "FFT" is selected as a source.
+<br />&#8226; The on-screen edge closest to the timebase reference is measured.
+<br />&#8226; You can specify that a Rising edge be measured, a FALLing edge be measured, or either a rising or a falling edge be measured (Either). If the &#60;slope&#62;is not specified, a rising edge is measured.</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p>set_slew_rate(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, source: str) -&gt; None</p>
+<blockquote>
+<div><p>Installs a slew rate measurement on the oscilloscope’s front-panel screen.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>source (str) - Specifies the source for the slew rate meausurement.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; The slew rate of an edge is the change in vertical value between the lower and upper thresholds of a waveform source (typically volts) divided by the change in time between where the waveform threshold crossings take place.
+<br />&#8226; The lower and upper thresholds for the measurement are specified by the measurement threshold settings for the source waveform.
+<br />&#8226; If the &#60;source&#62; parameter is not specified, then current MeasurementsSetSource setting is used.
+<br />&#8226; The method is not available when "FFT" is selected as a source.
+<br />&#8226; The on-screen edge closest to the timebase reference is measured.</dd>
+</dl>
+</div></blockquote>
+</li>
+</ol>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.set_source">
+<span class="sig-name descname"><span class="pre">set_source</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.set_source" title="Link to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic">
+<li><p>set_source(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, source1: str, source2: str) -&gt; None</p>
+<blockquote>
+<div><p>Sets the default sources for measurements.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>source1 (str) - Specifies the source1 for measurements.</p></li>
+<li><p>source2 (str) - Specifies the source2 for measurements.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; The specified sources are used as the sources for the Measurements, if the sources are not explicitly set.
+<br />&#8226; If a source is specified for any measurement, the current source is changed to this new value.
+<br />&#8226; The parameter &#60;source&#62; can be specified in one of the following string formats:
+<br /><blockquote>&#8226; Channel&lt;n&gt;, where n: 1 to the number of available analog channels.
+<br />&#8226; Digital&lt;d&gt;, where d: 1 to the number of available digital channels - 1. Allowed for Series X2000, X3000, T3000, x4000, x6000, M240X &#38; P40X models only.
+<br />&#8226; Function&lt;m&gt;, where m: 1 to the number of available math functions. For  X1000 &#38; X1200 family series model "Math" as a source is also valid.
+<br />&#8226; Math&lt;m&gt;, where m: 1 to the number of available math functions. For X1000 &#38; X1200 family series model "Function" as a source is also valid.
+<br />&#8226; Wmemory&lt;r&gt;, where r: 1 to the number of available reference waveforms.
+<br />&#8226; External: allowed for Series X1000, X1200, X2000 &#38; X3000 models only.</blockquote>
+<br />&#8226; Source2 applies only to Delay &#38; Phase measurements.
+<br />&#8226; MATH&#60;m&#62; is an alias for FUNCtion&#60;m&#62;.
+<br />&#8226; FUNCtion or MATH (without the "&#60;m&#62;" math function number) is an alias for FUNCtion2 or MATH2. 
+<br />&#8226; FUNC2 will be returned if the source is FUNCtion or MATH.</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p>set_source(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, source: str) -&gt; None</p>
+<blockquote>
+<div><p>Sets the default source for measurements.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>source (str) - Specifies the source for measurements.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; The specified sources are used as the sources for the Measurements, if the sources are not explicitly set.
+<br />&#8226; If a source is specified for any measurement, the current source is changed to this new value.
+<br />&#8226; The parameter &#60; source &#62;  can be specified in one of the following string formats:
+<br /><blockquote>&#8226; Channel&lt;n&gt;, where n: 1 to the number of available analog channels.
+<br />&#8226; Digital&lt;d&gt;, where d: 1 to the number of available digital channels - 1. Allowed for Series X2000, X3000, T3000, x4000, x6000, M240X &#38; P40X models only.
+<br />&#8226; Function&lt;m&gt;, where m: 1 to the number of available math functions. For  X1000 &#38; X1200 family series model "Math" as a source is also valid.
+<br />&#8226; Math&lt;m&gt;, where m: 1 to the number of available math functions. For X1000 &#38; X1200 family series model "Function" as a source is also valid.
+<br />&#8226; Wmemory&lt;r&gt;, where r: 1 to the number of available reference waveforms.
+<br />&#8226; External: allowed for Series X1000, X1200, X2000 &#38; X3000 models only.</blockquote>
+<br />&#8226; Math&#60;m&#62; is an alias for Function&#60;m&#62;.
+<br />&#8226; Function or Math (without the "&#60;m&#62;" math function number) is an alias for Function2 or Math2. 
+<br />&#8226; Func2 will be returned if the source is Function or Math.</dd>
+</dl>
+</div></blockquote>
+</li>
+</ol>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.set_time_of_edge_measurement">
+<span class="sig-name descname"><span class="pre">set_time_of_edge_measurement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.set_time_of_edge_measurement" title="Link to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic">
+<li><p>set_time_of_edge_measurement(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, occurrence: int) -&gt; None</p>
+<blockquote>
+<div><p>It installs a screen measurement whose result is the time of the specified edge transition relative to the trigger edge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>occurrence (int) - Occurance</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p>set_time_of_edge_measurement(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, slope: keysight_ktinfiniivision.keysight_ktinfiniivision.MeasurementEdgeSlope, occurrence: int, source: str) -&gt; None</p>
+<blockquote>
+<div><p>It installs a screen measurement whose result is the time of the specified edge transition relative to the trigger edge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>slope (MeasurementEdgeSlope) - RISing edges or FALLing edges</p></li>
+<li><p>occurrence (int) - Occurance</p></li>
+<li><p>source (str) - Specifies the source1 for measurements.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+</ol>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.set_vrms_measurment">
+<span class="sig-name descname"><span class="pre">set_vrms_measurment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.set_vrms_measurment" title="Link to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic">
+<li><p>set_vrms_measurment(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, interval: keysight_ktinfiniivision.keysight_ktinfiniivision.MeasurementIntervalType, type: keysight_ktinfiniivision.keysight_ktinfiniivision.MeasurementType, source: str) -&gt; None</p>
+<blockquote>
+<div><p>Installs a screen measurement and starts an RMS value measurement</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>interval (MeasurementIntervalType) - The measurement interval</p></li>
+<li><p>type (MeasurementType) - DC RMS measurement or an AC RMS measurement</p></li>
+<li><p>source (str) - Source</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p>set_vrms_measurment(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, interval: keysight_ktinfiniivision.keysight_ktinfiniivision.MeasurementIntervalType, type: keysight_ktinfiniivision.keysight_ktinfiniivision.MeasurementType) -&gt; None</p>
+<blockquote>
+<div><p>Installs a screen measurement and starts an RMS value measurement</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>interval (MeasurementIntervalType) - The measurement interval</p></li>
+<li><p>type (MeasurementType) - DC RMS measurement or an AC RMS measurement</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p>set_vrms_measurment(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, interval: keysight_ktinfiniivision.keysight_ktinfiniivision.MeasurementIntervalType) -&gt; None</p>
+<blockquote>
+<div><p>Installs a screen measurement and starts an RMS value measurement</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>interval (MeasurementIntervalType) - The measurement interval</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p>set_vrms_measurment(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection) -&gt; None</p>
+<blockquote>
+<div><p>Installs a screen measurement and starts an RMS value measurement</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+</ol>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.set_waveform_measurment">
+<span class="sig-name descname"><span class="pre">set_waveform_measurment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.set_waveform_measurment" title="Link to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic">
+<li><p>set_waveform_measurment(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, type: keysight_ktinfiniivision.keysight_ktinfiniivision.WaveformMeasurementType, source: str) -&gt; None</p>
+<blockquote>
+<div><p>Set Waveform Measurements</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>type (WaveformMeasurementType) - Characteristic of the acquired waveform to be measured.</p></li>
+<li><p>source (str) - Source</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p>set_waveform_measurment(self: keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection, type: keysight_ktinfiniivision.keysight_ktinfiniivision.WaveformMeasurementType) -&gt; None</p>
+<blockquote>
+<div><p>Set Waveform Measurements</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>type (WaveformMeasurementType) - Characteristic of the acquired waveform to be measured.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+</ol>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.set_y">
+<span class="sig-name descname"><span class="pre">set_y</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">horizontal_location</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.timedelta" title="(in Python v3.13)"><span class="pre">datetime.timedelta</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">source</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.set_y" title="Link to this definition">¶</a></dt>
+<dd><p>Installs a screen measurement of the vertical value at a specified horizontal value on the source specified.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>horizontal_location</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.timedelta" title="(in Python v3.13)"><em>datetime.timedelta</em></a>) – Specifies the horizantal location i.e. the time from trigger in seconds for the vertical value measurement.</p></li>
+<li><p><strong>source</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><em>str</em></a>) – Specifies the source for the vertical value measurement at the specified horizontal location.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; The parameter &#60;horizontalLocation&#62; is the time from trigger in seconds.
+<br />&#8226; The parameter &#60;source&#62; can be specified in one of the following string formats:
+<br /><blockquote>&#8226; Channel&lt;n&gt;, where n: 1 to the number of available analog channels.
+<br />&#8226; Digital&lt;d&gt;, where d: 1 to the number of available digital channels - 1.
+<br />&#8226; Function&lt;m&gt;, where m: 1 to the number of available math functions.
+<br />&#8226; Math&lt;m&gt;, where m: 1 to the number of available math functions.
+<br />&#8226; Wmemory&lt;r&gt;, where r: 1 to the number of available reference waveforms.</blockquote>
+<br />&#8226; When the  &#60;source&#62; is "FFT" waveform, the &#60;horizontalLocation&#62; is a frequency value instead of a time value. 
+<br />&#8226; The specified horizontal value must be on the screen; when it is a time value, it is referenced to the trigger event.
+<br />&#8226; If the optional source parameter is specified, then measurement source is modified.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.statistics">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">statistics</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.statistics" title="Link to this definition">¶</a></dt>
+<dd><p>Reference to the <a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics" title="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionStatistics</span></code></a> interface.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Readonly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics" title="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics">KtInfiniiVisionMeasurementCollectionStatistics</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.status">
+<span class="sig-name descname"><span class="pre">status</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="keysight_ktinfiniivision.AcquisitionStatus.html#keysight_ktinfiniivision.AcquisitionStatus" title="keysight_ktinfiniivision.keysight_ktinfiniivision.AcquisitionStatus"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.AcquisitionStatus</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.status" title="Link to this definition">¶</a></dt>
+<dd><p>Returns whether an acquisition is in progress, complete, or if the status is unknown.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The acquisition status.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.AcquisitionStatus.html#keysight_ktinfiniivision.AcquisitionStatus" title="keysight_ktinfiniivision.AcquisitionStatus">AcquisitionStatus</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<p><strong>Child Interfaces</strong></p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurement.html">KtInfiniiVisionMeasurement</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurement.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurement"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurement</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurement.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurement.configure_jitter_measurement"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurement.configure_jitter_measurement()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurement.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurement.fetch_jitter_measurement"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurement.fetch_jitter_measurement()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurement.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurement.fetch_waveform_measurement"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurement.fetch_waveform_measurement()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurement.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurement.name"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurement.name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurement.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurement.read_jitter_measurement"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurement.read_jitter_measurement()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurement.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurement.read_waveform_measurement"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurement.read_waveform_measurement()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.html">KtInfiniiVisionMeasurementCollectionConfiguration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionConfiguration</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.configure_delay"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionConfiguration.configure_delay()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.get_absolute_threshold"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionConfiguration.get_absolute_threshold()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.get_delay"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionConfiguration.get_delay()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.get_source"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionConfiguration.get_source()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.get_threshold"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionConfiguration.get_threshold()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.get_threshold_mode"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionConfiguration.get_threshold_mode()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.get_threshold_percent"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionConfiguration.get_threshold_percent()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.markers_enabled"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionConfiguration.markers_enabled</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.query_delay"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionConfiguration.query_delay()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.set_absolute_threshold"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionConfiguration.set_absolute_threshold()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.set_delay"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionConfiguration.set_delay()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.set_source"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionConfiguration.set_source()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.set_standard"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionConfiguration.set_standard()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.set_threshold"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionConfiguration.set_threshold()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.set_threshold_mode"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionConfiguration.set_threshold_mode()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.set_threshold_percent"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionConfiguration.set_threshold_percent()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.set_threshold_standard"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionConfiguration.set_threshold_standard()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.time_at_edge_occurrence"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionConfiguration.time_at_edge_occurrence</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.time_at_edge_slope"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionConfiguration.time_at_edge_slope</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.time_at_value_occurrence"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionConfiguration.time_at_value_occurrence</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.time_at_value_slope"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionConfiguration.time_at_value_slope</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.time_at_value_value"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionConfiguration.time_at_value_value</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.value_at_time_time"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionConfiguration.value_at_time_time</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionConfiguration.window"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionConfiguration.window</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionDual.html">KtInfiniiVisionMeasurementCollectionDual</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionDual.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionDual"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionDual</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionDual.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionDual.get_charge"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionDual.get_charge()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionDual.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionDual.get_data"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionDual.get_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionDual.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionDual.get_vamp"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionDual.get_vamp()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionDual.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionDual.get_vav"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionDual.get_vav()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionDual.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionDual.get_vbas"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionDual.get_vbas()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionDual.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionDual.get_vpp"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionDual.get_vpp()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionDual.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionDual.get_vrms"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionDual.get_vrms()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionDual.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionDual.set_charge"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionDual.set_charge()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionDual.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionDual.set_data"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionDual.set_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionDual.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionDual.set_vamp"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionDual.set_vamp()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionDual.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionDual.set_vav"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionDual.set_vav()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionDual.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionDual.set_vbas"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionDual.set_vbas()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionDual.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionDual.set_vpp"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionDual.set_vpp()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionDual.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionDual.set_vrms"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionDual.set_vrms()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionFFT.html">KtInfiniiVisionMeasurementCollectionFFT</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionFFT.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionFFT"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionFFT</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionFFT.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionFFT.get_bandwdith"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionFFT.get_bandwdith()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionFFT.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionFFT.get_channel_power"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionFFT.get_channel_power()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionFFT.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionFFT.get_harmonic_distortion"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionFFT.get_harmonic_distortion()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionFFT.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionFFT.get_power_ratio"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionFFT.get_power_ratio()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionFFT.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionFFT.harmonic_distortion_auto"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionFFT.harmonic_distortion_auto()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionFFT.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionFFT.set_bandwidth"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionFFT.set_bandwidth()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionFFT.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionFFT.set_channel_power"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionFFT.set_channel_power()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionFFT.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionFFT.set_harmonic_distortion"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionFFT.set_harmonic_distortion()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionFFT.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionFFT.set_power_ratio"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionFFT.set_power_ratio()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.html">KtInfiniiVisionMeasurementCollectionStatistics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionStatistics</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.count"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionStatistics.count</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.display_enabled"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionStatistics.display_enabled</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.format"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionStatistics.format</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.get_results"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionStatistics.get_results()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.increment"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionStatistics.increment()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.install_measurement"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionStatistics.install_measurement()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.install_power_measurement"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionStatistics.install_power_measurement()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.relative_std_dev_enabled"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionStatistics.relative_std_dev_enabled</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.html#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.reset"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionStatistics.reset()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">KtInfiniiVisionMeasurementCollection</a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection</span></code></a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.abort"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.abort()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.auto_acquisition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.auto_acquisition</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.auto_scale_channels"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.auto_scale_channels</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.auto_scale_fast_debug_enabled"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.auto_scale_fast_debug_enabled</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.auto_setup"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.auto_setup()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.clear"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.clear()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.configuration"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.configuration</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.count"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.count</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.dual"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.dual</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.eye_height"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.eye_height</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.eye_width"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.eye_width</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.fft"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.fft</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.get_area_measurement"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.get_area_measurement()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.get_average_measurement"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.get_average_measurement()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.get_delay_measurement"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.get_delay_measurement()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.get_phase_measurement"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.get_phase_measurement()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.get_ratio"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.get_ratio()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.get_slew_rate"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.get_slew_rate()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.get_t_value_measurement"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.get_t_value_measurement()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.get_time_of_edge_measurement"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.get_time_of_edge_measurement()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.get_v_time_measurement"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.get_v_time_measurement()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.get_vrms_measurment"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.get_vrms_measurment()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.get_waveform_measurment"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.get_waveform_measurment()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.get_y"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.get_y()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.initiate"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.initiate()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.install"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.install()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.install_eye_height"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.install_eye_height()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.install_eye_width"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.install_eye_width()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.install_screen_dump"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.install_screen_dump()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.is_waveform_element_invalid"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.is_waveform_element_invalid()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.set_area_measurement"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.set_area_measurement()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.set_average_measurement"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.set_average_measurement()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.set_delay_measurement"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.set_delay_measurement()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.set_phase_measurement"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.set_phase_measurement()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.set_ratio"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.set_ratio()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.set_slew_rate"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.set_slew_rate()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.set_source"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.set_source()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.set_time_of_edge_measurement"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.set_time_of_edge_measurement()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.set_vrms_measurment"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.set_vrms_measurment()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.set_waveform_measurment"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.set_waveform_measurment()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.set_y"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.set_y()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.statistics"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.statistics</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.status"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollection.status()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionMathFunctionSmoothing.html"
+                          title="previous chapter">KtInfiniiVisionMathFunctionSmoothing</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionMeasurement.html"
+                          title="next chapter">KtInfiniiVisionMeasurement</a></p>
+  </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionMeasurement.html" title="KtInfiniiVisionMeasurement"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionMathFunctionSmoothing.html" title="KtInfiniiVisionMathFunctionSmoothing"
+             >previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionMeasurementCollection</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Keysight Technologies.  v1.0.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

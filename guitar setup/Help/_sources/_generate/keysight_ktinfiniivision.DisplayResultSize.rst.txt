@@ -1,0 +1,14 @@
+
+DisplayResultSize
+==================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: DisplayResultSize
+    :members:
+    :exclude-members: name
+
+
+
+

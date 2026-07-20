@@ -1,0 +1,14 @@
+
+WaveformMeasurementType
+========================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: WaveformMeasurementType
+    :members:
+    :exclude-members: name
+
+
+
+

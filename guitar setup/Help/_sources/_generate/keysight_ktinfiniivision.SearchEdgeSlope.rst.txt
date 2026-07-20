@@ -1,0 +1,14 @@
+
+SearchEdgeSlope
+================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SearchEdgeSlope
+    :members:
+    :exclude-members: name
+
+
+
+

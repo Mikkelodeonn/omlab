@@ -1,0 +1,14 @@
+
+SerialBusDestination
+=====================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusDestination
+    :members:
+    :exclude-members: name
+
+
+
+

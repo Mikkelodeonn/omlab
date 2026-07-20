@@ -1,0 +1,14 @@
+
+SerialBusM1553TriggerType
+==========================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusM1553TriggerType
+    :members:
+    :exclude-members: name
+
+
+
+

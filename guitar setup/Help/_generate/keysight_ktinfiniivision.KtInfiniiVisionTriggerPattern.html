@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>KtInfiniiVisionTriggerPattern &#8212; KtInfiniiVision 1.0.0 Documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinxdoc.css?v=d59dc883" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <script src="../_static/documentation_options.js?v=8d563738"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="KtInfiniiVisionTriggerRandomHoldoff" href="keysight_ktinfiniivision.KtInfiniiVisionTriggerRandomHoldoff.html" />
+    <link rel="prev" title="KtInfiniiVisionTriggerPXI" href="keysight_ktinfiniivision.KtInfiniiVisionTriggerPXI.html" /> 
+  </head><body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<table width="100%" cellpadding="0" cellspacing="0"><tr>
+        <td valign="top"><a href="../index.html"><h1 style="font-size: 2em;">KtInfiniiVision Driver Python API</h1></a></td>
+        <td align="right"><a href="https://www.keysight.com" target="_blank"><img src="../_static\keysight.gif" alt="keysight.gif"></a></td>
+</tr></table>
+</div>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionTriggerRandomHoldoff.html" title="KtInfiniiVisionTriggerRandomHoldoff"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionTriggerPXI.html" title="KtInfiniiVisionTriggerPXI"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="keysight_ktinfiniivision.KtInfiniiVisionTrigger.html" accesskey="U">KtInfiniiVisionTrigger</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionTriggerPattern</a></li> 
+      </ul>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="ktinfiniivisiontriggerpattern">
+<h1>KtInfiniiVisionTriggerPattern<a class="headerlink" href="#ktinfiniivisiontriggerpattern" title="Link to this heading">¶</a></h1>
+<blockquote>
+<div><div class="line-block">
+<div class="line">Access interface members using: <code class="docutils literal notranslate"><span class="pre">driver.trigger.pattern</span></code></div>
+<div class="line">Where <code class="docutils literal notranslate"><span class="pre">driver</span></code> is a reference to the driver’s root interface returned by the <a class="reference internal" href="../programming.html#creating-a-driver-instance"><span class="std std-ref">constructor</span></a>.</div>
+</div>
+</div></blockquote>
+<dl class="py class">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">KtInfiniiVisionTriggerPattern</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern" title="Link to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern" title="keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionTriggerPattern</span></code></a> interface.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern.analog_pattern">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">analog_pattern</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern.analog_pattern" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the analog channel pattern. Only permissible character starting left side of the string will be accepted, rest of the string will be truncated.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">For example, if input string is  "01010101XXXXXXX" and the model has 4 analog channels only "01010" will be accepted.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern.condition">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">condition</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern.condition" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the pattern matching condition. This property specifies when the trigger event occurs with respect to the pattern, either trigger on entering the specified pattern or exiting the specified pattern.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.PatternMatchingMode.html#keysight_ktinfiniivision.PatternMatchingMode" title="keysight_ktinfiniivision.PatternMatchingMode">PatternMatchingMode</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; Enter: when the pattern is entered.
+<br />&#8226; Lessthan: when the pattern is present for less than a time value.
+<br />&#8226; GreaterThan: when the pattern is present for greater than a time value. Thetrigger occurs when the pattern exits (not when the Greaterthan time value is exceeded)
+<br />&#8226; Timeout: when the pattern is present for greater than a time value. In this case, the trigger occurs when the Greaterthan time value is exceeded (not when the pattern exits).
+<br />&#8226; InRange: when the pattern is present for a time within a range of values.
+<br />&#8226; OutRange: when the pattern is present for a time outside of range of values.
+<br />&#8226; Pattern durations are evaluated using a timer. The timer starts on the last edge that makes the pattern (logical AND) true. Except when the Timeout qualifier is selected, the trigger occurs on the first edge that makes the pattern false, provided the time qualifier criteria has been met.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern.configure">
+<span class="sig-name descname"><span class="pre">configure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">analog_pattern</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">digital_pattern</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">condition</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="keysight_ktinfiniivision.PatternMatchingMode.html#keysight_ktinfiniivision.PatternMatchingMode" title="keysight_ktinfiniivision.keysight_ktinfiniivision.PatternMatchingMode"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.PatternMatchingMode</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern.configure" title="Link to this definition">¶</a></dt>
+<dd><p>Configures the pattern trigger</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>analog_pattern</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><em>str</em></a>) – The analog channel pattern.</p></li>
+<li><p><strong>digital_pattern</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><em>str</em></a>) – The digital channel pattern. This parameter will only be taken into account when MSO is licensed.</p></li>
+<li><p><strong>condition</strong> (<a class="reference internal" href="keysight_ktinfiniivision.PatternMatchingMode.html#keysight_ktinfiniivision.PatternMatchingMode" title="keysight_ktinfiniivision.PatternMatchingMode"><em>PatternMatchingMode</em></a>) – The pattern matching condition.  This attribute specifies when the trigger event occurs with respect to the pattern, either trigger on entering the specified pattern or exiting the specified pattern.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern.digital_pattern">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">digital_pattern</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern.digital_pattern" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the digital channel pattern. Only permissible character starting left side of the string will be accepted, rest of the string will be truncated.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">For example, if input string is  "01010101XXXXXXX" and the model has 8 digital channels only "01010101" will be accepted.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern.get_range">
+<span class="sig-name descname"><span class="pre">get_range</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern.get_range" title="Link to this definition">¶</a></dt>
+<dd><p>Gets the duration time for the defined pattern.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><p>A tuple containing:</p>
+<ul class="simple">
+<li><p><strong>lessThanTime</strong> (float) : Less than time.</p></li>
+<li><p><strong>greaterThanTime</strong> (float) : Greater than time.</p></li>
+</ul>
+</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.13)">tuple</a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern.max_duration">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">max_duration</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern.max_duration" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the maximum duration for the defined pattern when pattern condition is set to Lessthan. The units are seconds.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">With the input value suitable suffix from &#123; s  &#124; ms  &#124; us &#124; ns &#124; ps &#125; can be selected.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern.min_duration">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">min_duration</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern.min_duration" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the minimum duration for the defined pattern when pattern condition is set to Greaterthan. The units are seconds.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; It can also specify the timeout value when the pattern condition is set to Timeout.
+<br />&#8226; With the input value suitable suffix from &#123; s  &#124; ms  &#124; us &#124; ns &#124; ps &#125; can be selected.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern.number_base">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">number_base</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern.number_base" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the number base for trigger patterns.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.TriggerPatternFormat.html#keysight_ktinfiniivision.TriggerPatternFormat" title="keysight_ktinfiniivision.TriggerPatternFormat">TriggerPatternFormat</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">The default base is ASCII.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern.set_range">
+<span class="sig-name descname"><span class="pre">set_range</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">less_than_time</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">greater_than_time</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern.set_range" title="Link to this definition">¶</a></dt>
+<dd><p>Sets the duration for the defined pattern when the pattern condition is set to INRange or OUTRange</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>less_than_time</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><em>float</em></a>) – Less than time. Permissible values are from 10 ns to 9.99 seconds.</p></li>
+<li><p><strong>greater_than_time</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><em>float</em></a>) – Greater than time.. Permissible values are from 15 ns to 10 seconds</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; User can enter the parameters in any order, the smaller value becomes the greater than time, and the larger value becomes the less than time.
+<br />&#8226; With the input value suitable suffix from &#123; s  &#124; ms  &#124; us &#124; ns &#124; ps &#125; can be selected.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">KtInfiniiVisionTriggerPattern</a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTriggerPattern</span></code></a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern.analog_pattern"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTriggerPattern.analog_pattern</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern.condition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTriggerPattern.condition</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern.configure"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTriggerPattern.configure()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern.digital_pattern"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTriggerPattern.digital_pattern</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern.get_range"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTriggerPattern.get_range()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern.max_duration"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTriggerPattern.max_duration</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern.min_duration"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTriggerPattern.min_duration</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern.number_base"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTriggerPattern.number_base</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern.set_range"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTriggerPattern.set_range()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionTriggerPXI.html"
+                          title="previous chapter">KtInfiniiVisionTriggerPXI</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionTriggerRandomHoldoff.html"
+                          title="next chapter">KtInfiniiVisionTriggerRandomHoldoff</a></p>
+  </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionTriggerRandomHoldoff.html" title="KtInfiniiVisionTriggerRandomHoldoff"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionTriggerPXI.html" title="KtInfiniiVisionTriggerPXI"
+             >previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="keysight_ktinfiniivision.KtInfiniiVisionTrigger.html" >KtInfiniiVisionTrigger</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionTriggerPattern</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Keysight Technologies.  v1.0.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+
+SearchSerialM1553Mode
+======================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SearchSerialM1553Mode
+    :members:
+    :exclude-members: name
+
+
+
+

@@ -1,0 +1,14 @@
+
+WaveformGeneratorDCMode
+========================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: WaveformGeneratorDCMode
+    :members:
+    :exclude-members: name
+
+
+
+

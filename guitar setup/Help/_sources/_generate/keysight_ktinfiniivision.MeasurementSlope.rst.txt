@@ -1,0 +1,14 @@
+
+MeasurementSlope
+=================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: MeasurementSlope
+    :members:
+    :exclude-members: name
+
+
+
+

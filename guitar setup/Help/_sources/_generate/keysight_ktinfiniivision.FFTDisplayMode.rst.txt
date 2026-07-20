@@ -1,0 +1,14 @@
+
+FFTDisplayMode
+===============
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: FFTDisplayMode
+    :members:
+    :exclude-members: name
+
+
+
+

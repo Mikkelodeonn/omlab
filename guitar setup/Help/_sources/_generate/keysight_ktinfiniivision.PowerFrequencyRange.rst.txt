@@ -1,0 +1,14 @@
+
+PowerFrequencyRange
+====================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: PowerFrequencyRange
+    :members:
+    :exclude-members: name
+
+
+
+

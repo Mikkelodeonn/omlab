@@ -1,0 +1,14 @@
+
+SerialBusUSBPdHeaderQualifier
+==============================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusUSBPdHeaderQualifier
+    :members:
+    :exclude-members: name
+
+
+
+

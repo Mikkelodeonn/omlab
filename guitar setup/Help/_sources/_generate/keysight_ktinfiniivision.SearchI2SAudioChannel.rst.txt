@@ -1,0 +1,14 @@
+
+SearchI2SAudioChannel
+======================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SearchI2SAudioChannel
+    :members:
+    :exclude-members: name
+
+
+
+

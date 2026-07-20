@@ -1,0 +1,14 @@
+
+WaveformType
+=============
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: WaveformType
+    :members:
+    :exclude-members: name
+
+
+
+

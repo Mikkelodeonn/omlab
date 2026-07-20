@@ -1,0 +1,14 @@
+
+SerialBusManchesterBitOrder
+============================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusManchesterBitOrder
+    :members:
+    :exclude-members: name
+
+
+
+

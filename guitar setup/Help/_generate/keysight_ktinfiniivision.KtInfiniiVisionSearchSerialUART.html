@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>KtInfiniiVisionSearchSerialUART &#8212; KtInfiniiVision 1.0.0 Documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinxdoc.css?v=d59dc883" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <script src="../_static/documentation_options.js?v=8d563738"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="KtInfiniiVisionSearchSerialUSB" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.html" />
+    <link rel="prev" title="KtInfiniiVisionSearchSerialSPI" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialSPI.html" /> 
+  </head><body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<table width="100%" cellpadding="0" cellspacing="0"><tr>
+        <td valign="top"><a href="../index.html"><h1 style="font-size: 2em;">KtInfiniiVision Driver Python API</h1></a></td>
+        <td align="right"><a href="https://www.keysight.com" target="_blank"><img src="../_static\keysight.gif" alt="keysight.gif"></a></td>
+</tr></table>
+</div>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.html" title="KtInfiniiVisionSearchSerialUSB"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialSPI.html" title="KtInfiniiVisionSearchSerialSPI"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="keysight_ktinfiniivision.KtInfiniiVisionSearch.html" >KtInfiniiVisionSearch</a> &#187;</li>
+          <li class="nav-item nav-item-5"><a href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerial.html" accesskey="U">KtInfiniiVisionSearchSerial</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionSearchSerialUART</a></li> 
+      </ul>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="ktinfiniivisionsearchserialuart">
+<h1>KtInfiniiVisionSearchSerialUART<a class="headerlink" href="#ktinfiniivisionsearchserialuart" title="Link to this heading">¶</a></h1>
+<blockquote>
+<div><div class="line-block">
+<div class="line">Access interface members using: <code class="docutils literal notranslate"><span class="pre">driver.search.serial.uart</span></code></div>
+<div class="line">Where <code class="docutils literal notranslate"><span class="pre">driver</span></code> is a reference to the driver’s root interface returned by the <a class="reference internal" href="../programming.html#creating-a-driver-instance"><span class="std std-ref">constructor</span></a>.</div>
+</div>
+</div></blockquote>
+<dl class="py class">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUART">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">KtInfiniiVisionSearchSerialUART</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUART" title="Link to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUART" title="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUART"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUART</span></code></a> interface.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUART.condition">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">condition</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUART.condition" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the data value qualifier when searching for UART/RS232 events.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.SearchUARTCondition.html#keysight_ktinfiniivision.SearchUARTCondition" title="keysight_ktinfiniivision.SearchUARTCondition">SearchUARTCondition</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">The Condition property can be set to one of the following values:
+<ul>
+<li>Equal</li>
+<li>Not Equal</li>
+<li>Greater Than</li>
+<li> Less Than</li>
+</ul></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUART.mode">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">mode</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUART.mode" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the type of UART/RS232 information to find in the Lister display.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.SearchUARTMode.html#keysight_ktinfiniivision.SearchUARTMode" title="keysight_ktinfiniivision.SearchUARTMode">SearchUARTMode</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li>The Type property can be set to one of the following values:</li>
+<ul>
+<li>RData: searches for a receive data value when data words are from 5 to 8 bits long.</li>
+<li>RD1: searches for a receive data value when data words are 9 bits long and the 9th (alert) bit is 1.</li>
+<li>RD0: searches for a receive data value when data words are 9 bits long and the 9th (alert) bit is 0.</li>
+<li>RDX: searches for a receive data value when data words are 9 bits long and the 9th (alert) bit is a don't care (X.)</li>
+<li>TData: searches for a transmit data value when data words are from 5 to 8 bits long.</li>
+<li>TD1: searches for a transmit data value when data words are 9 bits long and the 9th (alert) bit is 1.</li>
+<li>TD0: searches for a transmit data value when data words are 9 bits long and the 9th (alert) bit is 0.</li>
+<li>TDX: searches for a transmit data value when data words are 9 bits long and the 9th (alert) bit is a don't care (X).</li>
+<li>ParityError: searches for parity errors</li>
+<li>AnyError: searches for any error</li>
+</ul>
+<li>Data values are specified using the SearchSerialUARTPatternData property.</li>
+<li>Data value qualifiers are specified using the SearchSerialUARTConditionproperty.</li></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUART.pattern_data">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">pattern_data</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUART.pattern_data" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets a data value when searching for UART/RS232 events.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li>The PatternData property can be specified in one of the following string formats:</li>
+<ul>
+<li>"n", where n: 8-bit integer from 0-255</li>
+<li>"#Hnn", where n: {0,..,9 | A,..,F} from 0x00-0xff</li>
+<li>"#Bnn...n", where n: {0 | 1}</li>
+<li>"0xnn", where n: {0,..,9 | A,..,F} from 0x00-0xff</li>
+<li>Any of the 128 valid 7-bit ASCII characters (or standard abbreviations)</li>
+</ul>
+<li>The data value qualifier is specified using the SearchSerialUARTCondition property.</li></dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">KtInfiniiVisionSearchSerialUART</a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUART"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUART</span></code></a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUART.condition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUART.condition</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUART.mode"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUART.mode</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUART.pattern_data"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUART.pattern_data</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialSPI.html"
+                          title="previous chapter">KtInfiniiVisionSearchSerialSPI</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.html"
+                          title="next chapter">KtInfiniiVisionSearchSerialUSB</a></p>
+  </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.html" title="KtInfiniiVisionSearchSerialUSB"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialSPI.html" title="KtInfiniiVisionSearchSerialSPI"
+             >previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="keysight_ktinfiniivision.KtInfiniiVisionSearch.html" >KtInfiniiVisionSearch</a> &#187;</li>
+          <li class="nav-item nav-item-5"><a href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerial.html" >KtInfiniiVisionSearchSerial</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionSearchSerialUART</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Keysight Technologies.  v1.0.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

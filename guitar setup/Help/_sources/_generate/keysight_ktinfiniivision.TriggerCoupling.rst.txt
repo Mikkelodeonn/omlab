@@ -1,0 +1,14 @@
+
+TriggerCoupling
+================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: TriggerCoupling
+    :members:
+    :exclude-members: name
+
+
+
+

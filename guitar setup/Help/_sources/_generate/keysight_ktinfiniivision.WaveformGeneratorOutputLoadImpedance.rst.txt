@@ -1,0 +1,14 @@
+
+WaveformGeneratorOutputLoadImpedance
+=====================================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: WaveformGeneratorOutputLoadImpedance
+    :members:
+    :exclude-members: name
+
+
+
+

@@ -1,0 +1,14 @@
+
+SerialBusLINPatternBase
+========================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusLINPatternBase
+    :members:
+    :exclude-members: name
+
+
+
+

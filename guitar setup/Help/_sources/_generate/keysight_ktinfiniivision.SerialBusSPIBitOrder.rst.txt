@@ -1,0 +1,14 @@
+
+SerialBusSPIBitOrder
+=====================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusSPIBitOrder
+    :members:
+    :exclude-members: name
+
+
+
+

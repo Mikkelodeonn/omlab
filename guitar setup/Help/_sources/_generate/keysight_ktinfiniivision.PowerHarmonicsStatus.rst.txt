@@ -1,0 +1,14 @@
+
+PowerHarmonicsStatus
+=====================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: PowerHarmonicsStatus
+    :members:
+    :exclude-members: name
+
+
+
+

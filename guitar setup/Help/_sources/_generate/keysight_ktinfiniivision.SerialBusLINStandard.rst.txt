@@ -1,0 +1,14 @@
+
+SerialBusLINStandard
+=====================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusLINStandard
+    :members:
+    :exclude-members: name
+
+
+
+

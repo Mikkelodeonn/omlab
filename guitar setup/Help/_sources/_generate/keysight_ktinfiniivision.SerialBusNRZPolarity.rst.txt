@@ -1,0 +1,14 @@
+
+SerialBusNRZPolarity
+=====================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusNRZPolarity
+    :members:
+    :exclude-members: name
+
+
+
+

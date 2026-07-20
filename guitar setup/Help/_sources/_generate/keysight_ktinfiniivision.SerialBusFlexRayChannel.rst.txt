@@ -1,0 +1,14 @@
+
+SerialBusFlexRayChannel
+========================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusFlexRayChannel
+    :members:
+    :exclude-members: name
+
+
+
+

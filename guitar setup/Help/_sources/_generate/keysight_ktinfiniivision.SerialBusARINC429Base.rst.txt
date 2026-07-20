@@ -1,0 +1,14 @@
+
+SerialBusARINC429Base
+======================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusARINC429Base
+    :members:
+    :exclude-members: name
+
+
+
+

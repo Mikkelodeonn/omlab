@@ -1,0 +1,14 @@
+
+MaskTestTerminationCondition
+=============================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: MaskTestTerminationCondition
+    :members:
+    :exclude-members: name
+
+
+
+

@@ -1,0 +1,33 @@
+
+KtInfiniiVisionSerialBus
+=========================
+    | Access interface members using: ``driver.serial_buses[<name_or_index>]``
+    | Where ``driver`` is a reference to the driver's root interface returned by the :ref:`constructor <programming:Creating a Driver Instance>`.
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: KtInfiniiVisionSerialBus
+    :members:
+    :exclude-members: get_name_by_index, items
+
+
+
+**Child Interfaces**
+
+
+.. toctree::
+   keysight_ktinfiniivision.KtInfiniiVisionSerialBusARINC429
+   keysight_ktinfiniivision.KtInfiniiVisionSerialBusCAN
+   keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI
+   keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay
+   keysight_ktinfiniivision.KtInfiniiVisionSerialBusI2S
+   keysight_ktinfiniivision.KtInfiniiVisionSerialBusIIC
+   keysight_ktinfiniivision.KtInfiniiVisionSerialBusLIN
+   keysight_ktinfiniivision.KtInfiniiVisionSerialBusM1553
+   keysight_ktinfiniivision.KtInfiniiVisionSerialBusManchester
+   keysight_ktinfiniivision.KtInfiniiVisionSerialBusNRZ
+   keysight_ktinfiniivision.KtInfiniiVisionSerialBusSENT
+   keysight_ktinfiniivision.KtInfiniiVisionSerialBusSPI
+   keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART
+   keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB
+   keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSBPd

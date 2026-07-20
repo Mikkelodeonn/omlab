@@ -1,0 +1,14 @@
+
+SerialBusSENTTriggerIDLength
+=============================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusSENTTriggerIDLength
+    :members:
+    :exclude-members: name
+
+
+
+

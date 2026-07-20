@@ -1,0 +1,14 @@
+
+FFTPhaseReference
+==================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: FFTPhaseReference
+    :members:
+    :exclude-members: name
+
+
+
+

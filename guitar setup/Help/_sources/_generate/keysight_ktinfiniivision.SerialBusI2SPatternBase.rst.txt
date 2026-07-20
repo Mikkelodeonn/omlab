@@ -1,0 +1,14 @@
+
+SerialBusI2SPatternBase
+========================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusI2SPatternBase
+    :members:
+    :exclude-members: name
+
+
+
+

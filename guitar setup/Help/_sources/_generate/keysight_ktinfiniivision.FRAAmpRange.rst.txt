@@ -1,0 +1,14 @@
+
+FRAAmpRange
+============
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: FRAAmpRange
+    :members:
+    :exclude-members: name
+
+
+
+

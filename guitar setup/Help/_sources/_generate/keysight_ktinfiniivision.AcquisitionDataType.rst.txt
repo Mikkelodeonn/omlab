@@ -1,0 +1,14 @@
+
+AcquisitionDataType
+====================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: AcquisitionDataType
+    :members:
+    :exclude-members: name
+
+
+
+

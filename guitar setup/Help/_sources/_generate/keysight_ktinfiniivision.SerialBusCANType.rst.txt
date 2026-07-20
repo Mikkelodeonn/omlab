@@ -1,0 +1,14 @@
+
+SerialBusCANType
+=================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusCANType
+    :members:
+    :exclude-members: name
+
+
+
+

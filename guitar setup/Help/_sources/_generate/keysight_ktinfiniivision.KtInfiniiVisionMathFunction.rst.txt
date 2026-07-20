@@ -1,0 +1,26 @@
+
+KtInfiniiVisionMathFunction
+============================
+    | Access interface members using: ``driver.math_functions[<name_or_index>]``
+    | Where ``driver`` is a reference to the driver's root interface returned by the :ref:`constructor <programming:Creating a Driver Instance>`.
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: KtInfiniiVisionMathFunction
+    :members:
+    :exclude-members: get_name_by_index, items
+
+
+
+**Child Interfaces**
+
+
+.. toctree::
+   keysight_ktinfiniivision.KtInfiniiVisionMathFunctionAverage
+   keysight_ktinfiniivision.KtInfiniiVisionMathFunctionBus
+   keysight_ktinfiniivision.KtInfiniiVisionMathFunctionFFT
+   keysight_ktinfiniivision.KtInfiniiVisionMathFunctionFilter
+   keysight_ktinfiniivision.KtInfiniiVisionMathFunctionIntegrate
+   keysight_ktinfiniivision.KtInfiniiVisionMathFunctionLinear
+   keysight_ktinfiniivision.KtInfiniiVisionMathFunctionMeasurementTrend
+   keysight_ktinfiniivision.KtInfiniiVisionMathFunctionSmoothing

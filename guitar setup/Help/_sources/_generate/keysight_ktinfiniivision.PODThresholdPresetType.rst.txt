@@ -1,0 +1,14 @@
+
+PODThresholdPresetType
+=======================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: PODThresholdPresetType
+    :members:
+    :exclude-members: name
+
+
+
+

@@ -1,0 +1,14 @@
+
+MemorySaveOptions
+==================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: MemorySaveOptions
+    :members:
+    :exclude-members: name
+
+
+
+

@@ -1,0 +1,14 @@
+
+FFTReadoutType
+===============
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: FFTReadoutType
+    :members:
+    :exclude-members: name
+
+
+
+

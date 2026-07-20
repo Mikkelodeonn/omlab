@@ -1,0 +1,14 @@
+
+TriggerEdgeRejectFilterType
+============================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: TriggerEdgeRejectFilterType
+    :members:
+    :exclude-members: name
+
+
+
+

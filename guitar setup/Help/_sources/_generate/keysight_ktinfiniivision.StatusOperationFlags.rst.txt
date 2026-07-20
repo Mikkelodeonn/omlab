@@ -1,0 +1,14 @@
+
+StatusOperationFlags
+=====================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: StatusOperationFlags
+    :members:
+    :exclude-members: name
+
+
+
+

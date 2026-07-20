@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>SearchIICMode &#8212; KtInfiniiVision 1.0.0 Documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinxdoc.css?v=d59dc883" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <script src="../_static/documentation_options.js?v=8d563738"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="SearchLINMode" href="keysight_ktinfiniivision.SearchLINMode.html" />
+    <link rel="prev" title="SearchIICCondition" href="keysight_ktinfiniivision.SearchIICCondition.html" /> 
+  </head><body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<table width="100%" cellpadding="0" cellspacing="0"><tr>
+        <td valign="top"><a href="../index.html"><h1 style="font-size: 2em;">KtInfiniiVision Driver Python API</h1></a></td>
+        <td align="right"><a href="https://www.keysight.com" target="_blank"><img src="../_static\keysight.gif" alt="keysight.gif"></a></td>
+</tr></table>
+</div>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.SearchLINMode.html" title="SearchLINMode"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.SearchIICCondition.html" title="SearchIICCondition"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="enumerations.html" accesskey="U">Enumerations</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">SearchIICMode</a></li> 
+      </ul>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="searchiicmode">
+<h1>SearchIICMode<a class="headerlink" href="#searchiicmode" title="Link to this heading">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.SearchIICMode">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SearchIICMode</span></span><a class="headerlink" href="#keysight_ktinfiniivision.SearchIICMode" title="Link to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>Values for the type of IIC information to find in the Lister display.</p>
+</div></blockquote>
+<p>Members:</p>
+<blockquote>
+<div><p>READ7 : Searches for 7-bit address frames containing Start:Address7:Read:Ack:Data.</p>
+<p>WRITE7 : Searches for 7-bit address frames containing Start:Address7:Write:Ack:Data</p>
+<p>MISSING_ACKNOWLEDGE : Searches for missing acknowledge events</p>
+<p>NO_ACKNOWLEDGE : Searches for address with no acknowledge events</p>
+<p>R7_DATA2 : Searches for 7-bit address frames containing Start:Address7:Read:Ack:Data:Ack:Data2</p>
+<p>W7_DATA2 : Searches for 7-bit address frames containing Start:Address7:Write:Ack:Data:Ack:Data2</p>
+<p>RESTART : Searches for another start condition occurring before a stop condition.</p>
+<p>READ_EPROM : Searches for EEPROM data reads</p>
+<p>ADDRESS : Searches for a packet with the specified address.</p>
+<p>REP_ROM :</p>
+</div></blockquote>
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">SearchIICMode</a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.SearchIICMode"><code class="docutils literal notranslate"><span class="pre">SearchIICMode</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.SearchIICCondition.html"
+                          title="previous chapter">SearchIICCondition</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.SearchLINMode.html"
+                          title="next chapter">SearchLINMode</a></p>
+  </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.SearchLINMode.html" title="SearchLINMode"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.SearchIICCondition.html" title="SearchIICCondition"
+             >previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="enumerations.html" >Enumerations</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">SearchIICMode</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Keysight Technologies.  v1.0.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

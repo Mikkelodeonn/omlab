@@ -1,0 +1,14 @@
+
+SerialBusFlexRayTriggerType
+============================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusFlexRayTriggerType
+    :members:
+    :exclude-members: name
+
+
+
+

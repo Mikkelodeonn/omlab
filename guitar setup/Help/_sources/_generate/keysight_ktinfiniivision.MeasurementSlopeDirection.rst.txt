@@ -1,0 +1,14 @@
+
+MeasurementSlopeDirection
+==========================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: MeasurementSlopeDirection
+    :members:
+    :exclude-members: name
+
+
+
+

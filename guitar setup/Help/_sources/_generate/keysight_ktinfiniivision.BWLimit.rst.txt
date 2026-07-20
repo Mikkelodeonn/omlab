@@ -1,0 +1,14 @@
+
+BWLimit
+========
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: BWLimit
+    :members:
+    :exclude-members: name
+
+
+
+

@@ -1,0 +1,14 @@
+
+MathIntOperation
+=================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: MathIntOperation
+    :members:
+    :exclude-members: name
+
+
+
+

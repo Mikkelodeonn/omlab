@@ -1,0 +1,14 @@
+
+MeasurementPowerFunction
+=========================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: MeasurementPowerFunction
+    :members:
+    :exclude-members: name
+
+
+
+

@@ -1,0 +1,14 @@
+
+SerialBusCANFDStandard
+=======================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusCANFDStandard
+    :members:
+    :exclude-members: name
+
+
+
+

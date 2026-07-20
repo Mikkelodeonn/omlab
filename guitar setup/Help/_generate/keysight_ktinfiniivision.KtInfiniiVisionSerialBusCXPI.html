@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>KtInfiniiVisionSerialBusCXPI &#8212; KtInfiniiVision 1.0.0 Documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinxdoc.css?v=d59dc883" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <script src="../_static/documentation_options.js?v=8d563738"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="KtInfiniiVisionSerialBusFlexRay" href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.html" />
+    <link rel="prev" title="KtInfiniiVisionSerialBusCANFD" href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusCANFD.html" /> 
+  </head><body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<table width="100%" cellpadding="0" cellspacing="0"><tr>
+        <td valign="top"><a href="../index.html"><h1 style="font-size: 2em;">KtInfiniiVision Driver Python API</h1></a></td>
+        <td align="right"><a href="https://www.keysight.com" target="_blank"><img src="../_static\keysight.gif" alt="keysight.gif"></a></td>
+</tr></table>
+</div>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.html" title="KtInfiniiVisionSerialBusFlexRay"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusCANFD.html" title="KtInfiniiVisionSerialBusCANFD"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusCollection.html" >KtInfiniiVisionSerialBusCollection</a> &#187;</li>
+          <li class="nav-item nav-item-5"><a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBus.html" accesskey="U">KtInfiniiVisionSerialBus</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionSerialBusCXPI</a></li> 
+      </ul>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="ktinfiniivisionserialbuscxpi">
+<h1>KtInfiniiVisionSerialBusCXPI<a class="headerlink" href="#ktinfiniivisionserialbuscxpi" title="Link to this heading">¶</a></h1>
+<blockquote>
+<div><div class="line-block">
+<div class="line">Access interface members using: <code class="docutils literal notranslate"><span class="pre">driver.serial_buses[&lt;name_or_index&gt;].cxpi</span></code></div>
+<div class="line">Where <code class="docutils literal notranslate"><span class="pre">driver</span></code> is a reference to the driver’s root interface returned by the <a class="reference internal" href="../programming.html#creating-a-driver-instance"><span class="std std-ref">constructor</span></a>.</div>
+</div>
+</div></blockquote>
+<dl class="py class">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">KtInfiniiVisionSerialBusCXPI</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI" title="Link to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI" title="keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusCXPI</span></code></a> interface.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.baud_rate">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">baud_rate</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.baud_rate" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the baud rate of the CXPI signal from device under test.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li>The default baud rate is 20 kb/s.</li>
+<li>The CXPI baud rate can be set from 9600 b/s to 40000 b/s in 100 b/s increments.</li></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.display_parity">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">display_parity</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.display_parity" title="Link to this definition">¶</a></dt>
+<dd><p>Enable or disable the parity bit to display in the identifier field.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)">bool</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">When Off, the upper bit is masked. The parity is still checked, but it is not displayed unless a parity error occurs.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.source">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">source</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.source" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the oscilloscope channel connected to the CXPI signal line.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">The source can be of the format:  Channel&lt;n&gt;, where n: 1 to the number of available analog channels.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.tolerance">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">tolerance</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.tolerance" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the tolerance as a percentage of the Tbit width.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">Range : 1 to 30</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.trigger_cxpi_frame">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">trigger_cxpi_frame</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.trigger_cxpi_frame" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the Count (CT) value of the CXPI frame you wish to trigger on.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li>This is a two-bit binary value in the format "nn" where n ::= {0 | 1 | X}.</li>
+<li>Applicable for the trigger types that let the user trigger on data, as well as frame ID and frame information bits.</li></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.trigger_cxpi_length">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">trigger_cxpi_length</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.trigger_cxpi_length" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the data length code of the CXPI frame you wish to trigger on.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li>When <a href="keysight_ktinfiniivision.SerialBusCXPITriggerType.html">SerialBusCXPITriggerType</a> is Data, Range :-1 (don't care) to 15.</li>
+<li>When <a href="keysight_ktinfiniivision.SerialBusCXPITriggerType.html">SerialBusCXPITriggerType</a> is LData, Range :-1 (don't care) to 255.</li>
+<li>It will also affect the number of data bytes user can specify in the trigger.</li>
+<li>Applicable for the trigger types that let the user trigger on data.</li></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.trigger_cxpinm">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">trigger_cxpinm</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.trigger_cxpinm" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the Network Management (NM) value of the CXPI frame you wish to trigger on.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li>This is a two-bit binary value in the format "nn" where n ::= {0 | 1 | X}.</li>
+<li>Applicable for the trigger types that let the user trigger on data, as well as frame ID and frame information bits.</li></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.trigger_id_filter">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">trigger_id_filter</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.trigger_id_filter" title="Link to this definition">¶</a></dt>
+<dd><p>Enable or disable modification of the trigger so that it occurs only for a specified ID.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)">bool</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">Applicable for the trigger types that let the user trigger on CRC Field Errors, Inter-Byte Space Errors, Framing Errors, or Data Length Errors.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.trigger_p_type">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">trigger_p_type</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.trigger_p_type" title="Link to this definition">¶</a></dt>
+<dd><p>Enable or disable the trigger on data types when the special PTYPE byte is present (ON) or not present (OFF).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.trigger_pattern_data">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">trigger_pattern_data</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.trigger_pattern_data" title="Link to this definition">¶</a></dt>
+<dd><p>Stes and gets the specified data value for the trigger types that let you trigger on data.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li>This property can be specified in one of the following string formats:</li>
+<ul>
+<li>"nn...n", where n: {0 | 1 | X | $}</li>
+<li>"0xnn...n", where n: {0,..,9 | A,..,F | X | $}</li>
+</ul>
+<li>If the string parameter starts with "0x", it is a hexadecimal string made up of hexadecimal and X (don't care) characters; otherwise, it is a binary string made up of 0, 1, and X (don't care) characters.</li></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.trigger_pattern_data_length">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">trigger_pattern_data_length</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.trigger_pattern_data_length" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the length of the data to trigger on, from 0 to 12 bytes, limited by the data length code (DLC).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.trigger_pattern_id">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">trigger_pattern_id</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.trigger_pattern_id" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the frame ID value for the trigger types. It lets the user specify frame ID values in the trigger or allow filtering by the frame ID.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li>The TriggerPatternID property can be specified in one of the following string formats:</li>
+<ul>
+<li>"nn...n", where n: {0 | 1 | X | $}</li>
+<li>"0xnn...n", where n: {0,..,9 | A,..,F | X | $}</li>
+</ul>
+<li>If the string parameter starts with "0x", it is a hexadecimal string made up of hexadecimal and X (don't care) characters; otherwise, it is a binary string made up of 0, 1, and X (don't care) characters.</li></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.trigger_pattern_start_byte_position">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">trigger_pattern_start_byte_position</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.trigger_pattern_start_byte_position" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the starting byte location where the data value should be found.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">The starting byte location must be within the first 123 bytes when SerialBusCXPITriggerPType is disabled.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.trigger_type">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">trigger_type</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.trigger_type" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the CXPI trigger type.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.SerialBusCXPITriggerType.html#keysight_ktinfiniivision.SerialBusCXPITriggerType" title="keysight_ktinfiniivision.SerialBusCXPITriggerType">SerialBusCXPITriggerType</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li>SOF(Start of Frame): triggers at the start bit of any frame.</li>
+<li>EOF (End of Frame): triggers at the end of any frame.</li>
+<li>PType: triggers on any frame that starts with the special PTYPE byte.</li>
+<li>ID (Frame ID): triggers on a user-defined Frame ID at the end of the PID byte.</li>
+<li>Data (Frame ID, Info and Data): triggers on CXPI frames at the end of the last data byte defined in the trigger.</li>
+<li>LData (Frame ID, Info and Data (Long Frame)): triggers on CXPI frames at the end of the last data byte defined in the trigger.</li>
+<li>CRCError (CRC Field Error): triggers when the calculated CRC does not match the transmitted CRC.</li>
+<li>ParityError: triggers when the parity bit in the PID or PTYPE field is not correct.</li>
+<li>IBSError (Inter-Byte Space Error): triggers when there are more than 9 bits between consecutive bytes in a frame.</li>
+<li>IFSError (Inter-Frame Space Error): triggers when there are fewer than 10 idle bits before a new frame begins.</li>
+<li>FramingError: triggers when the stop bit of a byte is not logical 1.</li>
+<li>DLengthError (Data Length Error): triggers when there are more data bytes in a frame than is indicated by the DLC or Extended DLC field.</li>
+<li>SampleError: triggers when 10 consecutive logical 0s are detected.</li>
+<li>AllErrors: triggers on all CRC, Parity, IBS, Stop Bit, Data Length, and Sample errors.</li>
+<li>SleepFrame: triggers when a normal frame is transmitted matching the definition of a sleep frame in the CXPI specification.</li>
+<li>WakeupPulse: triggers when a wakeup pulse is detected.</li></dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">KtInfiniiVisionSerialBusCXPI</a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusCXPI</span></code></a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.baud_rate"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusCXPI.baud_rate</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.display_parity"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusCXPI.display_parity</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.source"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusCXPI.source</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.tolerance"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusCXPI.tolerance</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.trigger_cxpi_frame"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusCXPI.trigger_cxpi_frame</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.trigger_cxpi_length"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusCXPI.trigger_cxpi_length</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.trigger_cxpinm"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusCXPI.trigger_cxpinm</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.trigger_id_filter"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusCXPI.trigger_id_filter</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.trigger_p_type"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusCXPI.trigger_p_type</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.trigger_pattern_data"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusCXPI.trigger_pattern_data</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.trigger_pattern_data_length"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusCXPI.trigger_pattern_data_length</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.trigger_pattern_id"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusCXPI.trigger_pattern_id</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.trigger_pattern_start_byte_position"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusCXPI.trigger_pattern_start_byte_position</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.trigger_type"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusCXPI.trigger_type</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusCANFD.html"
+                          title="previous chapter">KtInfiniiVisionSerialBusCANFD</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.html"
+                          title="next chapter">KtInfiniiVisionSerialBusFlexRay</a></p>
+  </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.html" title="KtInfiniiVisionSerialBusFlexRay"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusCANFD.html" title="KtInfiniiVisionSerialBusCANFD"
+             >previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusCollection.html" >KtInfiniiVisionSerialBusCollection</a> &#187;</li>
+          <li class="nav-item nav-item-5"><a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBus.html" >KtInfiniiVisionSerialBus</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionSerialBusCXPI</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Keysight Technologies.  v1.0.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

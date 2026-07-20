@@ -1,0 +1,14 @@
+
+SerialBusNRZBitOrder
+=====================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusNRZBitOrder
+    :members:
+    :exclude-members: name
+
+
+
+

@@ -1,0 +1,14 @@
+
+SearchI2SPatternFormat
+=======================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SearchI2SPatternFormat
+    :members:
+    :exclude-members: name
+
+
+
+

@@ -1,0 +1,14 @@
+
+DVMMode
+========
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: DVMMode
+    :members:
+    :exclude-members: name
+
+
+
+

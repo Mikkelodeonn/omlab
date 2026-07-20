@@ -1,0 +1,14 @@
+
+SerialBusUSBSpeed
+==================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusUSBSpeed
+    :members:
+    :exclude-members: name
+
+
+
+

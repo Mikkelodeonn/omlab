@@ -1,0 +1,14 @@
+
+SerialBusUSBPIDSpecial
+=======================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusUSBPIDSpecial
+    :members:
+    :exclude-members: name
+
+
+
+

@@ -1,0 +1,35 @@
+
+KtInfiniiVisionTrigger
+=======================
+    | Access interface members using: ``driver.trigger``
+    | Where ``driver`` is a reference to the driver's root interface returned by the :ref:`constructor <programming:Creating a Driver Instance>`.
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: KtInfiniiVisionTrigger
+    :members:
+    :exclude-members: get_name_by_index, items
+
+
+
+**Child Interfaces**
+
+
+.. toctree::
+   keysight_ktinfiniivision.KtInfiniiVisionTriggerAcLine
+   keysight_ktinfiniivision.KtInfiniiVisionTriggerDelay
+   keysight_ktinfiniivision.KtInfiniiVisionTriggerEdge
+   keysight_ktinfiniivision.KtInfiniiVisionTriggerEdgeBurst
+   keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch
+   keysight_ktinfiniivision.KtInfiniiVisionTriggerNFC
+   keysight_ktinfiniivision.KtInfiniiVisionTriggerOR
+   keysight_ktinfiniivision.KtInfiniiVisionTriggerPXI
+   keysight_ktinfiniivision.KtInfiniiVisionTriggerPattern
+   keysight_ktinfiniivision.KtInfiniiVisionTriggerRandomHoldoff
+   keysight_ktinfiniivision.KtInfiniiVisionTriggerRunt
+   keysight_ktinfiniivision.KtInfiniiVisionTriggerSetupAndHold
+   keysight_ktinfiniivision.KtInfiniiVisionTriggerTV
+   keysight_ktinfiniivision.KtInfiniiVisionTriggerTransition
+   keysight_ktinfiniivision.KtInfiniiVisionTriggerUSB
+   keysight_ktinfiniivision.KtInfiniiVisionTriggerWidth
+   keysight_ktinfiniivision.KtInfiniiVisionTriggerZone

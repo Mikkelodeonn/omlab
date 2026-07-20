@@ -1,0 +1,14 @@
+
+PowerOnOffType
+===============
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: PowerOnOffType
+    :members:
+    :exclude-members: name
+
+
+
+

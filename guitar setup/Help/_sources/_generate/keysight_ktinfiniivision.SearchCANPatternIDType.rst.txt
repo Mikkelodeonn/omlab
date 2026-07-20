@@ -1,0 +1,14 @@
+
+SearchCANPatternIDType
+=======================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SearchCANPatternIDType
+    :members:
+    :exclude-members: name
+
+
+
+

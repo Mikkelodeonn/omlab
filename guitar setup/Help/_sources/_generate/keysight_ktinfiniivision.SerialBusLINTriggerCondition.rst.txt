@@ -1,0 +1,14 @@
+
+SerialBusLINTriggerCondition
+=============================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusLINTriggerCondition
+    :members:
+    :exclude-members: name
+
+
+
+

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>KtInfiniiVisionSerialBusFlexRay &#8212; KtInfiniiVision 1.0.0 Documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinxdoc.css?v=d59dc883" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <script src="../_static/documentation_options.js?v=8d563738"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="KtInfiniiVisionSerialBusI2S" href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusI2S.html" />
+    <link rel="prev" title="KtInfiniiVisionSerialBusCXPI" href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.html" /> 
+  </head><body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<table width="100%" cellpadding="0" cellspacing="0"><tr>
+        <td valign="top"><a href="../index.html"><h1 style="font-size: 2em;">KtInfiniiVision Driver Python API</h1></a></td>
+        <td align="right"><a href="https://www.keysight.com" target="_blank"><img src="../_static\keysight.gif" alt="keysight.gif"></a></td>
+</tr></table>
+</div>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusI2S.html" title="KtInfiniiVisionSerialBusI2S"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.html" title="KtInfiniiVisionSerialBusCXPI"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusCollection.html" >KtInfiniiVisionSerialBusCollection</a> &#187;</li>
+          <li class="nav-item nav-item-5"><a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBus.html" accesskey="U">KtInfiniiVisionSerialBus</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionSerialBusFlexRay</a></li> 
+      </ul>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="ktinfiniivisionserialbusflexray">
+<h1>KtInfiniiVisionSerialBusFlexRay<a class="headerlink" href="#ktinfiniivisionserialbusflexray" title="Link to this heading">¶</a></h1>
+<blockquote>
+<div><div class="line-block">
+<div class="line">Access interface members using: <code class="docutils literal notranslate"><span class="pre">driver.serial_buses[&lt;name_or_index&gt;].flex_ray</span></code></div>
+<div class="line">Where <code class="docutils literal notranslate"><span class="pre">driver</span></code> is a reference to the driver’s root interface returned by the <a class="reference internal" href="../programming.html#creating-a-driver-instance"><span class="std std-ref">constructor</span></a>.</div>
+</div>
+</div></blockquote>
+<dl class="py class">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">KtInfiniiVisionSerialBusFlexRay</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay" title="Link to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay" title="keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusFlexRay</span></code></a> interface.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.auto_setup">
+<span class="sig-name descname"><span class="pre">auto_setup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.auto_setup" title="Link to this definition">¶</a></dt>
+<dd><p>Automatically configures oscilloscope settings to facilitate FlexRay triggering and serial decode.</p>
+<dl class="field-list">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+<dt class="field-even">Remarks<span class="colon">:</span></dt>
+<dd class="field-even">Sets the selected source channel's impedance to 50 Ohms, sets the selected source channel's probe attenuation to 10:1, sets the trigger level (on the selected source channel) to -300 mV, turns on trigger Noise Reject, turns on Serial Decode and sets the trigger type to FlexRay.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.baud_rate">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">baud_rate</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.baud_rate" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the baud rate. Valid values are: 2500000, 5000000, 10000000 b/s.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.channel">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">channel</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.channel" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the bus channel, A or B, of the FlexRay signal.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.SerialBusFlexRayChannel.html#keysight_ktinfiniivision.SerialBusFlexRayChannel" title="keysight_ktinfiniivision.SerialBusFlexRayChannel">SerialBusFlexRayChannel</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; The channel property can be set to one of the following values:
+<blockquote>
+<br />&#8226; ChannelA: specifies bus channel A
+<br />&#8226; ChannelB: specifies bus channel B
+</blockquote></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.error_count">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">error_count</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.error_count" title="Link to this definition">¶</a></dt>
+<dd><p>Read Only - Gets the FlexRay error frame count.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.null_count">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">null_count</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.null_count" title="Link to this definition">¶</a></dt>
+<dd><p>Read Only - Gets the FlexRay null frame count.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.reset_counters">
+<span class="sig-name descname"><span class="pre">reset_counters</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.reset_counters" title="Link to this definition">¶</a></dt>
+<dd><p>Resets the FlexRay frame counters.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.source">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">source</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.source" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the input source for the FlexRay signal.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">The source can be specified in the following format: "Channel&lt;n&gt;", where n: 1 to the number of analog channels available.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.sync_count">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sync_count</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.sync_count" title="Link to this definition">¶</a></dt>
+<dd><p>Read Only - Gets the FlexRay sync frame count.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.total_count">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">total_count</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.total_count" title="Link to this definition">¶</a></dt>
+<dd><p>Read Only - Gets the FlexRay total frame count.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.trigger_error_type">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">trigger_error_type</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.trigger_error_type" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the FlexRay error type to trigger on. The error type setting is only valid when the FlexRay TriggerType property is set to Error.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.SerialBusFlexRayTriggerErrorType.html#keysight_ktinfiniivision.SerialBusFlexRayTriggerErrorType" title="keysight_ktinfiniivision.SerialBusFlexRayTriggerErrorType">SerialBusFlexRayTriggerErrorType</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; The TriggerErrorType property can be set to one of the following values:
+<blockquote>
+<br />&#8226; All: triggers on ALL errors.
+<br />&#8226; HeaderCRC: triggers on only Header CRC errors.
+<br />&#8226; FrameCRC: triggers on only Frame CRC errors.
+</blockquote></dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.trigger_event_auto_setup">
+<span class="sig-name descname"><span class="pre">trigger_event_auto_setup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.trigger_event_auto_setup" title="Link to this definition">¶</a></dt>
+<dd><p>Presets oscilloscope parameters for the selected event type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.trigger_event_bssid">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">trigger_event_bssid</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.trigger_event_bssid" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the ByteStart Sequence ID.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; The TriggerEventBSSID property can be specified in one of the following formats:
+<blockquote>
+<br />&#8226; "All"
+<br />&#8226; "n", where n: 1-2047
+</blockquote></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.trigger_event_type">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">trigger_event_type</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.trigger_event_type" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the FlexRay event to trigger on. The event setting is only valid when the FlexRay TriggerType property is set to Event.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.SerialBusFlexRayTriggerEventType.html#keysight_ktinfiniivision.SerialBusFlexRayTriggerEventType" title="keysight_ktinfiniivision.SerialBusFlexRayTriggerEventType">SerialBusFlexRayTriggerEventType</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; The TriggerEventType property can be set to one of the following values:
+<blockquote>
+<br />&#8226; WakeUp: triggers on Wake-Up event.
+<br />&#8226; TSS: triggers on Transmission Start Sequence event.
+<br />&#8226; BSS: triggers on Byte Start Sequence event.
+<br />&#8226; FES: triggers on Frame End Sequence event.
+<br />&#8226; DTS: triggers on Dynamic Trailing Sequence event.
+</blockquote></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.trigger_frame_cc_base">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">trigger_frame_cc_base</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.trigger_frame_cc_base" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the base of the FlexRay cycle count (in the frame header) to trigger on. The cycle count base setting is only valid when the FlexRay TriggerType property is set to Frame.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">This property can be set to a value from 0 through the Cycle Count Repetition factor minus 1.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.trigger_frame_cc_repetition">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">trigger_frame_cc_repetition</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.trigger_frame_cc_repetition" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the repetition number of the FlexRay cycle count (in the frame header) to trigger on. The cycle count repetition setting is only valid when the FlexRay TriggerType property is set to Frame.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; The TriggerFrameCCRepetition property can be specified in one of the following formats:
+<blockquote>
+<br />&#8226; "All"
+<br />&#8226; "n", where n is an integer from 2 to 64
+</blockquote></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.trigger_frame_id">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">trigger_frame_id</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.trigger_frame_id" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the FlexRay frame ID to trigger on. The frame ID setting is only valid when the FlexRay TriggerType property is set to Frame.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; This property can be specified in one of the following formats:
+<blockquote>
+<br />&#8226; "All"
+<br />&#8226; "n", where n is an integer from 1-2047
+</blockquote></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.trigger_frame_type">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">trigger_frame_type</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.trigger_frame_type" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the FlexRay frame type to trigger on. The frame type setting is only valid when the FlexRay TriggerType property is set to Frame.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.SerialBusFlexRayTriggerFrameType.html#keysight_ktinfiniivision.SerialBusFlexRayTriggerFrameType" title="keysight_ktinfiniivision.SerialBusFlexRayTriggerFrameType">SerialBusFlexRayTriggerFrameType</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; The TriggerFrameType property can be set to one of the following values:
+<blockquote>
+<br />&#8226; Normal: will trigger on only normal (NStartup and NNull and NSync) frames.
+<br />&#8226; Startup: will trigger on only startup frames.
+<br />&#8226; Null: will trigger on only null frames.
+<br />&#8226; Sync: will trigger on only sync frames.
+<br />&#8226; Startup: will trigger on frames other than startup frames.
+<br />&#8226; Null: will trigger on frames other than null frames.
+<br />&#8226; Sync: will trigger on frames other than sync frames.
+<br />&#8226; All: will trigger on all FlexRay frame types.</blockquote></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.trigger_type">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">trigger_type</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.trigger_type" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the FlexRay trigger on condition.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.SerialBusFlexRayTriggerType.html#keysight_ktinfiniivision.SerialBusFlexRayTriggerType" title="keysight_ktinfiniivision.SerialBusFlexRayTriggerType">SerialBusFlexRayTriggerType</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; This property can be set to one of the following values:
+<blockquote>
+<br />&#8226; Frame: triggers on specified frames (without errors).
+<br />&#8226; Error: triggers on selected active error frames and unknown bus conditions.
+<br />&#8226; Event: triggers on specified FlexRay event/symbol.</blockquote></dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">KtInfiniiVisionSerialBusFlexRay</a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusFlexRay</span></code></a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.auto_setup"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusFlexRay.auto_setup()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.baud_rate"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusFlexRay.baud_rate</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.channel"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusFlexRay.channel</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.error_count"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusFlexRay.error_count</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.null_count"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusFlexRay.null_count</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.reset_counters"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusFlexRay.reset_counters()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.source"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusFlexRay.source</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.sync_count"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusFlexRay.sync_count</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.total_count"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusFlexRay.total_count</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.trigger_error_type"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusFlexRay.trigger_error_type</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.trigger_event_auto_setup"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusFlexRay.trigger_event_auto_setup()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.trigger_event_bssid"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusFlexRay.trigger_event_bssid</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.trigger_event_type"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusFlexRay.trigger_event_type</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.trigger_frame_cc_base"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusFlexRay.trigger_frame_cc_base</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.trigger_frame_cc_repetition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusFlexRay.trigger_frame_cc_repetition</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.trigger_frame_id"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusFlexRay.trigger_frame_id</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.trigger_frame_type"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusFlexRay.trigger_frame_type</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusFlexRay.trigger_type"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusFlexRay.trigger_type</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.html"
+                          title="previous chapter">KtInfiniiVisionSerialBusCXPI</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusI2S.html"
+                          title="next chapter">KtInfiniiVisionSerialBusI2S</a></p>
+  </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusI2S.html" title="KtInfiniiVisionSerialBusI2S"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusCXPI.html" title="KtInfiniiVisionSerialBusCXPI"
+             >previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusCollection.html" >KtInfiniiVisionSerialBusCollection</a> &#187;</li>
+          <li class="nav-item nav-item-5"><a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBus.html" >KtInfiniiVisionSerialBus</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionSerialBusFlexRay</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Keysight Technologies.  v1.0.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+
+PowerType
+==========
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: PowerType
+    :members:
+    :exclude-members: name
+
+
+
+

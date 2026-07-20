@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>KtInfiniiVisionMathFFT &#8212; KtInfiniiVision 1.0.0 Documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinxdoc.css?v=d59dc883" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <script src="../_static/documentation_options.js?v=8d563738"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="KtInfiniiVisionMathFilterFrequency" href="keysight_ktinfiniivision.KtInfiniiVisionMathFilterFrequency.html" />
+    <link rel="prev" title="KtInfiniiVisionMathBus" href="keysight_ktinfiniivision.KtInfiniiVisionMathBus.html" /> 
+  </head><body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<table width="100%" cellpadding="0" cellspacing="0"><tr>
+        <td valign="top"><a href="../index.html"><h1 style="font-size: 2em;">KtInfiniiVision Driver Python API</h1></a></td>
+        <td align="right"><a href="https://www.keysight.com" target="_blank"><img src="../_static\keysight.gif" alt="keysight.gif"></a></td>
+</tr></table>
+</div>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionMathFilterFrequency.html" title="KtInfiniiVisionMathFilterFrequency"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionMathBus.html" title="KtInfiniiVisionMathBus"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="keysight_ktinfiniivision.KtInfiniiVisionMath.html" accesskey="U">KtInfiniiVisionMath</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionMathFFT</a></li> 
+      </ul>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="ktinfiniivisionmathfft">
+<h1>KtInfiniiVisionMathFFT<a class="headerlink" href="#ktinfiniivisionmathfft" title="Link to this heading">¶</a></h1>
+<blockquote>
+<div><div class="line-block">
+<div class="line">Access interface members using: <code class="docutils literal notranslate"><span class="pre">driver.math.fft</span></code></div>
+<div class="line">Where <code class="docutils literal notranslate"><span class="pre">driver</span></code> is a reference to the driver’s root interface returned by the <a class="reference internal" href="../programming.html#creating-a-driver-instance"><span class="std std-ref">constructor</span></a>.</div>
+</div>
+</div></blockquote>
+<dl class="py class">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMathFFT">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">KtInfiniiVisionMathFFT</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMathFFT" title="Link to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMathFFT" title="keysight_ktinfiniivision.KtInfiniiVisionMathFFT"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionMathFFT</span></code></a> interface.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMathFFT.center_frequency">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">center_frequency</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMathFFT.center_frequency" title="Link to this definition">¶</a></dt>
+<dd><p>Center frequency for FFT function. Permissible values are 0 Hz to 25E9 Hz.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">The Unit of Frequency is Hz. The &#60;frequency&#62; is the current center frequency in NR3 format. The range
+of legal values for :
+<br />&#8226; For X1000, X1200, X2000, X3000 Series Oscilloscopes - 0 Hz to 25 Hz
+<br />&#8226; For T3000, M9240X, P9240X Series Oscilloscopes - 1 Hz to 100 GHz.
+<br />&#8226; For x6000 Series Oscilloscopes - 25 GHz to 25 GHz.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMathFFT.span">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">span</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMathFFT.span" title="Link to this definition">¶</a></dt>
+<dd><p>Frequency span of the display when FFT is selected.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; The current frequency span legal values are 1 Hz to 100 GHz.
+<br />&#8226; If you set the frequency span to a value outside of the legal range, the
+step size is automatically set to the nearest legal value.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMathFFT.vertical_units">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">vertical_units</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMathFFT.vertical_units" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the FFT vertical units.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.MathFFTVerticalUnits.html#keysight_ktinfiniivision.MathFFTVerticalUnits" title="keysight_ktinfiniivision.MathFFTVerticalUnits">MathFFTVerticalUnits</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">The VerticalUnits property can be set to one of the following values:
+<blockquote><br />&#60; units &#62;: &#123; Decibel &#124; VRMS &#125; for the FFT (magnitude) operation.
+<br />&#60; units &#62;: &#123; Degrees &#124; Radians &#125; for the FFT phase operation.    </blockquote>
+<br />&#8226; For the FFT (Magnitude) operation units, Decibel equates to the user interface's
+Logarithmic selection, and VRMS equates to the user interface's Linear selection.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMathFFT.window_type">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">window_type</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMathFFT.window_type" title="Link to this definition">¶</a></dt>
+<dd><p>Windowing transforms or operations for the FFT.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.MathFFTWindowType.html#keysight_ktinfiniivision.MathFFTWindowType" title="keysight_ktinfiniivision.MathFFTWindowType">MathFFTWindowType</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; The FFT operation assumes that the time record repeats. Unless an integral number of sampled waveform cycles exist in the record, a discontinuity is created between the end of one record and the beginning of the next. 
+<br />&#8226; This discontinuity introduces additional frequency components about the peaks into the spectrum. This is referred to as leakage. 
+<br />&#8226; To minimize leakage, windows that approach zero smoothly at the start and end of the record are employed as filters to the FFTs. Each window is useful for certain classes of input signals.
+<blockquote>
+
+<br />&#8226;  Rectangular: useful for transient signals, and signals where there are an integral number of cycles in the time record.
+<br />&#8226;  Hanning: useful for frequency resolution and general purpose use. It is goodfor resolving two frequencies that are close together, or for making frequency measurements. This is the default window.
+<br />&#8226;  FlatTop: best for making accurate amplitude measurements of frequency peaks.
+<br />&#8226;  Bharris (Blackman-Harris)" (triangular, with end points at zero) window is similar to the Hanning window in that it is good for making accurate frequency measurements, but its higher and wider secondary lobes make it not quite as good for resolving frequencies that are close together.
+<br />&#8226;  Bartlett: (triangular, with end points at zero) window is similar to the Hanning window in that it is good for making accurate frequency measurements, but its higher and wider secondary lobes make it not quite as good for resolving frequencies that are close together. Not available for X1000, X1200, X2000 and X3000 Series oscilloscopes.
+
+</blockquote></dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">KtInfiniiVisionMathFFT</a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMathFFT"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMathFFT</span></code></a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMathFFT.center_frequency"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMathFFT.center_frequency</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMathFFT.span"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMathFFT.span</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMathFFT.vertical_units"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMathFFT.vertical_units</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMathFFT.window_type"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMathFFT.window_type</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionMathBus.html"
+                          title="previous chapter">KtInfiniiVisionMathBus</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionMathFilterFrequency.html"
+                          title="next chapter">KtInfiniiVisionMathFilterFrequency</a></p>
+  </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionMathFilterFrequency.html" title="KtInfiniiVisionMathFilterFrequency"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionMathBus.html" title="KtInfiniiVisionMathBus"
+             >previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="keysight_ktinfiniivision.KtInfiniiVisionMath.html" >KtInfiniiVisionMath</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionMathFFT</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Keysight Technologies.  v1.0.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

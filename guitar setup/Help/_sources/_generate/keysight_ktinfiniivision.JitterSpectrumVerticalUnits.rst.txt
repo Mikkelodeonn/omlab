@@ -1,0 +1,14 @@
+
+JitterSpectrumVerticalUnits
+============================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: JitterSpectrumVerticalUnits
+    :members:
+    :exclude-members: name
+
+
+
+

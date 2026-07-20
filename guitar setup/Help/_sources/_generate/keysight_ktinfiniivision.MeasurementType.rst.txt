@@ -1,0 +1,14 @@
+
+MeasurementType
+================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: MeasurementType
+    :members:
+    :exclude-members: name
+
+
+
+

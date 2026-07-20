@@ -1,0 +1,14 @@
+
+SerialBusNRZIdleState
+======================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusNRZIdleState
+    :members:
+    :exclude-members: name
+
+
+
+

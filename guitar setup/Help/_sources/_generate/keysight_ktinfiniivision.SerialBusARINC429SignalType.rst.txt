@@ -1,0 +1,14 @@
+
+SerialBusARINC429SignalType
+============================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusARINC429SignalType
+    :members:
+    :exclude-members: name
+
+
+
+

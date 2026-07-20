@@ -1,0 +1,14 @@
+
+PowerSignalAnalysisType
+========================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: PowerSignalAnalysisType
+    :members:
+    :exclude-members: name
+
+
+
+

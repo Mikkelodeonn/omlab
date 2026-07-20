@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>KtInfiniiVisionTriggerGlitch &#8212; KtInfiniiVision 1.0.0 Documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinxdoc.css?v=d59dc883" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <script src="../_static/documentation_options.js?v=8d563738"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="KtInfiniiVisionTriggerNFC" href="keysight_ktinfiniivision.KtInfiniiVisionTriggerNFC.html" />
+    <link rel="prev" title="KtInfiniiVisionTriggerEdgeBurst" href="keysight_ktinfiniivision.KtInfiniiVisionTriggerEdgeBurst.html" /> 
+  </head><body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<table width="100%" cellpadding="0" cellspacing="0"><tr>
+        <td valign="top"><a href="../index.html"><h1 style="font-size: 2em;">KtInfiniiVision Driver Python API</h1></a></td>
+        <td align="right"><a href="https://www.keysight.com" target="_blank"><img src="../_static\keysight.gif" alt="keysight.gif"></a></td>
+</tr></table>
+</div>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionTriggerNFC.html" title="KtInfiniiVisionTriggerNFC"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionTriggerEdgeBurst.html" title="KtInfiniiVisionTriggerEdgeBurst"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="keysight_ktinfiniivision.KtInfiniiVisionTrigger.html" accesskey="U">KtInfiniiVisionTrigger</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionTriggerGlitch</a></li> 
+      </ul>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="ktinfiniivisiontriggerglitch">
+<h1>KtInfiniiVisionTriggerGlitch<a class="headerlink" href="#ktinfiniivisiontriggerglitch" title="Link to this heading">¶</a></h1>
+<blockquote>
+<div><div class="line-block">
+<div class="line">Access interface members using: <code class="docutils literal notranslate"><span class="pre">driver.trigger.glitch</span></code></div>
+<div class="line">Where <code class="docutils literal notranslate"><span class="pre">driver</span></code> is a reference to the driver’s root interface returned by the <a class="reference internal" href="../programming.html#creating-a-driver-instance"><span class="std std-ref">constructor</span></a>.</div>
+</div>
+</div></blockquote>
+<dl class="py class">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">KtInfiniiVisionTriggerGlitch</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch" title="Link to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch" title="keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionTriggerGlitch</span></code></a> interface.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch.condition">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">condition</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch.condition" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the mode of operation of the glitch pulse width trigger whether it glitches less than, greater than or within a range of the specified time duration.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.TriggerGlitchCondition.html#keysight_ktinfiniivision.TriggerGlitchCondition" title="keysight_ktinfiniivision.TriggerGlitchCondition">TriggerGlitchCondition</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch.configure">
+<span class="sig-name descname"><span class="pre">configure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">source</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">level</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">polarity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="keysight_ktinfiniivision.TriggerGlitchPolarity.html#keysight_ktinfiniivision.TriggerGlitchPolarity" title="keysight_ktinfiniivision.keysight_ktinfiniivision.TriggerGlitchPolarity"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.TriggerGlitchPolarity</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">condition</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="keysight_ktinfiniivision.TriggerGlitchCondition.html#keysight_ktinfiniivision.TriggerGlitchCondition" title="keysight_ktinfiniivision.keysight_ktinfiniivision.TriggerGlitchCondition"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.TriggerGlitchCondition</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch.configure" title="Link to this definition">¶</a></dt>
+<dd><p>Configures the glitch trigger Source, Level, Width, Polarity, and Condition. A glitch trigger occurs when the edge of a pulse that matches the Width and Polarity crosses the specified Level (in Volts).</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>source</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><em>str</em></a>) – Specifies the trigger source. This value sets the Trigger Source property.</p></li>
+<li><p><strong>level</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><em>float</em></a>) – Specifies the trigger level. This value sets the Trigger Level property.</p></li>
+<li><p><strong>width</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><em>float</em></a>) – Specifies the glitch triggering glitch width in seconds.</p></li>
+<li><p><strong>polarity</strong> (<a class="reference internal" href="keysight_ktinfiniivision.TriggerGlitchPolarity.html#keysight_ktinfiniivision.TriggerGlitchPolarity" title="keysight_ktinfiniivision.TriggerGlitchPolarity"><em>TriggerGlitchPolarity</em></a>) – Specifies the glitch polarity. This value sets the Glitch Polarity property.</p></li>
+<li><p><strong>condition</strong> (<a class="reference internal" href="keysight_ktinfiniivision.TriggerGlitchCondition.html#keysight_ktinfiniivision.TriggerGlitchCondition" title="keysight_ktinfiniivision.TriggerGlitchCondition"><em>TriggerGlitchCondition</em></a>) – Specifies the glitch condition. This value sets the Glitch Condition property.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">Note: <a href="keysight_ktinfiniivision.TriggerType.html">TriggerType</a> should be set to Glitch before executing this method.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch.get_range">
+<span class="sig-name descname"><span class="pre">get_range</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch.get_range" title="Link to this definition">¶</a></dt>
+<dd><p>READ ONLY- Gets the pulse width duration time for trigger source.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><p>A tuple containing:</p>
+<ul class="simple">
+<li><p><strong>lowerLimit</strong> (float) : LowerLimit</p></li>
+<li><p><strong>upperLimit</strong> (float) : UpperLimit</p></li>
+</ul>
+</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.13)">tuple</a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch.level">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">level</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch.level" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the Trigger level voltage for the active pulse width trigger mode.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch.max_pulse_duration">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">max_pulse_duration</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch.max_pulse_duration" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the maximum pulse width duration.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">With the input value suitable suffix from &#123; s  &#124; ms  &#124; us &#124; ns &#124; ps &#125; can be selected.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch.min_pulse_duration">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">min_pulse_duration</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch.min_pulse_duration" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the minimum pulse width duration.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">With the input value suitable suffix from &#123; s  &#124; ms  &#124; us &#124; ns &#124; ps &#125; can be selected.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch.polarity">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">polarity</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch.polarity" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the polarity of the glitch that triggers the oscilloscope.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.TriggerGlitchPolarity.html#keysight_ktinfiniivision.TriggerGlitchPolarity" title="keysight_ktinfiniivision.TriggerGlitchPolarity">TriggerGlitchPolarity</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch.set_range">
+<span class="sig-name descname"><span class="pre">set_range</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">lower_limit</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">upper_limit</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch.set_range" title="Link to this definition">¶</a></dt>
+<dd><p>Sets the pulse width duration for the selected source.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>lower_limit</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><em>float</em></a>) – LowerLimit. Permissible values are from 10 ns to 9.99 seconds</p></li>
+<li><p><strong>upper_limit</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><em>float</em></a>) – UpperLimit. Permissible values are from 15 ns to 10 seconds</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">User can enter the parameters in any order, the smaller value becomes the greater than time and the larger value becomes the less than time.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch.source">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">source</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch.source" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the pulse width source.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; The parameter &#60;source&#62; can be specified in one of the following string formats:
+<br /><blockquote>&#8226; Channel&lt;n&gt;, where n: 1 to the number of available analog channels.
+<br />&#8226; Digital&lt;d&gt;, where d: 1 to the number of available digital channels - 1.
+</blockquote><br />&#8226; If all channels are off, then "None" is returned.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">KtInfiniiVisionTriggerGlitch</a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTriggerGlitch</span></code></a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch.condition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTriggerGlitch.condition</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch.configure"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTriggerGlitch.configure()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch.get_range"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTriggerGlitch.get_range()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch.level"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTriggerGlitch.level</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch.max_pulse_duration"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTriggerGlitch.max_pulse_duration</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch.min_pulse_duration"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTriggerGlitch.min_pulse_duration</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch.polarity"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTriggerGlitch.polarity</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch.set_range"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTriggerGlitch.set_range()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTriggerGlitch.source"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTriggerGlitch.source</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionTriggerEdgeBurst.html"
+                          title="previous chapter">KtInfiniiVisionTriggerEdgeBurst</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionTriggerNFC.html"
+                          title="next chapter">KtInfiniiVisionTriggerNFC</a></p>
+  </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionTriggerNFC.html" title="KtInfiniiVisionTriggerNFC"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionTriggerEdgeBurst.html" title="KtInfiniiVisionTriggerEdgeBurst"
+             >previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="keysight_ktinfiniivision.KtInfiniiVisionTrigger.html" >KtInfiniiVisionTrigger</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionTriggerGlitch</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Keysight Technologies.  v1.0.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

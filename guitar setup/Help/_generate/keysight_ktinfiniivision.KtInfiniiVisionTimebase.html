@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>KtInfiniiVisionTimebase &#8212; KtInfiniiVision 1.0.0 Documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinxdoc.css?v=d59dc883" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <script src="../_static/documentation_options.js?v=8d563738"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="KtInfiniiVisionTimebaseWindow" href="keysight_ktinfiniivision.KtInfiniiVisionTimebaseWindow.html" />
+    <link rel="prev" title="KtInfiniiVisionSystemTracing" href="keysight_ktinfiniivision.KtInfiniiVisionSystemTracing.html" /> 
+  </head><body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<table width="100%" cellpadding="0" cellspacing="0"><tr>
+        <td valign="top"><a href="../index.html"><h1 style="font-size: 2em;">KtInfiniiVision Driver Python API</h1></a></td>
+        <td align="right"><a href="https://www.keysight.com" target="_blank"><img src="../_static\keysight.gif" alt="keysight.gif"></a></td>
+</tr></table>
+</div>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionTimebaseWindow.html" title="KtInfiniiVisionTimebaseWindow"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionSystemTracing.html" title="KtInfiniiVisionSystemTracing"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" accesskey="U">KtInfiniiVision</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionTimebase</a></li> 
+      </ul>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="ktinfiniivisiontimebase">
+<h1>KtInfiniiVisionTimebase<a class="headerlink" href="#ktinfiniivisiontimebase" title="Link to this heading">¶</a></h1>
+<blockquote>
+<div><div class="line-block">
+<div class="line">Access interface members using: <code class="docutils literal notranslate"><span class="pre">driver.timebase</span></code></div>
+<div class="line">Where <code class="docutils literal notranslate"><span class="pre">driver</span></code> is a reference to the driver’s root interface returned by the <a class="reference internal" href="../programming.html#creating-a-driver-instance"><span class="std std-ref">constructor</span></a>.</div>
+</div>
+</div></blockquote>
+<dl class="py class">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTimebase">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">KtInfiniiVisionTimebase</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTimebase" title="Link to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTimebase" title="keysight_ktinfiniivision.KtInfiniiVisionTimebase"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionTimebase</span></code></a> interface.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTimebase.delay">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">delay</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTimebase.delay" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the time interval (in seconds) between the trigger event and the display reference point on the screen.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li>The display reference point is either left, right, or center.</li>
+<li>The maximum position value depends on the time/division.</li></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTimebase.horizontal_scale">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">horizontal_scale</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTimebase.horizontal_scale" title="Link to this definition">¶</a></dt>
+<dd><p>Horizontal scale or seconds per division for the main window.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTimebase.mode">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">mode</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTimebase.mode" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the current time base mode.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.TimebaseMode.html#keysight_ktinfiniivision.TimebaseMode" title="keysight_ktinfiniivision.TimebaseMode">TimebaseMode</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">The time base modes are:
+<ul>
+    <li>Main: The normal time base mode is the main time base. It is the default time after Reset.</li>
+    <li>Window: In the Window (zoomed or delayed) time base mode, measurements are made in the zoomed time base if possible; otherwise, the measurements are made in the main time base</li>
+    <li>XY: No measurements are available in this mode. TimebaseTimeReference are not available.</li>
+    <li>Roll: In the Roll mode, data moves continuously across the display from left to right. The oscilloscope runs continuously and is untriggered. TimebaseTimeReference changes to Right.</li>
+</ul></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTimebase.range">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">range</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTimebase.range" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the full-scale horizontal time in seconds for the main window.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">The range is 10 times the current time-per-division.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTimebase.reference_clock_enabled">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">reference_clock_enabled</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTimebase.reference_clock_enabled" title="Link to this definition">¶</a></dt>
+<dd><p>Enables or disables the 10 MHz REF BNC located on the rear panel of the oscilloscope.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)">bool</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">The 10 MHz REF BNC can be used as an input for the oscilloscope's reference clock (instead of the internal 10 MHz reference), or it can be used to output the internal 10 MHz reference clock when synchronizing multiple instruments.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTimebase.reference_location">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">reference_location</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTimebase.reference_location" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the time base reference custom location when TimeReference is custom.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">Value of location can be from 0.0 to 1.0</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTimebase.time_reference">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">time_reference</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTimebase.time_reference" title="Link to this definition">¶</a></dt>
+<dd><p>Time reference selection can be made to one division from the left side of the screen, to the center of the screen, or to one division from the right side of the screen or custom.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.TimebaseReference.html#keysight_ktinfiniivision.TimebaseReference" title="keysight_ktinfiniivision.TimebaseReference">TimebaseReference</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li>For referrnce to be Custom, this property places the time reference location at a percent of the graticule width (where 0.0 is the left edge and 1.0 is the right edge)</li>
+<li>This affects the trigger point on the display.</li></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTimebase.vernier_enabled">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">vernier_enabled</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTimebase.vernier_enabled" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies whether the time base control’s ernier (fine horizontal adjustment) setting is ON or OFF.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionTimebase.window">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">window</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionTimebase.window" title="Link to this definition">¶</a></dt>
+<dd><p>Reference to the <a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionTimebaseWindow.html#keysight_ktinfiniivision.KtInfiniiVisionTimebaseWindow" title="keysight_ktinfiniivision.KtInfiniiVisionTimebaseWindow"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionTimebaseWindow</span></code></a> interface.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Readonly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionTimebaseWindow.html#keysight_ktinfiniivision.KtInfiniiVisionTimebaseWindow" title="keysight_ktinfiniivision.KtInfiniiVisionTimebaseWindow">KtInfiniiVisionTimebaseWindow</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<p><strong>Child Interfaces</strong></p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionTimebaseWindow.html">KtInfiniiVisionTimebaseWindow</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionTimebaseWindow.html#keysight_ktinfiniivision.KtInfiniiVisionTimebaseWindow"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTimebaseWindow</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionTimebaseWindow.html#keysight_ktinfiniivision.KtInfiniiVisionTimebaseWindow.horizontal_position"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTimebaseWindow.horizontal_position</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionTimebaseWindow.html#keysight_ktinfiniivision.KtInfiniiVisionTimebaseWindow.horizontal_scale"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTimebaseWindow.horizontal_scale</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionTimebaseWindow.html#keysight_ktinfiniivision.KtInfiniiVisionTimebaseWindow.range"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTimebaseWindow.range</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">KtInfiniiVisionTimebase</a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTimebase"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTimebase</span></code></a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTimebase.delay"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTimebase.delay</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTimebase.horizontal_scale"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTimebase.horizontal_scale</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTimebase.mode"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTimebase.mode</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTimebase.range"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTimebase.range</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTimebase.reference_clock_enabled"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTimebase.reference_clock_enabled</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTimebase.reference_location"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTimebase.reference_location</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTimebase.time_reference"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTimebase.time_reference</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTimebase.vernier_enabled"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTimebase.vernier_enabled</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionTimebase.window"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionTimebase.window</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionSystemTracing.html"
+                          title="previous chapter">KtInfiniiVisionSystemTracing</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionTimebaseWindow.html"
+                          title="next chapter">KtInfiniiVisionTimebaseWindow</a></p>
+  </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionTimebaseWindow.html" title="KtInfiniiVisionTimebaseWindow"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionSystemTracing.html" title="KtInfiniiVisionSystemTracing"
+             >previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionTimebase</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Keysight Technologies.  v1.0.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>KtInfiniiVisionAnalogChannel &#8212; KtInfiniiVision 1.0.0 Documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinxdoc.css?v=d59dc883" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <script src="../_static/documentation_options.js?v=8d563738"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="KtInfiniiVisionCalibration" href="keysight_ktinfiniivision.KtInfiniiVisionCalibration.html" />
+    <link rel="prev" title="KtInfiniiVisionAnalogChannelCollection" href="keysight_ktinfiniivision.KtInfiniiVisionAnalogChannelCollection.html" /> 
+  </head><body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<table width="100%" cellpadding="0" cellspacing="0"><tr>
+        <td valign="top"><a href="../index.html"><h1 style="font-size: 2em;">KtInfiniiVision Driver Python API</h1></a></td>
+        <td align="right"><a href="https://www.keysight.com" target="_blank"><img src="../_static\keysight.gif" alt="keysight.gif"></a></td>
+</tr></table>
+</div>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionCalibration.html" title="KtInfiniiVisionCalibration"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionAnalogChannelCollection.html" title="KtInfiniiVisionAnalogChannelCollection"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="keysight_ktinfiniivision.KtInfiniiVisionAnalogChannelCollection.html" accesskey="U">KtInfiniiVisionAnalogChannelCollection</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionAnalogChannel</a></li> 
+      </ul>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="ktinfiniivisionanalogchannel">
+<h1>KtInfiniiVisionAnalogChannel<a class="headerlink" href="#ktinfiniivisionanalogchannel" title="Link to this heading">¶</a></h1>
+<blockquote>
+<div><div class="line-block">
+<div class="line">Access interface members using: <code class="docutils literal notranslate"><span class="pre">driver.analog_channels[&lt;name_or_index&gt;]</span></code></div>
+<div class="line">Where <code class="docutils literal notranslate"><span class="pre">driver</span></code> is a reference to the driver’s root interface returned by the <a class="reference internal" href="../programming.html#creating-a-driver-instance"><span class="std std-ref">constructor</span></a>.</div>
+</div>
+</div></blockquote>
+<dl class="py class">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">KtInfiniiVisionAnalogChannel</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel" title="Link to this definition">¶</a></dt>
+<dd><p>Root interface for the AnalogChannel repeated capability.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.bandwidth_limit">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">bandwidth_limit</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.bandwidth_limit" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the bandwidth limit value and turns on bandwidth limiting.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; For waveforms with frequencies below the bandwidth limit, turning the bandwidth limit on removes unwanted high frequency noise from the waveform.
+<br />&#8226; Bandwidth limit also limits the trigger signal path of the channel.
+<br />&#8226; If the bandwidth limit is off, the query returns the full bandwidth of the oscilloscope.
+<br />&#8226; When the Maximum parameter is used, the oscilloscope's maximum possible bandwidth is returned.
+<br />&#8226; While you can request any limit; for X1000, X12000, X2000, X3000, and X4000 Series  the oscilloscope will choose the only bandwidth limit available i.e. 25 MHz.
+<br />&#8226; For X6000 the oscilloscope will choose the one that is greater than or equal to the limit requested. The limits available depend on the bandwidth of oscilloscope, the channel's input impedance and the channel's V/div as shown in the following table.
+<br/>
+<table style="width:300px">
+ <tr>
+  <th>Input Impedance</th>
+  <th>V/div</th> 
+  <th>Oscilloscope
+Bandwidth</th>
+<th>Limits Available</th>
+ </tr>
+<tr>
+  <td>1M Ohm</td>
+  <td>&gt;2 mV/div</td> 
+  <td>(all)</td>
+  <td>20 MHz</td>
+</tr>
+<tr>
+  <td></td>
+  <td>&lt;=2 mV/div</td> 
+  <td>(all)</td>
+  <td>20 MHz or 200 MHz</td>
+</tr>
+<tr>
+  <td>50 Ohm</td>
+  <td>(all)</td> 
+  <td>1 GHz</td>
+  <td>20 MHz or 200 MHz</td>
+</tr>
+<tr>
+  <td></td>
+  <td></td> 
+  <td>2.5 GHz</td>
+  <td>20 MHz, 200 MHz, or 1.5 GHz</td>
+</tr>
+<tr>
+  <td></td>
+  <td></td> 
+  <td>4 GHz</td>
+  <td>20 MHz, 200 MHz, 1.5 GHz, or 3 GHz</td>
+</tr>
+<tr>
+  <td></td>
+  <td></td> 
+  <td>6 GHz</td>
+  <td>20 MHz, 200 MHz, 1.5 GHz, or 3 GHz</td>
+</tr>
+</table></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.bandwidth_limit_enabled">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">bandwidth_limit_enabled</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.bandwidth_limit_enabled" title="Link to this definition">¶</a></dt>
+<dd><p>Enables or disables the bandwidth limit.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)">bool</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">If bandwidth limiting is currently Off, turning it On 
+<br />&#8226; The bandwidth of the specified channel is limited to approximately 25 MHz for X1000, X1200, X2000, X3000, X4000, T3000, M9240X and P9240X Series Oscilloscopes.
+<br />&#8226; For X6000 Series Oscilloscopes, it will invoke the lowest possible bandwidth limit 20 MHz.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.clear_protection">
+<span class="sig-name descname"><span class="pre">clear_protection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.clear_protection" title="Link to this definition">¶</a></dt>
+<dd><p>Reset the analog channel input impedance to 50 Ohms after clearing the overvoltage protection.</p>
+<dl class="field-list">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+<dt class="field-even">Remarks<span class="colon">:</span></dt>
+<dd class="field-even"><br />&#8226; When the analog channel input impedance is set to 50 Ω, the input channels are
+protected against overvoltage.
+<br />&#8226; When an overvoltage condition is sensed, the input impedance for the channel is automatically changed to 1 MΩ.
+<br />&#8226; This property does nothing for X1000, X1200 and X2000, Series Oscilloscopes as  the analog channel input impedance is always 1 MΩ, so automatic overvoltage protection is not necessary. And no protection settings are required to cleared.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.configure">
+<span class="sig-name descname"><span class="pre">configure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">range</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">coupling</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="keysight_ktinfiniivision.ChannelCoupling.html#keysight_ktinfiniivision.ChannelCoupling" title="keysight_ktinfiniivision.keysight_ktinfiniivision.ChannelCoupling"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.ChannelCoupling</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">probe_attenuation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">enabled</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.configure" title="Link to this definition">¶</a></dt>
+<dd><p>Configures the range, offset, coupling, probe attenuation, and channel enabled state of the oscilloscope.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>range</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><em>float</em></a>) – Specifies the vertical range. This value sets the Vertical Range property.</p></li>
+<li><p><strong>offset</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><em>float</em></a>) – Specifies the vertical offset. This value sets the Vertical Offset property.</p></li>
+<li><p><strong>coupling</strong> (<a class="reference internal" href="keysight_ktinfiniivision.ChannelCoupling.html#keysight_ktinfiniivision.ChannelCoupling" title="keysight_ktinfiniivision.ChannelCoupling"><em>ChannelCoupling</em></a>) – Specifies how to couple the input signal.</p></li>
+<li><p><strong>probe_attenuation</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><em>float</em></a>) – Specifies the probe attenuation. This value sets the Probe Attenuation property.</p></li>
+<li><p><strong>enabled</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)"><em>bool</em></a>) – Specifies if the channel is enabled for acquisition. This value sets the Channel Enabled property.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.configure_characteristics">
+<span class="sig-name descname"><span class="pre">configure_characteristics</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_impedance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_frequency_max</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.configure_characteristics" title="Link to this definition">¶</a></dt>
+<dd><p>Configures the input impedance and the maximum frequency of the input signal which control the electrical characteristics of the channel.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_impedance</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><em>float</em></a>) – The input impedance for the channel. The driver sets the Input Impedance to this value.</p></li>
+<li><p><strong>input_frequency_max</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><em>float</em></a>) – The maximum input frequency for the channel. The driver sets the Max Input Frequency to this value.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.coupling_mode">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">coupling_mode</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.coupling_mode" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the current coupling for the specified input channel.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.ChannelCoupling.html#keysight_ktinfiniivision.ChannelCoupling" title="keysight_ktinfiniivision.ChannelCoupling">ChannelCoupling</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.enabled">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">enabled</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.enabled" title="Link to this definition">¶</a></dt>
+<dd><p>If True, the oscilloscope acquires a waveform for this channel when the Initiate Acquisition, Read Waveform, Read Min Max Waveform, or Read Waveform Measurement methods are called.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.get_bandwidth_max">
+<span class="sig-name descname"><span class="pre">get_bandwidth_max</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.get_bandwidth_max" title="Link to this definition">¶</a></dt>
+<dd><p>Gets the oscilloscope’s maximum possible bandwidth.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The oscilloscope’s maximum possible bandwidth.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.input_frequency_max">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">input_frequency_max</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.input_frequency_max" title="Link to this definition">¶</a></dt>
+<dd><p>The maximum input frequency of the channel. It is the frequency at which the input circuitry attenuates the input signal by 3 dB. The units are hertz.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li>For 6000X series this property sets the bandwidth limit value and turns on bandwidth limiting.</li>
+<li>You can request any limit, the oscilloscope will choose the one that is
+greater than or equal to the limit requested. The limits available depend
+on the bandwidth of oscilloscope, the channel's input impedance, and the channel's V/div as shown below in the table:</li>
+<br/>
+<table style="width:900px">
+ <tr>
+  <th>Input Impedance</th>
+  <th>V/div</th> 
+  <th>Oscilloscope
+Bandwidth</th>
+<th>Limits Available</th>
+ </tr>
+<tr>
+  <td>1M Ohm</td>
+  <td>&gt;2 mV/div</td> 
+  <td>(all)</td>
+  <td>20 MHz</td>
+</tr>
+<tr>
+  <td></td>
+  <td>&lt;=2 mV/div</td> 
+  <td>(all)</td>
+  <td>20 MHz or 200 MHz</td>
+</tr>
+<tr>
+  <td>50 Ohm</td>
+  <td>(all)</td> 
+  <td>1 GHz</td>
+  <td>20 MHz or 200 MHz</td>
+</tr>
+<tr>
+  <td></td>
+  <td></td> 
+  <td>2.5 GHz</td>
+  <td>20 MHz, 200 MHz, or 1.5 GHz</td>
+</tr>
+<tr>
+  <td></td>
+  <td></td> 
+  <td>4 GHz</td>
+  <td>20 MHz, 200 MHz, 1.5 GHz, or 3 GHz</td>
+</tr>
+<tr>
+  <td></td>
+  <td></td> 
+  <td>6 GHz</td>
+  <td>20 MHz, 200 MHz, 1.5 GHz, or 3 GHz</td>
+</tr>
+</table></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.input_impedance">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">input_impedance</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.input_impedance" title="Link to this definition">¶</a></dt>
+<dd><p>The input impedance of the channel. The units are ohms.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226;  The legal values for this command are OneMeg (1 MΩ) and Fifty (50Ω).
+<br />&#8226; For X1000, X1200 and X2000 Series Oscilloscopes, only OneMeg (1 MΩ) is allowed.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.invert_enabled">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">invert_enabled</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.invert_enabled" title="Link to this definition">¶</a></dt>
+<dd><p>Inverts the input signal for the specified channel.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.label">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">label</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.label" title="Link to this definition">¶</a></dt>
+<dd><p>The analog channel label.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; For 2000X Family: Label strings are 10 characters or less, and may contain any commonly used ASCII characters. Labels with more than 10 characters are truncated to 10 characters. Lower case characters are converted to upper case.
+<br />&#8226; For 3000X, 4000X and 6000X families: Label strings are 32 characters or less, and may contain any commonly used ASCII characters. Labels with more than 32 characters are truncated to 32 characters. Lower case characters are converted to upper case.
+<br />&#8226; Setting a label for a channel also adds the name to the label list in
+non-volatile memory (replacing the oldest label in the list).</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.name">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.name" title="Link to this definition">¶</a></dt>
+<dd><p>The repeated capability physical identifier.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.offset">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">offset</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.offset" title="Link to this definition">¶</a></dt>
+<dd><p>The location of the center of the range that you specify with the Range property.  The units are volts, with respect to ground. For example, to acquire a sine wave spanning 0.0 to 10.0 volts, set Offset to 5.0 volts.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; With the input value,  &#60;suffix&#62; can be chosen from &#123; V &#124; mV &#125; 
+<br />&#8226; If offset value is set to a value outside of the legal range, the offset value is automatically set to the nearest legal value. 
+<br />&#8226; Legal values are affected by the probe attenuation setting.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.probe_attenuation">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">probe_attenuation</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.probe_attenuation" title="Link to this definition">¶</a></dt>
+<dd><p>The scaling factor by which the probe attenuates the input signal. For example, with a 10:1 probe, the value is 10.0.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; The obsolete attenuation values X1, X10, X20, X100 are also supported.
+<br />&#8226; The probe attenuation factor may be from 0.001 to 10000.
+<br />&#8226; This property does not change the actual input sensitivity of the oscilloscope. It changes the reference constants for scaling the display factors, for making automatic measurements, and for setting trigger levels.
+<br />&#8226; If an AutoProbe probe is connected to the oscilloscope, the attenuation value cannot be changed from the sensed value. Attempting to set the oscilloscope to an attenuation value other than the sensed value produces an error.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.probe_head_type">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">probe_head_type</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.probe_head_type" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets an analog channel probe head type and dB value.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.ChannelProbeHeadType.html#keysight_ktinfiniivision.ChannelProbeHeadType" title="keysight_ktinfiniivision.ChannelProbeHeadType">ChannelProbeHeadType</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li>Valid only for the 113xA Series probes.</li>
+<li>The probe head type and dB values are:
+    <ul>SEND0: Single-ended, 0 dB.</ul>
+    <ul>SEND6: Single-ended, 6 dB.</ul>
+    <ul>SEND12: Single-ended, 12 dB.</ul>
+    <ul>SEND20: Single-ended, 20 dB.</ul>
+    <ul>DIFF0: Differential, 0 dB.</ul>
+    <ul>DIFF6: Differential, 6 dB.</ul>
+    <ul>DIFF12: Differential, 12 dB.</ul>
+    <ul>DIFF20: Differential, 20 dB.</ul>
+    <ul>DSMA: Differential SMA probe head, 0 dB.</ul>
+    <ul>DSMA6: Differential SMA probe head, 6 dB.</ul>
+</li></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.probe_id">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">probe_id</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.probe_id" title="Link to this definition">¶</a></dt>
+<dd><p>Read Only - Type of probe attached to the specified oscilloscope channel.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.probe_model">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">probe_model</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.probe_model" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the model number of the supported Tektronix probe.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.ChannelProbeModel.html#keysight_ktinfiniivision.ChannelProbeModel" title="keysight_ktinfiniivision.ChannelProbeModel">ChannelProbeModel</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.probe_r_sense">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">probe_r_sense</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.probe_r_sense" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the R-sense resistor value that is being probed in DUT, When the N2820A high-sensitivity current probe is used with the N2825A user-defined R-sense head.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li>Suppoeted R-sense resistor values are from 1 mΩ to 1MΩ.</li>
+<li>When the N2820A high-sensitivity current probe is not attached, infinite value is retrned by property.</li>
+<li>When the N2820A high-sensitivity current probe is attached and a special head is attached to the probe, the property returns the value of the special head.</li></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.probe_sense">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">probe_sense</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.probe_sense" title="Link to this definition">¶</a></dt>
+<dd><p>Read Only - The probe attenuation value the oscilloscope automatically senses. If the automatic probe sense is disabled, its value is the manual probe attenuation setting.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.probe_signal">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">probe_signal</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.probe_signal" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the channel probe signal type (STYPe) to differential or single-ended when using the 113xA Series probes and determines how offset is applied.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.ChannelProbeSignalType.html#keysight_ktinfiniivision.ChannelProbeSignalType" title="keysight_ktinfiniivision.ChannelProbeSignalType">ChannelProbeSignalType</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li>Valid only for the 113xA Series probes.</li>
+<li>When single-ended is selected, the ChannelOffset changes the offset value of the probe amplifier.</li>
+<li>When differential is selected, the ChannelOffset changes the offset value of the channel amplifier.</li></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.probe_skew">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">probe_skew</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.probe_skew" title="Link to this definition">¶</a></dt>
+<dd><p>Channel-to-channel skew factor for the specified channel. Each analog channel can be adjusted + or -100 ns for a total of 200 ns difference between channels.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">The oscilloscope's probe skew control can be used to remove cable-delay errors between channels.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.probe_zoom">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">probe_zoom</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.probe_zoom" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the zoom state, whether the cable will have the Zoom In waveform (ON) or the Zoom Out waveform (OFF), when the N2820A high-sensitivity current probe is used with both the Primary and Secondary cables.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)">bool</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">The other cable will have the opposite waveform.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.protection">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">protection</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.protection" title="Link to this definition">¶</a></dt>
+<dd><p>Read Only - State of the input protection for specified channel. If a channel input has experienced an overload, TRIP (tripped) will be returned otherwise NORM (normal).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.ChannelProtection.html#keysight_ktinfiniivision.ChannelProtection" title="keysight_ktinfiniivision.ChannelProtection">ChannelProtection</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.range">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">range</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.range" title="Link to this definition">¶</a></dt>
+<dd><p>The absolute value of the input range the oscilloscope can acquire for the channel. The units are volts. For example, to acquire a sine wave spanning -5.0 to 5.0 volts, set Range to 10.0 volts.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; With the input value,  &#60;suffix&#62; can be chosen from &#123; V &#124; mV &#125; 
+<br />&#8226; When using 1:1 probe attenuation, legal values for the range are from 16 mV to 40 V.
+<br />&#8226; If the probe attenuation is changed, the scale value is multiplied by the probe's
+attenuation factor.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.scale">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">scale</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.scale" title="Link to this definition">¶</a></dt>
+<dd><p>Vertical scale, or units per division, of the selected channel.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; With the input value,  &#60;suffix&#62; can be chosen from &#123; V &#124; mV &#125;
+<br />&#8226; When using 1:1 probe attenuation, legal values for the scale are from 2 mV to 5 V.
+<br />&#8226; If the probe attenuation is changed, the scale value is multiplied by the probe's
+attenuation factor.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.units">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">units</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.units" title="Link to this definition">¶</a></dt>
+<dd><p>Measurement units for the connected probe.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.ChannelUnits.html#keysight_ktinfiniivision.ChannelUnits" title="keysight_ktinfiniivision.ChannelUnits">ChannelUnits</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; Voltage to be selcted for a voltage probe and  Ampere for a current probe.
+<br />&#8226;  Measurement results, channel sensitivity, and trigger level will reflect the measurement units you select.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.vernier">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">vernier</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.vernier" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the state of the channel’s vernier.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">KtInfiniiVisionAnalogChannel</a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAnalogChannel</span></code></a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.bandwidth_limit"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAnalogChannel.bandwidth_limit</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.bandwidth_limit_enabled"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAnalogChannel.bandwidth_limit_enabled</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.clear_protection"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAnalogChannel.clear_protection()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.configure"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAnalogChannel.configure()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.configure_characteristics"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAnalogChannel.configure_characteristics()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.coupling_mode"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAnalogChannel.coupling_mode</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.enabled"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAnalogChannel.enabled</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.get_bandwidth_max"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAnalogChannel.get_bandwidth_max()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.input_frequency_max"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAnalogChannel.input_frequency_max</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.input_impedance"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAnalogChannel.input_impedance</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.invert_enabled"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAnalogChannel.invert_enabled</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.label"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAnalogChannel.label</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.name"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAnalogChannel.name</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.offset"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAnalogChannel.offset</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.probe_attenuation"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAnalogChannel.probe_attenuation</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.probe_head_type"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAnalogChannel.probe_head_type</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.probe_id"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAnalogChannel.probe_id</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.probe_model"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAnalogChannel.probe_model</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.probe_r_sense"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAnalogChannel.probe_r_sense</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.probe_sense"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAnalogChannel.probe_sense</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.probe_signal"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAnalogChannel.probe_signal</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.probe_skew"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAnalogChannel.probe_skew</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.probe_zoom"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAnalogChannel.probe_zoom</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.protection"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAnalogChannel.protection</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.range"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAnalogChannel.range</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.scale"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAnalogChannel.scale</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.units"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAnalogChannel.units</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionAnalogChannel.vernier"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionAnalogChannel.vernier</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionAnalogChannelCollection.html"
+                          title="previous chapter">KtInfiniiVisionAnalogChannelCollection</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionCalibration.html"
+                          title="next chapter">KtInfiniiVisionCalibration</a></p>
+  </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionCalibration.html" title="KtInfiniiVisionCalibration"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionAnalogChannelCollection.html" title="KtInfiniiVisionAnalogChannelCollection"
+             >previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="keysight_ktinfiniivision.KtInfiniiVisionAnalogChannelCollection.html" >KtInfiniiVisionAnalogChannelCollection</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionAnalogChannel</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Keysight Technologies.  v1.0.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

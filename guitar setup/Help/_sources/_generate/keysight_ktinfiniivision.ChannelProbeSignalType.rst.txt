@@ -1,0 +1,14 @@
+
+ChannelProbeSignalType
+=======================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: ChannelProbeSignalType
+    :members:
+    :exclude-members: name
+
+
+
+

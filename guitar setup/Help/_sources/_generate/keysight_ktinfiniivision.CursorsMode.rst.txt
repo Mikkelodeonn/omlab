@@ -1,0 +1,14 @@
+
+CursorsMode
+============
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: CursorsMode
+    :members:
+    :exclude-members: name
+
+
+
+

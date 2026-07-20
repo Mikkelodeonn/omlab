@@ -1,0 +1,14 @@
+
+XListType
+==========
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: XListType
+    :members:
+    :exclude-members: name
+
+
+
+

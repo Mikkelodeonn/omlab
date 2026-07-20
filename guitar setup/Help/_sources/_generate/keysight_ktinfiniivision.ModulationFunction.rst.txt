@@ -1,0 +1,14 @@
+
+ModulationFunction
+===================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: ModulationFunction
+    :members:
+    :exclude-members: name
+
+
+
+

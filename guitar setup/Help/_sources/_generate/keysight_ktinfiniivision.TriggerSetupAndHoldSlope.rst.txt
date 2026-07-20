@@ -1,0 +1,14 @@
+
+TriggerSetupAndHoldSlope
+=========================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: TriggerSetupAndHoldSlope
+    :members:
+    :exclude-members: name
+
+
+
+

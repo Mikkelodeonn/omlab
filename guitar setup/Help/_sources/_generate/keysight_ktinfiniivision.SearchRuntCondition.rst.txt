@@ -1,0 +1,14 @@
+
+SearchRuntCondition
+====================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SearchRuntCondition
+    :members:
+    :exclude-members: name
+
+
+
+

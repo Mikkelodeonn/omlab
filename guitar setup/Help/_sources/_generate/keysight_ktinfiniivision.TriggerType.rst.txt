@@ -1,0 +1,14 @@
+
+TriggerType
+============
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: TriggerType
+    :members:
+    :exclude-members: name
+
+
+
+

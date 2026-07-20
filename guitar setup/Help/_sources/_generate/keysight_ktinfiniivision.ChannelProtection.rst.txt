@@ -1,0 +1,14 @@
+
+ChannelProtection
+==================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: ChannelProtection
+    :members:
+    :exclude-members: name
+
+
+
+

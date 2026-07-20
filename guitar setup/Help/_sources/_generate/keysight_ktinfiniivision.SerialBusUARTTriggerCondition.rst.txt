@@ -1,0 +1,14 @@
+
+SerialBusUARTTriggerCondition
+==============================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusUARTTriggerCondition
+    :members:
+    :exclude-members: name
+
+
+
+

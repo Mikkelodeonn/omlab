@@ -1,0 +1,14 @@
+
+TriggerTVPolarity
+==================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: TriggerTVPolarity
+    :members:
+    :exclude-members: name
+
+
+
+

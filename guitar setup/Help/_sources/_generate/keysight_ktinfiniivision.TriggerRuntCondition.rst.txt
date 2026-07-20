@@ -1,0 +1,14 @@
+
+TriggerRuntCondition
+=====================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: TriggerRuntCondition
+    :members:
+    :exclude-members: name
+
+
+
+

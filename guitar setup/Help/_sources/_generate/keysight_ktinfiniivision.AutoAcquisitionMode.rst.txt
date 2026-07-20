@@ -1,0 +1,14 @@
+
+AutoAcquisitionMode
+====================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: AutoAcquisitionMode
+    :members:
+    :exclude-members: name
+
+
+
+

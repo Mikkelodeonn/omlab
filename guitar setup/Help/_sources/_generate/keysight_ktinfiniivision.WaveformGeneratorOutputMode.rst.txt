@@ -1,0 +1,14 @@
+
+WaveformGeneratorOutputMode
+============================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: WaveformGeneratorOutputMode
+    :members:
+    :exclude-members: name
+
+
+
+

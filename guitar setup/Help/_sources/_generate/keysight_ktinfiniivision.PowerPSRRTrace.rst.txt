@@ -1,0 +1,14 @@
+
+PowerPSRRTrace
+===============
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: PowerPSRRTrace
+    :members:
+    :exclude-members: name
+
+
+
+

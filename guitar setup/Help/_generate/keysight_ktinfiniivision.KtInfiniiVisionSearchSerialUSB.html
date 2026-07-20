@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>KtInfiniiVisionSearchSerialUSB &#8212; KtInfiniiVision 1.0.0 Documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinxdoc.css?v=d59dc883" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <script src="../_static/documentation_options.js?v=8d563738"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="KtInfiniiVisionSearchTransition" href="keysight_ktinfiniivision.KtInfiniiVisionSearchTransition.html" />
+    <link rel="prev" title="KtInfiniiVisionSearchSerialUART" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUART.html" /> 
+  </head><body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<table width="100%" cellpadding="0" cellspacing="0"><tr>
+        <td valign="top"><a href="../index.html"><h1 style="font-size: 2em;">KtInfiniiVision Driver Python API</h1></a></td>
+        <td align="right"><a href="https://www.keysight.com" target="_blank"><img src="../_static\keysight.gif" alt="keysight.gif"></a></td>
+</tr></table>
+</div>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionSearchTransition.html" title="KtInfiniiVisionSearchTransition"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUART.html" title="KtInfiniiVisionSearchSerialUART"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="keysight_ktinfiniivision.KtInfiniiVisionSearch.html" >KtInfiniiVisionSearch</a> &#187;</li>
+          <li class="nav-item nav-item-5"><a href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerial.html" accesskey="U">KtInfiniiVisionSearchSerial</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionSearchSerialUSB</a></li> 
+      </ul>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="ktinfiniivisionsearchserialusb">
+<h1>KtInfiniiVisionSearchSerialUSB<a class="headerlink" href="#ktinfiniivisionsearchserialusb" title="Link to this heading">¶</a></h1>
+<blockquote>
+<div><div class="line-block">
+<div class="line">Access interface members using: <code class="docutils literal notranslate"><span class="pre">driver.search.serial.usb</span></code></div>
+<div class="line">Where <code class="docutils literal notranslate"><span class="pre">driver</span></code> is a reference to the driver’s root interface returned by the <a class="reference internal" href="../programming.html#creating-a-driver-instance"><span class="std std-ref">constructor</span></a>.</div>
+</div>
+</div></blockquote>
+<dl class="py class">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">KtInfiniiVisionSearchSerialUSB</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB" title="Link to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB" title="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUSB</span></code></a> interface.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.address">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">address</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.address" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the 7-bit Address portion of the search value (in hex.)</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; Its value can be in string format as "0xnn" where n : &#123;0,..,9  &#124; A,..,F  &#124; X  &#124; $  &#125;
+<br />&#8226; Only supported for X4000 and X6000 series oscilloscopes.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.crc">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">crc</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.crc" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the CRC portion of the search value (in hex.)</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; Its value can be in string format as "0xnn" where n : &#123;0,..,9  &#124; A,..,F  &#124; X  &#124; $  &#125;
+<br />&#8226; Only supported for X4000 and X6000 series oscilloscopes.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.data">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">data</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.data" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the Data portion of the trigger (in hex.)</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; Its value can be in string format as "0xnn" where n : &#123;0,..,9  &#124; A,..,F  &#124; X  &#124; $  &#125;
+<br />&#8226; Only supported for X4000 and X6000 series oscilloscopes.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.data_length">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">data_length</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.data_length" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the data length in bytes.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; Range of data length is from 1 to 20.
+<br />&#8226; Only supported for X4000 and X6000 series oscilloscopes.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.end_point">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">end_point</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.end_point" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the 4-bit Endpoint portion of the search value (in hex.)</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; Its value can be in string format as "0xnn" where n : &#123;0,..,9  &#124; A,..,F  &#124; X  &#124; $  &#125;
+<br />&#8226; Only supported for X4000 and X6000 series oscilloscopes.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.et">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">et</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.et" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the 2-bit ET portion of the search value (in hex.)</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; Its value can be in string format as "0xn" where n : &#123; 0 &#124; 1 &#124; 2 &#124; 3 &#124; X  &#124; $ &#125;
+<br />&#8226; Only supported for X4000 and X6000 series oscilloscopes.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.frame">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">frame</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.frame" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the 11-bit Frame portion of the search value (in hex.)</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; Its value can be in string format as "0xnn" where n : &#123;0,..,9  &#124; A,..,F  &#124; X  &#124; $  &#125;
+<br />&#8226; Only supported for X4000 and X6000 series oscilloscopes.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.hub_address">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">hub_address</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.hub_address" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the 7-bit Hub Address portion of the search value (in hex.)</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; Its value can be in string format as "0xnn" where n : &#123;0,..,9  &#124; A,..,F  &#124; X  &#124; $  &#125;
+<br />&#8226; Only supported for X4000 and X6000 series oscilloscopes.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.mode">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">mode</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.mode" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the USB search mode.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.SearchUSBMode.html#keysight_ktinfiniivision.SearchUSBMode" title="keysight_ktinfiniivision.SearchUSBMode">SearchUSBMode</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">Only supported for X4000 and X6000 series oscilloscopes.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.pid_data">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">pid_data</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.pid_data" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the USB data PID to find.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.SearchUSBPIDData.html#keysight_ktinfiniivision.SearchUSBPIDData" title="keysight_ktinfiniivision.SearchUSBPIDData">SearchUSBPIDData</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; The Data USB search mode can be selected using the SearchSerialUSBMode property.
+<br />&#8226; Only supported for X4000 and X6000 series oscilloscopes.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.pid_handshake">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">pid_handshake</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.pid_handshake" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the USB handshake PID to find.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.SearchUSBPIDHandshake.html#keysight_ktinfiniivision.SearchUSBPIDHandshake" title="keysight_ktinfiniivision.SearchUSBPIDHandshake">SearchUSBPIDHandshake</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; The Handshake USB search mode can be selected using the SearchSerialUSBMode property.
+<br />&#8226; Only supported for X4000 and X6000 series oscilloscopes.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.pid_special">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">pid_special</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.pid_special" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the USB special PID to find.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.SearchUSBPIDSpecial.html#keysight_ktinfiniivision.SearchUSBPIDSpecial" title="keysight_ktinfiniivision.SearchUSBPIDSpecial">SearchUSBPIDSpecial</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; The Special USB search mode can be selected using the SearchSerialUSBMode property.
+<br />&#8226; Only supported for X4000 and X6000 series oscilloscopes.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.pid_token">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">pid_token</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.pid_token" title="Link to this definition">¶</a></dt>
+<dd><p>Setsa and gets the USB token PID to find.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.SearchUSBPIDToken.html#keysight_ktinfiniivision.SearchUSBPIDToken" title="keysight_ktinfiniivision.SearchUSBPIDToken">SearchUSBPIDToken</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; The Token USB search mode can be selected using the SearchSerialUSBMode property.
+<br />&#8226; Only supported for X4000 and X6000 series oscilloscopes.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.port">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">port</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.port" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the 7-bit Port portion of the search value (in hex.)</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; Its value can be in string format as "0xnn" where n : &#123;0,..,9  &#124; A,..,F  &#124; X  &#124; $  &#125;
+<br />&#8226; Only supported for X4000 and X6000 series oscilloscopes.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.sc">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sc</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.sc" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the 1-bit SC portion of the search value (in hex.)</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; Its value can be in string format as "0xn" where n : &#123; 0 &#124; 1 &#124; 2 &#124; 3 &#124; X  &#124; $ &#125;
+<br />&#8226; Only supported for X4000 and X6000 series oscilloscopes.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.seu">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">seu</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.seu" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the 2-bit S and E or U portion of the search value (in hex.)</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; Its value can be in string format as "0xn" where n : &#123; 0 &#124; 1 &#124; 2 &#124; 3 &#124; X  &#124; $ &#125;
+<br />&#8226; Only supported for X4000 and X6000 series oscilloscopes.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">KtInfiniiVisionSearchSerialUSB</a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUSB</span></code></a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.address"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUSB.address</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.crc"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUSB.crc</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.data"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUSB.data</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.data_length"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUSB.data_length</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.end_point"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUSB.end_point</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.et"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUSB.et</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.frame"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUSB.frame</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.hub_address"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUSB.hub_address</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.mode"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUSB.mode</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.pid_data"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUSB.pid_data</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.pid_handshake"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUSB.pid_handshake</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.pid_special"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUSB.pid_special</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.pid_token"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUSB.pid_token</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.port"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUSB.port</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.sc"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUSB.sc</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.seu"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUSB.seu</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUART.html"
+                          title="previous chapter">KtInfiniiVisionSearchSerialUART</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionSearchTransition.html"
+                          title="next chapter">KtInfiniiVisionSearchTransition</a></p>
+  </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionSearchTransition.html" title="KtInfiniiVisionSearchTransition"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUART.html" title="KtInfiniiVisionSearchSerialUART"
+             >previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="keysight_ktinfiniivision.KtInfiniiVisionSearch.html" >KtInfiniiVisionSearch</a> &#187;</li>
+          <li class="nav-item nav-item-5"><a href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerial.html" >KtInfiniiVisionSearchSerial</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionSearchSerialUSB</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Keysight Technologies.  v1.0.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

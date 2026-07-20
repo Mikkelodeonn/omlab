@@ -1,0 +1,14 @@
+
+MathFFTWindowType
+==================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: MathFFTWindowType
+    :members:
+    :exclude-members: name
+
+
+
+

@@ -1,0 +1,14 @@
+
+SerialBusSPIClockSlope
+=======================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusSPIClockSlope
+    :members:
+    :exclude-members: name
+
+
+
+

@@ -1,0 +1,14 @@
+
+SerialBusUSBBase
+=================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusUSBBase
+    :members:
+    :exclude-members: name
+
+
+
+

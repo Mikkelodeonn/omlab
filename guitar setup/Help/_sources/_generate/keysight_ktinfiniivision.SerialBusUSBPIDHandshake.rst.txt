@@ -1,0 +1,14 @@
+
+SerialBusUSBPIDHandshake
+=========================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusUSBPIDHandshake
+    :members:
+    :exclude-members: name
+
+
+
+

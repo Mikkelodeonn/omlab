@@ -1,0 +1,14 @@
+
+DisplayMode
+============
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: DisplayMode
+    :members:
+    :exclude-members: name
+
+
+
+

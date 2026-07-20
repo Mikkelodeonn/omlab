@@ -1,0 +1,14 @@
+
+ErrorExtendedType
+==================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: ErrorExtendedType
+    :members:
+    :exclude-members: name
+
+
+
+

@@ -1,0 +1,14 @@
+
+PatternMatchingMode
+====================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: PatternMatchingMode
+    :members:
+    :exclude-members: name
+
+
+
+

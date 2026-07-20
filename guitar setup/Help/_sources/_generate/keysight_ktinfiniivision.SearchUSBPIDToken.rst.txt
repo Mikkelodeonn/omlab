@@ -1,0 +1,14 @@
+
+SearchUSBPIDToken
+==================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SearchUSBPIDToken
+    :members:
+    :exclude-members: name
+
+
+
+

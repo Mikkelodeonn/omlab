@@ -1,0 +1,14 @@
+
+PowerHarmonicsDisplayType
+==========================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: PowerHarmonicsDisplayType
+    :members:
+    :exclude-members: name
+
+
+
+

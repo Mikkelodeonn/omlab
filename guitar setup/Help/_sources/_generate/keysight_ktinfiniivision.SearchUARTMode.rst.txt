@@ -1,0 +1,14 @@
+
+SearchUARTMode
+===============
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SearchUARTMode
+    :members:
+    :exclude-members: name
+
+
+
+

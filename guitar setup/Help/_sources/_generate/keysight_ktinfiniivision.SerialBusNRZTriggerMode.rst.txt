@@ -1,0 +1,14 @@
+
+SerialBusNRZTriggerMode
+========================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusNRZTriggerMode
+    :members:
+    :exclude-members: name
+
+
+
+

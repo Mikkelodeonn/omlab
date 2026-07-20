@@ -1,0 +1,14 @@
+
+SerialBusUSBPIDData
+====================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusUSBPIDData
+    :members:
+    :exclude-members: name
+
+
+
+

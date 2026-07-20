@@ -1,0 +1,14 @@
+
+SerialBusI2STriggerCondition
+=============================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusI2STriggerCondition
+    :members:
+    :exclude-members: name
+
+
+
+

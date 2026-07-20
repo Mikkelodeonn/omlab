@@ -1,0 +1,14 @@
+
+TriggerRuntPolarity
+====================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: TriggerRuntPolarity
+    :members:
+    :exclude-members: name
+
+
+
+

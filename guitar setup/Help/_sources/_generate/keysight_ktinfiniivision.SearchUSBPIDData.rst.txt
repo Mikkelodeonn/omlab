@@ -1,0 +1,14 @@
+
+SearchUSBPIDData
+=================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SearchUSBPIDData
+    :members:
+    :exclude-members: name
+
+
+
+

@@ -1,0 +1,14 @@
+
+SerialBusUARTTriggerType
+=========================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusUARTTriggerType
+    :members:
+    :exclude-members: name
+
+
+
+

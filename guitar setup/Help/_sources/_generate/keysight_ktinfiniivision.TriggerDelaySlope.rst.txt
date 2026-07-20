@@ -1,0 +1,14 @@
+
+TriggerDelaySlope
+==================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: TriggerDelaySlope
+    :members:
+    :exclude-members: name
+
+
+
+

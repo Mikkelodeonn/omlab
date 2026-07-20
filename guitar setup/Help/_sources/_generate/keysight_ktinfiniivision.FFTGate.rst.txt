@@ -1,0 +1,14 @@
+
+FFTGate
+========
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: FFTGate
+    :members:
+    :exclude-members: name
+
+
+
+

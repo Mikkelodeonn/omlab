@@ -1,0 +1,14 @@
+
+ChannelProbeHeadType
+=====================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: ChannelProbeHeadType
+    :members:
+    :exclude-members: name
+
+
+
+

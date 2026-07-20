@@ -1,0 +1,14 @@
+
+PowerConductionMethod
+======================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: PowerConductionMethod
+    :members:
+    :exclude-members: name
+
+
+
+

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>WaveformMeasurementType &#8212; KtInfiniiVision 1.0.0 Documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinxdoc.css?v=d59dc883" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <script src="../_static/documentation_options.js?v=8d563738"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="WaveformPointMode" href="keysight_ktinfiniivision.WaveformPointMode.html" />
+    <link rel="prev" title="WaveformGeneratorOutputMode" href="keysight_ktinfiniivision.WaveformGeneratorOutputMode.html" /> 
+  </head><body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<table width="100%" cellpadding="0" cellspacing="0"><tr>
+        <td valign="top"><a href="../index.html"><h1 style="font-size: 2em;">KtInfiniiVision Driver Python API</h1></a></td>
+        <td align="right"><a href="https://www.keysight.com" target="_blank"><img src="../_static\keysight.gif" alt="keysight.gif"></a></td>
+</tr></table>
+</div>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.WaveformPointMode.html" title="WaveformPointMode"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.WaveformGeneratorOutputMode.html" title="WaveformGeneratorOutputMode"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="enumerations.html" accesskey="U">Enumerations</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">WaveformMeasurementType</a></li> 
+      </ul>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="waveformmeasurementtype">
+<h1>WaveformMeasurementType<a class="headerlink" href="#waveformmeasurementtype" title="Link to this heading">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.WaveformMeasurementType">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">WaveformMeasurementType</span></span><a class="headerlink" href="#keysight_ktinfiniivision.WaveformMeasurementType" title="Link to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>Values for the MeasFunction parameter of the measurement Read and Fetch methods.</p>
+</div></blockquote>
+<p>Members:</p>
+<blockquote>
+<div><p>RISE_TIME : The length of time for a rising edge of the signal to rise from the low reference level to the high reference level. The units are seconds.</p>
+<p>FALL_TIME : The length of time for a falling edge of the signal to fall from the high reference level to the low reference level. The units are seconds.</p>
+<p>FREQUENCY : The frequency of one complete cycle in the waveform. The units are Hertz.</p>
+<p>PERIOD : The length of time of one complete cycle in the waveform. The units are seconds.</p>
+<p>PEAK_TO_PEAK : The absolute difference between the Voltage Max and the Voltage Min. The units are Volts.</p>
+<p>VOLTAGE_MAX : The maximum amplitude found in the entire waveform. The units are Volts.</p>
+<p>VOLTAGE_MIN : The minimum amplitude found in the entire waveform. The units are Volts.</p>
+<p>VOLTAGE_HIGH : The voltage that corresponds to 100% when using the reference levels. The oscilloscope calculates this value using either the min/max or histogram methods.</p>
+<p>VOLTAGE_LOW : The voltage that corresponds to 0% when using the reference levels. The oscilloscope calculates this value using either the min/max or histogram methods.</p>
+<p>WIDTH_NEG : The length of time between the mid reference level points of a negative pulse in the waveform. The units are seconds.</p>
+<p>WIDTH_POS : The length of time between the mid reference level points of a positive pulse in the waveform. The units are seconds.</p>
+<p>DUTY_CYCLE_NEG : The ratio of the Width Neg to the Period of an integer number of cycles in the waveform expressed as a percentage.</p>
+<p>DUTY_CYCLE_POS : The ratio of the Width Pos width to the Period of an integer number of cycles in the waveform expressed as a percentage.</p>
+<p>AMPLITUDE : The Voltage High less the Voltage Low in Volts over the entire waveform.</p>
+<p>OVER_SHOOT : The relative waveform distortion that follows an edge transition.</p>
+<p>PRESHOOT : The relative waveform distortion that precedes an edge transition.</p>
+<p>FREQUENCY_COUNTER : The High precision frequency measurement made with an internal frequency counter.</p>
+<p>TIME_AT_MAX : The time of the maximum amplitude found in the entire waveform. The units are seconds.</p>
+<p>TIME_AT_MIN : The time of the minimum amplitude found in the entire waveform. The units are seconds.</p>
+<p>BURST_WIDTH : – NOT SUPPORTED IN 2000 X-SERIES –  the width of the burst on the screen. The burst width is calculated as follows: burst width = (last edge on screen - first edge on screen)This option is not available if the source is FFT (Fast Fourier Transform).</p>
+<p>FALLING_EDGE_COUNT : – NOT SUPPORTED IN 2000 X-SERIES – Measures the on-screen falling edge count.</p>
+<p>FALLING_PULSE_COUNT : – NOT SUPPORTED IN 2000 X-SERIES – Measures the on-screen falling pulse count.</p>
+<p>RISING_EDGE_COUNT : – NOT SUPPORTED IN 2000 X-SERIES – Measures the on-screen rising edge count.</p>
+<p>RISING_PULSE_COUNT : – NOT SUPPORTED IN 2000 X-SERIES – Measures the on-screen rising pulse count.</p>
+<p>STANDARD_DEVIATION : – NOT SUPPORTED IN 2000 X-SERIES – Measures the standard deviation of the selected waveform. The oscilloscope computes the standard deviation on all displayed data points.</p>
+<p>BIT_RATE : Bit rate measurement.</p>
+<p>NEGATIVE_DUTY_CYCLE : Installs a screen measurement and starts a negative duty cycle measurement.</p>
+</div></blockquote>
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">WaveformMeasurementType</a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.WaveformMeasurementType"><code class="docutils literal notranslate"><span class="pre">WaveformMeasurementType</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.WaveformGeneratorOutputMode.html"
+                          title="previous chapter">WaveformGeneratorOutputMode</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.WaveformPointMode.html"
+                          title="next chapter">WaveformPointMode</a></p>
+  </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.WaveformPointMode.html" title="WaveformPointMode"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.WaveformGeneratorOutputMode.html" title="WaveformGeneratorOutputMode"
+             >previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="enumerations.html" >Enumerations</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">WaveformMeasurementType</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Keysight Technologies.  v1.0.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

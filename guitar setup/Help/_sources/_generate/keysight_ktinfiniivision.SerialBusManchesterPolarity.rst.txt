@@ -1,0 +1,14 @@
+
+SerialBusManchesterPolarity
+============================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusManchesterPolarity
+    :members:
+    :exclude-members: name
+
+
+
+

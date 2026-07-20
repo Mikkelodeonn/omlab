@@ -1,0 +1,14 @@
+
+ChannelProbeModel
+==================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: ChannelProbeModel
+    :members:
+    :exclude-members: name
+
+
+
+

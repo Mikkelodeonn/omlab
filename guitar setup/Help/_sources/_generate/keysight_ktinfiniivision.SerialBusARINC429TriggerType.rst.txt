@@ -1,0 +1,14 @@
+
+SerialBusARINC429TriggerType
+=============================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusARINC429TriggerType
+    :members:
+    :exclude-members: name
+
+
+
+

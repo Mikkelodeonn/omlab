@@ -1,0 +1,14 @@
+
+SearchGlitchCondition
+======================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SearchGlitchCondition
+    :members:
+    :exclude-members: name
+
+
+
+

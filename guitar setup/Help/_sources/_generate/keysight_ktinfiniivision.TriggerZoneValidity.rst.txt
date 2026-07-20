@@ -1,0 +1,14 @@
+
+TriggerZoneValidity
+====================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: TriggerZoneValidity
+    :members:
+    :exclude-members: name
+
+
+
+

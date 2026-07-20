@@ -1,0 +1,14 @@
+
+MeasurementEdgeSlope
+=====================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: MeasurementEdgeSlope
+    :members:
+    :exclude-members: name
+
+
+
+

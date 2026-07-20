@@ -1,0 +1,14 @@
+
+JitterSpectrumWindowType
+=========================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: JitterSpectrumWindowType
+    :members:
+    :exclude-members: name
+
+
+
+

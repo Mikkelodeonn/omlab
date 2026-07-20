@@ -1,0 +1,14 @@
+
+SerialBusI2SWordSelectPolarity
+===============================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusI2SWordSelectPolarity
+    :members:
+    :exclude-members: name
+
+
+
+

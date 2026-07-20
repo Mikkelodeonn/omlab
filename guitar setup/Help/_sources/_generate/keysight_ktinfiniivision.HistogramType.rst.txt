@@ -1,0 +1,14 @@
+
+HistogramType
+==============
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: HistogramType
+    :members:
+    :exclude-members: name
+
+
+
+

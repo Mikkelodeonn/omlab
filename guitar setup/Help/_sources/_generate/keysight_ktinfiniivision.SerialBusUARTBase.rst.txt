@@ -1,0 +1,14 @@
+
+SerialBusUARTBase
+==================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusUARTBase
+    :members:
+    :exclude-members: name
+
+
+
+

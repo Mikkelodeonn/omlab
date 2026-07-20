@@ -1,0 +1,14 @@
+
+SerialBusCANTriggerType
+========================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusCANTriggerType
+    :members:
+    :exclude-members: name
+
+
+
+

@@ -1,0 +1,14 @@
+
+SerialBusMode
+==============
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusMode
+    :members:
+    :exclude-members: name
+
+
+
+

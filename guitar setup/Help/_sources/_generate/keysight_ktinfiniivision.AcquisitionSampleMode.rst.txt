@@ -1,0 +1,14 @@
+
+AcquisitionSampleMode
+======================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: AcquisitionSampleMode
+    :members:
+    :exclude-members: name
+
+
+
+

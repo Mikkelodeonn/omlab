@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>KtInfiniiVisionPower &#8212; KtInfiniiVision 1.0.0 Documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinxdoc.css?v=d59dc883" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <script src="../_static/documentation_options.js?v=8d563738"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="KtInfiniiVisionPowerControlLoop" href="keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop.html" />
+    <link rel="prev" title="KtInfiniiVisionMemoryResultFormat" href="keysight_ktinfiniivision.KtInfiniiVisionMemoryResultFormat.html" /> 
+  </head><body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<table width="100%" cellpadding="0" cellspacing="0"><tr>
+        <td valign="top"><a href="../index.html"><h1 style="font-size: 2em;">KtInfiniiVision Driver Python API</h1></a></td>
+        <td align="right"><a href="https://www.keysight.com" target="_blank"><img src="../_static\keysight.gif" alt="keysight.gif"></a></td>
+</tr></table>
+</div>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop.html" title="KtInfiniiVisionPowerControlLoop"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionMemoryResultFormat.html" title="KtInfiniiVisionMemoryResultFormat"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" accesskey="U">KtInfiniiVision</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionPower</a></li> 
+      </ul>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="ktinfiniivisionpower">
+<h1>KtInfiniiVisionPower<a class="headerlink" href="#ktinfiniivisionpower" title="Link to this heading">¶</a></h1>
+<blockquote>
+<div><div class="line-block">
+<div class="line">Access interface members using: <code class="docutils literal notranslate"><span class="pre">driver.power</span></code></div>
+<div class="line">Where <code class="docutils literal notranslate"><span class="pre">driver</span></code> is a reference to the driver’s root interface returned by the <a class="reference internal" href="../programming.html#creating-a-driver-instance"><span class="std std-ref">constructor</span></a>.</div>
+</div>
+</div></blockquote>
+<dl class="py class">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionPower">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">KtInfiniiVisionPower</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionPower" title="Link to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionPower" title="keysight_ktinfiniivision.KtInfiniiVisionPower"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionPower</span></code></a> interface.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionPower.apply_analysis">
+<span class="sig-name descname"><span class="pre">apply_analysis</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionPower" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionPower"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionPower</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">analysis_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="keysight_ktinfiniivision.PowerAnalysisType.html#keysight_ktinfiniivision.PowerAnalysisType" title="keysight_ktinfiniivision.keysight_ktinfiniivision.PowerAnalysisType"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.PowerAnalysisType</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionPower.apply_analysis" title="Link to this definition">¶</a></dt>
+<dd><p>Performs the specified power analysis.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>analysis_type</strong> (<a class="reference internal" href="keysight_ktinfiniivision.PowerAnalysisType.html#keysight_ktinfiniivision.PowerAnalysisType" title="keysight_ktinfiniivision.PowerAnalysisType"><em>PowerAnalysisType</em></a>) – The power analysis type.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li>Power Analysis type:
+    <ul>CLResponse: Control loop response (Bode) analysis</ul>
+    <ul>Efficiency: Efficiency power analysis</ul>
+    <ul>Harmonics: Current harmonics analysis</ul>
+    <ul>InRush: Inrush current analysis</ul>
+    <ul>Modulation: Modulation analysis</ul>
+    <ul>OnOff: Turn on/off analysis</ul>
+    <ul>PSRR: Power supply rejection ratio (PSRR) analysis</ul>
+    <ul>Quality: Power quality analysis</ul>
+    <ul>Ripple: Output ripple analysis</ul>
+    <ul>Slew: Slew rate analysis</ul>
+    <ul>Switch: Switching loss analysis</ul>
+    <ul>Transient: applies the transient analysis using theinitial current and new current settings.</ul>
+</li></dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionPower.auto_deskew">
+<span class="sig-name descname"><span class="pre">auto_deskew</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionPower" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionPower"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionPower</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionPower.auto_deskew" title="Link to this definition">¶</a></dt>
+<dd><p>Launches the auto deskew process on the oscilloscope.</p>
+<dl class="field-list">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+<dt class="field-even">Remarks<span class="colon">:</span></dt>
+<dd class="field-even"><br />&#8226; Prerequisites: <blockquote>
+    <br />&#8226; Demagnetize and zero-adjust the current probe.
+    <br />&#8226; Make connections to the U1880A deskew fixture.
+    <br />&#8226; Make sure the voltage probe and current probe channels are specified appropriately.
+</blockquote>
+<li>Use the lowest attenuation setting on the high voltage differential probes whenever possible because the voltage levels on the deskew fixture are very small.</li>
+<li>Using a higher attenuation setting may yield inaccurate skew values (and affect the measurements made) because the noise level is magnified as well.</li>
+<li>The deskew values are saved in the oscilloscope until a factory default or secure erase is performed. The next time user run the Power Application, user can use the saved deskew values or perform the deskew again.</li>
+<li>AutoDeskew is needed when part of the test setup changes (for example, a different probe, different oscilloscope channel, etc.) or when the ambient temperature has changed.</li></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionPower.control_loop">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">control_loop</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionPower.control_loop" title="Link to this definition">¶</a></dt>
+<dd><p>Reference to the <a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop.html#keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop" title="keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerControlLoop</span></code></a> interface.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Readonly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop.html#keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop" title="keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop">KtInfiniiVisionPowerControlLoop</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionPower.efficiency_type">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">efficiency_type</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionPower.efficiency_type" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the type of power that is being converted from the input to the output.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.PowerType.html#keysight_ktinfiniivision.PowerType" title="keysight_ktinfiniivision.PowerType">PowerType</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionPower.enabled">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">enabled</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionPower.enabled" title="Link to this definition">¶</a></dt>
+<dd><p>Enables or disables power analysis.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionPower.harmonics">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">harmonics</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionPower.harmonics" title="Link to this definition">¶</a></dt>
+<dd><p>Reference to the <a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerHarmonics.html#keysight_ktinfiniivision.KtInfiniiVisionPowerHarmonics" title="keysight_ktinfiniivision.KtInfiniiVisionPowerHarmonics"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerHarmonics</span></code></a> interface.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Readonly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerHarmonics.html#keysight_ktinfiniivision.KtInfiniiVisionPowerHarmonics" title="keysight_ktinfiniivision.KtInfiniiVisionPowerHarmonics">KtInfiniiVisionPowerHarmonics</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionPower.input_type">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">input_type</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionPower.input_type" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the type of power that is being converted from the input (DC or AC).</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.PowerInputType.html#keysight_ktinfiniivision.PowerInputType" title="keysight_ktinfiniivision.PowerInputType">PowerInputType</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">It is used in the Inrush Current and Turn On/Turn Off tests.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionPower.inrush">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">inrush</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionPower.inrush" title="Link to this definition">¶</a></dt>
+<dd><p>Reference to the <a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerInrush.html#keysight_ktinfiniivision.KtInfiniiVisionPowerInrush" title="keysight_ktinfiniivision.KtInfiniiVisionPowerInrush"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerInrush</span></code></a> interface.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Readonly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerInrush.html#keysight_ktinfiniivision.KtInfiniiVisionPowerInrush" title="keysight_ktinfiniivision.KtInfiniiVisionPowerInrush">KtInfiniiVisionPowerInrush</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionPower.modulation">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">modulation</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionPower.modulation" title="Link to this definition">¶</a></dt>
+<dd><p>Reference to the <a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerModulation.html#keysight_ktinfiniivision.KtInfiniiVisionPowerModulation" title="keysight_ktinfiniivision.KtInfiniiVisionPowerModulation"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerModulation</span></code></a> interface.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Readonly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerModulation.html#keysight_ktinfiniivision.KtInfiniiVisionPowerModulation" title="keysight_ktinfiniivision.KtInfiniiVisionPowerModulation">KtInfiniiVisionPowerModulation</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionPower.on_off">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">on_off</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionPower.on_off" title="Link to this definition">¶</a></dt>
+<dd><p>Reference to the <a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerOnOff.html#keysight_ktinfiniivision.KtInfiniiVisionPowerOnOff" title="keysight_ktinfiniivision.KtInfiniiVisionPowerOnOff"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerOnOff</span></code></a> interface.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Readonly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerOnOff.html#keysight_ktinfiniivision.KtInfiniiVisionPowerOnOff" title="keysight_ktinfiniivision.KtInfiniiVisionPowerOnOff">KtInfiniiVisionPowerOnOff</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionPower.psrr">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">psrr</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionPower.psrr" title="Link to this definition">¶</a></dt>
+<dd><p>Reference to the <a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerPSRR.html#keysight_ktinfiniivision.KtInfiniiVisionPowerPSRR" title="keysight_ktinfiniivision.KtInfiniiVisionPowerPSRR"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerPSRR</span></code></a> interface.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Readonly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerPSRR.html#keysight_ktinfiniivision.KtInfiniiVisionPowerPSRR" title="keysight_ktinfiniivision.KtInfiniiVisionPowerPSRR">KtInfiniiVisionPowerPSRR</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionPower.quality_measurement_type">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">quality_measurement_type</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionPower.quality_measurement_type" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the type of measurement to make in the power quality analysis.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.PowerQualityType.html#keysight_ktinfiniivision.PowerQualityType" title="keysight_ktinfiniivision.PowerQualityType">PowerQualityType</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; Power Factor: Ratio of the actual power to the apparent power
+<br />&#8226; Real (Actual) Power: The portion of power flow that, averaged over acomplete cycle of the AC waveform, results in net transfer of energy in one direction.
+<br />&#8226; Apparent Power: The portion of power flow due to stored energy, which returns to the source in each cycle.
+<br />&#8226; Reacitve Power: The difference between apparent power and realpower due to reactance.
+<br />&#8226; Crest Factor: Crest factor is the ratio between the instantaneous peak current/voltage required by the load and the RMS current/voltage (RMS stands for Root Mean Square, which is a type of average).
+<br />&#8226; Phase Angle: In the power triangle (the right triangle where apparent_power&#94;2 = real_power&#94;2 + reactive_power&#94;2), phase angle is the angle between the apparent power and the real power, indicating the amount of reactive power.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionPower.signals">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">signals</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionPower.signals" title="Link to this definition">¶</a></dt>
+<dd><p>Reference to the <a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerSignals.html#keysight_ktinfiniivision.KtInfiniiVisionPowerSignals" title="keysight_ktinfiniivision.KtInfiniiVisionPowerSignals"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerSignals</span></code></a> interface.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Readonly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerSignals.html#keysight_ktinfiniivision.KtInfiniiVisionPowerSignals" title="keysight_ktinfiniivision.KtInfiniiVisionPowerSignals">KtInfiniiVisionPowerSignals</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionPower.slew_source">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">slew_source</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionPower.slew_source" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the source (voltage or current) for the slew rate analysis.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.PowerSourceType.html#keysight_ktinfiniivision.PowerSourceType" title="keysight_ktinfiniivision.PowerSourceType">PowerSourceType</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionPower.switch">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">switch</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionPower.switch" title="Link to this definition">¶</a></dt>
+<dd><p>Reference to the <a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerSwitch.html#keysight_ktinfiniivision.KtInfiniiVisionPowerSwitch" title="keysight_ktinfiniivision.KtInfiniiVisionPowerSwitch"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerSwitch</span></code></a> interface.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Readonly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerSwitch.html#keysight_ktinfiniivision.KtInfiniiVisionPowerSwitch" title="keysight_ktinfiniivision.KtInfiniiVisionPowerSwitch">KtInfiniiVisionPowerSwitch</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionPower.transient">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">transient</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionPower.transient" title="Link to this definition">¶</a></dt>
+<dd><p>Reference to the <a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerTransient.html#keysight_ktinfiniivision.KtInfiniiVisionPowerTransient" title="keysight_ktinfiniivision.KtInfiniiVisionPowerTransient"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerTransient</span></code></a> interface.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Readonly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerTransient.html#keysight_ktinfiniivision.KtInfiniiVisionPowerTransient" title="keysight_ktinfiniivision.KtInfiniiVisionPowerTransient">KtInfiniiVisionPowerTransient</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<p><strong>Child Interfaces</strong></p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop.html">KtInfiniiVisionPowerControlLoop</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop.html#keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerControlLoop</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop.html#keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop.frequency"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerControlLoop.frequency</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop.html#keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop.gain_crossover_frequency"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerControlLoop.gain_crossover_frequency</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop.html#keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop.gain_margin"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerControlLoop.gain_margin</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop.html#keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop.get_analysis_setup_info"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerControlLoop.get_analysis_setup_info()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop.html#keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop.get_data"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerControlLoop.get_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop.html#keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop.get_output_amplitude"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerControlLoop.get_output_amplitude()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop.html#keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop.input_source"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerControlLoop.input_source</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop.html#keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop.output_impedance"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerControlLoop.output_impedance</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop.html#keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop.output_source"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerControlLoop.output_source</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop.html#keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop.phase_crossover_frequency"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerControlLoop.phase_crossover_frequency</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop.html#keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop.phase_margin"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerControlLoop.phase_margin</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop.html#keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop.points_per_decade"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerControlLoop.points_per_decade</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop.html#keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop.set_output_amplitude"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerControlLoop.set_output_amplitude()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop.html#keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop.trace_type"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerControlLoop.trace_type</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop.html#keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop.voltage_profile_enabled"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerControlLoop.voltage_profile_enabled</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoopFrequency.html">KtInfiniiVisionPowerControlLoopFrequency</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoopFrequency.html#keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoopFrequency"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerControlLoopFrequency</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoopFrequency.html#keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoopFrequency.mode"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerControlLoopFrequency.mode</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoopFrequency.html#keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoopFrequency.single"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerControlLoopFrequency.single</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoopFrequency.html#keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoopFrequency.start_sweep"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerControlLoopFrequency.start_sweep</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoopFrequency.html#keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoopFrequency.stop_sweep"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerControlLoopFrequency.stop_sweep</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerHarmonics.html">KtInfiniiVisionPowerHarmonics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerHarmonics.html#keysight_ktinfiniivision.KtInfiniiVisionPowerHarmonics"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerHarmonics</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerHarmonics.html#keysight_ktinfiniivision.KtInfiniiVisionPowerHarmonics.display_type"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerHarmonics.display_type</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerHarmonics.html#keysight_ktinfiniivision.KtInfiniiVisionPowerHarmonics.get_data"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerHarmonics.get_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerHarmonics.html#keysight_ktinfiniivision.KtInfiniiVisionPowerHarmonics.get_fail_count"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerHarmonics.get_fail_count()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerHarmonics.html#keysight_ktinfiniivision.KtInfiniiVisionPowerHarmonics.get_iteration_count"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerHarmonics.get_iteration_count()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerHarmonics.html#keysight_ktinfiniivision.KtInfiniiVisionPowerHarmonics.get_pass_fail_status"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerHarmonics.get_pass_fail_status()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerHarmonics.html#keysight_ktinfiniivision.KtInfiniiVisionPowerHarmonics.get_power_factor_value"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerHarmonics.get_power_factor_value()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerHarmonics.html#keysight_ktinfiniivision.KtInfiniiVisionPowerHarmonics.get_total_distortion_result"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerHarmonics.get_total_distortion_result()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerHarmonics.html#keysight_ktinfiniivision.KtInfiniiVisionPowerHarmonics.iec_standard"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerHarmonics.iec_standard</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerHarmonics.html#keysight_ktinfiniivision.KtInfiniiVisionPowerHarmonics.line_frequency"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerHarmonics.line_frequency</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerHarmonics.html#keysight_ktinfiniivision.KtInfiniiVisionPowerHarmonics.real_power_source"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerHarmonics.real_power_source</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerHarmonics.html#keysight_ktinfiniivision.KtInfiniiVisionPowerHarmonics.user_defined_real_power"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerHarmonics.user_defined_real_power</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerInrush.html">KtInfiniiVisionPowerInrush</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerInrush.html#keysight_ktinfiniivision.KtInfiniiVisionPowerInrush"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerInrush</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerInrush.html#keysight_ktinfiniivision.KtInfiniiVisionPowerInrush.configure"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerInrush.configure()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerInrush.html#keysight_ktinfiniivision.KtInfiniiVisionPowerInrush.next_step"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerInrush.next_step()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerInrush.html#keysight_ktinfiniivision.KtInfiniiVisionPowerInrush.stop"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerInrush.stop()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerModulation.html">KtInfiniiVisionPowerModulation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerModulation.html#keysight_ktinfiniivision.KtInfiniiVisionPowerModulation"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerModulation</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerModulation.html#keysight_ktinfiniivision.KtInfiniiVisionPowerModulation.configure"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerModulation.configure()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerModulation.html#keysight_ktinfiniivision.KtInfiniiVisionPowerModulation.source"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerModulation.source</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerModulation.html#keysight_ktinfiniivision.KtInfiniiVisionPowerModulation.type"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerModulation.type</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerOnOff.html">KtInfiniiVisionPowerOnOff</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerOnOff.html#keysight_ktinfiniivision.KtInfiniiVisionPowerOnOff"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerOnOff</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerOnOff.html#keysight_ktinfiniivision.KtInfiniiVisionPowerOnOff.analysis_type"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerOnOff.analysis_type</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerOnOff.html#keysight_ktinfiniivision.KtInfiniiVisionPowerOnOff.get_in_out_threshold"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerOnOff.get_in_out_threshold()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerOnOff.html#keysight_ktinfiniivision.KtInfiniiVisionPowerOnOff.next_step"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerOnOff.next_step()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerOnOff.html#keysight_ktinfiniivision.KtInfiniiVisionPowerOnOff.set_in_out_threshold"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerOnOff.set_in_out_threshold()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerOnOff.html#keysight_ktinfiniivision.KtInfiniiVisionPowerOnOff.stop"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerOnOff.stop()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerPSRR.html">KtInfiniiVisionPowerPSRR</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerPSRR.html#keysight_ktinfiniivision.KtInfiniiVisionPowerPSRR"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerPSRR</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerPSRR.html#keysight_ktinfiniivision.KtInfiniiVisionPowerPSRR.frequency"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerPSRR.frequency</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerPSRR.html#keysight_ktinfiniivision.KtInfiniiVisionPowerPSRR.get_analysis_setup_info"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerPSRR.get_analysis_setup_info()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerPSRR.html#keysight_ktinfiniivision.KtInfiniiVisionPowerPSRR.get_data"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerPSRR.get_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerPSRR.html#keysight_ktinfiniivision.KtInfiniiVisionPowerPSRR.get_output_amplitude"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerPSRR.get_output_amplitude()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerPSRR.html#keysight_ktinfiniivision.KtInfiniiVisionPowerPSRR.input_source"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerPSRR.input_source</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerPSRR.html#keysight_ktinfiniivision.KtInfiniiVisionPowerPSRR.output_impedance"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerPSRR.output_impedance</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerPSRR.html#keysight_ktinfiniivision.KtInfiniiVisionPowerPSRR.output_source"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerPSRR.output_source</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerPSRR.html#keysight_ktinfiniivision.KtInfiniiVisionPowerPSRR.points_per_decade"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerPSRR.points_per_decade</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerPSRR.html#keysight_ktinfiniivision.KtInfiniiVisionPowerPSRR.set_output_amplitude"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerPSRR.set_output_amplitude()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerPSRR.html#keysight_ktinfiniivision.KtInfiniiVisionPowerPSRR.trace_type"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerPSRR.trace_type</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerPSRR.html#keysight_ktinfiniivision.KtInfiniiVisionPowerPSRR.verticle_scale"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerPSRR.verticle_scale</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerPSRR.html#keysight_ktinfiniivision.KtInfiniiVisionPowerPSRR.voltage_profile_enabled"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerPSRR.voltage_profile_enabled</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerPSRRFrequency.html">KtInfiniiVisionPowerPSRRFrequency</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerPSRRFrequency.html#keysight_ktinfiniivision.KtInfiniiVisionPowerPSRRFrequency"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerPSRRFrequency</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerPSRRFrequency.html#keysight_ktinfiniivision.KtInfiniiVisionPowerPSRRFrequency.mode"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerPSRRFrequency.mode</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerPSRRFrequency.html#keysight_ktinfiniivision.KtInfiniiVisionPowerPSRRFrequency.single"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerPSRRFrequency.single</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerPSRRFrequency.html#keysight_ktinfiniivision.KtInfiniiVisionPowerPSRRFrequency.start_sweep"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerPSRRFrequency.start_sweep</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerPSRRFrequency.html#keysight_ktinfiniivision.KtInfiniiVisionPowerPSRRFrequency.stop_sweep"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerPSRRFrequency.stop_sweep</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerSignals.html">KtInfiniiVisionPowerSignals</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerSignals.html#keysight_ktinfiniivision.KtInfiniiVisionPowerSignals"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerSignals</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerSignals.html#keysight_ktinfiniivision.KtInfiniiVisionPowerSignals.auto_setup"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerSignals.auto_setup()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerSignals.html#keysight_ktinfiniivision.KtInfiniiVisionPowerSignals.efficiency_duration"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerSignals.efficiency_duration</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerSignals.html#keysight_ktinfiniivision.KtInfiniiVisionPowerSignals.expected_inrush_current"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerSignals.expected_inrush_current</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerSignals.html#keysight_ktinfiniivision.KtInfiniiVisionPowerSignals.get_current_source"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerSignals.get_current_source()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerSignals.html#keysight_ktinfiniivision.KtInfiniiVisionPowerSignals.get_voltage_source"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerSignals.get_voltage_source()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerSignals.html#keysight_ktinfiniivision.KtInfiniiVisionPowerSignals.harmonics_cycles"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerSignals.harmonics_cycles</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerSignals.html#keysight_ktinfiniivision.KtInfiniiVisionPowerSignals.max_voltage"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerSignals.max_voltage</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerSignals.html#keysight_ktinfiniivision.KtInfiniiVisionPowerSignals.modulation_duration"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerSignals.modulation_duration</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerSignals.html#keysight_ktinfiniivision.KtInfiniiVisionPowerSignals.off_duration"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerSignals.off_duration</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerSignals.html#keysight_ktinfiniivision.KtInfiniiVisionPowerSignals.on_duration"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerSignals.on_duration</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerSignals.html#keysight_ktinfiniivision.KtInfiniiVisionPowerSignals.quality_cycles"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerSignals.quality_cycles</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerSignals.html#keysight_ktinfiniivision.KtInfiniiVisionPowerSignals.ripple_duration"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerSignals.ripple_duration</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerSignals.html#keysight_ktinfiniivision.KtInfiniiVisionPowerSignals.set_current_source"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerSignals.set_current_source()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerSignals.html#keysight_ktinfiniivision.KtInfiniiVisionPowerSignals.set_voltage_source"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerSignals.set_voltage_source()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerSignals.html#keysight_ktinfiniivision.KtInfiniiVisionPowerSignals.steady_voltage"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerSignals.steady_voltage</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerSignals.html#keysight_ktinfiniivision.KtInfiniiVisionPowerSignals.transient_duration"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerSignals.transient_duration</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerSignals.html#keysight_ktinfiniivision.KtInfiniiVisionPowerSignals.voltage_overshoot_percent"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerSignals.voltage_overshoot_percent</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerSignalsMaxVoltage.html">KtInfiniiVisionPowerSignalsMaxVoltage</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerSignalsMaxVoltage.html#keysight_ktinfiniivision.KtInfiniiVisionPowerSignalsMaxVoltage"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerSignalsMaxVoltage</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerSignalsMaxVoltage.html#keysight_ktinfiniivision.KtInfiniiVisionPowerSignalsMaxVoltage.inrush"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerSignalsMaxVoltage.inrush</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerSignalsMaxVoltage.html#keysight_ktinfiniivision.KtInfiniiVisionPowerSignalsMaxVoltage.off"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerSignalsMaxVoltage.off</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerSignalsMaxVoltage.html#keysight_ktinfiniivision.KtInfiniiVisionPowerSignalsMaxVoltage.on"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerSignalsMaxVoltage.on</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerSignalsSteadyVoltage.html">KtInfiniiVisionPowerSignalsSteadyVoltage</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerSignalsSteadyVoltage.html#keysight_ktinfiniivision.KtInfiniiVisionPowerSignalsSteadyVoltage"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerSignalsSteadyVoltage</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerSignalsSteadyVoltage.html#keysight_ktinfiniivision.KtInfiniiVisionPowerSignalsSteadyVoltage.off"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerSignalsSteadyVoltage.off</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerSignalsSteadyVoltage.html#keysight_ktinfiniivision.KtInfiniiVisionPowerSignalsSteadyVoltage.on"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerSignalsSteadyVoltage.on</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerSignalsSteadyVoltage.html#keysight_ktinfiniivision.KtInfiniiVisionPowerSignalsSteadyVoltage.transient"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerSignalsSteadyVoltage.transient</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerSwitch.html">KtInfiniiVisionPowerSwitch</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerSwitch.html#keysight_ktinfiniivision.KtInfiniiVisionPowerSwitch"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerSwitch</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerSwitch.html#keysight_ktinfiniivision.KtInfiniiVisionPowerSwitch.conduction_calculation_method"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerSwitch.conduction_calculation_method</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerSwitch.html#keysight_ktinfiniivision.KtInfiniiVisionPowerSwitch.current_percentage"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerSwitch.current_percentage</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerSwitch.html#keysight_ktinfiniivision.KtInfiniiVisionPowerSwitch.rds"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerSwitch.rds</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerSwitch.html#keysight_ktinfiniivision.KtInfiniiVisionPowerSwitch.vce"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerSwitch.vce</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerSwitch.html#keysight_ktinfiniivision.KtInfiniiVisionPowerSwitch.voltage_percentage"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerSwitch.voltage_percentage</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerTransient.html">KtInfiniiVisionPowerTransient</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerTransient.html#keysight_ktinfiniivision.KtInfiniiVisionPowerTransient"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerTransient</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerTransient.html#keysight_ktinfiniivision.KtInfiniiVisionPowerTransient.initial_load_current"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerTransient.initial_load_current</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerTransient.html#keysight_ktinfiniivision.KtInfiniiVisionPowerTransient.new_load_current"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerTransient.new_load_current</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerTransient.html#keysight_ktinfiniivision.KtInfiniiVisionPowerTransient.next_step"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerTransient.next_step()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionPowerTransient.html#keysight_ktinfiniivision.KtInfiniiVisionPowerTransient.stop"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPowerTransient.stop()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">KtInfiniiVisionPower</a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionPower"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPower</span></code></a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionPower.apply_analysis"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPower.apply_analysis()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionPower.auto_deskew"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPower.auto_deskew()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionPower.control_loop"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPower.control_loop</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionPower.efficiency_type"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPower.efficiency_type</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionPower.enabled"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPower.enabled</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionPower.harmonics"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPower.harmonics</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionPower.input_type"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPower.input_type</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionPower.inrush"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPower.inrush</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionPower.modulation"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPower.modulation</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionPower.on_off"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPower.on_off</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionPower.psrr"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPower.psrr</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionPower.quality_measurement_type"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPower.quality_measurement_type</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionPower.signals"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPower.signals</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionPower.slew_source"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPower.slew_source</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionPower.switch"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPower.switch</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionPower.transient"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionPower.transient</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionMemoryResultFormat.html"
+                          title="previous chapter">KtInfiniiVisionMemoryResultFormat</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop.html"
+                          title="next chapter">KtInfiniiVisionPowerControlLoop</a></p>
+  </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionPowerControlLoop.html" title="KtInfiniiVisionPowerControlLoop"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionMemoryResultFormat.html" title="KtInfiniiVisionMemoryResultFormat"
+             >previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionPower</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Keysight Technologies.  v1.0.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

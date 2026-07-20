@@ -1,0 +1,14 @@
+
+SerialBusUSBPdExtendedMessage
+==============================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusUSBPdExtendedMessage
+    :members:
+    :exclude-members: name
+
+
+
+

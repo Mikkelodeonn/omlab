@@ -1,0 +1,14 @@
+
+SerialBusIICTriggerCondition
+=============================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusIICTriggerCondition
+    :members:
+    :exclude-members: name
+
+
+
+

@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>KtInfiniiVisionSerialBusUSB &#8212; KtInfiniiVision 1.0.0 Documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinxdoc.css?v=d59dc883" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <script src="../_static/documentation_options.js?v=8d563738"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="KtInfiniiVisionSerialBusUSBPd" href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSBPd.html" />
+    <link rel="prev" title="KtInfiniiVisionSerialBusUART" href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.html" /> 
+  </head><body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<table width="100%" cellpadding="0" cellspacing="0"><tr>
+        <td valign="top"><a href="../index.html"><h1 style="font-size: 2em;">KtInfiniiVision Driver Python API</h1></a></td>
+        <td align="right"><a href="https://www.keysight.com" target="_blank"><img src="../_static\keysight.gif" alt="keysight.gif"></a></td>
+</tr></table>
+</div>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSBPd.html" title="KtInfiniiVisionSerialBusUSBPd"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.html" title="KtInfiniiVisionSerialBusUART"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusCollection.html" >KtInfiniiVisionSerialBusCollection</a> &#187;</li>
+          <li class="nav-item nav-item-5"><a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBus.html" accesskey="U">KtInfiniiVisionSerialBus</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionSerialBusUSB</a></li> 
+      </ul>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="ktinfiniivisionserialbususb">
+<h1>KtInfiniiVisionSerialBusUSB<a class="headerlink" href="#ktinfiniivisionserialbususb" title="Link to this heading">¶</a></h1>
+<blockquote>
+<div><div class="line-block">
+<div class="line">Access interface members using: <code class="docutils literal notranslate"><span class="pre">driver.serial_buses[&lt;name_or_index&gt;].usb</span></code></div>
+<div class="line">Where <code class="docutils literal notranslate"><span class="pre">driver</span></code> is a reference to the driver’s root interface returned by the <a class="reference internal" href="../programming.html#creating-a-driver-instance"><span class="std std-ref">constructor</span></a>.</div>
+</div>
+</div></blockquote>
+<dl class="py class">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">KtInfiniiVisionSerialBusUSB</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB" title="Link to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB" title="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUSB</span></code></a> interface.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.address">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">address</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.address" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the 7-bit Address portion of the trigger for the selected bus, in binary or hex.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; Its value can be in binary format or in hexadecimal format. <blockquote>
+<br />&#8226; "nn" where n = {0 | 1 | X}
+<br />&#8226; "0xn" where n ::= {0,..,9 | A,..,F | X | $}
+</blockquote></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.base">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">base</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.base" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the base to use for the USB decode and Lister display, controlling how the data or payload field is displayed.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.SerialBusUSBBase.html#keysight_ktinfiniivision.SerialBusUSBBase" title="keysight_ktinfiniivision.SerialBusUSBBase">SerialBusUSBBase</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">All other fields are displayed in hex.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.condition">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">condition</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.condition" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets USB trigger mode for the selected bus.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.SerialBusUSBCondition.html#keysight_ktinfiniivision.SerialBusUSBCondition" title="keysight_ktinfiniivision.SerialBusUSBCondition">SerialBusUSBCondition</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br /></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.crc_portion">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">crc_portion</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.crc_portion" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the CRC portion of the trigger for the selected bus, in binary or hex.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; Its value can be in binary format or in hexadecimal format. <blockquote>
+<br />&#8226; "nn" where n = {0 | 1 | X}
+<br />&#8226; "0xn" where n ::= {0,..,9 | A,..,F | X | $}
+</blockquote></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.d_minus_source">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">d_minus_source</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.d_minus_source" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets which signal is used as the USB D- source for the selected bus.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; The DMinusSource can be specified in one the following string formats:
+<blockquote>
+<br />&#8226; For DSO Models:
+ <blockquote>
+<br />&#8226; "Channel&lt;n&gt;", where &lt;n&gt; can be from 1 to the number of analog channels.
+</blockquote>
+<br />&#8226; For MSO Models:
+ <blockquote>
+ <br />&#8226; "Channel&lt;n&gt;", where &lt;n&gt; can be from 1 to the number of analog channels.
+ <br />&#8226; "DigitalChannel&lt;d&gt;", where &lt;d&gt; can be from 0 to the number of digital channels minus 1.
+ </blockquote>
+ </blockquote>
+ <br />&#8226; On 4-channel oscilloscopes, users should use different channel pairs for the D+ and D- signals. This provides the maximum sample rate. (Channels 1 and 2 are one pair and channels 3 and 4 are the other pair.)</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.d_plus_source">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">d_plus_source</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.d_plus_source" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets which signal is used as the USB D+ source for the selected bus.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; The DPlusSource can be specified in one the following string formats:
+<blockquote>
+<br />&#8226; For DSO Models:
+ <blockquote>
+<br />&#8226; "Channel&lt;n&gt;", where &lt;n&gt; can be from 1 to the number of analog channels.
+</blockquote>
+<br />&#8226; For MSO Models:
+ <blockquote>
+ <br />&#8226; "Channel&lt;n&gt;", where &lt;n&gt; can be from 1 to the number of analog channels.
+ <br />&#8226; "DigitalChannel&lt;d&gt;", where &lt;d&gt; can be from 0 to the number of digital channels minus 1.
+ </blockquote>
+ </blockquote></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.data_length">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">data_length</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.data_length" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the data length in bytes.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">It range is from 1 to 20.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.data_portion">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">data_portion</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.data_portion" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the Data portion of the trigger for the selected bus, in binary or hex.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; Its value can be in binary format or in hexadecimal format. <blockquote>
+<br />&#8226; "nn" where n = {0 | 1 | X}
+<br />&#8226; "0xn" where n ::= {0,..,9 | A,..,F | X | $}
+</blockquote></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.differential_source">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">differential_source</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.differential_source" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets which signal is used as the differential source for the selected bus. Only used for High Speed.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">The Differential Source can be in the follwoing format: "Channel&lt;n&gt;", where &lt;n&gt; can be from 1 to the number of analog channels</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.end_point_portion">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">end_point_portion</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.end_point_portion" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the 4-bit Endpoint portion of the trigger for the selected bus, in binary or hex.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; Its value can be in binary format or in hexadecimal format. <blockquote>
+<br />&#8226; "nn" where n = {0 | 1 | X}
+<br />&#8226; "0xn" where n ::= {0,..,9 | A,..,F | X | $}
+</blockquote></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.et_portion">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">et_portion</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.et_portion" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the 2-bit ET portion of the trigger for the selected bus, in binary or hex.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; Its value can be in binary format or in hexadecimal format. <blockquote>
+<br />&#8226; "nn" where n = {0 | 1 | X}
+<br />&#8226; "0xn" where n ::= {0,..,9 | A,..,F | X | $}
+</blockquote></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.frame_portion">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">frame_portion</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.frame_portion" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the 11-bit Frame portion of the trigger for the selected bus, in binary or hex.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; Its value can be in binary format or in hexadecimal format. <blockquote>
+<br />&#8226; "nn" where n = {0 | 1 | X}
+<br />&#8226; "0xn" where n ::= {0,..,9 | A,..,F | X | $}
+</blockquote></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.hub_address_portion">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">hub_address_portion</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.hub_address_portion" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the 7-bit Hub Address portion of the trigger for the selected bus, in binary or hex.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; Its value can be in binary format or in hexadecimal format. <blockquote>
+<br />&#8226; "nn" where n = {0 | 1 | X}
+<br />&#8226; "0xn" where n ::= {0,..,9 | A,..,F | X | $}
+</blockquote></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.pid_check_portion">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">pid_check_portion</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.pid_check_portion" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the 4-bit PID check portion of the trigger for the selected bus, in binary or hex.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; Its value can be in binary format or in hexadecimal format. <blockquote>
+<br />&#8226; "nn" where n = {0 | 1 | X}
+<br />&#8226; "0xn" where n ::= {0,..,9 | A,..,F | X | $}
+</blockquote></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.pid_data">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">pid_data</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.pid_data" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the USB data PID to trigger on for the selected bus.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.SerialBusUSBPIDData.html#keysight_ktinfiniivision.SerialBusUSBPIDData" title="keysight_ktinfiniivision.SerialBusUSBPIDData">SerialBusUSBPIDData</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li />The specified PID does not include the PID check value, which is specified using the SerialBussUSBPIDCheckPortion property.
+<li />The Data USB trigger mode can be selected using the Condition property.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.pid_handshake">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">pid_handshake</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.pid_handshake" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the USB handshake PID to trigger on for the selected bus.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.SerialBusUSBPIDHandshake.html#keysight_ktinfiniivision.SerialBusUSBPIDHandshake" title="keysight_ktinfiniivision.SerialBusUSBPIDHandshake">SerialBusUSBPIDHandshake</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li />The specified PID does not include the PID check value, which is specified using the SerialBussUSBPIDCheckPortion property.
+<li />The Handshake USB trigger mode can be selected using the Condition property.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.pid_special">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">pid_special</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.pid_special" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the USB special PID to trigger on for the selected bus</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.SerialBusUSBPIDSpecial.html#keysight_ktinfiniivision.SerialBusUSBPIDSpecial" title="keysight_ktinfiniivision.SerialBusUSBPIDSpecial">SerialBusUSBPIDSpecial</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li />The specified PID does not include the PID check value, which is specified using the SerialBussUSBPIDCheckPortion property.
+<li />The special USB trigger mode can be selected using the Condition property.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.pid_token">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">pid_token</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.pid_token" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the USB token PID to trigger on for the selected bus.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.SerialBusUSBPIDToken.html#keysight_ktinfiniivision.SerialBusUSBPIDToken" title="keysight_ktinfiniivision.SerialBusUSBPIDToken">SerialBusUSBPIDToken</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li />The specified PID does not include the PID check value, which is specified using the SerialBussUSBPIDCheckPortion property.
+<li />The Token USB trigger mode can be selected using the SerialBussUSBCondition property.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.port_portion">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">port_portion</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.port_portion" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the 7-bit Port portion of the trigger for the selected bus, in binary or hex.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; Its value can be in binary format or in hexadecimal format. <blockquote>
+<br />&#8226; "nn" where n = {0 | 1 | X}
+<br />&#8226; "0xn" where n ::= {0,..,9 | A,..,F | X | $}
+</blockquote></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.sc_portion">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sc_portion</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.sc_portion" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the 1-bit SC portion of the trigger for the selected bus, in binary or hex.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; Its value can be in binary format or in hexadecimal format. <blockquote>
+<br />&#8226; "nn" where n = {0 | 1 | X}
+<br />&#8226; "0xn" where n ::= {0,..,9 | A,..,F | X | $}
+</blockquote></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.seu_portion">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">seu_portion</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.seu_portion" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the 2-bit S and E or U portion of the trigger for the selected bus, in binary or hex.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; Its value can be in binary format or in hexadecimal format. <blockquote>
+<br />&#8226; "nn" where n = {0 | 1 | X}
+<br />&#8226; "0xn" where n ::= {0,..,9 | A,..,F | X | $}
+</blockquote></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.speed">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">speed</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.speed" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the speed of the USB interface for the selected bus.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.SerialBusUSBSpeed.html#keysight_ktinfiniivision.SerialBusUSBSpeed" title="keysight_ktinfiniivision.SerialBusUSBSpeed">SerialBusUSBSpeed</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">KtInfiniiVisionSerialBusUSB</a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUSB</span></code></a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.address"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUSB.address</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.base"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUSB.base</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.condition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUSB.condition</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.crc_portion"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUSB.crc_portion</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.d_minus_source"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUSB.d_minus_source</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.d_plus_source"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUSB.d_plus_source</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.data_length"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUSB.data_length</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.data_portion"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUSB.data_portion</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.differential_source"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUSB.differential_source</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.end_point_portion"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUSB.end_point_portion</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.et_portion"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUSB.et_portion</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.frame_portion"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUSB.frame_portion</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.hub_address_portion"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUSB.hub_address_portion</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.pid_check_portion"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUSB.pid_check_portion</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.pid_data"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUSB.pid_data</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.pid_handshake"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUSB.pid_handshake</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.pid_special"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUSB.pid_special</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.pid_token"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUSB.pid_token</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.port_portion"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUSB.port_portion</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.sc_portion"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUSB.sc_portion</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.seu_portion"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUSB.seu_portion</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSB.speed"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSerialBusUSB.speed</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.html"
+                          title="previous chapter">KtInfiniiVisionSerialBusUART</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSBPd.html"
+                          title="next chapter">KtInfiniiVisionSerialBusUSBPd</a></p>
+  </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUSBPd.html" title="KtInfiniiVisionSerialBusUSBPd"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusUART.html" title="KtInfiniiVisionSerialBusUART"
+             >previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusCollection.html" >KtInfiniiVisionSerialBusCollection</a> &#187;</li>
+          <li class="nav-item nav-item-5"><a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBus.html" >KtInfiniiVisionSerialBus</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionSerialBusUSB</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Keysight Technologies.  v1.0.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

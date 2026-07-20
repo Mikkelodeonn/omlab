@@ -1,0 +1,19 @@
+
+KtInfiniiVisionWaveGenArbitrary
+================================
+    | Access interface members using: ``driver.wave_gens[<name_or_index>].arbitrary``
+    | Where ``driver`` is a reference to the driver's root interface returned by the :ref:`constructor <programming:Creating a Driver Instance>`.
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: KtInfiniiVisionWaveGenArbitrary
+    :members:
+    :exclude-members: get_name_by_index, items
+
+
+
+**Child Interfaces**
+
+
+.. toctree::
+   keysight_ktinfiniivision.KtInfiniiVisionWaveGenArbitraryAttribute

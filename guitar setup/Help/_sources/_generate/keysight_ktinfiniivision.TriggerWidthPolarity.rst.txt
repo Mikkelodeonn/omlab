@@ -1,0 +1,14 @@
+
+TriggerWidthPolarity
+=====================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: TriggerWidthPolarity
+    :members:
+    :exclude-members: name
+
+
+
+

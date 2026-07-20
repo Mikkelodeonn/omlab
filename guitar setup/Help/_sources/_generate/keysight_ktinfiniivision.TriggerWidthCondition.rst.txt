@@ -1,0 +1,14 @@
+
+TriggerWidthCondition
+======================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: TriggerWidthCondition
+    :members:
+    :exclude-members: name
+
+
+
+

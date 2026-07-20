@@ -1,0 +1,14 @@
+
+DigitalChannelSize
+===================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: DigitalChannelSize
+    :members:
+    :exclude-members: name
+
+
+
+

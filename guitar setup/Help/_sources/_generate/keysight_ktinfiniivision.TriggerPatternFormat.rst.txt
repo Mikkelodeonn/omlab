@@ -1,0 +1,14 @@
+
+TriggerPatternFormat
+=====================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: TriggerPatternFormat
+    :members:
+    :exclude-members: name
+
+
+
+

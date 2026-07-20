@@ -1,0 +1,14 @@
+
+TriggerTransitionSlope
+=======================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: TriggerTransitionSlope
+    :members:
+    :exclude-members: name
+
+
+
+

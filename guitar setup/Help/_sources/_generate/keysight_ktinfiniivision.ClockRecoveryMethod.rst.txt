@@ -1,0 +1,14 @@
+
+ClockRecoveryMethod
+====================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: ClockRecoveryMethod
+    :members:
+    :exclude-members: name
+
+
+
+

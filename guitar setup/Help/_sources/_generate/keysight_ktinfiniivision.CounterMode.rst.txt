@@ -1,0 +1,14 @@
+
+CounterMode
+============
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: CounterMode
+    :members:
+    :exclude-members: name
+
+
+
+

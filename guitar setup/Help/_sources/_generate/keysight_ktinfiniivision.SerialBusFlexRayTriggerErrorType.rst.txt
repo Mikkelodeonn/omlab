@@ -1,0 +1,14 @@
+
+SerialBusFlexRayTriggerErrorType
+=================================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusFlexRayTriggerErrorType
+    :members:
+    :exclude-members: name
+
+
+
+

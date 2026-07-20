@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>KtInfiniiVisionMeasurementCollectionStatistics &#8212; KtInfiniiVision 1.0.0 Documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinxdoc.css?v=d59dc883" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <script src="../_static/documentation_options.js?v=8d563738"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="KtInfiniiVisionMemory" href="keysight_ktinfiniivision.KtInfiniiVisionMemory.html" />
+    <link rel="prev" title="KtInfiniiVisionMeasurementCollectionFFT" href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionFFT.html" /> 
+  </head><body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<table width="100%" cellpadding="0" cellspacing="0"><tr>
+        <td valign="top"><a href="../index.html"><h1 style="font-size: 2em;">KtInfiniiVision Driver Python API</h1></a></td>
+        <td align="right"><a href="https://www.keysight.com" target="_blank"><img src="../_static\keysight.gif" alt="keysight.gif"></a></td>
+</tr></table>
+</div>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionMemory.html" title="KtInfiniiVisionMemory"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionFFT.html" title="KtInfiniiVisionMeasurementCollectionFFT"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.html" accesskey="U">KtInfiniiVisionMeasurementCollection</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionMeasurementCollectionStatistics</a></li> 
+      </ul>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="ktinfiniivisionmeasurementcollectionstatistics">
+<h1>KtInfiniiVisionMeasurementCollectionStatistics<a class="headerlink" href="#ktinfiniivisionmeasurementcollectionstatistics" title="Link to this heading">¶</a></h1>
+<blockquote>
+<div><div class="line-block">
+<div class="line">Access interface members using: <code class="docutils literal notranslate"><span class="pre">driver.measurements.statistics</span></code></div>
+<div class="line">Where <code class="docutils literal notranslate"><span class="pre">driver</span></code> is a reference to the driver’s root interface returned by the <a class="reference internal" href="../programming.html#creating-a-driver-instance"><span class="std std-ref">constructor</span></a>.</div>
+</div>
+</div></blockquote>
+<dl class="py class">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">KtInfiniiVisionMeasurementCollectionStatistics</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics" title="Link to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics" title="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionStatistics</span></code></a> interface.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.count">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">count</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.count" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the maximum number of values used when calculating measurement statistics.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">The Count property can be specified in one of the following string formats:
+<ul>
+<li>"Infinite"</li>
+<li>"n", where n: an integer from 2 to 2000</li>
+</ul></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.display_enabled">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">display_enabled</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.display_enabled" title="Link to this definition">¶</a></dt>
+<dd><p>Enables or disables the display of the measurement statistics.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.format">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">format</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.format" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the type of information returned by the GetResults() method.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.MeasurementStatisticsFormat.html#keysight_ktinfiniivision.MeasurementStatisticsFormat" title="keysight_ktinfiniivision.MeasurementStatisticsFormat">MeasurementStatisticsFormat</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">The Format property can be set to one of the following values: 
+<ul>
+<li>All: All statistics are on</li>
+<li>Current: Only the Current statistic is on</li>
+<li>Minimum: Only the Minimum statistic is on</li>
+<li>Maximum: Only the Maximum statistic is on</li>
+<li>Mean: Only the Mean statistic is on</li>
+<li>StandardDeviation: Only the Standard Deviation statistic is on</li>
+<li>Count: Only the Count statistic is on</li>
+</ul></dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.get_results">
+<span class="sig-name descname"><span class="pre">get_results</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.get_results" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the results of the continuously displayed measurements.</p>
+<dl class="field-list">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><ul class="simple">
+<li><p><strong>results</strong> (str) : The results for the continuously displayed measurements.</p></li>
+</ul>
+</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li>If more than one measurement is running continuously, the return values are duplicated for each continuous measurement from the first to last (left to right) result displayed. Each result returned is separated from the previous result by a comma. There is a maximum of four continuous measurements that can be continuously displayed at a time.</li>
+
+<li>When no quick measurements are installed, this method returns nothing (empty string). When the count for any of the measurements is 0, the value of infinity (9.9E+37) is returned for the min, max, mean, and standard deviation.</li>
+
+<li>Measurement label, current, min, max, mean, std dev, and count are only returned if the If MeasurementsStatisticsFormatproperty is set to ON.</li>
+
+<li>The following shows the order of values received for a single measurement:</li>
+<table>
+<tr>
+    <td>Measurement label</td>
+    <td>current</td>
+    <td>min</td>
+    <td>max</td>
+    <td>mean</td>
+    <td>std dev</td>
+    <td>count</td>
+</tr>
+</table>
+<br /><br />
+If MeasurementsStatisticsFormat property is set to Current, Min, Max, Mean, Standard Deviation or Count, only that particular statistic value is returned for each measurement that is on.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.increment">
+<span class="sig-name descname"><span class="pre">increment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.increment" title="Link to this definition">¶</a></dt>
+<dd><p>This command updates the statistics once (incrementing the count by one) using the current measurement values.</p>
+<dl class="field-list">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+<dt class="field-even">Remarks<span class="colon">:</span></dt>
+<dd class="field-even"><li>This command lets you, for example, gather statistics over multiple pulses captured in a single acquisition. To do this, change the horizontal position and enter the command for each new pulse that is measured.</li>
+
+<li>This method is only valid when the oscilloscope is stopped and quick measurements are on. </li>
+
+<li>The method is valid in segmented acquisition mode even though the corresponding front panel softkey is not available.</li></dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.install_measurement">
+<span class="sig-name descname"><span class="pre">install_measurement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">measurement</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="keysight_ktinfiniivision.MeasurementFunction.html#keysight_ktinfiniivision.MeasurementFunction" title="keysight_ktinfiniivision.keysight_ktinfiniivision.MeasurementFunction"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.MeasurementFunction</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">source</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.install_measurement" title="Link to this definition">¶</a></dt>
+<dd><p>Installs a measurement on the screen as a continuously running measurement. The source is specified using Source parameter and the measurement is specified using the Measurement parameter.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>measurement</strong> (<a class="reference internal" href="keysight_ktinfiniivision.MeasurementFunction.html#keysight_ktinfiniivision.MeasurementFunction" title="keysight_ktinfiniivision.MeasurementFunction"><em>MeasurementFunction</em></a>) – Specifies the type of the measurement to install.</p></li>
+<li><p><strong>source</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><em>str</em></a>) – Specifies the source for the measurement.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.install_power_measurement">
+<span class="sig-name descname"><span class="pre">install_power_measurement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">measurement</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="keysight_ktinfiniivision.MeasurementPowerFunction.html#keysight_ktinfiniivision.MeasurementPowerFunction" title="keysight_ktinfiniivision.keysight_ktinfiniivision.MeasurementPowerFunction"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.MeasurementPowerFunction</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">source1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">source2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.install_power_measurement" title="Link to this definition">¶</a></dt>
+<dd><p>Installs the specified power measurement.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>measurement</strong> (<a class="reference internal" href="keysight_ktinfiniivision.MeasurementPowerFunction.html#keysight_ktinfiniivision.MeasurementPowerFunction" title="keysight_ktinfiniivision.MeasurementPowerFunction"><em>MeasurementPowerFunction</em></a>) – The power measurements.</p></li>
+<li><p><strong>source1</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><em>str</em></a>) – Source - Channel{1|2|..|max analog channels}</p></li>
+<li><p><strong>source2</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><em>str</em></a>) – Source - Channel{1|2|..|max analog channels}</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li>The Power measurements are:
+    <ul>Angle: Installs a power phase angle measurement on screen.</ul>
+    <ul>Apparent: Installs an apparent power measurement on screen.</ul>
+    <ul>CPLoss: Installs a power loss per cycle measurement on screen.</ul>
+    <ul>Crest: Installs a crest factor measurement on screen.</ul>
+    <ul>Efficiency: Installs an efficiency measurement on screen.</ul>
+    <ul>ELoss: Installs an energy loss measurement on screen.</ul>
+    <ul>Factor: Installs a power factor measurement on screen.</ul>
+    <ul>IPower: Installs an input power measurement on screen.</ul>
+    <ul>OffTime: Installs an "off time" measurement on screen.</ul>
+    <ul>OnTime: Installs an "on time" measurement on screen.</ul>
+    <ul>OPower: Installs an output power measurement on screen.</ul>
+    <ul>PCurrent: Installs a peak current measurement on screen.</ul>
+    <ul>PLoss: Installs a power loss measurement on screen.</ul>
+    <ul>RDson:  Installs a power Rds-on measurement on screen.</ul>
+    <ul>Reactive: Installs a reactive power measurement on screen.</ul>
+    <ul>Real: Installs a real power measurement on screen.</ul>
+    <ul>Ripple: Installs an output ripple measurement on screen.</ul>
+    <ul>TResponse: Installs a transient response time measurement on screen.</ul>
+    <ul>VceSat: Installs a power Vce saturation measurement on screen.</ul>
+</li>
+<li>The Source1 parameter is the channel probing voltage and the Source2 parameter is the channel probing current.</li></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.relative_std_dev_enabled">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">relative_std_dev_enabled</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.relative_std_dev_enabled" title="Link to this definition">¶</a></dt>
+<dd><p>Disables or enables relative standard deviations, that is, standard deviation/mean, in the measurement statistics.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.reset">
+<span class="sig-name descname"><span class="pre">reset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.reset" title="Link to this definition">¶</a></dt>
+<dd><p>This method resets the measurement statistics, zeroing the counts. Note that the measurement (statistics) configuration is not deleted.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">KtInfiniiVisionMeasurementCollectionStatistics</a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionStatistics</span></code></a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.count"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionStatistics.count</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.display_enabled"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionStatistics.display_enabled</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.format"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionStatistics.format</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.get_results"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionStatistics.get_results()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.increment"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionStatistics.increment()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.install_measurement"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionStatistics.install_measurement()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.install_power_measurement"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionStatistics.install_power_measurement()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.relative_std_dev_enabled"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionStatistics.relative_std_dev_enabled</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionStatistics.reset"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionMeasurementCollectionStatistics.reset()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionFFT.html"
+                          title="previous chapter">KtInfiniiVisionMeasurementCollectionFFT</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionMemory.html"
+                          title="next chapter">KtInfiniiVisionMemory</a></p>
+  </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionMemory.html" title="KtInfiniiVisionMemory"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollectionFFT.html" title="KtInfiniiVisionMeasurementCollectionFFT"
+             >previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="keysight_ktinfiniivision.KtInfiniiVisionMeasurementCollection.html" >KtInfiniiVisionMeasurementCollection</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionMeasurementCollectionStatistics</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Keysight Technologies.  v1.0.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+
+PowerFrequencyMode
+===================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: PowerFrequencyMode
+    :members:
+    :exclude-members: name
+
+
+
+

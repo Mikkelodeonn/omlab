@@ -1,0 +1,14 @@
+
+TriggerTVEvent
+===============
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: TriggerTVEvent
+    :members:
+    :exclude-members: name
+
+
+
+

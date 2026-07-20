@@ -1,0 +1,14 @@
+
+WaveformByteOrder
+==================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: WaveformByteOrder
+    :members:
+    :exclude-members: name
+
+
+
+

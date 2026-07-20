@@ -1,0 +1,14 @@
+
+TriggerPXIMode
+===============
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: TriggerPXIMode
+    :members:
+    :exclude-members: name
+
+
+
+

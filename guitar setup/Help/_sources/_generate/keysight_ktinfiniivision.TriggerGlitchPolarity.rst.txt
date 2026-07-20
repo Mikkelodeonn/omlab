@@ -1,0 +1,14 @@
+
+TriggerGlitchPolarity
+======================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: TriggerGlitchPolarity
+    :members:
+    :exclude-members: name
+
+
+
+

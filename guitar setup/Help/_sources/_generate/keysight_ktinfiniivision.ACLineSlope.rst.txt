@@ -1,0 +1,14 @@
+
+ACLineSlope
+============
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: ACLineSlope
+    :members:
+    :exclude-members: name
+
+
+
+

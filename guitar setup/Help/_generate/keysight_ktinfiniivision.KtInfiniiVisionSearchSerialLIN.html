@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>KtInfiniiVisionSearchSerialLIN &#8212; KtInfiniiVision 1.0.0 Documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinxdoc.css?v=d59dc883" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <script src="../_static/documentation_options.js?v=8d563738"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="KtInfiniiVisionSearchSerialM1553" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialM1553.html" />
+    <link rel="prev" title="KtInfiniiVisionSearchSerialIIC" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialIIC.html" /> 
+  </head><body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<table width="100%" cellpadding="0" cellspacing="0"><tr>
+        <td valign="top"><a href="../index.html"><h1 style="font-size: 2em;">KtInfiniiVision Driver Python API</h1></a></td>
+        <td align="right"><a href="https://www.keysight.com" target="_blank"><img src="../_static\keysight.gif" alt="keysight.gif"></a></td>
+</tr></table>
+</div>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialM1553.html" title="KtInfiniiVisionSearchSerialM1553"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialIIC.html" title="KtInfiniiVisionSearchSerialIIC"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="keysight_ktinfiniivision.KtInfiniiVisionSearch.html" >KtInfiniiVisionSearch</a> &#187;</li>
+          <li class="nav-item nav-item-5"><a href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerial.html" accesskey="U">KtInfiniiVisionSearchSerial</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionSearchSerialLIN</a></li> 
+      </ul>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="ktinfiniivisionsearchseriallin">
+<h1>KtInfiniiVisionSearchSerialLIN<a class="headerlink" href="#ktinfiniivisionsearchseriallin" title="Link to this heading">¶</a></h1>
+<blockquote>
+<div><div class="line-block">
+<div class="line">Access interface members using: <code class="docutils literal notranslate"><span class="pre">driver.search.serial.lin</span></code></div>
+<div class="line">Where <code class="docutils literal notranslate"><span class="pre">driver</span></code> is a reference to the driver’s root interface returned by the <a class="reference internal" href="../programming.html#creating-a-driver-instance"><span class="std std-ref">constructor</span></a>.</div>
+</div>
+</div></blockquote>
+<dl class="py class">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">KtInfiniiVisionSearchSerialLIN</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN" title="Link to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN" title="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialLIN</span></code></a> interface.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.id">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.id" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the frame ID value when searching for LIN events</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li>The ID property can be specified in one of the following string formats:</li>
+<ul>
+<li>"n" where n: 7-bit integer in signed decimal</li>
+<li>"#Hnn" where n: {0,..,9 | A,..,F}</li>
+<li>"#Bnn" where n: {0 | 1 }</li>
+<li>"0xnn" where n: {0,..,9 | A,..,F}</li>
+</ul>
+<li>Valid range of values are: 0 to 63 or 0x00 to 0x3f.</li></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.mode">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">mode</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.mode" title="Link to this definition">¶</a></dt>
+<dd><p>Selects the type of LIN information to find in the Lister display</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.SearchLINMode.html#keysight_ktinfiniivision.SearchLINMode" title="keysight_ktinfiniivision.SearchLINMode">SearchLINMode</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li>The Type property can be set to one of the following values:</li>
+<ul>
+<li>ID: searches for a frame ID</li>
+<li>Data: searches for a frame ID and data</li>
+<li>Error: searches for errors</li>
+<li>Frame: searches for symbolic frames</li>
+<li>FrameSig: searches for symbolic frames and signal values</li>
+</ul>
+<li>Frame IDs are specified using the SearchSerialLINID property.</li>
+<li>Data values are specified using the  SearchSerialLINPatternData property.</li></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.pattern_data">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">pattern_data</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.pattern_data" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the data value when searching for LIN events.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li>The PatternData property can be specified in one of the following string formats:</li>
+<ul>
+<li>"n" where n: 32-bit integer in signed decimal</li>
+<li>"0xnn...n" where n: {0,..,9 | A,..,F | X}</li>
+</ul>
+<br /><li>The length of the data value entered is specified using the <a href="53E45DE9_D340_4887_8840_049E669CBB9F.html">SearchSerialLINPatternDataLength </a>property.</li></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.pattern_data_length">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">pattern_data_length</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.pattern_data_length" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the length (from 1 to 8) of the data value when searching for LIN events. Valid values are from 1 to 8.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">The data value is specified using the SearchSerialLINPatternData property.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.pattern_format">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">pattern_format</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.pattern_format" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the number base for data value.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.SearchLINPatternFormat.html#keysight_ktinfiniivision.SearchLINPatternFormat" title="keysight_ktinfiniivision.SearchLINPatternFormat">SearchLINPatternFormat</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">The pattern format can be set to one of the following values:
+<ul>
+    <li>Hexadecimal: the hexadecimal base for data</li>
+    <li>Decimal: the decimal base for data</li>
+</ul></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.symbolic_frame">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">symbolic_frame</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.symbolic_frame" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the specific message when LIN serial search mode is set to Frame.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">It specifies the signal value to search for when LIN symbolic data has been loaded (recalled) into the oscilloscope and the LIN serial search mode is set.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.symbolic_signal">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">symbolic_signal</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.symbolic_signal" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the specific signal when LIN serial search mode is set to Frame and Signal.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">It specifies the signal value to search for when LIN symbolic data has been loaded (recalled) into the oscilloscope and the LIN serial search mode is set.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.symbolic_value">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">symbolic_value</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.symbolic_value" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the specific signal value when LIN serial search mode is set to Frame and Signal.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; It specifies the signal value to search for when LIN symbolic data has been loaded (recalled) into the oscilloscope and the LIN serial search mode is set.
+<br />&#8226; Encoded signal values are not supported in the remote interface (even though they can be used in the front panel graphical interface).</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">KtInfiniiVisionSearchSerialLIN</a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialLIN</span></code></a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.id"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialLIN.id</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.mode"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialLIN.mode</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.pattern_data"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialLIN.pattern_data</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.pattern_data_length"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialLIN.pattern_data_length</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.pattern_format"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialLIN.pattern_format</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.symbolic_frame"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialLIN.symbolic_frame</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.symbolic_signal"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialLIN.symbolic_signal</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.symbolic_value"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialLIN.symbolic_value</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialIIC.html"
+                          title="previous chapter">KtInfiniiVisionSearchSerialIIC</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialM1553.html"
+                          title="next chapter">KtInfiniiVisionSearchSerialM1553</a></p>
+  </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialM1553.html" title="KtInfiniiVisionSearchSerialM1553"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialIIC.html" title="KtInfiniiVisionSearchSerialIIC"
+             >previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="keysight_ktinfiniivision.KtInfiniiVisionSearch.html" >KtInfiniiVisionSearch</a> &#187;</li>
+          <li class="nav-item nav-item-5"><a href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerial.html" >KtInfiniiVisionSearchSerial</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionSearchSerialLIN</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Keysight Technologies.  v1.0.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

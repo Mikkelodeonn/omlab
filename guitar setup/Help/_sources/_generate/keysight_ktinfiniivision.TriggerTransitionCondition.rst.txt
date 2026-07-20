@@ -1,0 +1,14 @@
+
+TriggerTransitionCondition
+===========================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: TriggerTransitionCondition
+    :members:
+    :exclude-members: name
+
+
+
+

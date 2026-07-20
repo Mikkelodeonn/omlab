@@ -1,0 +1,14 @@
+
+WGenPolarity
+=============
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: WGenPolarity
+    :members:
+    :exclude-members: name
+
+
+
+

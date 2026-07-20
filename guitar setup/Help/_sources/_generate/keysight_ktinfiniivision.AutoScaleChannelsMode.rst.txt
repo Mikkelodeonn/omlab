@@ -1,0 +1,14 @@
+
+AutoScaleChannelsMode
+======================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: AutoScaleChannelsMode
+    :members:
+    :exclude-members: name
+
+
+
+

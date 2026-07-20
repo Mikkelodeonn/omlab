@@ -1,0 +1,14 @@
+
+TriggerNFCArmEvent
+===================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: TriggerNFCArmEvent
+    :members:
+    :exclude-members: name
+
+
+
+

@@ -1,0 +1,14 @@
+
+MeasurementIntervalType
+========================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: MeasurementIntervalType
+    :members:
+    :exclude-members: name
+
+
+
+

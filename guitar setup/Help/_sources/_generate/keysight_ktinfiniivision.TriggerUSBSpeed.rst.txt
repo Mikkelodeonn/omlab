@@ -1,0 +1,14 @@
+
+TriggerUSBSpeed
+================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: TriggerUSBSpeed
+    :members:
+    :exclude-members: name
+
+
+
+

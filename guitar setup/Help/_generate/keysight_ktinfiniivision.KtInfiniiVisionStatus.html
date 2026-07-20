@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>KtInfiniiVisionStatus &#8212; KtInfiniiVision 1.0.0 Documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinxdoc.css?v=d59dc883" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <script src="../_static/documentation_options.js?v=8d563738"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="KtInfiniiVisionStatusMaskTestEvent" href="keysight_ktinfiniivision.KtInfiniiVisionStatusMaskTestEvent.html" />
+    <link rel="prev" title="KtInfiniiVisionSerialBusCollectionLister" href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusCollectionLister.html" /> 
+  </head><body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<table width="100%" cellpadding="0" cellspacing="0"><tr>
+        <td valign="top"><a href="../index.html"><h1 style="font-size: 2em;">KtInfiniiVision Driver Python API</h1></a></td>
+        <td align="right"><a href="https://www.keysight.com" target="_blank"><img src="../_static\keysight.gif" alt="keysight.gif"></a></td>
+</tr></table>
+</div>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionStatusMaskTestEvent.html" title="KtInfiniiVisionStatusMaskTestEvent"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusCollectionLister.html" title="KtInfiniiVisionSerialBusCollectionLister"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" accesskey="U">KtInfiniiVision</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionStatus</a></li> 
+      </ul>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="ktinfiniivisionstatus">
+<h1>KtInfiniiVisionStatus<a class="headerlink" href="#ktinfiniivisionstatus" title="Link to this heading">¶</a></h1>
+<blockquote>
+<div><div class="line-block">
+<div class="line">Access interface members using: <code class="docutils literal notranslate"><span class="pre">driver.status</span></code></div>
+<div class="line">Where <code class="docutils literal notranslate"><span class="pre">driver</span></code> is a reference to the driver’s root interface returned by the <a class="reference internal" href="../programming.html#creating-a-driver-instance"><span class="std std-ref">constructor</span></a>.</div>
+</div>
+</div></blockquote>
+<dl class="py class">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionStatus">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">KtInfiniiVisionStatus</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionStatus" title="Link to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionStatus" title="keysight_ktinfiniivision.KtInfiniiVisionStatus"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionStatus</span></code></a> interface.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionStatus.bit">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">bit</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionStatus.bit" title="Link to this definition">¶</a></dt>
+<dd><p>bit = 0-14. Set bit value before running any STATUS BIT commands</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionStatus.clear">
+<span class="sig-name descname"><span class="pre">clear</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionStatus" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionStatus"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionStatus</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionStatus.clear" title="Link to this definition">¶</a></dt>
+<dd><p>Clears all event registers and the error message queue. Enable and any transition registers are unaffected.</p>
+<dl class="field-list">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+<dt class="field-even">Remarks<span class="colon">:</span></dt>
+<dd class="field-even"><p>
+    For details on the status register structure see the
+    <a href="../statusSystem.html">Status System Overview</a> page.
+    </p></dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionStatus.disable_service_request_events">
+<span class="sig-name descname"><span class="pre">disable_service_request_events</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionStatus" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionStatus"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionStatus</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionStatus.disable_service_request_events" title="Link to this definition">¶</a></dt>
+<dd><p>Disables ServiceRequestEvent callbacks.  SRQ events are not supported on non-488.2 connections.</p>
+<dl class="field-list">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+<dt class="field-even">Remarks<span class="colon">:</span></dt>
+<dd class="field-even"><p>
+    For example code and details on the status register structure see the
+    <a href="../statusSystem.html">Status System Overview</a> page.
+    </p></dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionStatus.enable_service_request_events">
+<span class="sig-name descname"><span class="pre">enable_service_request_events</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionStatus" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionStatus"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionStatus</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionStatus.enable_service_request_events" title="Link to this definition">¶</a></dt>
+<dd><p>Enables ServiceRequestEvent callbacks.  SRQ events are not supported on non-488.2 connections.</p>
+<dl class="field-list">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+<dt class="field-even">Remarks<span class="colon">:</span></dt>
+<dd class="field-even"><p>
+    For example code and details on the status register structure see the
+    <a href="../statusSystem.html">Status System Overview</a> page.
+    </p></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionStatus.mask_test_event">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">mask_test_event</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionStatus.mask_test_event" title="Link to this definition">¶</a></dt>
+<dd><p>Reference to the <a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusMaskTestEvent.html#keysight_ktinfiniivision.KtInfiniiVisionStatusMaskTestEvent" title="keysight_ktinfiniivision.KtInfiniiVisionStatusMaskTestEvent"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusMaskTestEvent</span></code></a> interface.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Readonly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusMaskTestEvent.html#keysight_ktinfiniivision.KtInfiniiVisionStatusMaskTestEvent" title="keysight_ktinfiniivision.KtInfiniiVisionStatusMaskTestEvent">KtInfiniiVisionStatusMaskTestEvent</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionStatus.operation">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">operation</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionStatus.operation" title="Link to this definition">¶</a></dt>
+<dd><p>Reference to the <a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperation" title="keysight_ktinfiniivision.KtInfiniiVisionStatusOperation"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperation</span></code></a> interface.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Readonly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperation" title="keysight_ktinfiniivision.KtInfiniiVisionStatusOperation">KtInfiniiVisionStatusOperation</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionStatus.overload_event">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">overload_event</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionStatus.overload_event" title="Link to this definition">¶</a></dt>
+<dd><p>Reference to the <a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOverloadEvent.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOverloadEvent" title="keysight_ktinfiniivision.KtInfiniiVisionStatusOverloadEvent"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOverloadEvent</span></code></a> interface.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Readonly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOverloadEvent.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOverloadEvent" title="keysight_ktinfiniivision.KtInfiniiVisionStatusOverloadEvent">KtInfiniiVisionStatusOverloadEvent</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionStatus.preset">
+<span class="sig-name descname"><span class="pre">preset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionStatus" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionStatus"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionStatus</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionStatus.preset" title="Link to this definition">¶</a></dt>
+<dd><p>Preset</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionStatus.read_status_byte_register">
+<span class="sig-name descname"><span class="pre">read_status_byte_register</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionStatus" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionStatus"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionStatus</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="keysight_ktinfiniivision.StatusByteFlags.html#keysight_ktinfiniivision.StatusByteFlags" title="keysight_ktinfiniivision.keysight_ktinfiniivision.StatusByteFlags"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.StatusByteFlags</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionStatus.read_status_byte_register" title="Link to this definition">¶</a></dt>
+<dd><p>Queries the StatusByte register.</p>
+<dl class="field-list">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The Status Byte value.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.StatusByteFlags.html#keysight_ktinfiniivision.StatusByteFlags" title="keysight_ktinfiniivision.StatusByteFlags">StatusByteFlags</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><p>
+    For details on the status register structure see the
+    <a href="../statusSystem.html">Status System Overview</a> page.
+    </p></dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionStatus.serial_poll">
+<span class="sig-name descname"><span class="pre">serial_poll</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionStatus" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionStatus"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionStatus</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="keysight_ktinfiniivision.StatusByteFlags.html#keysight_ktinfiniivision.StatusByteFlags" title="keysight_ktinfiniivision.keysight_ktinfiniivision.StatusByteFlags"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.StatusByteFlags</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionStatus.serial_poll" title="Link to this definition">¶</a></dt>
+<dd><p>Serial poll the instrument status byte.  Not supported on non-488.2 connections.</p>
+<dl class="field-list">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The Status Byte value.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.StatusByteFlags.html#keysight_ktinfiniivision.StatusByteFlags" title="keysight_ktinfiniivision.StatusByteFlags">StatusByteFlags</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><p>
+    For details on the status register structure see the
+    <a href="../statusSystem.html">Status System Overview</a> page.
+    </p></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionStatus.service_request_enable_register">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">service_request_enable_register</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionStatus.service_request_enable_register" title="Link to this definition">¶</a></dt>
+<dd><p>The ServiceRequestEnable register specifies the bits in the StatusByte register that can generate a service request (SRQ) setting the StatusByte RequestingService bit (bit 6, value 64).</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.StatusByteFlags.html#keysight_ktinfiniivision.StatusByteFlags" title="keysight_ktinfiniivision.StatusByteFlags">StatusByteFlags</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><p>
+    For details on the status register structure see the
+    <a href="../statusSystem.html">Status System Overview</a> page.
+    </p></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionStatus.service_request_event">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">service_request_event</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionStatus.service_request_event" title="Link to this definition">¶</a></dt>
+<dd><p>Add or remove ServiceRequest event handler.  SRQ events are not supported on non-488.2 connections.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.ServiceRequestEvent.html#keysight_ktinfiniivision.ServiceRequestEvent" title="keysight_ktinfiniivision.ServiceRequestEvent">ServiceRequestEvent</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionStatus.standard_event">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">standard_event</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionStatus.standard_event" title="Link to this definition">¶</a></dt>
+<dd><p>Reference to the <a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusStandardEvent.html#keysight_ktinfiniivision.KtInfiniiVisionStatusStandardEvent" title="keysight_ktinfiniivision.KtInfiniiVisionStatusStandardEvent"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusStandardEvent</span></code></a> interface.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Readonly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusStandardEvent.html#keysight_ktinfiniivision.KtInfiniiVisionStatusStandardEvent" title="keysight_ktinfiniivision.KtInfiniiVisionStatusStandardEvent">KtInfiniiVisionStatusStandardEvent</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionStatus.trigger">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">trigger</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionStatus.trigger" title="Link to this definition">¶</a></dt>
+<dd><p>Reference to the <a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusTrigger.html#keysight_ktinfiniivision.KtInfiniiVisionStatusTrigger" title="keysight_ktinfiniivision.KtInfiniiVisionStatusTrigger"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusTrigger</span></code></a> interface.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Readonly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusTrigger.html#keysight_ktinfiniivision.KtInfiniiVisionStatusTrigger" title="keysight_ktinfiniivision.KtInfiniiVisionStatusTrigger">KtInfiniiVisionStatusTrigger</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionStatus.user">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">user</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionStatus.user" title="Link to this definition">¶</a></dt>
+<dd><p>Reference to the <a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusUser.html#keysight_ktinfiniivision.KtInfiniiVisionStatusUser" title="keysight_ktinfiniivision.KtInfiniiVisionStatusUser"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusUser</span></code></a> interface.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Readonly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusUser.html#keysight_ktinfiniivision.KtInfiniiVisionStatusUser" title="keysight_ktinfiniivision.KtInfiniiVisionStatusUser">KtInfiniiVisionStatusUser</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<p><strong>Child Interfaces</strong></p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusMaskTestEvent.html">KtInfiniiVisionStatusMaskTestEvent</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusMaskTestEvent.html#keysight_ktinfiniivision.KtInfiniiVisionStatusMaskTestEvent"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusMaskTestEvent</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusMaskTestEvent.html#keysight_ktinfiniivision.KtInfiniiVisionStatusMaskTestEvent.enable_register"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusMaskTestEvent.enable_register</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusMaskTestEvent.html#keysight_ktinfiniivision.KtInfiniiVisionStatusMaskTestEvent.read_event_register"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusMaskTestEvent.read_event_register()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.html">KtInfiniiVisionStatusOperation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperation"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperation</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.arm"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperation.arm</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.condition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperation.condition()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.enable"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperation.enable</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.enable_bit"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperation.enable_bit</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.enable_register"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperation.enable_register</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.get_bit_condition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperation.get_bit_condition()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.get_bit_event"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperation.get_bit_event()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.get_event"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperation.get_event()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.hardware"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperation.hardware</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.local"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperation.local</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.mask_test"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperation.mask_test</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.negative_transition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperation.negative_transition</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.negative_transition_bit"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperation.negative_transition_bit</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.overload"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperation.overload</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.positive_transition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperation.positive_transition</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.positive_transition_bit"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperation.positive_transition_bit</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.power"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperation.power</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.read_condition_register"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperation.read_condition_register()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperation.read_event_register"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperation.read_event_register()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationArm.html">KtInfiniiVisionStatusOperationArm</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationArm.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationArm"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationArm</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationArm.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationArm.enable"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationArm.enable</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationArm.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationArm.enable_bit"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationArm.enable_bit</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationArm.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationArm.get_bit_condition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationArm.get_bit_condition()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationArm.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationArm.get_bit_event"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationArm.get_bit_event()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationArm.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationArm.get_condtion"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationArm.get_condtion()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationArm.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationArm.get_event"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationArm.get_event()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationArm.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationArm.negative_transition_bit"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationArm.negative_transition_bit</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationArm.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationArm.negative_transtion"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationArm.negative_transtion</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationArm.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationArm.positive_transition_bit"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationArm.positive_transition_bit</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationArm.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationArm.positive_transtion"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationArm.positive_transtion</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationHardware.html">KtInfiniiVisionStatusOperationHardware</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationHardware.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationHardware"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationHardware</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationHardware.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationHardware.condition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationHardware.condition()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationHardware.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationHardware.enable"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationHardware.enable</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationHardware.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationHardware.enable_bit"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationHardware.enable_bit</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationHardware.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationHardware.get_bit_condition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationHardware.get_bit_condition()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationHardware.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationHardware.get_bit_event"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationHardware.get_bit_event()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationHardware.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationHardware.get_event"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationHardware.get_event()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationHardware.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationHardware.negative_transition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationHardware.negative_transition</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationHardware.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationHardware.negative_transition_bit"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationHardware.negative_transition_bit</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationHardware.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationHardware.positive_transition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationHardware.positive_transition</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationHardware.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationHardware.positive_transition_bit"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationHardware.positive_transition_bit</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationLocal.html">KtInfiniiVisionStatusOperationLocal</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationLocal.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationLocal"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationLocal</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationLocal.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationLocal.condition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationLocal.condition()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationLocal.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationLocal.enable"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationLocal.enable</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationLocal.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationLocal.enable_bit"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationLocal.enable_bit</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationLocal.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationLocal.get_bit_condition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationLocal.get_bit_condition()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationLocal.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationLocal.get_bit_event"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationLocal.get_bit_event()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationLocal.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationLocal.get_event"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationLocal.get_event()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationLocal.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationLocal.negative_transition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationLocal.negative_transition</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationLocal.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationLocal.negative_transition_bit"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationLocal.negative_transition_bit</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationLocal.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationLocal.positive_transition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationLocal.positive_transition</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationLocal.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationLocal.positive_transition_bit"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationLocal.positive_transition_bit</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationMaskTest.html">KtInfiniiVisionStatusOperationMaskTest</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationMaskTest.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationMaskTest"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationMaskTest</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationMaskTest.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationMaskTest.condition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationMaskTest.condition()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationMaskTest.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationMaskTest.enable"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationMaskTest.enable</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationMaskTest.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationMaskTest.enable_bit"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationMaskTest.enable_bit</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationMaskTest.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationMaskTest.get_bit_condition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationMaskTest.get_bit_condition()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationMaskTest.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationMaskTest.get_bit_event"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationMaskTest.get_bit_event()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationMaskTest.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationMaskTest.get_event"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationMaskTest.get_event()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationMaskTest.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationMaskTest.negative_transition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationMaskTest.negative_transition</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationMaskTest.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationMaskTest.negative_transition_bit"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationMaskTest.negative_transition_bit</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationMaskTest.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationMaskTest.positive_transition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationMaskTest.positive_transition</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationMaskTest.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationMaskTest.positive_transition_bit"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationMaskTest.positive_transition_bit</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverload.html">KtInfiniiVisionStatusOperationOverload</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverload.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverload"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationOverload</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverload.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverload.condition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationOverload.condition()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverload.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverload.enable"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationOverload.enable</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverload.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverload.enable_bit"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationOverload.enable_bit</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverload.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverload.get_bit_condition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationOverload.get_bit_condition()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverload.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverload.get_bit_event"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationOverload.get_bit_event()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverload.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverload.get_event"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationOverload.get_event()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverload.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverload.negative_transition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationOverload.negative_transition</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverload.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverload.negative_transition_bit"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationOverload.negative_transition_bit</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverload.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverload.positive_transition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationOverload.positive_transition</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverload.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverload.positive_transition_bit"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationOverload.positive_transition_bit</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverload.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverload.probe_fault"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationOverload.probe_fault</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverloadProbeFault.html">KtInfiniiVisionStatusOperationOverloadProbeFault</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverloadProbeFault.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverloadProbeFault"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationOverloadProbeFault</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverloadProbeFault.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverloadProbeFault.condition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationOverloadProbeFault.condition()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverloadProbeFault.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverloadProbeFault.enable"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationOverloadProbeFault.enable</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverloadProbeFault.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverloadProbeFault.enable_bit"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationOverloadProbeFault.enable_bit</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverloadProbeFault.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverloadProbeFault.get_bit_condition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationOverloadProbeFault.get_bit_condition()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverloadProbeFault.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverloadProbeFault.get_bit_event"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationOverloadProbeFault.get_bit_event()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverloadProbeFault.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverloadProbeFault.get_event"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationOverloadProbeFault.get_event()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverloadProbeFault.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverloadProbeFault.negative_transition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationOverloadProbeFault.negative_transition</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverloadProbeFault.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverloadProbeFault.negative_transition_bit"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationOverloadProbeFault.negative_transition_bit</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverloadProbeFault.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverloadProbeFault.positive_transition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationOverloadProbeFault.positive_transition</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverloadProbeFault.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationOverloadProbeFault.positive_transition_bit"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationOverloadProbeFault.positive_transition_bit</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationPower.html">KtInfiniiVisionStatusOperationPower</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationPower.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationPower"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationPower</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationPower.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationPower.condition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationPower.condition()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationPower.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationPower.enable"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationPower.enable</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationPower.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationPower.enable_bit"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationPower.enable_bit</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationPower.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationPower.get_bit_condition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationPower.get_bit_condition()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationPower.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationPower.get_bit_event"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationPower.get_bit_event()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationPower.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationPower.get_event"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationPower.get_event()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationPower.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationPower.negative_transition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationPower.negative_transition</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationPower.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationPower.negative_transition_bit"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationPower.negative_transition_bit</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationPower.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationPower.positive_transition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationPower.positive_transition</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOperationPower.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOperationPower.positive_transition_bit"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOperationPower.positive_transition_bit</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOverloadEvent.html">KtInfiniiVisionStatusOverloadEvent</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOverloadEvent.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOverloadEvent"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOverloadEvent</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOverloadEvent.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOverloadEvent.enable_register"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOverloadEvent.enable_register</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOverloadEvent.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOverloadEvent.get_event_register"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOverloadEvent.get_event_register()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOverloadEvent.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOverloadEvent.initialize_register"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOverloadEvent.initialize_register</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusOverloadEvent.html#keysight_ktinfiniivision.KtInfiniiVisionStatusOverloadEvent.read_event_register"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusOverloadEvent.read_event_register()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusStandardEvent.html">KtInfiniiVisionStatusStandardEvent</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusStandardEvent.html#keysight_ktinfiniivision.KtInfiniiVisionStatusStandardEvent"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusStandardEvent</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusStandardEvent.html#keysight_ktinfiniivision.KtInfiniiVisionStatusStandardEvent.enable_register"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusStandardEvent.enable_register</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusStandardEvent.html#keysight_ktinfiniivision.KtInfiniiVisionStatusStandardEvent.read_event_register"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusStandardEvent.read_event_register()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusTrigger.html">KtInfiniiVisionStatusTrigger</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusTrigger.html#keysight_ktinfiniivision.KtInfiniiVisionStatusTrigger"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusTrigger</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusTrigger.html#keysight_ktinfiniivision.KtInfiniiVisionStatusTrigger.condition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusTrigger.condition()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusTrigger.html#keysight_ktinfiniivision.KtInfiniiVisionStatusTrigger.enable"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusTrigger.enable</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusTrigger.html#keysight_ktinfiniivision.KtInfiniiVisionStatusTrigger.enable_bit"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusTrigger.enable_bit</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusTrigger.html#keysight_ktinfiniivision.KtInfiniiVisionStatusTrigger.get_bit_condition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusTrigger.get_bit_condition()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusTrigger.html#keysight_ktinfiniivision.KtInfiniiVisionStatusTrigger.get_bit_event"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusTrigger.get_bit_event()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusTrigger.html#keysight_ktinfiniivision.KtInfiniiVisionStatusTrigger.get_event"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusTrigger.get_event()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusTrigger.html#keysight_ktinfiniivision.KtInfiniiVisionStatusTrigger.negative_transition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusTrigger.negative_transition</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusTrigger.html#keysight_ktinfiniivision.KtInfiniiVisionStatusTrigger.negative_transition_bit"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusTrigger.negative_transition_bit</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusTrigger.html#keysight_ktinfiniivision.KtInfiniiVisionStatusTrigger.positive_transition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusTrigger.positive_transition</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusTrigger.html#keysight_ktinfiniivision.KtInfiniiVisionStatusTrigger.positive_transition_bit"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusTrigger.positive_transition_bit</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusUser.html">KtInfiniiVisionStatusUser</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusUser.html#keysight_ktinfiniivision.KtInfiniiVisionStatusUser"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusUser</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusUser.html#keysight_ktinfiniivision.KtInfiniiVisionStatusUser.condition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusUser.condition()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusUser.html#keysight_ktinfiniivision.KtInfiniiVisionStatusUser.enable"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusUser.enable</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusUser.html#keysight_ktinfiniivision.KtInfiniiVisionStatusUser.enable_bit"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusUser.enable_bit</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusUser.html#keysight_ktinfiniivision.KtInfiniiVisionStatusUser.get_bit_condition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusUser.get_bit_condition()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusUser.html#keysight_ktinfiniivision.KtInfiniiVisionStatusUser.get_bit_event"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusUser.get_bit_event()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusUser.html#keysight_ktinfiniivision.KtInfiniiVisionStatusUser.get_event"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusUser.get_event()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusUser.html#keysight_ktinfiniivision.KtInfiniiVisionStatusUser.negative_transition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusUser.negative_transition</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusUser.html#keysight_ktinfiniivision.KtInfiniiVisionStatusUser.negative_transition_bit"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusUser.negative_transition_bit</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusUser.html#keysight_ktinfiniivision.KtInfiniiVisionStatusUser.positive_transition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusUser.positive_transition</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionStatusUser.html#keysight_ktinfiniivision.KtInfiniiVisionStatusUser.positive_transition_bit"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatusUser.positive_transition_bit</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">KtInfiniiVisionStatus</a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionStatus"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatus</span></code></a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionStatus.bit"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatus.bit</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionStatus.clear"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatus.clear()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionStatus.disable_service_request_events"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatus.disable_service_request_events()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionStatus.enable_service_request_events"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatus.enable_service_request_events()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionStatus.mask_test_event"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatus.mask_test_event</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionStatus.operation"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatus.operation</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionStatus.overload_event"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatus.overload_event</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionStatus.preset"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatus.preset()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionStatus.read_status_byte_register"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatus.read_status_byte_register()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionStatus.serial_poll"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatus.serial_poll()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionStatus.service_request_enable_register"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatus.service_request_enable_register</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionStatus.service_request_event"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatus.service_request_event</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionStatus.standard_event"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatus.standard_event</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionStatus.trigger"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatus.trigger</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionStatus.user"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionStatus.user</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusCollectionLister.html"
+                          title="previous chapter">KtInfiniiVisionSerialBusCollectionLister</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionStatusMaskTestEvent.html"
+                          title="next chapter">KtInfiniiVisionStatusMaskTestEvent</a></p>
+  </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionStatusMaskTestEvent.html" title="KtInfiniiVisionStatusMaskTestEvent"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionSerialBusCollectionLister.html" title="KtInfiniiVisionSerialBusCollectionLister"
+             >previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionStatus</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Keysight Technologies.  v1.0.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

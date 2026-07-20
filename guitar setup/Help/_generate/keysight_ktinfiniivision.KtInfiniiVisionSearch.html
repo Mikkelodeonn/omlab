@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>KtInfiniiVisionSearch &#8212; KtInfiniiVision 1.0.0 Documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinxdoc.css?v=d59dc883" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <script src="../_static/documentation_options.js?v=8d563738"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="KtInfiniiVisionSearchEdge" href="keysight_ktinfiniivision.KtInfiniiVisionSearchEdge.html" />
+    <link rel="prev" title="KtInfiniiVisionReferenceWaveform" href="keysight_ktinfiniivision.KtInfiniiVisionReferenceWaveform.html" /> 
+  </head><body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<table width="100%" cellpadding="0" cellspacing="0"><tr>
+        <td valign="top"><a href="../index.html"><h1 style="font-size: 2em;">KtInfiniiVision Driver Python API</h1></a></td>
+        <td align="right"><a href="https://www.keysight.com" target="_blank"><img src="../_static\keysight.gif" alt="keysight.gif"></a></td>
+</tr></table>
+</div>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionSearchEdge.html" title="KtInfiniiVisionSearchEdge"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionReferenceWaveform.html" title="KtInfiniiVisionReferenceWaveform"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" accesskey="U">KtInfiniiVision</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionSearch</a></li> 
+      </ul>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="ktinfiniivisionsearch">
+<h1>KtInfiniiVisionSearch<a class="headerlink" href="#ktinfiniivisionsearch" title="Link to this heading">¶</a></h1>
+<blockquote>
+<div><div class="line-block">
+<div class="line">Access interface members using: <code class="docutils literal notranslate"><span class="pre">driver.search</span></code></div>
+<div class="line">Where <code class="docutils literal notranslate"><span class="pre">driver</span></code> is a reference to the driver’s root interface returned by the <a class="reference internal" href="../programming.html#creating-a-driver-instance"><span class="std std-ref">constructor</span></a>.</div>
+</div>
+</div></blockquote>
+<dl class="py class">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearch">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">KtInfiniiVisionSearch</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearch" title="Link to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearch" title="keysight_ktinfiniivision.KtInfiniiVisionSearch"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionSearch</span></code></a> interface.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearch.count">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">count</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearch.count" title="Link to this definition">¶</a></dt>
+<dd><p>Read Only - Gets the number of search events found.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; This property performs a digitize operation, so it's important that user trigger is set up so that data is captured and is available to perform the search on.
+<br />&#8226; User can get times out because there is no data to search, user may need to send a device clear to the oscilloscope to cancel its wait for the data.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearch.edge">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">edge</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearch.edge" title="Link to this definition">¶</a></dt>
+<dd><p>Reference to the <a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchEdge.html#keysight_ktinfiniivision.KtInfiniiVisionSearchEdge" title="keysight_ktinfiniivision.KtInfiniiVisionSearchEdge"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchEdge</span></code></a> interface.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Readonly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchEdge.html#keysight_ktinfiniivision.KtInfiniiVisionSearchEdge" title="keysight_ktinfiniivision.KtInfiniiVisionSearchEdge">KtInfiniiVisionSearchEdge</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearch.enabled">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">enabled</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearch.enabled" title="Link to this definition">¶</a></dt>
+<dd><p>Enables or disables the search feature.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearch.event">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">event</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearch.event" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the search event number.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li>When On, the horizontal position is changed so that the specified event is located at the time reference.</li></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearch.glitch">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">glitch</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearch.glitch" title="Link to this definition">¶</a></dt>
+<dd><p>Reference to the <a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchGlitch.html#keysight_ktinfiniivision.KtInfiniiVisionSearchGlitch" title="keysight_ktinfiniivision.KtInfiniiVisionSearchGlitch"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchGlitch</span></code></a> interface.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Readonly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchGlitch.html#keysight_ktinfiniivision.KtInfiniiVisionSearchGlitch" title="keysight_ktinfiniivision.KtInfiniiVisionSearchGlitch">KtInfiniiVisionSearchGlitch</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearch.mode">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">mode</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearch.mode" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the oscilloscope search mode.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.SearchMode.html#keysight_ktinfiniivision.SearchMode" title="keysight_ktinfiniivision.SearchMode">SearchMode</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">The Mode property can be set to one of the following values:
+<ul>
+<li>Edge:the Edge search mode</li>
+<li>Glitch: the Glitch search mode</li>
+<li>Runt: the Runt search mode</li>
+<li>Transition: the Transition search mode</li>
+<li>Serial1: the Serial1 search mode</li>
+<li>Serial2: the Serial2 search mode</li>
+<li>Peak: the Peak search mode</li>
+<li>Off: the search mode is Off</li>
+</ul></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearch.peak">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">peak</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearch.peak" title="Link to this definition">¶</a></dt>
+<dd><p>Reference to the <a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchPeak.html#keysight_ktinfiniivision.KtInfiniiVisionSearchPeak" title="keysight_ktinfiniivision.KtInfiniiVisionSearchPeak"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchPeak</span></code></a> interface.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Readonly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchPeak.html#keysight_ktinfiniivision.KtInfiniiVisionSearchPeak" title="keysight_ktinfiniivision.KtInfiniiVisionSearchPeak">KtInfiniiVisionSearchPeak</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearch.runt">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">runt</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearch.runt" title="Link to this definition">¶</a></dt>
+<dd><p>Reference to the <a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchRunt.html#keysight_ktinfiniivision.KtInfiniiVisionSearchRunt" title="keysight_ktinfiniivision.KtInfiniiVisionSearchRunt"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchRunt</span></code></a> interface.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Readonly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchRunt.html#keysight_ktinfiniivision.KtInfiniiVisionSearchRunt" title="keysight_ktinfiniivision.KtInfiniiVisionSearchRunt">KtInfiniiVisionSearchRunt</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearch.serial">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">serial</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearch.serial" title="Link to this definition">¶</a></dt>
+<dd><p>Reference to the <a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerial.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerial" title="keysight_ktinfiniivision.KtInfiniiVisionSearchSerial"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerial</span></code></a> interface.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Readonly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerial.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerial" title="keysight_ktinfiniivision.KtInfiniiVisionSearchSerial">KtInfiniiVisionSearchSerial</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionSearch.transition">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">transition</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionSearch.transition" title="Link to this definition">¶</a></dt>
+<dd><p>Reference to the <a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchTransition.html#keysight_ktinfiniivision.KtInfiniiVisionSearchTransition" title="keysight_ktinfiniivision.KtInfiniiVisionSearchTransition"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchTransition</span></code></a> interface.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Readonly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchTransition.html#keysight_ktinfiniivision.KtInfiniiVisionSearchTransition" title="keysight_ktinfiniivision.KtInfiniiVisionSearchTransition">KtInfiniiVisionSearchTransition</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<p><strong>Child Interfaces</strong></p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchEdge.html">KtInfiniiVisionSearchEdge</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchEdge.html#keysight_ktinfiniivision.KtInfiniiVisionSearchEdge"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchEdge</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchEdge.html#keysight_ktinfiniivision.KtInfiniiVisionSearchEdge.configure"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchEdge.configure()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchEdge.html#keysight_ktinfiniivision.KtInfiniiVisionSearchEdge.slope"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchEdge.slope</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchEdge.html#keysight_ktinfiniivision.KtInfiniiVisionSearchEdge.source"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchEdge.source</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchGlitch.html">KtInfiniiVisionSearchGlitch</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchGlitch.html#keysight_ktinfiniivision.KtInfiniiVisionSearchGlitch"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchGlitch</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchGlitch.html#keysight_ktinfiniivision.KtInfiniiVisionSearchGlitch.condition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchGlitch.condition</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchGlitch.html#keysight_ktinfiniivision.KtInfiniiVisionSearchGlitch.configure"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchGlitch.configure()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchGlitch.html#keysight_ktinfiniivision.KtInfiniiVisionSearchGlitch.get_range"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchGlitch.get_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchGlitch.html#keysight_ktinfiniivision.KtInfiniiVisionSearchGlitch.max_pulse_width_duration"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchGlitch.max_pulse_width_duration</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchGlitch.html#keysight_ktinfiniivision.KtInfiniiVisionSearchGlitch.min_pulse_width_duration"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchGlitch.min_pulse_width_duration</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchGlitch.html#keysight_ktinfiniivision.KtInfiniiVisionSearchGlitch.polarity"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchGlitch.polarity</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchGlitch.html#keysight_ktinfiniivision.KtInfiniiVisionSearchGlitch.set_range"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchGlitch.set_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchGlitch.html#keysight_ktinfiniivision.KtInfiniiVisionSearchGlitch.source"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchGlitch.source</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchPeak.html">KtInfiniiVisionSearchPeak</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchPeak.html#keysight_ktinfiniivision.KtInfiniiVisionSearchPeak"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchPeak</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchPeak.html#keysight_ktinfiniivision.KtInfiniiVisionSearchPeak.excursion"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchPeak.excursion</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchPeak.html#keysight_ktinfiniivision.KtInfiniiVisionSearchPeak.number_of_peaks"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchPeak.number_of_peaks</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchPeak.html#keysight_ktinfiniivision.KtInfiniiVisionSearchPeak.source"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchPeak.source</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchPeak.html#keysight_ktinfiniivision.KtInfiniiVisionSearchPeak.threshold"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchPeak.threshold</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchRunt.html">KtInfiniiVisionSearchRunt</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchRunt.html#keysight_ktinfiniivision.KtInfiniiVisionSearchRunt"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchRunt</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchRunt.html#keysight_ktinfiniivision.KtInfiniiVisionSearchRunt.condition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchRunt.condition</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchRunt.html#keysight_ktinfiniivision.KtInfiniiVisionSearchRunt.configure"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchRunt.configure()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchRunt.html#keysight_ktinfiniivision.KtInfiniiVisionSearchRunt.polarity"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchRunt.polarity</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchRunt.html#keysight_ktinfiniivision.KtInfiniiVisionSearchRunt.qualifier_time"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchRunt.qualifier_time</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchRunt.html#keysight_ktinfiniivision.KtInfiniiVisionSearchRunt.source"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchRunt.source</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerial.html">KtInfiniiVisionSearchSerial</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerial.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerial"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerial</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerial.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerial.arinc429"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerial.arinc429</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerial.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerial.can"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerial.can</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerial.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerial.flex_ray"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerial.flex_ray</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerial.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerial.i2_s"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerial.i2_s</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerial.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerial.iic"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerial.iic</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerial.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerial.lin"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerial.lin</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerial.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerial.m1553"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerial.m1553</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerial.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerial.sent"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerial.sent</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerial.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerial.spi"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerial.spi</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerial.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerial.uart"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerial.uart</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerial.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerial.usb"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerial.usb</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialARINC429.html">KtInfiniiVisionSearchSerialARINC429</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialARINC429.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialARINC429"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialARINC429</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialARINC429.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialARINC429.label"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialARINC429.label</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialARINC429.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialARINC429.mode"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialARINC429.mode</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialARINC429.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialARINC429.pattern_data"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialARINC429.pattern_data</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialARINC429.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialARINC429.pattern_sdi"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialARINC429.pattern_sdi</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialARINC429.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialARINC429.pattern_ssm"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialARINC429.pattern_ssm</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialCAN.html">KtInfiniiVisionSearchSerialCAN</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialCAN.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialCAN"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialCAN</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialCAN.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialCAN.mode"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialCAN.mode</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialCAN.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialCAN.pattern_data"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialCAN.pattern_data</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialCAN.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialCAN.pattern_data_length"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialCAN.pattern_data_length</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialCAN.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialCAN.pattern_id"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialCAN.pattern_id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialCAN.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialCAN.pattern_id_type"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialCAN.pattern_id_type</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialCAN.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialCAN.symbolic_message"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialCAN.symbolic_message</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialCAN.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialCAN.symbolic_signal"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialCAN.symbolic_signal</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialCAN.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialCAN.symbolic_value"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialCAN.symbolic_value</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialFlexRay.html">KtInfiniiVisionSearchSerialFlexRay</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialFlexRay.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialFlexRay"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialFlexRay</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialFlexRay.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialFlexRay.cycle_number"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialFlexRay.cycle_number</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialFlexRay.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialFlexRay.frame_id"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialFlexRay.frame_id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialFlexRay.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialFlexRay.mode"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialFlexRay.mode</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialFlexRay.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialFlexRay.pattern_data"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialFlexRay.pattern_data</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialFlexRay.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialFlexRay.pattern_data_length"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialFlexRay.pattern_data_length</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialI2S.html">KtInfiniiVisionSearchSerialI2S</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialI2S.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialI2S"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialI2S</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialI2S.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialI2S.audio_channel"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialI2S.audio_channel</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialI2S.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialI2S.get_range"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialI2S.get_range()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialI2S.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialI2S.mode"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialI2S.mode</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialI2S.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialI2S.pattern_data"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialI2S.pattern_data</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialI2S.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialI2S.pattern_format"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialI2S.pattern_format</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialI2S.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialI2S.set_range"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialI2S.set_range()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialIIC.html">KtInfiniiVisionSearchSerialIIC</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialIIC.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialIIC"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialIIC</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialIIC.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialIIC.address"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialIIC.address</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialIIC.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialIIC.condition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialIIC.condition</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialIIC.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialIIC.mode"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialIIC.mode</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialIIC.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialIIC.pattern_data"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialIIC.pattern_data</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialIIC.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialIIC.pattern_data2"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialIIC.pattern_data2</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.html">KtInfiniiVisionSearchSerialLIN</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialLIN</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.id"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialLIN.id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.mode"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialLIN.mode</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.pattern_data"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialLIN.pattern_data</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.pattern_data_length"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialLIN.pattern_data_length</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.pattern_format"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialLIN.pattern_format</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.symbolic_frame"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialLIN.symbolic_frame</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.symbolic_signal"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialLIN.symbolic_signal</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN.symbolic_value"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialLIN.symbolic_value</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialM1553.html">KtInfiniiVisionSearchSerialM1553</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialM1553.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialM1553"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialM1553</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialM1553.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialM1553.mode"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialM1553.mode</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialM1553.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialM1553.pattern_data"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialM1553.pattern_data</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialM1553.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialM1553.remote_terminal_address"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialM1553.remote_terminal_address</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialSENT.html">KtInfiniiVisionSearchSerialSENT</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialSENT.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialSENT"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialSENT</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialSENT.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialSENT.fast"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialSENT.fast</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialSENT.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialSENT.mode"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialSENT.mode</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialSENT.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialSENT.slow"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialSENT.slow</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialSENTFast.html">KtInfiniiVisionSearchSerialSENTFast</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialSENTFast.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialSENTFast"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialSENTFast</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialSENTFast.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialSENTFast.data"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialSENTFast.data</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialSENTSlow.html">KtInfiniiVisionSearchSerialSENTSlow</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialSENTSlow.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialSENTSlow"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialSENTSlow</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialSENTSlow.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialSENTSlow.data"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialSENTSlow.data</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialSENTSlow.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialSENTSlow.id"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialSENTSlow.id</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialSPI.html">KtInfiniiVisionSearchSerialSPI</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialSPI.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialSPI"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialSPI</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialSPI.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialSPI.mode"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialSPI.mode</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialSPI.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialSPI.pattern_data"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialSPI.pattern_data</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialSPI.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialSPI.pattern_width"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialSPI.pattern_width</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUART.html">KtInfiniiVisionSearchSerialUART</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUART.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUART"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUART</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUART.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUART.condition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUART.condition</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUART.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUART.mode"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUART.mode</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUART.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUART.pattern_data"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUART.pattern_data</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.html">KtInfiniiVisionSearchSerialUSB</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUSB</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.address"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUSB.address</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.crc"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUSB.crc</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.data"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUSB.data</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.data_length"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUSB.data_length</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.end_point"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUSB.end_point</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.et"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUSB.et</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.frame"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUSB.frame</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.hub_address"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUSB.hub_address</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.mode"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUSB.mode</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.pid_data"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUSB.pid_data</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.pid_handshake"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUSB.pid_handshake</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.pid_special"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUSB.pid_special</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.pid_token"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUSB.pid_token</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.port"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUSB.port</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.sc"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUSB.sc</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.html#keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB.seu"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchSerialUSB.seu</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchTransition.html">KtInfiniiVisionSearchTransition</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchTransition.html#keysight_ktinfiniivision.KtInfiniiVisionSearchTransition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchTransition</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchTransition.html#keysight_ktinfiniivision.KtInfiniiVisionSearchTransition.condition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchTransition.condition</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchTransition.html#keysight_ktinfiniivision.KtInfiniiVisionSearchTransition.configure"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchTransition.configure()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchTransition.html#keysight_ktinfiniivision.KtInfiniiVisionSearchTransition.qualifier_time"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchTransition.qualifier_time</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchTransition.html#keysight_ktinfiniivision.KtInfiniiVisionSearchTransition.slope"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchTransition.slope</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionSearchTransition.html#keysight_ktinfiniivision.KtInfiniiVisionSearchTransition.source"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearchTransition.source</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">KtInfiniiVisionSearch</a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearch"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearch</span></code></a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearch.count"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearch.count</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearch.edge"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearch.edge</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearch.enabled"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearch.enabled</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearch.event"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearch.event</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearch.glitch"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearch.glitch</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearch.mode"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearch.mode</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearch.peak"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearch.peak</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearch.runt"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearch.runt</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearch.serial"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearch.serial</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionSearch.transition"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionSearch.transition</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionReferenceWaveform.html"
+                          title="previous chapter">KtInfiniiVisionReferenceWaveform</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionSearchEdge.html"
+                          title="next chapter">KtInfiniiVisionSearchEdge</a></p>
+  </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionSearchEdge.html" title="KtInfiniiVisionSearchEdge"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionReferenceWaveform.html" title="KtInfiniiVisionReferenceWaveform"
+             >previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionSearch</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Keysight Technologies.  v1.0.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

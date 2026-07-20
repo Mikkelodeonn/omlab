@@ -1,0 +1,14 @@
+
+AcquisitionReferenceSignalMode
+===============================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: AcquisitionReferenceSignalMode
+    :members:
+    :exclude-members: name
+
+
+
+

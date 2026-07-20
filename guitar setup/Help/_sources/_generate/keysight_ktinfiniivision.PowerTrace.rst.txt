@@ -1,0 +1,14 @@
+
+PowerTrace
+===========
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: PowerTrace
+    :members:
+    :exclude-members: name
+
+
+
+

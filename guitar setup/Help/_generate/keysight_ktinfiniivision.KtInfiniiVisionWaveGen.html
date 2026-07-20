@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>KtInfiniiVisionWaveGen &#8212; KtInfiniiVision 1.0.0 Documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinxdoc.css?v=d59dc883" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <script src="../_static/documentation_options.js?v=8d563738"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="KtInfiniiVisionWaveGenArbitrary" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenArbitrary.html" />
+    <link rel="prev" title="KtInfiniiVisionWaveGenCollection" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenCollection.html" /> 
+  </head><body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<table width="100%" cellpadding="0" cellspacing="0"><tr>
+        <td valign="top"><a href="../index.html"><h1 style="font-size: 2em;">KtInfiniiVision Driver Python API</h1></a></td>
+        <td align="right"><a href="https://www.keysight.com" target="_blank"><img src="../_static\keysight.gif" alt="keysight.gif"></a></td>
+</tr></table>
+</div>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenArbitrary.html" title="KtInfiniiVisionWaveGenArbitrary"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenCollection.html" title="KtInfiniiVisionWaveGenCollection"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenCollection.html" accesskey="U">KtInfiniiVisionWaveGenCollection</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionWaveGen</a></li> 
+      </ul>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="ktinfiniivisionwavegen">
+<h1>KtInfiniiVisionWaveGen<a class="headerlink" href="#ktinfiniivisionwavegen" title="Link to this heading">¶</a></h1>
+<blockquote>
+<div><div class="line-block">
+<div class="line">Access interface members using: <code class="docutils literal notranslate"><span class="pre">driver.wave_gens[&lt;name_or_index&gt;]</span></code></div>
+<div class="line">Where <code class="docutils literal notranslate"><span class="pre">driver</span></code> is a reference to the driver’s root interface returned by the <a class="reference internal" href="../programming.html#creating-a-driver-instance"><span class="std std-ref">constructor</span></a>.</div>
+</div>
+</div></blockquote>
+<dl class="py class">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveGen">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">KtInfiniiVisionWaveGen</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen" title="Link to this definition">¶</a></dt>
+<dd><p>Root interface for the WaveGen repeated capability.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveGen.additional_noise">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">additional_noise</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.additional_noise" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the amount of noise to add to the currently selected signal.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; The sum of the amplitude between the original signal and injected noise is limited to the regular amplitude limit (for example, 5 Vpp in 1 MOhm), so the range for input value varies according to current amplitude.
+<br />&#8226;  Adding noise affects edge triggering on the waveform generator source as well as the waveform generator sync pulse output signal. This is because the trigger comparator is located after the noise source.
+<br />&#8226;  On T3000, 4000X, X6000, M9240X and P9240X series oscilloscopes it supports both waveform generators (i.e. WaveGen1, WaveGen2).
+<br />&#8226;  On X1000, X1200, X2000 and X3000 series oscilloscopes it supports one waveform generator only (i.e WaveGen1).</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveGen.amplitude">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">amplitude</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.amplitude" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the amplitude in volts for currently specified waveform. Sine, Square, Ramp, Pulse, and Noise waveforms.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd">&#8226; Not valid for DC type waveforms.
+<br />&#8226; You can use the WaveGenOffsetVoltage specify the offset voltage or DC level.
+<br />&#8226; Amplituse and offset can also be indirectly set using WaveGensLowVoltage properties. For example, an amplitude of 5 V and an offset of 1 V is the same as a high-level voltage of 4 V and a low-level voltage of -1 V.
+<br />&#8226; When the amplitude is below 40 mV, the offset is limited to ±500 mV.
+<br />&#8226;  On T3000, 4000X, X6000, M9240X and P9240X series oscilloscopes it supports both waveform generators (i.e. WaveGen1, WaveGen2).
+<br />&#8226;  On X1000, X1200, X2000 and X3000 series oscilloscopes it supports one waveform generator only (i.e WaveGen1).</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveGen.arbitrary">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">arbitrary</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.arbitrary" title="Link to this definition">¶</a></dt>
+<dd><p>Reference to the <a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenArbitrary.html#keysight_ktinfiniivision.KtInfiniiVisionWaveGenArbitrary" title="keysight_ktinfiniivision.KtInfiniiVisionWaveGenArbitrary"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGenArbitrary</span></code></a> interface.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Readonly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenArbitrary.html#keysight_ktinfiniivision.KtInfiniiVisionWaveGenArbitrary" title="keysight_ktinfiniivision.KtInfiniiVisionWaveGenArbitrary">KtInfiniiVisionWaveGenArbitrary</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveGen.dc_mode">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dc_mode</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.dc_mode" title="Link to this definition">¶</a></dt>
+<dd><p>command sets ange gets the DC output mode.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.WaveformGeneratorDCMode.html#keysight_ktinfiniivision.WaveformGeneratorDCMode" title="keysight_ktinfiniivision.WaveformGeneratorDCMode">WaveformGeneratorDCMode</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveGen.duty_cycle">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">duty_cycle</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.duty_cycle" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the square wave duty cycle (20% to 80%) for Square waveforms.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><li>Duty cycle is the percentage of the period that the waveform is high.</li>
+<br />&#8226; On T3000, X4000, X6000, M9240X and P9240X series oscilloscopes it supports both waveform generators (i.e. WaveGen1, WaveGen2).
+<br />&#8226; On X1000, X1200, X2000 and X3000 series oscilloscopes it supports one waveform generator only (i.e WaveGen1).
+<br />&#8226; For X1200 Series oscilloscopes, the duty cycle can be adjusted from 1% to 99% up to 500 kHz. At higher frequencies, the adjustment range narrows to not allow pulse widths less than 20 ns. For example: <blockquote>
+<br />&#8226; At 1 MHz, the duty cycle can be adjusted from 2% to 98%.
+<br />&#8226; At 5 MHz, the duty cycle can be adjusted from 10% to 90%.
+<br />&#8226; At 5 MHz, the duty cycle can be adjusted from 10% to 90%.     
+</blockquote></dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveGen.frequency">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">frequency</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.frequency" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the frequency for Sine, Square, Ramp, and Pulse waveforms.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; Frequency can also be specified using WaveGensPeriod.
+<br />&#8226; On T3000, X4000, X6000, M9240X and P9240X series oscilloscopes it supports both waveform generators (i.e. WaveGen1, WaveGen2).
+<br />&#8226; On X1000, X1200, X2000 and X3000 series oscilloscopes it supports one waveform generator only (i.e WaveGen1).</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveGen.function">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">function</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.function" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the type of waveform.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.WaveformGeneratorFunction.html#keysight_ktinfiniivision.WaveformGeneratorFunction" title="keysight_ktinfiniivision.WaveformGeneratorFunction">WaveformGeneratorFunction</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; For all waveform types, the output amplitude, into 50 Ω, can be adjusted from 10 mVpp to 2.5 Vpp (or from 20 mVpp to 5 Vpp into and open-circuit load).
+<br />&#8226; On T3000, X4000, X6000, M9240X and P9240X series oscilloscopes it supports both waveform generators (i.e. WaveGen1, WaveGen2).
+<br />&#8226; On X1000, X1200, X2000 and X3000 series oscilloscopes it supports one waveform generator only (i.e WaveGen1).</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveGen.high_voltage">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">high_voltage</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.high_voltage" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the high-level voltage for Sine, Square, Ramp, Pulse, and Noise waveforms.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; User can also specify the high-level and low-level voltages indirectly using the WaveGensOffsetVoltage. For example, a
+high-level voltage of 4 V and a low-level voltage of -1 V is the same as an amplitude of 5 V and an offset of 1 V. 
+<br />&#8226; When the amplitude is below 40 mV, the offset is limited to ±500 mV for T3000, 4000X, X6000, M9240X and P9240X series oscilloscope
+<br />&#8226; On T3000, X4000, X6000, M9240X and P9240X series oscilloscopes it supports both waveform generators (i.e. WaveGen1, WaveGen2).
+<br />&#8226; On X1000, X1200, X2000 and X3000 series oscilloscopes it supports one waveform generator only (i.e WaveGen1).</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveGen.low_voltage">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">low_voltage</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.low_voltage" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the low-level voltage for Sine, Square, Ramp, Pulse, and Noise waveforms.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; User can also specify the high-level and low-level voltages indirectly using the WaveGensOffsetVoltage. For example, a
+high-level voltage of 4 V and a low-level voltage of -1 V is the same as an amplitude of 5 V and an offset of 1 V. 
+<br />&#8226; When the amplitude is below 40 mV, the offset is limited to ±500 mV for T3000, 4000X, X6000, M9240X and P9240X series oscilloscope
+<br />&#8226; On T3000, X4000, X6000, M9240X and P9240X series oscilloscopes it supports both waveform generators (i.e. WaveGen1, WaveGen2).
+<br />&#8226; On X1000, X1200, X2000 and X3000 series oscilloscopes it supports one waveform generator only (i.e WaveGen1).</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveGen.modulation">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">modulation</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.modulation" title="Link to this definition">¶</a></dt>
+<dd><p>Reference to the <a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulation.html#keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulation" title="keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulation"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGenModulation</span></code></a> interface.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Readonly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulation.html#keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulation" title="keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulation">KtInfiniiVisionWaveGenModulation</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveGen.name">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.name" title="Link to this definition">¶</a></dt>
+<dd><p>The repeated capability physical identifier.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadOnly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveGen.offset_voltage">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">offset_voltage</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.offset_voltage" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the voltage offset for Sine, Square, Ramp, Pulse, and Noise waveforms</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; User can also specify the amplitude and offset indirectly using the WaveGensLowVoltage.
+<br />&#8226; For example, an amplitude of 5 V and an offset of 1 V is the same as a high-level voltage of 4 V and a low-level voltage of -1 V.
+<br />&#8226; When the amplitude is below 40 mV, the offset is limited to ±500 mV.
+<br />&#8226; On T3000, X4000, X6000, M9240X and P9240X series oscilloscopes it supports both waveform generators (i.e. WaveGen1, WaveGen2).
+<br />&#8226; On X1000, X1200, X2000 and X3000 series oscilloscopes it supports one waveform generator only (i.e WaveGen1).</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveGen.output_enabled">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">output_enabled</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.output_enabled" title="Link to this definition">¶</a></dt>
+<dd><p>Enables or Disables waveform generator signal output.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)">bool</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; On T3000, X4000, X6000, M9240X and P9240X series oscilloscopes it supports both waveform generators (i.e. WaveGen1, WaveGen2).
+<br />&#8226; On X1000, X1200, X2000 and X3000 series oscilloscopes it supports one waveform generator only (i.e WaveGen1).</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveGen.output_inverted">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">output_inverted</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.output_inverted" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies whether the waveform generator output is inverted or not.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.WGenPolarity.html#keysight_ktinfiniivision.WGenPolarity" title="keysight_ktinfiniivision.WGenPolarity">WGenPolarity</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; True &#61;&#62; Inverted
+<br />&#8226; False &#61;&#62;  Normal
+<br />&#8226; On T3000, X4000, X6000, M9240X and P9240X series oscilloscopes it supports both waveform generators (i.e. WaveGen1, WaveGen2).
+<br />&#8226; On X1000 and X1200 series oscilloscopes it supports one waveform generator only (i.e</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveGen.output_load_impedance">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">output_load_impedance</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.output_load_impedance" title="Link to this definition">¶</a></dt>
+<dd><p>Expected output load impedance. The output load selection lets the waveform generator display the correct amplitude and offset levels for the expected output load.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.WaveformGeneratorOutputLoadImpedance.html#keysight_ktinfiniivision.WaveformGeneratorOutputLoadImpedance" title="keysight_ktinfiniivision.WaveformGeneratorOutputLoadImpedance">WaveformGeneratorOutputLoadImpedance</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; If the actual load impedance is different than the selected value, the displayed amplitude and offset levels will be incorrect.
+<br />&#8226; On T3000, X4000, X6000, M9240X and P9240X series oscilloscopes it supports both waveform generators (i.e. WaveGen1, WaveGen2).
+<br />&#8226; On X1000, X1200, X2000 and X3000 series oscilloscopes it supports one waveform generator only (i.e WaveGen1).</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveGen.output_mode">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">output_mode</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.output_mode" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and Gets the output mode setting.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.WaveformGeneratorOutputMode.html#keysight_ktinfiniivision.WaveformGeneratorOutputMode" title="keysight_ktinfiniivision.WaveformGeneratorOutputMode">WaveformGeneratorOutputMode</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; For Normal: the defined waveform is output continuously.
+<br />&#8226; For Single: one cycle of the defined waveform is output
+<br />&#8226; Not all waveform types allow single-shot output.
+<br />&#8226; Supported by 3000T, X4000, X6000, M9240X and P9240X series oscilloscopes.</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveGen.output_single">
+<span class="sig-name descname"><span class="pre">output_single</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionWaveGen"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionWaveGen</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.output_single" title="Link to this definition">¶</a></dt>
+<dd><p>Write Only - Specifies the single cycle of the defined waveform to be output.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveGen.period">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">period</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.period" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the period in seconds for Sine, Square, Ramp, and Pulse waveforms</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; For all waveforms except Noise and DC, this property will specifies the period of the waveform.
+<br />&#8226; You can also specify the period indirectly using WaveGensFrequency porperty.
+<br />&#8226; On T3000, X4000, X6000, M9240X and P9240X series oscilloscopes it supports both waveform generators (i.e. WaveGen1, WaveGen2).
+<br />&#8226; On X1000, X1200, X2000 and X3000 series oscilloscopes it supports one waveform generator only (i.e WaveGen1).</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveGen.pulse_width">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">pulse_width</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.pulse_width" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the pulse width in seconds for Pulse waveforms. The pulse width can be adjusted from 20 ns to the period minus 20 ns.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; On T3000, X4000, X6000, M9240X and P9240X series oscilloscopes it supports both waveform generators (i.e. WaveGen1, WaveGen2).
+<br />&#8226; On X1000, X1200, X2000 and X3000 series oscilloscopes it supports one waveform generator only (i.e WaveGen1).</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveGen.ramp_symmetry">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ramp_symmetry</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.ramp_symmetry" title="Link to this definition">¶</a></dt>
+<dd><p>Sets and gets the symmetry of the waveform.</p>
+<dl class="field-list">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ReadWrite</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
+</dd>
+<dt class="field-odd">Remarks<span class="colon">:</span></dt>
+<dd class="field-odd"><br />&#8226; Symmetry percentage from 0% to 100% for Ramp waveform. 
+<br />&#8226; Symmetry represents the amount of time per cycle that the ramp waveform is rising.
+<br />&#8226; On T3000, X4000, X6000, M9240X and P9240X series oscilloscopes it supports both waveform generators (i.e. WaveGen1, WaveGen2).
+<br />&#8226; On X1000, X1200, X2000 and X3000 series oscilloscopes it supports one waveform generator only (i.e WaveGen1).</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveGen.reset">
+<span class="sig-name descname"><span class="pre">reset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen" title="keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionWaveGen"><span class="pre">keysight_ktinfiniivision.keysight_ktinfiniivision.KtInfiniiVisionWaveGen</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.reset" title="Link to this definition">¶</a></dt>
+<dd><p>Restores the waveform generator factory default settingsn (1 kHz sine wave, 500 mVpp, 0 V offset.)</p>
+<dl class="field-list">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+<dt class="field-even">Remarks<span class="colon">:</span></dt>
+<dd class="field-even"><br />&#8226;  On T3000, 4000X, X6000, M9240X and P9240X series oscilloscopes it supports both waveform generators (i.e. WaveGen1, WaveGen2).
+<br />&#8226;  On X1000, X1200, X2000 and X3000 series oscilloscopes it supports one waveform generator only (i.e WaveGen1).</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="keysight_ktinfiniivision.KtInfiniiVisionWaveGen.tracking">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">tracking</span></span><a class="headerlink" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.tracking" title="Link to this definition">¶</a></dt>
+<dd><p>Reference to the <a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenTracking.html#keysight_ktinfiniivision.KtInfiniiVisionWaveGenTracking" title="keysight_ktinfiniivision.KtInfiniiVisionWaveGenTracking"><code class="xref py py-class docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGenTracking</span></code></a> interface.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Access<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Readonly</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenTracking.html#keysight_ktinfiniivision.KtInfiniiVisionWaveGenTracking" title="keysight_ktinfiniivision.KtInfiniiVisionWaveGenTracking">KtInfiniiVisionWaveGenTracking</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<p><strong>Child Interfaces</strong></p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenArbitrary.html">KtInfiniiVisionWaveGenArbitrary</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenArbitrary.html#keysight_ktinfiniivision.KtInfiniiVisionWaveGenArbitrary"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGenArbitrary</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenArbitrary.html#keysight_ktinfiniivision.KtInfiniiVisionWaveGenArbitrary.attribute"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGenArbitrary.attribute</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenArbitrary.html#keysight_ktinfiniivision.KtInfiniiVisionWaveGenArbitrary.byte_order"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGenArbitrary.byte_order</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenArbitrary.html#keysight_ktinfiniivision.KtInfiniiVisionWaveGenArbitrary.interpolation"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGenArbitrary.interpolation</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenArbitrary.html#keysight_ktinfiniivision.KtInfiniiVisionWaveGenArbitrary.reset"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGenArbitrary.reset()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenArbitrary.html#keysight_ktinfiniivision.KtInfiniiVisionWaveGenArbitrary.set_data"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGenArbitrary.set_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenArbitrary.html#keysight_ktinfiniivision.KtInfiniiVisionWaveGenArbitrary.set_data_dac"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGenArbitrary.set_data_dac()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenArbitrary.html#keysight_ktinfiniivision.KtInfiniiVisionWaveGenArbitrary.store"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGenArbitrary.store()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenArbitraryAttribute.html">KtInfiniiVisionWaveGenArbitraryAttribute</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenArbitraryAttribute.html#keysight_ktinfiniivision.KtInfiniiVisionWaveGenArbitraryAttribute"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGenArbitraryAttribute</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenArbitraryAttribute.html#keysight_ktinfiniivision.KtInfiniiVisionWaveGenArbitraryAttribute.number_of_points"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGenArbitraryAttribute.number_of_points</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulation.html">KtInfiniiVisionWaveGenModulation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulation.html#keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulation"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGenModulation</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulation.html#keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulation.am"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGenModulation.am</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulation.html#keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulation.enabled"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGenModulation.enabled</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulation.html#keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulation.fm"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGenModulation.fm</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulation.html#keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulation.fsk"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGenModulation.fsk</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulation.html#keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulation.function"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGenModulation.function</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulation.html#keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulation.ramp_symmetry"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGenModulation.ramp_symmetry</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulation.html#keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulation.type"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGenModulation.type</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulationAM.html">KtInfiniiVisionWaveGenModulationAM</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulationAM.html#keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulationAM"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGenModulationAM</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulationAM.html#keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulationAM.depth"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGenModulationAM.depth</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulationAM.html#keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulationAM.frequency"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGenModulationAM.frequency</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulationFM.html">KtInfiniiVisionWaveGenModulationFM</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulationFM.html#keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulationFM"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGenModulationFM</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulationFM.html#keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulationFM.deviation"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGenModulationFM.deviation</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulationFM.html#keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulationFM.frequency"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGenModulationFM.frequency</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulationFSK.html">KtInfiniiVisionWaveGenModulationFSK</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulationFSK.html#keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulationFSK"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGenModulationFSK</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulationFSK.html#keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulationFSK.frequency"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGenModulationFSK.frequency</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulationFSK.html#keysight_ktinfiniivision.KtInfiniiVisionWaveGenModulationFSK.rate"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGenModulationFSK.rate</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenTracking.html">KtInfiniiVisionWaveGenTracking</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenTracking.html#keysight_ktinfiniivision.KtInfiniiVisionWaveGenTracking"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGenTracking</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenTracking.html#keysight_ktinfiniivision.KtInfiniiVisionWaveGenTracking.amplitude_enabled"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGenTracking.amplitude_enabled</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenTracking.html#keysight_ktinfiniivision.KtInfiniiVisionWaveGenTracking.copy_signal"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGenTracking.copy_signal()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenTracking.html#keysight_ktinfiniivision.KtInfiniiVisionWaveGenTracking.enabled"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGenTracking.enabled</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenTracking.html#keysight_ktinfiniivision.KtInfiniiVisionWaveGenTracking.frequency_enabled"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGenTracking.frequency_enabled</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenTracking.html#keysight_ktinfiniivision.KtInfiniiVisionWaveGenTracking.phase"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGenTracking.phase</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">KtInfiniiVisionWaveGen</a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGen</span></code></a><ul>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.additional_noise"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGen.additional_noise</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.amplitude"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGen.amplitude</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.arbitrary"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGen.arbitrary</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.dc_mode"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGen.dc_mode</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.duty_cycle"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGen.duty_cycle</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.frequency"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGen.frequency</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.function"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGen.function</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.high_voltage"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGen.high_voltage</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.low_voltage"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGen.low_voltage</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.modulation"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGen.modulation</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.name"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGen.name</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.offset_voltage"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGen.offset_voltage</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.output_enabled"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGen.output_enabled</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.output_inverted"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGen.output_inverted</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.output_load_impedance"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGen.output_load_impedance</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.output_mode"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGen.output_mode</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.output_single"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGen.output_single()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.period"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGen.period</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.pulse_width"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGen.pulse_width</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.ramp_symmetry"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGen.ramp_symmetry</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.reset"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGen.reset()</span></code></a></li>
+<li><a class="reference internal" href="#keysight_ktinfiniivision.KtInfiniiVisionWaveGen.tracking"><code class="docutils literal notranslate"><span class="pre">KtInfiniiVisionWaveGen.tracking</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenCollection.html"
+                          title="previous chapter">KtInfiniiVisionWaveGenCollection</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenArbitrary.html"
+                          title="next chapter">KtInfiniiVisionWaveGenArbitrary</a></p>
+  </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenArbitrary.html" title="KtInfiniiVisionWaveGenArbitrary"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenCollection.html" title="KtInfiniiVisionWaveGenCollection"
+             >previous</a> |</li>
+        <li><a href="../index.html">home</a> |&nbsp;</li>
+        <!-- DP- Not using 'search' link on header and footer as it does not work in the 
+                 htmlHelp .chm file and is available from the sidebar in html help. -->
+        <!--<li><a href="../search.html">search</a>|&nbsp;</li>-->
+
+          <li class="nav-item nav-item-1"><a href="../reference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="hierarchy.html" >API Interfaces Hierarchy</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="keysight_ktinfiniivision.KtInfiniiVision.html" >KtInfiniiVision</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="keysight_ktinfiniivision.KtInfiniiVisionWaveGenCollection.html" >KtInfiniiVisionWaveGenCollection</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">KtInfiniiVisionWaveGen</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Keysight Technologies.  v1.0.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

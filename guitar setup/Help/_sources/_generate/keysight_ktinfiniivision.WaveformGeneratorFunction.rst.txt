@@ -1,0 +1,14 @@
+
+WaveformGeneratorFunction
+==========================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: WaveformGeneratorFunction
+    :members:
+    :exclude-members: name
+
+
+
+

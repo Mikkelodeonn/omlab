@@ -1,0 +1,14 @@
+
+SerialBusSPIFraming
+====================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: SerialBusSPIFraming
+    :members:
+    :exclude-members: name
+
+
+
+

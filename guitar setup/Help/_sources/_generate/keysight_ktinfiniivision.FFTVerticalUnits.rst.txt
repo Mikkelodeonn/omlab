@@ -1,0 +1,14 @@
+
+FFTVerticalUnits
+=================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: FFTVerticalUnits
+    :members:
+    :exclude-members: name
+
+
+
+

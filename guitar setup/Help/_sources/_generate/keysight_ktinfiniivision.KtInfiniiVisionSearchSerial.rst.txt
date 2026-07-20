@@ -1,0 +1,29 @@
+
+KtInfiniiVisionSearchSerial
+============================
+    | Access interface members using: ``driver.search.serial``
+    | Where ``driver`` is a reference to the driver's root interface returned by the :ref:`constructor <programming:Creating a Driver Instance>`.
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: KtInfiniiVisionSearchSerial
+    :members:
+    :exclude-members: get_name_by_index, items
+
+
+
+**Child Interfaces**
+
+
+.. toctree::
+   keysight_ktinfiniivision.KtInfiniiVisionSearchSerialARINC429
+   keysight_ktinfiniivision.KtInfiniiVisionSearchSerialCAN
+   keysight_ktinfiniivision.KtInfiniiVisionSearchSerialFlexRay
+   keysight_ktinfiniivision.KtInfiniiVisionSearchSerialI2S
+   keysight_ktinfiniivision.KtInfiniiVisionSearchSerialIIC
+   keysight_ktinfiniivision.KtInfiniiVisionSearchSerialLIN
+   keysight_ktinfiniivision.KtInfiniiVisionSearchSerialM1553
+   keysight_ktinfiniivision.KtInfiniiVisionSearchSerialSENT
+   keysight_ktinfiniivision.KtInfiniiVisionSearchSerialSPI
+   keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUART
+   keysight_ktinfiniivision.KtInfiniiVisionSearchSerialUSB

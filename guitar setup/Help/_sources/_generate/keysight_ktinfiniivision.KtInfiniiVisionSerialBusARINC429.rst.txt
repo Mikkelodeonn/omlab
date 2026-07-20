@@ -1,0 +1,15 @@
+
+KtInfiniiVisionSerialBusARINC429
+=================================
+    | Access interface members using: ``driver.serial_buses[<name_or_index>].arinc429``
+    | Where ``driver`` is a reference to the driver's root interface returned by the :ref:`constructor <programming:Creating a Driver Instance>`.
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: KtInfiniiVisionSerialBusARINC429
+    :members:
+    :exclude-members: get_name_by_index, items
+
+
+
+

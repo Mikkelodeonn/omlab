@@ -1,0 +1,14 @@
+
+HistogramAxis
+==============
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: HistogramAxis
+    :members:
+    :exclude-members: name
+
+
+
+

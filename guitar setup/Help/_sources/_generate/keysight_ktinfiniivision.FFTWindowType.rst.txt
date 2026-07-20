@@ -1,0 +1,14 @@
+
+FFTWindowType
+==============
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: FFTWindowType
+    :members:
+    :exclude-members: name
+
+
+
+

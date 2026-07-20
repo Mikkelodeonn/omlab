@@ -1,0 +1,14 @@
+
+TriggerUSBCondition
+====================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: TriggerUSBCondition
+    :members:
+    :exclude-members: name
+
+
+
+

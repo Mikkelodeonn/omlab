@@ -1,0 +1,14 @@
+
+MemoryImagePalette
+===================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: MemoryImagePalette
+    :members:
+    :exclude-members: name
+
+
+
+

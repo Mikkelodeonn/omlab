@@ -1,0 +1,14 @@
+
+ChannelCoupling
+================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: ChannelCoupling
+    :members:
+    :exclude-members: name
+
+
+
+

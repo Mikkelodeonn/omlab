@@ -1,0 +1,14 @@
+
+MeasurementDualType
+====================
+
+
+.. currentmodule:: keysight_ktinfiniivision
+
+.. autoclass:: MeasurementDualType
+    :members:
+    :exclude-members: name
+
+
+
+
