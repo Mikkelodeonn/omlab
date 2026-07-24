@@ -1,6 +1,17 @@
 class picomotor:
     def __init__(self, connection=0, auto_detect=False):
 
+        import usb.backend.libusb1
+        import libusb_package
+
+        _original_get_backend = usb.backend.libusb1.get_backend
+
+        def patched_get_backend(*args, **kwargs):
+            kwargs.setdefault("find_library", libusb_package.find_library)
+            return _original_get_backend(*args, **kwargs)
+
+        usb.backend.libusb1.get_backend = patched_get_backend
+
         from pylablib.devices import Newport 
 
         self.stage = Newport.Picomotor8742(connection)
@@ -9,6 +20,9 @@ class picomotor:
             print("autodetection motors...")
             self.stage.autodetect_motors()
             self.stage.save_parameters()
+        
+        print(self.stage.get_id())
+        print(self.stage.get_all_axes())
 
     def info(self):
         return self.stage.get_id()
@@ -44,4 +58,10 @@ class picomotor:
         self.stage.close()
     
 
-    ## Class documentation: https://pylablib.readthedocs.io/en/latest/.apidoc/pylablib.devices.Newport.html#pylablib.devices.Newport.picomotor.Picomotor8742.move_by
+## Class documentation: https://pylablib.readthedocs.io/en/latest/.apidoc/pylablib.devices.Newport.html#pylablib.devices.Newport.picomotor.Picomotor8742.move_by
+
+
+#stage = picomotor(auto_detect=True)
+
+#stage.MoveBy(axis=1, steps=-100000)
+

@@ -1,5 +1,3 @@
-
-
 class keysight_scope:
     def __init__(self, visa_address: str):
         
@@ -18,5 +16,5 @@ class keysight_scope:
 
 
 
-#scope = keysight_scope(visa_address="USB0::0x0957::0x1796::MY53100155::0::INSTR")
+#scope = keysight_scope(visa_address="USB0::0x0957::0x1796::MY57153094::0::INSTR")
 #print(scope.average_voltage(channel=1))
