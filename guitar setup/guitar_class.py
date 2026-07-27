@@ -314,7 +314,50 @@ class guitar:
                 break
 
         print("Sample is in focus!")
-        
+
+    def area_scan(self, scan_length: int, stepsize: int, scope_channel: int):
+
+        init_xpos = self.xy_stage.GetPosition(channel=1)
+        init_ypos = self.xy_stage.GetPosition(channel=2)
+
+        xpos = np.arange(0, scan_length + stepsize, stepsize)
+        ypos = np.arange(0, scan_length + stepsize, stepsize)
+
+        measured_values = []
+
+        previous_xval = np.inf
+
+        while True: 
+            val = self.scope.average_voltage(channel=scope_channel)
+            self.xy_stage.MoveBy(-stepsize, 1)
+
+            if val < 1 and np.abs(val - previous_xval) < 0.1:
+                break
+
+            previous_xval = val
+
+        while np.abs(self.xy_stage.GetPosition(channel=2) - init_ypos) <= scan_length:
+            vals = []
+
+            while np.abs(self.xy_stage.GetPosition(channel=1) - init_xpos) <= scan_length:
+                val = self.scope.average_voltage(channel=scope_channel)
+                vals.append(val)
+                print(np.abs(self.xy_stage.GetPosition(channel=1)-init_xpos), "->", val)
+                self.xy_stage.MoveBy(steps=stepsize, channel=1)
+                #new_xpos = self.xy_stage.GetPosition(channel=1)
+                #xpos.append(new_xpos)
+                time.sleep(2)
+
+            measured_values.append(vals)
+            self.xy_stage.MoveBy(steps=stepsize, channel=2)
+            time.sleep(2)
+
+        plt.figure(figsize=(10,6))
+        plt.imshow(measured_values, aspect="auto", extent=[np.min(xpos), np.max(xpos), np.min(ypos), np.max(ypos)])
+        plt.xlabel("x-position [motor steps]", fontsize=28)
+        plt.ylabel("y-position [motor steps]", fontsize=28)
+        plt.locator_params(axis="both", nbins=5)
+        plt.show()
 
 G1 = guitar(stage_serial="97251709", 
             scope_visa_address="USB0::0x0957::0x1796::MY57153094::0::INSTR",
