@@ -367,7 +367,7 @@ G1 = guitar(stage_serial="97251709",
 #                    stepsize=20, 
 #                    scope_channel=1)
 
-G1.locate_beam_focus(scan_length=800,
-                     xy_stepsize=20, 
-                     scope_channel=1,
-                     z_stepsize=1000)
+#G1.locate_beam_focus(scan_length=800,
+#                     xy_stepsize=20, 
+#                     scope_channel=1,
+#                     z_stepsize=1000)

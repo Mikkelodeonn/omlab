@@ -61,7 +61,7 @@ class picomotor:
 ## Class documentation: https://pylablib.readthedocs.io/en/latest/.apidoc/pylablib.devices.Newport.html#pylablib.devices.Newport.picomotor.Picomotor8742.move_by
 
 
-#stage = picomotor(auto_detect=True)
+stage = picomotor(auto_detect=True)
 
-#stage.MoveBy(axis=1, steps=-100000)
+stage.MoveBy(axis=1, steps=-350000)
 
