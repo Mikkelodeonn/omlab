@@ -121,7 +121,7 @@ class mechanics:
                     S = A / ((x0 - x)**2 + (Γ/2)**2) + B
                     return S
 
-                popt, pcov = curve_fit(thermal_fit, xfit, yfit, p0=[float(freq)*1e-3, 0.1, -120, 100e3], maxfev=10000)
+                popt, pcov = curve_fit(thermal_fit, xfit, yfit, p0=[float(freq)*1e-3, 0.1, -120, 100e3], maxfev=100000)
 
                 Γ = popt[1]
                 Ω0 = popt[0]
@@ -151,11 +151,14 @@ class mechanics:
             Qs_dict[mode] = {"measurement": np.mean(Qs),
                              "error": np.std(Qs)
                             }
-
+            print(np.mean(Qs))
+            print(np.std(Qs))
         return Qs_dict
 
-    def ringdown_plot(self, modes: list, ringdown_frequencies: list) -> None:
-        Qs_dict = self.ringdown_Qs(modes, ringdown_frequencies) 
+    def ringdown_plot(self, modes: list, ringdown_frequencies: list, sample_name: str) -> None:
+        Qs_dict = self.ringdown_Qs(modes=modes, 
+                                   ringdown_frequencies=ringdown_frequencies, 
+                                   sample_name=sample_name) 
 
         Qs = [Qs_dict[mode]["measurement"] for mode in modes]
         Q_errors = [Qs_dict[mode]["error"] for mode in modes]
@@ -167,16 +170,67 @@ class mechanics:
         plt.title("Ringdown")
         plt.errorbar(frequencies, Qs, yerr=Q_errors, color="firebrick", fmt="o", capsize=3, alpha=0.6)
         for frequency in frequencies:
-            plt.plot([frequency]*len(ys), ys, "--", color="royalblue", alpha=0.4)
+            plt.plot([frequency]*len(ys), ys, "--", color="black", alpha=0.4)
         plt.xlabel("frequency [Hz]")
         plt.ylabel("Q")
         #plt.legend()
         plt.show()
 
+    def thermal_plot(self, modes: list, thermal_frequencies: list, sample_name: str) -> None:
+        Qs_dict = self.thermal_Qs(modes=modes, 
+                                  thermal_frequencies=thermal_frequencies,
+                                  sample_name=sample_name) 
 
-modes = ["1,1"]#, "1,2", "2,1", "2,2", "2,3", "3,2", "3,3", "1,4", "4,1", "2,4", "3,4", "1,5", "5,1"]
-thermal_freqs = ["195024"]#, "308127", "308540", "390010", "496938", "497416", "585000", "567926", "569047", "616148", "689598", "702346", "703814"]
-ringdown_freqs = ["195024"]#, "308131", "308542", "390011", "496940", "497400", "585017", "567924", "569053", "616147", "689600", "702349", "703816"]
+        Qs = [Qs_dict[mode]["measurement"] for mode in modes]
+        Q_errors = [Qs_dict[mode]["error"] for mode in modes]
+        frequencies = [int(freq) for freq in thermal_frequencies]
+        
+        ys = np.linspace(0,max(Qs),1000)
+
+        plt.figure(figsize=(15,5))
+        plt.title("Thermal")
+        plt.errorbar(frequencies, Qs, yerr=Q_errors, color="royalblue", fmt="o", capsize=3, alpha=0.6)
+        for frequency in frequencies:
+            plt.plot([frequency]*len(ys), ys, "--", color="black", alpha=0.4)
+        plt.xlabel("frequency [Hz]")
+        plt.ylabel("Q")
+        #plt.legend()
+        plt.show()
+
+    def thermal_ringdown_comparison(self, modes: list, thermal_frequencies: list, ringdown_frequencies: list, sample_name: str) -> None:
+
+        thermal_Qs_dict = self.thermal_Qs(modes=modes, 
+                                          thermal_frequencies=thermal_frequencies,
+                                          sample_name=sample_name) 
+
+        thermal_Qs = [thermal_Qs_dict[mode]["measurement"] for mode in modes]
+        thermal_Q_errors = [thermal_Qs_dict[mode]["error"] for mode in modes]
+        thermal_frequencies = [int(freq) for freq in thermal_frequencies]
+
+        ringdown_Qs_dict = self.ringdown_Qs(modes=modes, 
+                                            ringdown_frequencies=ringdown_frequencies,
+                                            sample_name=sample_name) 
+
+        ringdown_Qs = [ringdown_Qs_dict[mode]["measurement"] for mode in modes]
+        ringdown_Q_errors = [ringdown_Qs_dict[mode]["error"] for mode in modes]
+        ringdown_frequencies = [int(freq) for freq in ringdown_frequencies]
+
+        ys = np.linspace(0,max(Qs),1000)
+
+        plt.figure(figsize=(15,5))
+        plt.title("Thermal/Ringdown")
+        plt.errorbar(thermal_frequencies, thermal_Qs, yerr=thermal_Q_errors, color="royalblue", fmt="o", capsize=3, alpha=0.6)
+        plt.errorbar(ringdown_frequencies, ringdown_Qs, yerr=ringdown_Q_errors, color="firebrick", fmt="o", capsize=3, alpha=0.6)
+        for frequency in ringdown_frequencies:
+            plt.plot([frequency]*len(ys), ys, "--", color="black", alpha=0.4)
+        plt.xlabel("frequency [Hz]")
+        plt.ylabel("Q")
+        #plt.legend()
+        plt.show()
+
+modes = ["1,1", "1,2", "2,1", "2,2", "2,3", "3,2", "3,3", "1,4", "4,1", "2,4", "3,4", "1,5", "5,1"]
+thermal_freqs = ["195024", "308127", "308540", "390010", "496938", "497416", "585000", "567926", "569047", "616148", "689598", "702346", "703814"]
+ringdown_freqs = ["195024", "308131", "308542", "390011", "496940", "497400", "585017", "567924", "569053", "616147", "689600", "702349", "703816"]
 
 D1 = mechanics(measurement_type="both", 
                thermal_freqs_in_Hz = thermal_freqs, 
@@ -184,6 +238,7 @@ D1 = mechanics(measurement_type="both",
                modes = modes, 
                date = "20260909")
 
-#D1.ringdown_Qs(modes, ringdown_freqs, "D1")
-D1.thermal_Qs(modes, thermal_freqs, "D1")
+#D1.ringdown_Qs(modes=modes, ringdown_freqs, "D1")
+#D1.thermal_Qs(modes, thermal_freqs, "D1")
 #D1.ringdown_plot(modes, ringdown_freqs, "D1")
+D1.thermal_ringdown_comparison(modes=modes, thermal_frequencies=thermal_freqs, ringdown_frequencies=ringdown_freqs, sample_name="D1")
