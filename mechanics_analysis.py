@@ -2,6 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 import os
+import tkinter as tk
+from tkinter import messagebox
 
 class mechanics: 
     def __init__(self, measurement_type: str, thermal_freqs_in_Hz: str, ringdown_freqs_in_Hz: str, modes: list, date: str) -> None:
@@ -95,6 +97,7 @@ class mechanics:
     def thermal_Qs(self, modes: list, thermal_frequencies: list, sample_name: str) -> dict:
         
         Qs_dict = {}
+        root = tk.Tk()
 
         for mode, freq in zip(modes, thermal_frequencies):
 
@@ -104,55 +107,65 @@ class mechanics:
                 xdata = self.thermal_data[mode][measurement][:,0]
                 ydata = 10**(self.thermal_data[mode][measurement][:,1]/10)
 
-                fig, ax = plt.subplots(figsize=(15,5))
-                ax.plot(xdata, ydata, "o", alpha=0.5, label="thermal data")
+                while True: 
+                    fig, ax = plt.subplots(figsize=(15,5))
+                    ax.plot(xdata, ydata, "o", alpha=0.5, label="thermal data")
 
-                clicked_points = plt.ginput(2, timeout=-1, show_clicks=True)
+                    clicked_points = plt.ginput(2, timeout=-1, show_clicks=True)
 
-                x1 = clicked_points[0][0]
-                x2 = clicked_points[1][0]
+                    x1 = clicked_points[0][0]
+                    x2 = clicked_points[1][0]
 
-                mask = (xdata >= x1) & (xdata <= x2)
+                    mask = (xdata >= x1) & (xdata <= x2)
 
-                xfit = xdata[mask]
-                yfit = ydata[mask]
+                    xfit = xdata[mask]
+                    yfit = ydata[mask]
 
-                def thermal_fit(x, x0, Γ, B, A):
-                    S = A / ((x0 - x)**2 + (Γ/2)**2) + B
-                    return S
+                    #def thermal_fit(x, x0, Γ, B, A):
+                    #    S = A / ((x0 - x)**2 + (Γ/2)**2) + B
+                    #    return S
 
-                popt, pcov = curve_fit(thermal_fit, xfit, yfit, p0=[float(freq)*1e-3, 0.1, -120, 100e3], maxfev=100000)
+                    def thermal_fit(x, x0, Γ, B, A): ### try this or change the A param in p0
+                                        S = A * (Γ / 2)**2 / ((x0 - x)**2 + (Γ/2)**2) + B
+                                        return S
 
-                Γ = popt[1]
-                Ω0 = popt[0]
-                Q = Ω0 / Γ
-                Qs.append(Q)
+                    popt, pcov = curve_fit(thermal_fit, xfit, yfit, p0=[float(freq)*1e-3, 1e-3, 0, 1e-12], maxfev=1000000)
 
-                xs_fit = np.linspace(x1,x2,100000)
-                ys_fit = thermal_fit(xs_fit, *popt)
+                    Γ = popt[1]
+                    Ω0 = popt[0]
+                    Q = np.abs(Ω0 / Γ)
 
-                ax.clear()
+                    xs_fit = np.linspace(x1,x2,100000)
+                    ys_fit = thermal_fit(xs_fit, *popt)
 
-                ax.plot(xs_fit, ys_fit, "-", lw=3, color="firebrick", label="thermal fit: Q ~ %s" % str(round(Q,2)))
-                ax.plot(xfit, yfit, "o", alpha=0.6, color="royalblue", label="data")
-                ax.set_xlabel("frequency [kHz]")
-                ax.set_ylabel("power [mW]")
-                ax.set_title(mode+" thermal "+str(measurement))
-                plt.legend()
+                    plt.close()
+                    fig, ax = plt.subplots(figsize=(15,5))
 
-                save_dir = "C:\\Users\\au601136\\omlab\\mechanics\\" + sample_name
-                filename = os.path.join(save_dir, mode+" thermal "+str(measurement)+".png")
+                    ax.plot(xs_fit, ys_fit, "-", lw=3, color="firebrick", label="thermal fit: Q ~ %s" % str(round(Q,2)))
+                    ax.plot(xfit, yfit, "o", alpha=0.6, color="royalblue", label="data")
+                    ax.set_xlabel("frequency [kHz]")
+                    ax.set_ylabel("power [mW]")
+                    ax.set_title(mode+" thermal "+str(measurement))
+                    plt.legend()
+                    plt.show(block=False)
 
-                plt.savefig(filename, dpi=300, bbox_inches="tight")
-                print(os.path.abspath(filename))
+                    root.withdraw()
 
-                #plt.show()
+                    accept_fit = messagebox.askyesno(message="Accept fit?")
+
+                    if accept_fit:
+                        Qs.append(Q)
+                        save_dir = "C:\\Users\\au601136\\omlab\\mechanics\\" + sample_name
+                        filename = os.path.join(save_dir, mode+" thermal "+str(measurement)+".png")
+
+                        plt.savefig(filename, dpi=300, bbox_inches="tight")
+                        print(os.path.abspath(filename))
+                        break
 
             Qs_dict[mode] = {"measurement": np.mean(Qs),
                              "error": np.std(Qs)
                             }
-            print(np.mean(Qs))
-            print(np.std(Qs))
+            
         return Qs_dict
 
     def ringdown_plot(self, modes: list, ringdown_frequencies: list, sample_name: str) -> None:
