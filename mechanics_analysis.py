@@ -6,13 +6,13 @@ import tkinter as tk
 from tkinter import messagebox
 
 class mechanics: 
-    def __init__(self, measurement_type: str, thermal_freqs_in_Hz: str, ringdown_freqs_in_Hz: str, modes: list, date: str) -> None:
+    def __init__(self, measurement_type: str, thermal_freqs_in_Hz: str, ringdown_freqs_in_Hz: str, modes: list, date: str, ringdown_RBW = "100", thermal_RBW = "0_1") -> None:
         match measurement_type:
             case "thermal":
                 self.thermal_data = {}
 
                 for mode, freq in zip(modes, thermal_freqs_in_Hz): 
-                    data = [np.loadtxt("C:\\Users\\au601136\\omlab\\mechanics\\"+date+"\\"+mode+"\\Thermal PCS 02(1,1), "+freq+"Hz,100Ave, RBW0_1Hz,900_7nm_170mbar_0Vdc_"+str(i)+".txt", skiprows=1) for i in range(1,6)]
+                    data = [np.loadtxt("C:\\Users\\au601136\\omlab\\mechanics\\"+date+"\\"+mode+"\\Thermal PCS 02(1,1), "+freq+"Hz,100Ave, RBW"+thermal_RBW+"Hz,900_7nm_170mbar_0Vdc_"+str(i)+".txt", skiprows=1) for i in range(1,6)]
 
                     self.thermal_data[mode] = data
 
@@ -20,7 +20,7 @@ class mechanics:
                 self.ringdown_data = {}
 
                 for mode, freq in zip(modes, ringdown_freqs_in_Hz):
-                    data = [np.loadtxt("C:\\Users\\au601136\\omlab\\mechanics\\"+date+"\\"+mode+"\\Ringdown ChamberPressure = 2-8e-4(1,1), "+freq+"Hz, 100Ave, RBW114Hz, 910-685nm_1-2e-05mbar_90Vdc_"+str(i)+".txt", skiprows=1) for i in range(1,6)]
+                    data = [np.loadtxt("C:\\Users\\au601136\\omlab\\mechanics\\"+date+"\\"+mode+"\\Ringdown ChamberPressure = 2-8e-4(1,1), "+freq+"Hz, 100Ave, RBW"+ringdown_RBW+"Hz, 910-685nm_1-2e-05mbar_90Vdc_"+str(i)+".txt", skiprows=1) for i in range(1,6)]
 
                     self.ringdown_data[mode] = data
 
@@ -29,9 +29,9 @@ class mechanics:
                 self.ringdown_data = {}
 
                 for mode, freq1, freq2 in zip(modes, thermal_freqs_in_Hz, ringdown_freqs_in_Hz): 
-                    data1 = [np.loadtxt("C:\\Users\\au601136\\omlab\\mechanics\\"+date+"\\"+mode+"\\Thermal PCS 02(1,1), "+freq1+"Hz,100Ave, RBW0_1Hz,900_7nm_170mbar_0Vdc_"+str(i)+".txt", skiprows=1) for i in range(1,6)]
+                    data1 = [np.loadtxt("C:\\Users\\au601136\\omlab\\mechanics\\"+date+"\\"+mode+"\\Thermal PCS 02(1,1), "+freq1+"Hz,100Ave, RBW"+thermal_RBW+"Hz,900_7nm_170mbar_0Vdc_"+str(i)+".txt", skiprows=1) for i in range(1,6)]
 
-                    data2 = [np.loadtxt("C:\\Users\\au601136\\omlab\\mechanics\\"+date+"\\"+mode+"\\Ringdown ChamberPressure = 2-8e-4(1,1), "+freq2+"Hz, 100Ave, RBW114Hz, 910-685nm_1-2e-05mbar_90Vdc_"+str(i)+".txt", skiprows=1) for i in range(1,6)]
+                    data2 = [np.loadtxt("C:\\Users\\au601136\\omlab\\mechanics\\"+date+"\\"+mode+"\\Ringdown ChamberPressure = 2-8e-4(1,1), "+freq2+"Hz, 100Ave, RBW"+ringdown_RBW+"Hz, 910-685nm_1-2e-05mbar_90Vdc_"+str(i)+".txt", skiprows=1) for i in range(1,6)]
 
                     self.thermal_data[mode] = data1
                     self.ringdown_data[mode] = data2
@@ -99,6 +99,10 @@ class mechanics:
         Qs_dict = {}
         root = tk.Tk()
 
+        def thermal_fit(x, x0, Γ, B, A): ### try this or change the A param in p0
+            S = A * (Γ / 2)**2 / ((x0 - x)**2 + (Γ/2)**2) + B
+            return S
+
         for mode, freq in zip(modes, thermal_frequencies):
 
             Qs = []
@@ -121,46 +125,48 @@ class mechanics:
                     xfit = xdata[mask]
                     yfit = ydata[mask]
 
-                    #def thermal_fit(x, x0, Γ, B, A):
-                    #    S = A / ((x0 - x)**2 + (Γ/2)**2) + B
-                    #    return S
+                    if len(xfit) == len(yfit) and len(yfit) >= 2:
+                        popt, pcov = curve_fit(thermal_fit, xfit, yfit, p0=[float(freq)*1e-3, 1e-3, 0, 1e-12], maxfev=1000000)
 
-                    def thermal_fit(x, x0, Γ, B, A): ### try this or change the A param in p0
-                                        S = A * (Γ / 2)**2 / ((x0 - x)**2 + (Γ/2)**2) + B
-                                        return S
+                        Γ = popt[1]
+                        Ω0 = popt[0]
+                        Q = np.abs(Ω0 / Γ)
 
-                    popt, pcov = curve_fit(thermal_fit, xfit, yfit, p0=[float(freq)*1e-3, 1e-3, 0, 1e-12], maxfev=1000000)
+                        xs_fit = np.linspace(x1,x2,100000)
+                        ys_fit = thermal_fit(xs_fit, *popt)
 
-                    Γ = popt[1]
-                    Ω0 = popt[0]
-                    Q = np.abs(Ω0 / Γ)
+                        plt.close()
+                        fig, ax = plt.subplots(figsize=(15,5))
 
-                    xs_fit = np.linspace(x1,x2,100000)
-                    ys_fit = thermal_fit(xs_fit, *popt)
+                        ax.plot(xs_fit, ys_fit, "-", lw=3, color="firebrick", label="thermal fit: Q ~ %s" % str(round(Q,2)))
+                        ax.plot(xfit, yfit, "o", alpha=0.6, color="royalblue", label="data")
+                        ax.set_xlabel("frequency [kHz]")
+                        ax.set_ylabel("power [mW]")
+                        ax.set_title(mode+" thermal "+str(measurement))
+                        plt.legend()
+                        plt.show(block=False)
 
-                    plt.close()
-                    fig, ax = plt.subplots(figsize=(15,5))
+                        root.withdraw()
 
-                    ax.plot(xs_fit, ys_fit, "-", lw=3, color="firebrick", label="thermal fit: Q ~ %s" % str(round(Q,2)))
-                    ax.plot(xfit, yfit, "o", alpha=0.6, color="royalblue", label="data")
-                    ax.set_xlabel("frequency [kHz]")
-                    ax.set_ylabel("power [mW]")
-                    ax.set_title(mode+" thermal "+str(measurement))
-                    plt.legend()
-                    plt.show(block=False)
+                        accept_fit = messagebox.askyesnocancel(message="Accept fit?")
 
-                    root.withdraw()
+                        if accept_fit == True:
+                            Qs.append(Q)
+                            save_dir = "C:\\Users\\au601136\\omlab\\mechanics\\" + sample_name
+                            filename = os.path.join(save_dir, mode+" thermal "+str(measurement)+".png")
 
-                    accept_fit = messagebox.askyesno(message="Accept fit?")
+                            plt.savefig(filename, dpi=300, bbox_inches="tight")
+                            print(os.path.abspath(filename))
+                            break
+                        elif accept_fit == None:
+                            plt.close()
+                            break
+                        else:
+                            plt.close()
 
-                    if accept_fit:
-                        Qs.append(Q)
-                        save_dir = "C:\\Users\\au601136\\omlab\\mechanics\\" + sample_name
-                        filename = os.path.join(save_dir, mode+" thermal "+str(measurement)+".png")
-
-                        plt.savefig(filename, dpi=300, bbox_inches="tight")
-                        print(os.path.abspath(filename))
-                        break
+                    else:
+                        print("Dude!? I need at least 2 points to fit. Preferably more than that, but you gotta give me at least 2.....")
+                        plt.close()
 
             Qs_dict[mode] = {"measurement": np.mean(Qs),
                              "error": np.std(Qs)
@@ -228,30 +234,43 @@ class mechanics:
         ringdown_Q_errors = [ringdown_Qs_dict[mode]["error"] for mode in modes]
         ringdown_frequencies = [int(freq) for freq in ringdown_frequencies]
 
-        ys = np.linspace(0,max(Qs),1000)
+        ys = np.linspace(0,max([max([Q+err for Q,err in zip(ringdown_Qs, ringdown_Q_errors)]), max([Q+err for Q,err in zip(thermal_Qs, thermal_Q_errors)])]),1000)
 
         plt.figure(figsize=(15,5))
-        plt.title("Thermal/Ringdown")
-        plt.errorbar(thermal_frequencies, thermal_Qs, yerr=thermal_Q_errors, color="royalblue", fmt="o", capsize=3, alpha=0.6)
-        plt.errorbar(ringdown_frequencies, ringdown_Qs, yerr=ringdown_Q_errors, color="firebrick", fmt="o", capsize=3, alpha=0.6)
+        plt.title(sample_name+" Thermal/Ringdown")
+        plt.errorbar(thermal_frequencies, thermal_Qs, yerr=thermal_Q_errors, color="royalblue", fmt="o", capsize=3, alpha=0.6, label="thermal")
+        plt.errorbar(ringdown_frequencies, ringdown_Qs, yerr=ringdown_Q_errors, color="firebrick", fmt="o", capsize=3, alpha=0.6, label="ringdown")
         for frequency in ringdown_frequencies:
             plt.plot([frequency]*len(ys), ys, "--", color="black", alpha=0.4)
         plt.xlabel("frequency [Hz]")
         plt.ylabel("Q")
-        #plt.legend()
+        plt.legend()
         plt.show()
 
-modes = ["1,1", "1,2", "2,1", "2,2", "2,3", "3,2", "3,3", "1,4", "4,1", "2,4", "3,4", "1,5", "5,1"]
-thermal_freqs = ["195024", "308127", "308540", "390010", "496938", "497416", "585000", "567926", "569047", "616148", "689598", "702346", "703814"]
-ringdown_freqs = ["195024", "308131", "308542", "390011", "496940", "497400", "585017", "567924", "569053", "616147", "689600", "702349", "703816"]
+D1_modes = ["1,1", "1,2", "2,1", "2,2", "2,3", "3,2", "3,3", "1,4", "4,1", "2,4", "3,4", "1,5", "5,1"]
+D1_thermal_freqs = ["195024", "308127", "308540", "390010", "496938", "497416", "585000", "567926", "569047", "616148", "689598", "702346", "703814"]
+D1_ringdown_freqs = ["195024", "308131", "308542", "390011", "496940", "497400", "585017", "567924", "569053", "616147", "689600", "702349", "703816"]
+
+E1_modes = ["1,1", "1,2", "2,1"]#, "2,2", "2,3", "3,2", "3,3", "1,4", "4,1", "2,4", "4,2", "3,4", "4,3", "4,4"]
+E1_thermal_freqs = ["195124", "308107", "308882"]#, "390178", "496975", "497813", "585299", "567849", "569954", "616181", "617770", "689441", "690213", "780485"]
+E1_ringdown_freqs = ["195128", "308110", "308886"]#, "390180", "496980", "497819", "585302", "567852", "569957", "616184", "617773", "689429", "690217", "780490"]
 
 D1 = mechanics(measurement_type="both", 
-               thermal_freqs_in_Hz = thermal_freqs, 
-               ringdown_freqs_in_Hz = ringdown_freqs,
-               modes = modes, 
-               date = "20260909")
+               thermal_freqs_in_Hz = D1_thermal_freqs, 
+               ringdown_freqs_in_Hz = D1_ringdown_freqs,
+               modes = D1_modes, 
+               date = "20260909", 
+               ringdown_RBW="114")
 
-#D1.ringdown_Qs(modes=modes, ringdown_freqs, "D1")
-#D1.thermal_Qs(modes, thermal_freqs, "D1")
-#D1.ringdown_plot(modes, ringdown_freqs, "D1")
-D1.thermal_ringdown_comparison(modes=modes, thermal_frequencies=thermal_freqs, ringdown_frequencies=ringdown_freqs, sample_name="D1")
+E1 = mechanics(measurement_type="both", 
+               thermal_freqs_in_Hz = E1_thermal_freqs, 
+               ringdown_freqs_in_Hz = E1_ringdown_freqs,
+              modes = E1_modes, 
+              date = "20260914")
+
+#D1.ringdown_Qs(modes=D1_modes, D1_ringdown_freqs, "D1")
+#D1.thermal_Qs(D1_modes, D1_thermal_freqs, "D1")
+#D1.ringdown_plot(D1_modes, D1_ringdown_freqs, "D1")
+#D1.thermal_ringdown_comparison(modes=D1_modes, thermal_frequencies=D1_thermal_freqs, ringdown_frequencies=D1_ringdown_freqs, sample_name="D1")
+
+E1.thermal_ringdown_comparison(modes=E1_modes, thermal_frequencies=E1_thermal_freqs, ringdown_frequencies=E1_ringdown_freqs, sample_name="test")
