@@ -6,13 +6,13 @@ import tkinter as tk
 from tkinter import messagebox
 
 class mechanics: 
-    def __init__(self, measurement_type: str, thermal_freqs_in_Hz: str, ringdown_freqs_in_Hz: str, modes: list, date: str, ringdown_RBW = "100", thermal_RBW = "0_1") -> None:
+    def __init__(self, measurement_type: str, thermal_freqs_in_Hz: str, ringdown_freqs_in_Hz: str, modes: list, date: str, folder: str, ringdown_RBW = "100", thermal_RBW = "0_1") -> None:
         match measurement_type:
             case "thermal":
                 self.thermal_data = {}
 
                 for mode, freq in zip(modes, thermal_freqs_in_Hz): 
-                    data = [np.loadtxt("C:\\Users\\au601136\\omlab\\mechanics\\"+date+"\\"+mode+"\\Thermal PCS 02(1,1), "+freq+"Hz,100Ave, RBW"+thermal_RBW+"Hz,900_7nm_170mbar_0Vdc_"+str(i)+".txt", skiprows=1) for i in range(1,6)]
+                    data = [np.loadtxt("C:\\Users\\au601136\\omlab\\mechanics\\"+folder+"\\"+mode+"\\Thermal PCS 02(1,1), "+freq+"Hz,100Ave, RBW"+thermal_RBW+"Hz,900_7nm_170mbar_0Vdc, "+date+"_00"+str(i)+".txt", skiprows=1) for i in range(1,6)]
 
                     self.thermal_data[mode] = data
 
@@ -209,8 +209,8 @@ class mechanics:
         plt.figure(figsize=(15,5))
         plt.title("Thermal")
         plt.errorbar(frequencies, Qs, yerr=Q_errors, color="royalblue", fmt="o", capsize=3, alpha=0.6)
-        for frequency in frequencies:
-            plt.plot([frequency]*len(ys), ys, "--", color="black", alpha=0.4)
+        #for frequency in frequencies:
+        #    plt.plot([frequency]*len(ys), ys, "--", color="black", alpha=0.4)
         plt.xlabel("frequency [Hz]")
         plt.ylabel("Q")
         #plt.legend()
@@ -240,8 +240,8 @@ class mechanics:
         plt.title(sample_name+" Thermal/Ringdown")
         plt.errorbar(thermal_frequencies, thermal_Qs, yerr=thermal_Q_errors, color="royalblue", fmt="o", capsize=3, alpha=0.6, label="thermal")
         plt.errorbar(ringdown_frequencies, ringdown_Qs, yerr=ringdown_Q_errors, color="firebrick", fmt="o", capsize=3, alpha=0.6, label="ringdown")
-        for frequency in ringdown_frequencies:
-            plt.plot([frequency]*len(ys), ys, "--", color="black", alpha=0.4)
+        #for n,m in :
+        #    plt.plot([ringdown_frequencies[0]]*len(ys), ys, "--", color="black", alpha=0.4)
         plt.xlabel("frequency [Hz]")
         plt.ylabel("Q")
         plt.legend()
@@ -255,22 +255,35 @@ E1_modes = ["1,1", "1,2", "2,1"]#, "2,2", "2,3", "3,2", "3,3", "1,4", "4,1", "2,
 E1_thermal_freqs = ["195124", "308107", "308882"]#, "390178", "496975", "497813", "585299", "567849", "569954", "616181", "617770", "689441", "690213", "780485"]
 E1_ringdown_freqs = ["195128", "308110", "308886"]#, "390180", "496980", "497819", "585302", "567852", "569957", "616184", "617773", "689429", "690217", "780490"]
 
-D1 = mechanics(measurement_type="both", 
-               thermal_freqs_in_Hz = D1_thermal_freqs, 
-               ringdown_freqs_in_Hz = D1_ringdown_freqs,
-               modes = D1_modes, 
-               date = "20260909", 
-               ringdown_RBW="114")
+C1_modes = ["mode0", "mode1", "mode2", "mode3", "mode4", "mode5", "mode6", "mode7", "mode8", "mode9", "mode10", "mode11", "mode12", "mode13", "mode14", "mode15", "mode16", "mode17"]
 
-E1 = mechanics(measurement_type="both", 
-               thermal_freqs_in_Hz = E1_thermal_freqs, 
-               ringdown_freqs_in_Hz = E1_ringdown_freqs,
-              modes = E1_modes, 
-              date = "20260914")
+C1_thermal_freqs = ["28211", "50611", "102356", "133764", "153941", "161409", "179346", "185577", "202699", "210000", "220953", "231175", "235865", "237469", "280731", "286268", "288697", "289651"]
+
+#D1 = mechanics(measurement_type="both", 
+#               thermal_freqs_in_Hz = D1_thermal_freqs, 
+#               ringdown_freqs_in_Hz = D1_ringdown_freqs,
+#               modes = D1_modes,
+#               folder = "20260909", 
+#               ringdown_RBW="114")
+
+#E1 = mechanics(measurement_type="both", 
+#               thermal_freqs_in_Hz = E1_thermal_freqs, 
+#               ringdown_freqs_in_Hz = E1_ringdown_freqs, 
+#               modes = E1_modes, 
+#               date="14-Sep-2026",
+#               folder = "20260914")
+
+C1 = mechanics(measurement_type="thermal", 
+               thermal_freqs_in_Hz=C1_thermal_freqs,
+               ringdown_freqs_in_Hz=[],
+               modes=C1_modes,
+               date="29-Sep-2026",
+               folder= "20260929")
 
 #D1.ringdown_Qs(modes=D1_modes, D1_ringdown_freqs, "D1")
 #D1.thermal_Qs(D1_modes, D1_thermal_freqs, "D1")
 #D1.ringdown_plot(D1_modes, D1_ringdown_freqs, "D1")
 #D1.thermal_ringdown_comparison(modes=D1_modes, thermal_frequencies=D1_thermal_freqs, ringdown_frequencies=D1_ringdown_freqs, sample_name="D1")
 
-E1.thermal_ringdown_comparison(modes=E1_modes, thermal_frequencies=E1_thermal_freqs, ringdown_frequencies=E1_ringdown_freqs, sample_name="test")
+#E1.thermal_ringdown_comparison(modes=E1_modes, thermal_frequencies=E1_thermal_freqs, ringdown_frequencies=E1_ringdown_freqs, sample_name="test")
+#C1.thermal_plot(modes=C1_modes, thermal_frequencies=C1_thermal_freqs, sample_name="C1")
