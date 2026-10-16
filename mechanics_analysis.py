@@ -174,7 +174,7 @@ class mechanics:
             
         return Qs_dict
 
-    def ringdown_plot(self, modes: list, ringdown_frequencies: list, sample_name: str) -> None:
+    def ringdown_plot(self, modes: list, ringdown_frequencies: list, sample_name: str, structure_type: str, comsol_file=None) -> None:
         Qs_dict = self.ringdown_Qs(modes=modes, 
                                    ringdown_frequencies=ringdown_frequencies, 
                                    sample_name=sample_name) 
@@ -188,14 +188,33 @@ class mechanics:
         plt.figure(figsize=(15,5))
         plt.title("Ringdown")
         plt.errorbar(frequencies, Qs, yerr=Q_errors, color="firebrick", fmt="o", capsize=3, alpha=0.6)
-        for frequency in frequencies:
-            plt.plot([frequency]*len(ys), ys, "--", color="black", alpha=0.4)
+
+        if structure_type == "drum":
+            membrane_frequencies = []
+            for n in range(10):
+                for m in range(10):
+                    freq = ringdown_frequencies[0] * np.sqrt(n**2 + m**2) / np.sqrt(2)
+                    membrane_frequencies.append(freq)
+
+            for freq in membrane_frequencies:
+                while freq < (ringdown_frequencies[-1] + 10e3):
+                    plt.plot([freq]*len(ys), ys, "--", color="black", alpha=0.4)
+
+        if structure_type == "trampoline":
+            if comsol_file == None:
+                continue
+            else:
+                comsol = np.loadtxt(comsol_file, skiprows=5)
+                simulated_frequencies = comsol[1][2:]
+                for freq in simulated_frequencies:
+                    plt.plot([freq]*len(ys), ys, "--", color="black", alpha=0.4)
+
         plt.xlabel("frequency [Hz]")
         plt.ylabel("Q")
         #plt.legend()
         plt.show()
 
-    def thermal_plot(self, modes: list, thermal_frequencies: list, sample_name: str) -> None:
+    def thermal_plot(self, modes: list, thermal_frequencies: list, sample_name: str, structure_type: str, comsol_file=None) -> None:
         Qs_dict = self.thermal_Qs(modes=modes, 
                                   thermal_frequencies=thermal_frequencies,
                                   sample_name=sample_name) 
@@ -209,14 +228,33 @@ class mechanics:
         plt.figure(figsize=(15,5))
         plt.title("Thermal")
         plt.errorbar(frequencies, Qs, yerr=Q_errors, color="royalblue", fmt="o", capsize=3, alpha=0.6)
-        #for frequency in frequencies:
-        #    plt.plot([frequency]*len(ys), ys, "--", color="black", alpha=0.4)
+
+        if structure_type == "drum":
+            membrane_frequencies = []
+            for n in range(10):
+                for m in range(10):
+                    freq = ringdown_frequencies[0] * np.sqrt(n**2 + m**2) / np.sqrt(2)
+                    membrane_frequencies.append(freq)
+
+            for freq in membrane_frequencies:
+                while freq < (ringdown_frequencies[-1] + 10e3):
+                    plt.plot([freq]*len(ys), ys, "--", color="black", alpha=0.4)
+
+        if structure_type == "trampoline":
+            if comsol_file == None:
+                continue
+            else:
+                comsol = np.loadtxt(comsol_file, skiprows=5)
+                simulated_frequencies = comsol[1][2:]
+                for freq in simulated_frequencies:
+                    plt.plot([freq]*len(ys), ys, "--", color="black", alpha=0.4)
+
         plt.xlabel("frequency [Hz]")
         plt.ylabel("Q")
         #plt.legend()
         plt.show()
 
-    def thermal_ringdown_comparison(self, modes: list, thermal_frequencies: list, ringdown_frequencies: list, sample_name: str) -> None:
+    def thermal_ringdown_comparison(self, modes: list, thermal_frequencies: list, ringdown_frequencies: list, sample_name: str, structure_type: str, comsol_file=None) -> None:
 
         thermal_Qs_dict = self.thermal_Qs(modes=modes, 
                                           thermal_frequencies=thermal_frequencies,
@@ -240,12 +278,33 @@ class mechanics:
         plt.title(sample_name+" Thermal/Ringdown")
         plt.errorbar(thermal_frequencies, thermal_Qs, yerr=thermal_Q_errors, color="royalblue", fmt="o", capsize=3, alpha=0.6, label="thermal")
         plt.errorbar(ringdown_frequencies, ringdown_Qs, yerr=ringdown_Q_errors, color="firebrick", fmt="o", capsize=3, alpha=0.6, label="ringdown")
-        #for n,m in :
-        #    plt.plot([ringdown_frequencies[0]]*len(ys), ys, "--", color="black", alpha=0.4)
+
+        if structure_type == "drum":
+            membrane_frequencies = []
+            for n in range(10):
+                for m in range(10):
+                    freq = ringdown_frequencies[0] * np.sqrt(n**2 + m**2) / np.sqrt(2)
+                    membrane_frequencies.append(freq)
+
+            for freq in membrane_frequencies:
+                while freq < (ringdown_frequencies[-1] + 10e3):
+                    plt.plot([freq]*len(ys), ys, "--", color="black", alpha=0.4)
+
+        if structure_type == "trampoline":
+            if comsol_file == None:
+                continue
+            else:
+                comsol = np.loadtxt(comsol_file, skiprows=5)
+                simulated_frequencies = comsol[1][2:]
+                for freq in simulated_frequencies:
+                    plt.plot([freq]*len(ys), ys, "--", color="black", alpha=0.4)
+
         plt.xlabel("frequency [Hz]")
         plt.ylabel("Q")
         plt.legend()
         plt.show()
+
+comsol_pad450_800MPa = r"C:\\Users\\au601136\\omlab\\mechanics\\20260929\\450Pad_300-800MPa-modes.txt"
 
 D1_modes = ["1,1", "1,2", "2,1", "2,2", "2,3", "3,2", "3,3", "1,4", "4,1", "2,4", "3,4", "1,5", "5,1"]
 D1_thermal_freqs = ["195024", "308127", "308540", "390010", "496938", "497416", "585000", "567926", "569047", "616148", "689598", "702346", "703814"]
@@ -264,21 +323,25 @@ C1_thermal_freqs = ["28211", "50611", "102356", "133764", "153941", "161409", "1
 #               ringdown_freqs_in_Hz = D1_ringdown_freqs,
 #               modes = D1_modes,
 #               folder = "20260909", 
-#               ringdown_RBW="114")
+#               ringdown_RBW="114"
+#               structure_type="drum")
 
 #E1 = mechanics(measurement_type="both", 
 #               thermal_freqs_in_Hz = E1_thermal_freqs, 
 #               ringdown_freqs_in_Hz = E1_ringdown_freqs, 
 #               modes = E1_modes, 
 #               date="14-Sep-2026",
-#               folder = "20260914")
+#               folder = "20260914"
+#               structure_type="drum")
 
-C1 = mechanics(measurement_type="thermal", 
-               thermal_freqs_in_Hz=C1_thermal_freqs,
-               ringdown_freqs_in_Hz=[],
-               modes=C1_modes,
-               date="29-Sep-2026",
-               folder= "20260929")
+#C1 = mechanics(measurement_type="thermal", 
+#               thermal_freqs_in_Hz=C1_thermal_freqs,
+#               ringdown_freqs_in_Hz=[],
+#               modes=C1_modes,
+#               date="29-Sep-2026",
+#               folder= "20260929"
+#               structure_type="trampoline",
+#               comsol_file=comsol_pad450_800MPa)
 
 #D1.ringdown_Qs(modes=D1_modes, D1_ringdown_freqs, "D1")
 #D1.thermal_Qs(D1_modes, D1_thermal_freqs, "D1")
