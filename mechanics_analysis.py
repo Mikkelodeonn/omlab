@@ -193,16 +193,16 @@ class mechanics:
             membrane_frequencies = []
             for n in range(10):
                 for m in range(10):
-                    freq = ringdown_frequencies[0] * np.sqrt(n**2 + m**2) / np.sqrt(2)
+                    freq = frequencies[0] * np.sqrt(n**2 + m**2) / np.sqrt(2)
                     membrane_frequencies.append(freq)
 
             for freq in membrane_frequencies:
-                while freq < (ringdown_frequencies[-1] + 10e3):
+                while freq < (frequencies[-1] + 10e3):
                     plt.plot([freq]*len(ys), ys, "--", color="black", alpha=0.4)
 
         if structure_type == "trampoline":
             if comsol_file == None:
-                continue
+                pass
             else:
                 comsol = np.loadtxt(comsol_file, skiprows=5)
                 simulated_frequencies = comsol[1][2:]
@@ -233,16 +233,16 @@ class mechanics:
             membrane_frequencies = []
             for n in range(10):
                 for m in range(10):
-                    freq = ringdown_frequencies[0] * np.sqrt(n**2 + m**2) / np.sqrt(2)
+                    freq = frequencies[0] * np.sqrt(n**2 + m**2) / np.sqrt(2)
                     membrane_frequencies.append(freq)
 
             for freq in membrane_frequencies:
-                while freq < (ringdown_frequencies[-1] + 10e3):
+                while freq < (frequencies[-1] + 10e3):
                     plt.plot([freq]*len(ys), ys, "--", color="black", alpha=0.4)
 
         if structure_type == "trampoline":
             if comsol_file == None:
-                continue
+                pass
             else:
                 comsol = np.loadtxt(comsol_file, skiprows=5)
                 simulated_frequencies = comsol[1][2:]
@@ -292,7 +292,7 @@ class mechanics:
 
         if structure_type == "trampoline":
             if comsol_file == None:
-                continue
+                pass
             else:
                 comsol = np.loadtxt(comsol_file, skiprows=5)
                 simulated_frequencies = comsol[1][2:]
