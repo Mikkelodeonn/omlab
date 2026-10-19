@@ -12,7 +12,7 @@ class mechanics:
                 self.thermal_data = {}
 
                 for mode, freq in zip(modes, thermal_freqs_in_Hz): 
-                    data = [np.loadtxt("C:\\Users\\au601136\\omlab\\mechanics\\"+folder+"\\"+mode+"\\Thermal PCS 02(1,1), "+freq+"Hz,100Ave, RBW"+thermal_RBW+"Hz,900_7nm_170mbar_0Vdc, "+date+"_00"+str(i)+".txt", skiprows=1) for i in range(1,6)]
+                    data = [np.loadtxt("C:\\Users\\au601136\\omlab\\mechanics\\"+folder+"\\"+mode+"\\Thermal C 02(1,1), "+freq+"Hz,100Ave, RBW"+thermal_RBW+"Hz,940_9nm_2_7e-06mbar_0Vdc, "+date+"_00"+str(i)+".txt", skiprows=1) for i in range(1,6)]
 
                     self.thermal_data[mode] = data
 
@@ -20,7 +20,7 @@ class mechanics:
                 self.ringdown_data = {}
 
                 for mode, freq in zip(modes, ringdown_freqs_in_Hz):
-                    data = [np.loadtxt("C:\\Users\\au601136\\omlab\\mechanics\\"+date+"\\"+mode+"\\Ringdown ChamberPressure = 2-8e-4(1,1), "+freq+"Hz, 100Ave, RBW"+ringdown_RBW+"Hz, 910-685nm_1-2e-05mbar_90Vdc_"+str(i)+".txt", skiprows=1) for i in range(1,6)]
+                    data = [np.loadtxt("C:\\Users\\au601136\\omlab\\mechanics\\"+folder+"\\"+mode+"\\Ringdown C 02(1,1), "+freq+"Hz, 100Ave, RBW"+ringdown_RBW+"Hz, 940-9nm_9e-07mbar_16Vdc, "+date+"_00"+str(i)+".txt", skiprows=1) for i in range(1,6)]
 
                     self.ringdown_data[mode] = data
 
@@ -29,9 +29,9 @@ class mechanics:
                 self.ringdown_data = {}
 
                 for mode, freq1, freq2 in zip(modes, thermal_freqs_in_Hz, ringdown_freqs_in_Hz): 
-                    data1 = [np.loadtxt("C:\\Users\\au601136\\omlab\\mechanics\\"+date+"\\"+mode+"\\Thermal PCS 02(1,1), "+freq1+"Hz,100Ave, RBW"+thermal_RBW+"Hz,900_7nm_170mbar_0Vdc_"+str(i)+".txt", skiprows=1) for i in range(1,6)]
+                    data1 = [np.loadtxt("C:\\Users\\au601136\\omlab\\mechanics\\"+folder+"\\"+mode+"\\Thermal C 02(1,1), "+freq+"Hz,100Ave, RBW"+thermal_RBW+"Hz,940_9nm_2_7e-06mbar_0Vdc, "+date+"_00"+str(i)+".txt", skiprows=1) for i in range(1,6)]
 
-                    data2 = [np.loadtxt("C:\\Users\\au601136\\omlab\\mechanics\\"+date+"\\"+mode+"\\Ringdown ChamberPressure = 2-8e-4(1,1), "+freq2+"Hz, 100Ave, RBW"+ringdown_RBW+"Hz, 910-685nm_1-2e-05mbar_90Vdc_"+str(i)+".txt", skiprows=1) for i in range(1,6)]
+                    data2 = [np.loadtxt("C:\\Users\\au601136\\omlab\\mechanics\\"+folder+"\\"+mode+"\\Ringdown C 02(1,1), "+freq+"Hz, 100Ave, RBW"+ringdown_RBW+"Hz, 940-9nm_9e-07mbar_16Vdc, "+date+"_00"+str(i)+".txt", skiprows=1) for i in range(1,6)]
 
                     self.thermal_data[mode] = data1
                     self.ringdown_data[mode] = data2
@@ -207,7 +207,7 @@ class mechanics:
                 comsol = np.loadtxt(comsol_file, skiprows=5)
                 simulated_frequencies = comsol[1][2:]
                 for freq in simulated_frequencies:
-                    plt.plot([freq]*len(ys), ys, "--", color="black", alpha=0.4)
+                    plt.plot([freq*1e3]*len(ys), ys, "--", color="black", alpha=0.4)
 
         plt.xlabel("frequency [Hz]")
         plt.ylabel("Q")
@@ -247,7 +247,7 @@ class mechanics:
                 comsol = np.loadtxt(comsol_file, skiprows=5)
                 simulated_frequencies = comsol[1][2:]
                 for freq in simulated_frequencies:
-                    plt.plot([freq]*len(ys), ys, "--", color="black", alpha=0.4)
+                    plt.plot([freq*1e3]*len(ys), ys, "--", color="black", alpha=0.4)
 
         plt.xlabel("frequency [Hz]")
         plt.ylabel("Q")
@@ -297,7 +297,7 @@ class mechanics:
                 comsol = np.loadtxt(comsol_file, skiprows=5)
                 simulated_frequencies = comsol[1][2:]
                 for freq in simulated_frequencies:
-                    plt.plot([freq]*len(ys), ys, "--", color="black", alpha=0.4)
+                    plt.plot([freq*1e3]*len(ys), ys, "--", color="black", alpha=0.4)
 
         plt.xlabel("frequency [Hz]")
         plt.ylabel("Q")
@@ -317,6 +317,10 @@ E1_ringdown_freqs = ["195128", "308110", "308886"]#, "390180", "496980", "497819
 C1_modes = ["mode0", "mode1", "mode2", "mode3", "mode4", "mode5", "mode6", "mode7", "mode8", "mode9", "mode10", "mode11", "mode12", "mode13", "mode14", "mode15", "mode16", "mode17"]
 
 C1_thermal_freqs = ["28211", "50611", "102356", "133764", "153941", "161409", "179346", "185577", "202699", "210000", "220953", "231175", "235865", "237469", "280731", "286268", "288697", "289651"]
+
+C2_modes = ["mode1", "mode2", "mode3", "mode4", "mode5", "mode6", "mode7", "mode8", "mode9", "mode10", "mode11", "mode12", "mode13", "mode14", "mode15", "mode16", "mode17"]
+C2_thermal_freqs = ["51355", "102756", "102865", "136469", "161425", "162359", "185682", "185772", "221734", "236504", "237134", "276552", "286344", "289481", "340737", "341851", "342581"]
+C2_ringdown_freqs = ["51361", "102761", "102861", "136491", "161453", "162390", "185719", "185802", "221775", "236551", "237177", "276701", "286507", "289481", "342035", "342765", "343007"]
 
 #D1 = mechanics(measurement_type="both", 
 #               thermal_freqs_in_Hz = D1_thermal_freqs, 
@@ -343,6 +347,21 @@ C1_thermal_freqs = ["28211", "50611", "102356", "133764", "153941", "161409", "1
 #               structure_type="trampoline",
 #               comsol_file=comsol_pad450_800MPa)
 
+C2_ringdown = mechanics(measurement_type="ringdown",
+               thermal_freqs_in_Hz=C2_thermal_freqs,
+               ringdown_freqs_in_Hz=C2_ringdown_freqs,
+               modes=C2_modes,
+               date="14-10-2026",
+               folder="20261014",
+               ringdown_RBW="10")
+
+C2_thermal = mechanics(measurement_type="thermal",
+               thermal_freqs_in_Hz=C2_thermal_freqs,
+               ringdown_freqs_in_Hz=C2_ringdown_freqs,
+               modes=C2_modes,
+               date="14-Oct-2026",
+               folder="20261014")
+
 #D1.ringdown_Qs(modes=D1_modes, D1_ringdown_freqs, "D1")
 #D1.thermal_Qs(D1_modes, D1_thermal_freqs, "D1")
 #D1.ringdown_plot(D1_modes, D1_ringdown_freqs, "D1")
@@ -350,3 +369,9 @@ C1_thermal_freqs = ["28211", "50611", "102356", "133764", "153941", "161409", "1
 
 #E1.thermal_ringdown_comparison(modes=E1_modes, thermal_frequencies=E1_thermal_freqs, ringdown_frequencies=E1_ringdown_freqs, sample_name="test")
 #C1.thermal_plot(modes=C1_modes, thermal_frequencies=C1_thermal_freqs, sample_name="C1")
+
+C2_ringdown.ringdown_plot(modes=C2_modes,
+                          ringdown_frequencies=C2_ringdown_freqs,
+                          sample_name="C2",
+                          structure_type="trampoline",
+                          comsol_file=comsol_pad450_800MPa)
