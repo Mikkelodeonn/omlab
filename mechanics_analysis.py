@@ -174,7 +174,7 @@ class mechanics:
             
         return Qs_dict
 
-    def ringdown_plot(self, modes: list, ringdown_frequencies: list, sample_name: str, structure_type: str, comsol_file=None) -> None:
+    def ringdown_plot(self, modes: list, ringdown_frequencies: list, sample_name: str, structure_type: str, comsol_file=None, logscale=True) -> None:
         Qs_dict = self.ringdown_Qs(modes=modes, 
                                    ringdown_frequencies=ringdown_frequencies, 
                                    sample_name=sample_name) 
@@ -183,7 +183,7 @@ class mechanics:
         Q_errors = [Qs_dict[mode]["error"] for mode in modes]
         frequencies = [int(freq) for freq in ringdown_frequencies]
 
-        ys = np.linspace(0,max(Qs),1000)
+        ys = np.linspace(0,max(np.array(Qs)+np.array(Q_errors)),1000)
 
         plt.figure(figsize=(15,5))
         plt.title("Ringdown")
@@ -211,10 +211,19 @@ class mechanics:
 
         plt.xlabel("frequency [Hz]")
         plt.ylabel("Q")
-        #plt.legend()
+
+        if logscale:
+            plt.yscale("log")
+
+        data_for_txt = np.column_stack((frequencies, Qs, Q_errors))
+        save_path = "C:\\Users\\au601136\\omlab\\mechanics\\"+sample_name
+        os.makedirs(save_path, exist_ok=True)
+        filename = os.path.join(save_path, f"{sample_name}_ringdown.txt")
+        np.savetxt(filename, data_for_txt, header="Frequency:\tQ-value:\tQ-error:", comments="")
+
         plt.show()
 
-    def thermal_plot(self, modes: list, thermal_frequencies: list, sample_name: str, structure_type: str, comsol_file=None) -> None:
+    def thermal_plot(self, modes: list, thermal_frequencies: list, sample_name: str, structure_type: str, comsol_file=None, logscale=True) -> None:
         Qs_dict = self.thermal_Qs(modes=modes, 
                                   thermal_frequencies=thermal_frequencies,
                                   sample_name=sample_name) 
@@ -223,7 +232,7 @@ class mechanics:
         Q_errors = [Qs_dict[mode]["error"] for mode in modes]
         frequencies = [int(freq) for freq in thermal_frequencies]
         
-        ys = np.linspace(0,max(Qs),1000)
+        ys = np.linspace(0,max(np.array(Qs)+np.array(Q_errors)),1000)
 
         plt.figure(figsize=(15,5))
         plt.title("Thermal")
@@ -251,7 +260,16 @@ class mechanics:
 
         plt.xlabel("frequency [Hz]")
         plt.ylabel("Q")
-        #plt.legend()
+
+        if logscale:
+            plt.yscale("log")
+
+        data_for_txt = np.column_stack((frequencies, Qs, Q_errors))
+        save_path = "C:\\Users\\au601136\\omlab\\mechanics\\"+sample_name
+        os.makedirs(save_path, exist_ok=True)
+        filename = os.path.join(save_path, f"{sample_name}_thermal.txt")
+        np.savetxt(filename, data_for_txt, header="Frequency:\tQ-value:\tQ-error:", comments="")
+
         plt.show()
 
     def thermal_ringdown_comparison(self, modes: list, thermal_frequencies: list, ringdown_frequencies: list, sample_name: str, structure_type: str, comsol_file=None) -> None:
@@ -304,23 +322,13 @@ class mechanics:
         plt.legend()
         plt.show()
 
-comsol_pad450_800MPa = r"C:\\Users\\au601136\\omlab\\mechanics\\20260929\\450Pad_300-800MPa-modes.txt"
+comsol_pad450_800MPa = r"C:\\Users\\au601136\\omlab\\mechanics\\450Pad_300-800MPa-modes.txt"
+
+##################################### D1 (membrane with spacers) ######################################
 
 D1_modes = ["1,1", "1,2", "2,1", "2,2", "2,3", "3,2", "3,3", "1,4", "4,1", "2,4", "3,4", "1,5", "5,1"]
 D1_thermal_freqs = ["195024", "308127", "308540", "390010", "496938", "497416", "585000", "567926", "569047", "616148", "689598", "702346", "703814"]
 D1_ringdown_freqs = ["195024", "308131", "308542", "390011", "496940", "497400", "585017", "567924", "569053", "616147", "689600", "702349", "703816"]
-
-E1_modes = ["1,1", "1,2", "2,1"]#, "2,2", "2,3", "3,2", "3,3", "1,4", "4,1", "2,4", "4,2", "3,4", "4,3", "4,4"]
-E1_thermal_freqs = ["195124", "308107", "308882"]#, "390178", "496975", "497813", "585299", "567849", "569954", "616181", "617770", "689441", "690213", "780485"]
-E1_ringdown_freqs = ["195128", "308110", "308886"]#, "390180", "496980", "497819", "585302", "567852", "569957", "616184", "617773", "689429", "690217", "780490"]
-
-C1_modes = ["mode0", "mode1", "mode2", "mode3", "mode4", "mode5", "mode6", "mode7", "mode8", "mode9", "mode10", "mode11", "mode12", "mode13", "mode14", "mode15", "mode16", "mode17"]
-
-C1_thermal_freqs = ["28211", "50611", "102356", "133764", "153941", "161409", "179346", "185577", "202699", "210000", "220953", "231175", "235865", "237469", "280731", "286268", "288697", "289651"]
-
-C2_modes = ["mode1", "mode2", "mode3", "mode4", "mode5", "mode6", "mode7", "mode8", "mode9", "mode10", "mode11", "mode12", "mode13", "mode14", "mode15", "mode16", "mode17"]
-C2_thermal_freqs = ["51355", "102756", "102865", "136469", "161425", "162359", "185682", "185772", "221734", "236504", "237134", "276552", "286344", "289481", "340737", "341851", "342581"]
-C2_ringdown_freqs = ["51361", "102761", "102861", "136491", "161453", "162390", "185719", "185802", "221775", "236551", "237177", "276701", "286507", "289481", "342035", "342765", "343007"]
 
 #D1 = mechanics(measurement_type="both", 
 #               thermal_freqs_in_Hz = D1_thermal_freqs, 
@@ -330,6 +338,19 @@ C2_ringdown_freqs = ["51361", "102761", "102861", "136491", "161453", "162390", 
 #               ringdown_RBW="114"
 #               structure_type="drum")
 
+#D1.ringdown_Qs(modes=D1_modes, D1_ringdown_freqs, "D1")
+#D1.thermal_Qs(D1_modes, D1_thermal_freqs, "D1")
+#D1.ringdown_plot(D1_modes, D1_ringdown_freqs, "D1")
+#D1.thermal_ringdown_comparison(modes=D1_modes, thermal_frequencies=D1_thermal_freqs, ringdown_frequencies=D1_ringdown_freqs, sample_name="D1")
+
+#######################################################################################################
+##################################### E1 (membrane with spacers) ######################################
+
+E1_modes = ["1,1", "1,2", "2,1", "2,2", "2,3", "3,2", "3,3", "1,4", "4,1", "2,4", "4,2", "3,4", "4,3", "4,4"]
+E1_thermal_freqs = ["195124", "308107", "308882", "390178", "496975", "497813", "585299", "567849", "569954", "616181", "617770", "689441", "690213", "780485"]
+E1_ringdown_freqs = ["195128", "308110", "308886", "390180", "496980", "497819", "585302", "567852", "569957", "616184", "617773", "689429", "690217", "780490"]
+
+
 #E1 = mechanics(measurement_type="both", 
 #               thermal_freqs_in_Hz = E1_thermal_freqs, 
 #               ringdown_freqs_in_Hz = E1_ringdown_freqs, 
@@ -337,6 +358,15 @@ C2_ringdown_freqs = ["51361", "102761", "102861", "136491", "161453", "162390", 
 #               date="14-Sep-2026",
 #               folder = "20260914"
 #               structure_type="drum")
+
+#E1.thermal_ringdown_comparison(modes=E1_modes, thermal_frequencies=E1_thermal_freqs, ringdown_frequencies=E1_ringdown_freqs, sample_name="test")
+
+#######################################################################################################
+####################################### C1 (450um trampoline) #########################################
+
+C1_modes = ["mode0", "mode1", "mode2", "mode3", "mode4", "mode5", "mode6", "mode7", "mode8", "mode9", "mode10", "mode11", "mode12", "mode13", "mode14", "mode15", "mode16", "mode17"]
+
+C1_thermal_freqs = ["28211", "50611", "102356", "133764", "153941", "161409", "179346", "185577", "202699", "210000", "220953", "231175", "235865", "237469", "280731", "286268", "288697", "289651"]
 
 #C1 = mechanics(measurement_type="thermal", 
 #               thermal_freqs_in_Hz=C1_thermal_freqs,
@@ -346,6 +376,15 @@ C2_ringdown_freqs = ["51361", "102761", "102861", "136491", "161453", "162390", 
 #               folder= "20260929"
 #               structure_type="trampoline",
 #               comsol_file=comsol_pad450_800MPa)
+
+#C1.thermal_plot(modes=C1_modes, thermal_frequencies=C1_thermal_freqs, sample_name="C1")
+
+#######################################################################################################
+####################################### C2 (450um trampoline) #########################################
+
+C2_modes = ["mode1", "mode2", "mode3", "mode4", "mode5", "mode6", "mode7", "mode8", "mode9", "mode10", "mode11", "mode12", "mode13", "mode14", "mode15", "mode16", "mode17"]
+C2_thermal_freqs = ["51355", "102756", "102865", "136469", "161425", "162359", "185682", "185772", "221734", "236504", "237134", "276552", "286344", "289481", "340737", "341851", "342581"]
+C2_ringdown_freqs = ["51361", "102761", "102861", "136491", "161453", "162390", "185719", "185802", "221775", "236551", "237177", "276701", "286507", "289481", "342035", "342765", "343007"]
 
 C2_ringdown = mechanics(measurement_type="ringdown",
                thermal_freqs_in_Hz=C2_thermal_freqs,
@@ -362,16 +401,26 @@ C2_thermal = mechanics(measurement_type="thermal",
                date="14-Oct-2026",
                folder="20261014")
 
-#D1.ringdown_Qs(modes=D1_modes, D1_ringdown_freqs, "D1")
-#D1.thermal_Qs(D1_modes, D1_thermal_freqs, "D1")
-#D1.ringdown_plot(D1_modes, D1_ringdown_freqs, "D1")
-#D1.thermal_ringdown_comparison(modes=D1_modes, thermal_frequencies=D1_thermal_freqs, ringdown_frequencies=D1_ringdown_freqs, sample_name="D1")
+#C2_ringdown.ringdown_plot(modes=C2_modes,
+#                         ringdown_frequencies=C2_ringdown_freqs,
+#                         sample_name="C2",
+#                          structure_type="trampoline",
+#                          comsol_file=comsol_pad450_800MPa)
 
-#E1.thermal_ringdown_comparison(modes=E1_modes, thermal_frequencies=E1_thermal_freqs, ringdown_frequencies=E1_ringdown_freqs, sample_name="test")
-#C1.thermal_plot(modes=C1_modes, thermal_frequencies=C1_thermal_freqs, sample_name="C1")
+#C2_thermal.thermal_plot(modes=C2_modes,
+#                          thermal_frequencies=C2_thermal_freqs,
+#                          sample_name="C2",
+#                          structure_type="trampoline",
+#                          comsol_file=comsol_pad450_800MPa)
 
-C2_ringdown.ringdown_plot(modes=C2_modes,
-                          ringdown_frequencies=C2_ringdown_freqs,
-                          sample_name="C2",
-                          structure_type="trampoline",
-                          comsol_file=comsol_pad450_800MPa)
+#######################################################################################################
+
+
+
+
+
+
+
+
+
+
