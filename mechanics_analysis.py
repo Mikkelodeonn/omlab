@@ -68,7 +68,7 @@ class mechanics:
                 popt, pcov = curve_fit(ringdown_fit, xfit, yfit)
 
                 τ = -10 / (popt[0]*np.log(10)) # calculation from log (dBm) to linear
-                Q = 2 * np.pi * float(freq) * τ
+                Q = 2 * np.pi * float(freq) * τ 
                 Qs.append(Q)
 
                 xs_fit = np.linspace(x1,x2,1000)
